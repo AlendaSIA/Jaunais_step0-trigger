@@ -1,29 +1,36 @@
-import json
-from flask import Flask, request, jsonify
+import os
+import requests
+import xml.etree.ElementTree as ET
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
 @app.get("/")
-def healthcheck():
-    # Pārlūks un healthchecki trāpīs šeit
+def ok():
     return "OK", 200
 
-@app.post("/webhook")
-def webhook():
-    # Scheduler / curl trāpīs šeit
-    payload = request.get_json(silent=True) or {}
+@app.post("/run")
+def run():
+    key = os.getenv("PAYTRAQ_API_KEY")
+    token = os.getenv("PAYTRAQ_API_TOKEN")
 
-    print("=== STEP0-TRIGGER: POST /webhook received ===")
-    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    if not key or not token:
+        return jsonify({"error": "Missing PayTraq credentials"}), 500
+
+    url = f"https://go.paytraq.com/api/sales?APIToken={token}&APIKey={key}"
+    r = requests.get(url, timeout=30)
+
+    root = ET.fromstring(r.text)
+    ids = [e.text for e in root.findall(".//DocumentID") if e.text]
+    last_id = ids[-1] if ids else None
 
     return jsonify({
-        "status": "received",
-        "route": "/webhook",
-        "payload_keys": list(payload.keys())
+        "http_status": r.status_code,
+        "document_id": last_id,
+        "count": len(ids),
+        "preview": r.text[:300]
     }), 200
 
 
-# Cloud Run/production vidē parasti WSGI serveris (gunicorn) pats palaiž app
-# Bet lokālam testam var palaist ar: python main.py
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8080)
