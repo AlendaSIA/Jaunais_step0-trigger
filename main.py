@@ -1,59 +1,40 @@
 import os
-import re
-from datetime import datetime
-import requests
-from flask import Flask, Response
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-PAYTRAQ_BASE = "https://go.paytraq.com/api"
-API_KEY = os.environ.get("PAYTRAQ_API_KEY")
-API_TOKEN = os.environ.get("PAYTRAQ_API_TOKEN")
-
-def paytraq_get_sales(params: dict) -> str:
-    r = requests.get(
-        f"{PAYTRAQ_BASE}/sales",
-        headers={
-            "APIKey": API_KEY,
-            "APIToken": API_TOKEN,
-        },
-        params=params,
-        timeout=30,
-    )
-    r.raise_for_status()
-    return r.text  # PayTraq atdod XML
-
-def extract_document_ids(xml: str) -> list[int]:
-    return [int(x) for x in re.findall(r"<DocumentID>(\d+)</DocumentID>", xml)]
-
-def today_ymd() -> str:
-    return datetime.utcnow().strftime("%Y-%m-%d")
+# Neliec ārā vērtības, tikai to, vai mainīgie eksistē
+SAFE_ENV_KEYS = [
+    "PAYTRAQ_API_KEY",
+    "PAYTRAQ_API_TOKEN",
+]
 
 @app.get("/")
-def health():
-    return "OK"
+def healthcheck():
+    return "OK", 200
 
-@app.post("/trigger")
-def trigger():
-    if not API_KEY or not API_TOKEN:
-        return Response("Missing PAYTRAQ_API_KEY or PAYTRAQ_API_TOKEN\n", status=500)
+@app.post("/")
+def webhook():
+    payload = request.get_json(silent=True)
 
-    today = today_ymd()
+    print("=== STEP0-TRIGGER: POST received ===")
+    print(f"Content-Type: {request.headers.get('Content-Type')}")
+    print(f"Has JSON body: {payload is not None}")
 
-    xml = paytraq_get_sales({
-        "date_from": today,
-        "date_till": today,
-    })
+    # Parādām tikai to, vai secrets ir piesaistīti (True/False), ne vērtības
+    env_presence = {k: bool(os.environ.get(k)) for k in SAFE_ENV_KEYS}
+    print(f"Env presence (no values): {env_presence}")
 
-    ids = extract_document_ids(xml)
+    # Parādām top-level atslēgas (ja ir JSON), lai redzi ko atnāca
+    if isinstance(payload, dict):
+        print(f"JSON keys: {list(payload.keys())}")
+    else:
+        print("JSON keys: [] (no JSON object)")
 
-    if not ids:
-        return Response("No documents today\n", mimetype="text/plain")
+    return jsonify({"status": "received", "env_presence": env_presence}), 200
 
-    ids.sort()
 
-    lines = ["Today's PayTraq document IDs:"]
-    lines.extend(str(i) for i in ids)
-
-    return Response("\n".join(lines) + "\n", mimetype="text/plain")
-
+if __name__ == "__main__":
+    # Cloud Run lieto PORT env
+    port = int(os.environ.get("PORT", "8080"))
+    app.run(host="0.0.0.0", port=port)
