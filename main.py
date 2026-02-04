@@ -1,40 +1,29 @@
-import os
+import json
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Neliec ārā vērtības, tikai to, vai mainīgie eksistē
-SAFE_ENV_KEYS = [
-    "PAYTRAQ_API_KEY",
-    "PAYTRAQ_API_TOKEN",
-]
-
 @app.get("/")
 def healthcheck():
+    # Pārlūks un healthchecki trāpīs šeit
     return "OK", 200
 
-@app.post("/")
+@app.post("/webhook")
 def webhook():
-    payload = request.get_json(silent=True)
+    # Scheduler / curl trāpīs šeit
+    payload = request.get_json(silent=True) or {}
 
-    print("=== STEP0-TRIGGER: POST received ===")
-    print(f"Content-Type: {request.headers.get('Content-Type')}")
-    print(f"Has JSON body: {payload is not None}")
+    print("=== STEP0-TRIGGER: POST /webhook received ===")
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
 
-    # Parādām tikai to, vai secrets ir piesaistīti (True/False), ne vērtības
-    env_presence = {k: bool(os.environ.get(k)) for k in SAFE_ENV_KEYS}
-    print(f"Env presence (no values): {env_presence}")
-
-    # Parādām top-level atslēgas (ja ir JSON), lai redzi ko atnāca
-    if isinstance(payload, dict):
-        print(f"JSON keys: {list(payload.keys())}")
-    else:
-        print("JSON keys: [] (no JSON object)")
-
-    return jsonify({"status": "received", "env_presence": env_presence}), 200
+    return jsonify({
+        "status": "received",
+        "route": "/webhook",
+        "payload_keys": list(payload.keys())
+    }), 200
 
 
+# Cloud Run/production vidē parasti WSGI serveris (gunicorn) pats palaiž app
+# Bet lokālam testam var palaist ar: python main.py
 if __name__ == "__main__":
-    # Cloud Run lieto PORT env
-    port = int(os.environ.get("PORT", "8080"))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=8080, debug=True)
