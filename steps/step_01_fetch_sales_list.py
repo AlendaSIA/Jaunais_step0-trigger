@@ -1,6 +1,5 @@
 import os
 import requests
-import xml.etree.ElementTree as ET
 
 PAYTRAQ_BASE_URL = "https://go.paytraq.com"
 
@@ -8,7 +7,6 @@ def run(ctx: dict):
     key = os.getenv("PAYTRAQ_API_KEY")
     token = os.getenv("PAYTRAQ_API_TOKEN")
 
-    # Debug: tikai vai ir/ nav (neshow'ojam pašas vērtības)
     ctx["has_paytraq_key"] = bool(key)
     ctx["has_paytraq_token"] = bool(token)
 
@@ -17,27 +15,23 @@ def run(ctx: dict):
         return ctx
 
     url = f"{PAYTRAQ_BASE_URL}/api/sales"
-    r = requests.get(
-        url,
-        params={"APIToken": token, "APIKey": key},
-        timeout=30,
-    )
 
-    ctx["paytraq_sales_status_code"] = r.status_code
-    if r.status_code != 200:
-        ctx["error"] = "PayTraq /api/sales returned non-200"
-        ctx["paytraq_body_snippet"] = r.text[:500]
-        return ctx
+    attempts = [
+        ("query_normal",  {"params": {"APIKey": key,   "APIToken": token}}),
+        ("query_swapped", {"params": {"APIKey": token, "APIToken": key}}),
+        ("query_case_alt", {"params": {"APIKEY": key, "APITOKEN": token}}),
+    ]
 
-    root = ET.fromstring(r.text)
-    ids = []
-    for el in root.iter():
-        if el.tag.lower() == "documentid" and el.text:
-            t = el.text.strip()
-            if t.isdigit():
-                ids.append(int(t))
+    last_text = ""
+    for name, kwargs in attempts:
+        r = requests.get(url, timeout=30, **kwargs)
+        ctx["paytraq_auth_used"] = name
+        ctx["paytraq_sales_status_code"] = r.status_code
+        last_text = r.text or ""
+        if r.status_code == 200:
+            ctx["ok"] = True
+            return ctx
 
-    ids = sorted(set(ids))
-    ctx["sales_count"] = len(ids)
-    ctx["sales_ids"] = ids[-20:]
+    ctx["error"] = "PayTraq /api/sales returned non-200"
+    ctx["paytraq_body_snippet"] = last_text[:500]
     return ctx
