@@ -2,11 +2,15 @@ import os
 import requests
 import xml.etree.ElementTree as ET
 
-PAYTRAQ_BASE_URL = "https://go.paytraq.com"  # ja tev ir cita bāze, pasaki
+PAYTRAQ_BASE_URL = "https://go.paytraq.com"
 
 def run(ctx: dict):
     key = os.getenv("PAYTRAQ_API_KEY")
     token = os.getenv("PAYTRAQ_API_TOKEN")
+
+    # Debug: tikai vai ir/ nav, nevis vērtības
+    ctx["has_paytraq_key"] = bool(key)
+    ctx["has_paytraq_token"] = bool(token)
 
     if not key or not token:
         ctx["error"] = "Missing env: PAYTRAQ_API_KEY or PAYTRAQ_API_TOKEN"
@@ -28,7 +32,6 @@ def run(ctx: dict):
         ctx["paytraq_body_snippet"] = r.text[:500]
         return ctx
 
-    # Parse XML and extract DocumentID values
     root = ET.fromstring(r.text)
     ids = []
     for el in root.iter():
@@ -39,5 +42,5 @@ def run(ctx: dict):
 
     ids = sorted(set(ids))
     ctx["sales_count"] = len(ids)
-    ctx["sales_ids"] = ids[-20:]  # ieliekam tikai pēdējos 20, lai response nav milzīgs
+    ctx["sales_ids"] = ids[-20:]
     return ctx
