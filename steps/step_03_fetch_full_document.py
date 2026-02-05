@@ -50,21 +50,24 @@ def run(ctx: dict):
         ctx["error"] = "Missing ctx.next_document_id (run step 02 first)"
         return ctx
 
-    url = f"{PAYTRAQ_BASE_URL}/api/sales/{doc_id}"
+    # ✅ Pareizais endpoints pilnajam dokumentam:
+    # GET https://go.paytraq.com/api/sale/{DocumentID}
+    url = f"{PAYTRAQ_BASE_URL}/api/sale/{doc_id}"
     r = requests.get(url, params={"APIKey": key, "APIToken": token}, timeout=30)
 
     ctx["paytraq_full_status_code"] = r.status_code
+    ctx["paytraq_full_endpoint"] = "/api/sale/{DocumentID}"
 
     if r.status_code != 200:
-        ctx["error"] = "PayTraq /api/sales/{id} returned non-200"
+        ctx["error"] = "PayTraq /api/sale/{DocumentID} returned non-200"
         ctx["paytraq_full_body_snippet"] = (r.text or "")[:800]
         return ctx
 
     xml_text = r.text or ""
     ctx["paytraq_full_xml_len"] = len(xml_text)
-    ctx["paytraq_full_xml"] = xml_text  # Step04 vajadzēs parsēšanai
+    ctx["paytraq_full_xml"] = xml_text
 
-    # Debug: saglabājam GitHub, lai viegli testēt (atverams repo UI)
+    # Debug: saglabājam GitHub, lai viegli testēt (repo UI)
     gh_token = os.getenv("GITHUB_TOKEN")
     if gh_token:
         path = f"state/debug/sales_{doc_id}.xml"
@@ -72,7 +75,7 @@ def run(ctx: dict):
             gh_token,
             path,
             xml_text.encode("utf-8"),
-            message=f"debug: save PayTraq sales XML {doc_id}",
+            message=f"debug: save PayTraq sale XML {doc_id}",
         )
         ctx["github_debug_xml_path"] = path
         ctx["github_debug_xml_status"] = status
