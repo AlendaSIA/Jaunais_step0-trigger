@@ -1,0 +1,19 @@
+{
+  "document_id": 15534909,
+  "document_date": "2026-02-04",
+  "document_ref": "M-860325-29815",
+  "document_status": "in_process",
+  "sale_type": "sales_order",
+  "operation": "sell_goods",
+  "currency": "EUR",
+  "total": "22.42",
+  "amount_due": "22.42",
+  "issued_by": "Ligita Zvejniece",
+  "comment": "M-860325-29815, Payment Gateway",
+  "client_id": "1069114",
+  "client_name": "Inita Strode",
+  "ship_to": "Inita Strode, 28276372",
+  "ship_address": "Auce, Baznīcas iela 1 (Auces TOP Venipak pakomāts)",
+  "ship_zip": "3708",
+  "ship_country": "LV"
+}
