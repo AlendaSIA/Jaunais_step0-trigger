@@ -8,7 +8,7 @@ def run(ctx: dict):
     key = os.getenv("PAYTRAQ_API_KEY")
     token = os.getenv("PAYTRAQ_API_TOKEN")
 
-    # Debug: tikai vai ir/ nav, nevis vērtības
+    # Debug: tikai vai ir/ nav (neshow'ojam pašas vērtības)
     ctx["has_paytraq_key"] = bool(key)
     ctx["has_paytraq_token"] = bool(token)
 
@@ -19,10 +19,7 @@ def run(ctx: dict):
     url = f"{PAYTRAQ_BASE_URL}/api/sales"
     r = requests.get(
         url,
-        headers={
-            "X-Consumer-Key": key,
-            "X-Access-Token": token,
-        },
+        params={"APIToken": token, "APIKey": key},
         timeout=30,
     )
 
