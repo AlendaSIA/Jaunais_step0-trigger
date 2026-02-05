@@ -5,6 +5,7 @@ from steps import (
     step_03_fetch_full_document,
     step_04_extract_client_data,
     step_05_pipedrive_ping,
+    step_08_finalize_state,
 )
 
 STEPS = [
@@ -14,6 +15,7 @@ STEPS = [
     ("03_fetch_full_document", step_03_fetch_full_document.run),
     ("04_extract_client_data", step_04_extract_client_data.run),
     ("05_pipedrive_ping", step_05_pipedrive_ping.run),
+    ("08_finalize_state", step_08_finalize_state.run),
 ]
 
 
@@ -22,9 +24,17 @@ def run_all():
     for name, fn in STEPS:
         ctx["current_step"] = name
         ctx = fn(ctx)
+
+        # ja ir kļūda -> stop
         if ctx.get("error"):
             ctx["status"] = "error"
             return ctx
+
+        # ja jābeidz normāli -> stop bez kļūdas
+        if ctx.get("halt_pipeline"):
+            ctx["status"] = "ok"
+            return ctx
+
     ctx["status"] = "ok"
     return ctx
 
@@ -62,10 +72,17 @@ def _run_until(until_name: str, ctx: dict):
     for name, fn in STEPS:
         ctx["current_step"] = name
         ctx = fn(ctx)
+
         if ctx.get("error"):
             ctx["status"] = "error"
             return ctx
+
+        if ctx.get("halt_pipeline"):
+            ctx["status"] = "ok"
+            return ctx
+
         if name == until_name:
             ctx["status"] = "ok"
             return ctx
+
     return {"status": "error", "error": f"Until-step not found: {until_name}"}
