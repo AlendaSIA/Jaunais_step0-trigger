@@ -1,6 +1,6 @@
 import os
 from flask import Flask, jsonify, request
-from runner import run_all, run_debug
+import runner
 
 app = Flask(__name__)
 
@@ -8,21 +8,21 @@ app = Flask(__name__)
 def health():
     return jsonify({"ok": True})
 
+@app.get("/steps")
+def steps():
+    return jsonify({
+        "steps": [name for name, _ in runner.STEPS]
+    }), 200
+
 @app.post("/run")
 def run():
-    # pilns cikls (vēlāk: 1 dokuments end-to-end)
-    ctx = run_all()
+    ctx = runner.run_all()
     return jsonify(ctx), 200
 
 @app.post("/debug")
 def debug():
-    """
-    Body piemēri:
-      {"mode":"step","step":"00_read_state"}
-      {"mode":"until","until":"00_read_state"}
-    """
     payload = request.get_json(silent=True) or {}
-    ctx = run_debug(payload)
+    ctx = runner.run_debug(payload)
     return jsonify(ctx), 200
 
 if __name__ == "__main__":
