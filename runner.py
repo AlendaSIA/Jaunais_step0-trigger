@@ -5,6 +5,7 @@ from steps import (
     step_03_fetch_full_document,
     step_04_extract_client_data,
     step_05_pipedrive_ping,
+    step_06_call_worker,      # <-- JAUNS
     step_08_finalize_state,
 )
 
@@ -15,6 +16,7 @@ STEPS = [
     ("03_fetch_full_document", step_03_fetch_full_document.run),
     ("04_extract_client_data", step_04_extract_client_data.run),
     ("05_pipedrive_ping", step_05_pipedrive_ping.run),
+    ("06_call_worker", step_06_call_worker.run),   # <-- JAUNS
     ("08_finalize_state", step_08_finalize_state.run),
 ]
 
