@@ -1,9 +1,10 @@
-from steps import step_00_read_state, step_01_fetch_sales_list, step_02_pick_next_doc
+from steps import step_00_read_state, step_01_fetch_sales_list, step_02_pick_next_doc, step_03_fetch_full_document
 
 STEPS = [
     ("00_read_state", step_00_read_state.run),
     ("01_fetch_sales_list", step_01_fetch_sales_list.run),
     ("02_pick_next_doc", step_02_pick_next_doc.run),
+    ("03_fetch_full_document", step_03_fetch_full_document.run),
 ]
 
 def run_all():
