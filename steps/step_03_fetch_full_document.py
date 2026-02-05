@@ -34,10 +34,18 @@ def _github_put_file(token: str, path: str, content_bytes: bytes, message: str):
     return r.status_code, (r.text or "")[:500]
 
 
+def _fetch_xml(path: str, key: str, token: str, timeout_s: int = 30):
+    url = f"{PAYTRAQ_BASE_URL}{path}"
+    r = requests.get(url, params={"APIKey": key, "APIToken": token}, timeout=timeout_s)
+    return r.status_code, (r.text or ""), path
+
+
 def run(ctx: dict):
+    # versijas marķieris, lai uzreiz redzētu ka mākonī ir jaunais kods
+    ctx["step_03_version"] = "v2026-02-05-01"
+
     key = os.getenv("PAYTRAQ_API_KEY")
     token = os.getenv("PAYTRAQ_API_TOKEN")
-
     ctx["has_paytraq_key"] = bool(key)
     ctx["has_paytraq_token"] = bool(token)
 
@@ -50,20 +58,27 @@ def run(ctx: dict):
         ctx["error"] = "Missing ctx.next_document_id (run step 02 first)"
         return ctx
 
-    # ✅ Pareizais endpoints pilnajam dokumentam:
-    # GET https://go.paytraq.com/api/sale/{DocumentID}
-    url = f"{PAYTRAQ_BASE_URL}/api/sale/{doc_id}"
-    r = requests.get(url, params={"APIKey": key, "APIToken": token}, timeout=30)
+    # 1) primārais: /api/sale/{id}
+    status, body, used_path = _fetch_xml(f"/api/sale/{doc_id}", key, token)
+    ctx["paytraq_full_status_code"] = status
+    ctx["paytraq_full_endpoint"] = used_path
 
-    ctx["paytraq_full_status_code"] = r.status_code
-    ctx["paytraq_full_endpoint"] = "/api/sale/{DocumentID}"
+    # 2) fallback, ja /api/sale/{id} nav pieejams: mēģinām /api/saleUBL/{id}
+    if status != 200:
+        status2, body2, used_path2 = _fetch_xml(f"/api/saleUBL/{doc_id}", key, token)
+        ctx["paytraq_full_status_code_2"] = status2
+        ctx["paytraq_full_endpoint_2"] = used_path2
+        if status2 == 200:
+            status, body, used_path = status2, body2, used_path2
+            ctx["paytraq_full_status_code"] = status
+            ctx["paytraq_full_endpoint"] = used_path
 
-    if r.status_code != 200:
-        ctx["error"] = "PayTraq /api/sale/{DocumentID} returned non-200"
-        ctx["paytraq_full_body_snippet"] = (r.text or "")[:800]
+    if status != 200:
+        ctx["error"] = "PayTraq full document returned non-200"
+        ctx["paytraq_full_body_snippet"] = (body or "")[:800]
         return ctx
 
-    xml_text = r.text or ""
+    xml_text = body or ""
     ctx["paytraq_full_xml_len"] = len(xml_text)
     ctx["paytraq_full_xml"] = xml_text
 
@@ -71,15 +86,15 @@ def run(ctx: dict):
     gh_token = os.getenv("GITHUB_TOKEN")
     if gh_token:
         path = f"state/debug/sales_{doc_id}.xml"
-        status, snippet = _github_put_file(
+        status_g, snippet = _github_put_file(
             gh_token,
             path,
             xml_text.encode("utf-8"),
-            message=f"debug: save PayTraq sale XML {doc_id}",
+            message=f"debug: save PayTraq XML {doc_id} ({used_path})",
         )
         ctx["github_debug_xml_path"] = path
-        ctx["github_debug_xml_status"] = status
-        if status not in (200, 201):
+        ctx["github_debug_xml_status"] = status_g
+        if status_g not in (200, 201):
             ctx["github_debug_xml_error_snippet"] = snippet
 
     return ctx
