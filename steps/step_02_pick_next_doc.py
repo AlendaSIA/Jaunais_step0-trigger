@@ -12,177 +12,200 @@ PAYTRAQ_API_TOKEN = os.getenv("PAYTRAQ_API_TOKEN")
 
 def _github_headers():
     return {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Authorization": f"token {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json",
     }
 
 
-def _get_state(ctx):
-    return ctx.get("state") or {}
+def _github_get_state():
+    if not GITHUB_STATE_URL or not GITHUB_TOKEN:
+        return None, None
+    r = requests.get(GITHUB_STATE_URL, headers=_github_headers(), timeout=20)
+    return r.status_code, r.text
 
 
-def _lock_in_progress(doc_id: int):
-    # original behavior: writes lock to GitHub
-    url = f"{GITHUB_STATE_URL}/in_progress"
-    r = requests.put(url, headers=_github_headers(), json={"in_progress_id": int(doc_id)}, timeout=30)
-    return r.status_code
+def _github_put_state(last_processed_id: int, in_progress_id: int | None):
+    if not GITHUB_STATE_URL or not GITHUB_TOKEN:
+        return None, None
+    payload = {
+        "last_processed_id": last_processed_id,
+        "in_progress_id": in_progress_id,
+    }
+    r = requests.put(GITHUB_STATE_URL, json=payload, headers=_github_headers(), timeout=20)
+    return r.status_code, r.text
 
 
-def _paytraq_get_sale_xml(doc_id: int):
-    url = f"{PAYTRAQ_BASE_URL}/api/sale/{int(doc_id)}"
+def _paytraq_sales_list():
+    url = f"{PAYTRAQ_BASE_URL}/api/sales"
+    params = {"APIKey": PAYTRAQ_API_KEY, "APIToken": PAYTRAQ_API_TOKEN}
+    r = requests.get(url, params=params, timeout=40)
+    return r.status_code, r.text
+
+
+def _paytraq_sale_xml_by_id(doc_id: int):
+    url = f"{PAYTRAQ_BASE_URL}/api/sale/{doc_id}"
     params = {"APIKey": PAYTRAQ_API_KEY, "APIToken": PAYTRAQ_API_TOKEN}
     r = requests.get(url, params=params, timeout=60)
-    return r.status_code, (r.text or "")
+    return r.status_code, r.text
 
 
-def _xml_text(root: ET.Element, path: str):
-    el = root.find(path)
-    if el is None or el.text is None:
+def _extract_doc_id_from_sales_xml(sales_xml: str):
+    # sales list is XML with multiple <Sale><DocumentID>...</DocumentID>...</Sale>
+    try:
+        root = ET.fromstring(sales_xml)
+    except Exception:
+        return []
+
+    ids = []
+    for el in root.findall(".//DocumentID"):
+        if el is not None and el.text:
+            t = el.text.strip()
+            if t.isdigit():
+                ids.append(int(t))
+    return ids
+
+
+def _doc_ref_from_sale_xml(sale_xml: str):
+    try:
+        root = ET.fromstring(sale_xml)
+    except Exception:
+        return None
+    el = root.find("./Header/Document/DocumentRef")
+    if el is None or not el.text:
         return None
     t = el.text.strip()
     return t if t else None
 
 
-def _matches_title_or_comment(s: str, document_ref: str | None, comment: str | None):
-    if not s:
-        return False
-    s_norm = s.strip().lower()
-    for candidate in [document_ref, comment]:
-        if not candidate:
-            continue
-        if s_norm in candidate.strip().lower():
-            return True
-    return False
-
-
-def _matches_date(doc_date: str | None, date_eq: str | None, date_from: str | None, date_to: str | None):
-    # dates are YYYY-MM-DD in PayTraq XML
-    if not doc_date:
-        return False
-
-    if date_eq:
-        return doc_date == date_eq
-
-    if date_from and doc_date < date_from:
-        return False
-    if date_to and doc_date > date_to:
-        return False
-
-    return bool(date_from or date_to)
+def _doc_date_from_sale_xml(sale_xml: str):
+    try:
+        root = ET.fromstring(sale_xml)
+    except Exception:
+        return None
+    el = root.find("./Header/Document/DocumentDate")
+    if el is None or not el.text:
+        return None
+    t = el.text.strip()
+    return t if t else None
 
 
 def run(ctx: dict):
     """
-    Step02: choose next document id.
-    Default: original "next doc after last_processed" behavior + writes lock.
+    Step02: pick next document id.
 
-    New (safe test overrides):
-      - ctx["override_doc_id"] -> use that doc id
-      - ctx["override_doc_title"] -> scan sales list, fetch sale XML, match against DocumentRef or Comment
-      - ctx["override_date"] or ctx["override_date_from"/"override_date_to"] -> scan & pick first matching date
+    Supports:
+    - normal mode: pick next doc after last_processed_id
+    - override: user can request a specific document by document_ref OR by date filters
 
-    Important:
-      - If ctx["skip_state_update"] is True -> we DO NOT write GitHub lock in this step.
+    Input accepted in ctx (from /run JSON):
+      - document_ref or doc_ref (string)  -> find a doc by matching DocumentRef (needs per-doc fetch)
+      - date (YYYY-MM-DD) or date_from/date_to -> filter by DocumentDate by fetching per-doc XML
+      - skip_state_update (bool) -> don't update last_processed_id/in_progress (for test runs)
     """
-    state = _get_state(ctx)
-    sales_ids = ctx.get("sales_ids") or []
-
+    # Read overrides from ctx (provided by /run body)
+    override_ref = ctx.get("document_ref") or ctx.get("doc_ref") or ctx.get("override_document_ref")
+    override_date = ctx.get("date") or ctx.get("override_date")
+    date_from = ctx.get("date_from")
+    date_to = ctx.get("date_to")
     skip_state_update = bool(ctx.get("skip_state_update"))
-    force_lock = bool(ctx.get("force_lock"))  # optional: allow locking even in test mode
 
-    override_doc_id = ctx.get("override_doc_id")
-    override_title = ctx.get("override_doc_title")
-    override_date = ctx.get("override_date")
-    override_date_from = ctx.get("override_date_from")
-    override_date_to = ctx.get("override_date_to")
-
-    # 1) Explicit doc_id override
-    if override_doc_id is not None:
-        doc_id = int(override_doc_id)
-        ctx["has_next_document"] = True
-        ctx["next_document_id"] = doc_id
-        ctx["in_progress_id"] = doc_id
-        ctx["picked_mode"] = "override_doc_id"
-        if (not skip_state_update) or force_lock:
-            ctx["github_lock_status"] = _lock_in_progress(doc_id)
-        else:
-            ctx["github_lock_status"] = "skipped(test_mode)"
+    # Sales list
+    sc, sales_xml = _paytraq_sales_list()
+    ctx["paytraq_sales_status_code"] = sc
+    if sc != 200:
+        ctx["_trace"] = (ctx.get("_trace") or []) + [{"step02": f"paytraq sales list error {sc}"}]
         return ctx
 
-    # 2) If title/date filters are provided -> scan sales list (fetch xml per id until match)
-    if override_title or override_date or override_date_from or override_date_to:
-        wanted = (override_title or "").strip()
-        date_eq = (override_date or "").strip() or None
-        date_from = (override_date_from or "").strip() or None
-        date_to = (override_date_to or "").strip() or None
+    ids = _extract_doc_id_from_sales_xml(sales_xml)
+    ctx["sales_count"] = len(ids)
+    ctx["sales_ids"] = ids[:100]  # debug visibility
 
-        scan_limit = int(ctx.get("scan_limit") or 200)
-        scanned = 0
+    if not ids:
+        ctx["has_next_document"] = False
+        ctx["next_document_id"] = None
+        return ctx
 
-        for doc_id in sales_ids[:scan_limit]:
-            scanned += 1
-            st, xml_text = _paytraq_get_sale_xml(int(doc_id))
-            if st < 200 or st >= 300 or not xml_text:
+    # Override by document_ref or date requires fetching per-doc XML (slower, but test-friendly)
+    if override_ref or override_date or date_from or date_to:
+        want_ref = override_ref.strip() if isinstance(override_ref, str) else None
+
+        # normalize date filters
+        if override_date and not date_from and not date_to:
+            date_from = override_date
+            date_to = override_date
+
+        # scan newest -> oldest so you get the most recent match first
+        for doc_id in ids:
+            sc2, sale_xml = _paytraq_sale_xml_by_id(doc_id)
+            if sc2 != 200:
                 continue
 
-            try:
-                root = ET.fromstring(xml_text)
-            except Exception:
-                continue
+            ref = _doc_ref_from_sale_xml(sale_xml)
+            dd = _doc_date_from_sale_xml(sale_xml)
 
-            document_ref = _xml_text(root, "./Header/Document/DocumentRef")
-            comment = _xml_text(root, "./Header/Comment")
-            doc_date = _xml_text(root, "./Header/Document/DocumentDate")
+            ref_ok = True
+            if want_ref:
+                ref_ok = (ref == want_ref)
 
-            title_ok = True
             date_ok = True
+            if date_from and date_to and dd:
+                date_ok = (date_from <= dd <= date_to)
+            elif date_from and dd:
+                date_ok = (dd >= date_from)
+            elif date_to and dd:
+                date_ok = (dd <= date_to)
+            elif (date_from or date_to) and not dd:
+                date_ok = False
 
-            if wanted:
-                title_ok = _matches_title_or_comment(wanted, document_ref, comment)
-
-            if date_eq or date_from or date_to:
-                date_ok = _matches_date(doc_date, date_eq, date_from, date_to)
-
-            if title_ok and date_ok:
+            if ref_ok and date_ok:
                 ctx["has_next_document"] = True
                 ctx["next_document_id"] = int(doc_id)
-                ctx["in_progress_id"] = int(doc_id)
-                ctx["picked_mode"] = "scan_match"
-                ctx["picked_scan_count"] = scanned
-                ctx["picked_document_ref"] = document_ref
-                ctx["picked_comment"] = comment
-                ctx["picked_document_date"] = doc_date
+                ctx["picked_by"] = "override_ref_or_date"
+                # store for next steps
+                ctx["paytraq_full_xml"] = sale_xml
 
-                if (not skip_state_update) or force_lock:
-                    ctx["github_lock_status"] = _lock_in_progress(int(doc_id))
-                else:
-                    ctx["github_lock_status"] = "skipped(test_mode)"
+                if not skip_state_update:
+                    # Mark lock as in_progress for safety during processing
+                    ctx["in_progress_id"] = int(doc_id)
                 return ctx
 
+        # no match
         ctx["has_next_document"] = False
-        ctx["error"] = f"Step02: no match found (title/date) after scanning {scanned} docs"
+        ctx["next_document_id"] = None
+        ctx["picked_by"] = "override_ref_or_date"
         return ctx
 
-    # 3) Default original behavior
-    last_processed_id = int(state.get("last_processed_id") or 0)
+    # Normal mode: pick next doc after last_processed_id
+    last_processed_id = ctx.get("last_processed_id")
+    if last_processed_id is None:
+        # IMPORTANT FIX: do NOT depend on ctx["state"], step00 provides last_processed_id directly
+        # If missing, try github state endpoint as fallback
+        gsc, gtxt = _github_get_state()
+        ctx["github_status_code"] = gsc
+        if gsc == 200 and gtxt:
+            # very small parsing without strict schema
+            m = re.search(r"last_processed_id[^0-9]*(\d+)", gtxt)
+            if m:
+                last_processed_id = int(m.group(1))
+
+    last_processed_id = int(last_processed_id) if last_processed_id is not None else None
+
     next_id = None
-
-    for doc_id in sales_ids:
-        if int(doc_id) > last_processed_id:
-            next_id = int(doc_id)
-            break
-
-    if not next_id:
-        ctx["has_next_document"] = False
-        return ctx
-
-    ctx["has_next_document"] = True
-    ctx["next_document_id"] = next_id
-    ctx["in_progress_id"] = next_id
-
-    if not skip_state_update:
-        ctx["github_lock_status"] = _lock_in_progress(next_id)
+    if last_processed_id is None:
+        # pick newest available
+        next_id = ids[0]
     else:
-        ctx["github_lock_status"] = "skipped(test_mode)"
+        # pick first id > last_processed_id (ids list is newest->older in our observed outputs)
+        # So scan reversed to find the smallest id greater than last_processed_id, or just pick first > last_processed_id
+        for doc_id in ids:
+            if int(doc_id) > int(last_processed_id):
+                next_id = int(doc_id)
+                break
+
+    ctx["next_document_id"] = next_id
+    ctx["has_next_document"] = bool(next_id)
+
+    if next_id and not skip_state_update:
+        ctx["in_progress_id"] = int(next_id)
 
     return ctx
