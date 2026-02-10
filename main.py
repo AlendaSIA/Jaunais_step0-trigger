@@ -1,43 +1,41 @@
 from flask import Flask, request, jsonify
-from runner import run_pipeline
+from runner import run_pipeline, list_steps
 
 app = Flask(__name__)
 
+
 @app.get("/health")
 def health():
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok"}), 200
+
 
 @app.get("/")
 def root():
-    return jsonify({"status": "ok"})
+    return jsonify({"ok": True}), 200
+
 
 @app.get("/steps")
 def steps():
-    return jsonify({
-        "steps": [
-            "01_load_secrets",
-            "02_pick_next_doc",
-            "03_fetch_sale_full",
-            "04_extract_all_fields",
-            "05_fetch_client_bundle",
-            "06_call_worker",
-            "07_debug_write_files",
-            "08_finalize_state",
-        ]
-    })
+    return jsonify({"steps": list_steps()}), 200
+
 
 @app.post("/run")
 def run():
     payload = request.get_json(silent=True) or {}
     ctx = run_pipeline(payload)
-    return jsonify(ctx)
+    return jsonify(ctx), 200
+
 
 @app.post("/debug")
 def debug():
     payload = request.get_json(silent=True) or {}
+    # obligāts: payload["step"]
+    if not payload.get("step"):
+        return jsonify({"status": "error", "error": "Missing 'step' in payload"}), 200
     payload["_debug"] = True
     ctx = run_pipeline(payload)
-    return jsonify(ctx)
+    return jsonify(ctx), 200
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
