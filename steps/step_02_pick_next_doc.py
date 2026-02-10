@@ -1,97 +1,188 @@
 import os
-import base64
+import re
 import requests
+import xml.etree.ElementTree as ET
 
-REPO = "AlendaSIA/Jaunais_step0-trigger"
-STATE_INPROGRESS_PATH = "state/in_progress_id.txt"
-
-
-def _github_get_sha(token: str, path: str):
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    r = requests.get(url, headers={"Authorization": f"token {token}"}, timeout=20)
-    if r.status_code == 200:
-        return (r.json() or {}).get("sha")
-    return None
+GITHUB_STATE_URL = os.getenv("GITHUB_STATE_URL")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+PAYTRAQ_BASE_URL = os.getenv("PAYTRAQ_BASE_URL", "https://go.paytraq.com").rstrip("/")
+PAYTRAQ_API_KEY = os.getenv("PAYTRAQ_API_KEY")
+PAYTRAQ_API_TOKEN = os.getenv("PAYTRAQ_API_TOKEN")
 
 
-def _github_put_text(token: str, path: str, text: str, message: str):
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    payload = {
-        "message": message,
-        "content": base64.b64encode((text or "").encode("utf-8")).decode("utf-8"),
+def _github_headers():
+    return {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
     }
 
-    sha = _github_get_sha(token, path)
-    if sha:
-        payload["sha"] = sha
 
-    r = requests.put(
-        url,
-        headers={"Authorization": f"token {token}"},
-        json=payload,
-        timeout=30,
-    )
-    return r.status_code, (r.text or "")[:500]
+def _get_state(ctx):
+    return ctx.get("state") or {}
+
+
+def _lock_in_progress(doc_id: int):
+    # original behavior: writes lock to GitHub
+    url = f"{GITHUB_STATE_URL}/in_progress"
+    r = requests.put(url, headers=_github_headers(), json={"in_progress_id": int(doc_id)}, timeout=30)
+    return r.status_code
+
+
+def _paytraq_get_sale_xml(doc_id: int):
+    url = f"{PAYTRAQ_BASE_URL}/api/sale/{int(doc_id)}"
+    params = {"APIKey": PAYTRAQ_API_KEY, "APIToken": PAYTRAQ_API_TOKEN}
+    r = requests.get(url, params=params, timeout=60)
+    return r.status_code, (r.text or "")
+
+
+def _xml_text(root: ET.Element, path: str):
+    el = root.find(path)
+    if el is None or el.text is None:
+        return None
+    t = el.text.strip()
+    return t if t else None
+
+
+def _matches_title_or_comment(s: str, document_ref: str | None, comment: str | None):
+    if not s:
+        return False
+    s_norm = s.strip().lower()
+    for candidate in [document_ref, comment]:
+        if not candidate:
+            continue
+        if s_norm in candidate.strip().lower():
+            return True
+    return False
+
+
+def _matches_date(doc_date: str | None, date_eq: str | None, date_from: str | None, date_to: str | None):
+    # dates are YYYY-MM-DD in PayTraq XML
+    if not doc_date:
+        return False
+
+    if date_eq:
+        return doc_date == date_eq
+
+    if date_from and doc_date < date_from:
+        return False
+    if date_to and doc_date > date_to:
+        return False
+
+    return bool(date_from or date_to)
 
 
 def run(ctx: dict):
-    last_id = ctx.get("last_processed_id")
-    in_progress = int(ctx.get("in_progress_id") or 0)
+    """
+    Step02: choose next document id.
+    Default: original "next doc after last_processed" behavior + writes lock.
 
-    ids = ctx.get("sales_ids_full") or ctx.get("sales_ids")
+    New (safe test overrides):
+      - ctx["override_doc_id"] -> use that doc id
+      - ctx["override_doc_title"] -> scan sales list, fetch sale XML, match against DocumentRef or Comment
+      - ctx["override_date"] or ctx["override_date_from"/"override_date_to"] -> scan & pick first matching date
 
-    if last_id is None:
-        ctx["error"] = "Missing ctx.last_processed_id"
+    Important:
+      - If ctx["skip_state_update"] is True -> we DO NOT write GitHub lock in this step.
+    """
+    state = _get_state(ctx)
+    sales_ids = ctx.get("sales_ids") or []
+
+    skip_state_update = bool(ctx.get("skip_state_update"))
+    force_lock = bool(ctx.get("force_lock"))  # optional: allow locking even in test mode
+
+    override_doc_id = ctx.get("override_doc_id")
+    override_title = ctx.get("override_doc_title")
+    override_date = ctx.get("override_date")
+    override_date_from = ctx.get("override_date_from")
+    override_date_to = ctx.get("override_date_to")
+
+    # 1) Explicit doc_id override
+    if override_doc_id is not None:
+        doc_id = int(override_doc_id)
+        ctx["has_next_document"] = True
+        ctx["next_document_id"] = doc_id
+        ctx["in_progress_id"] = doc_id
+        ctx["picked_mode"] = "override_doc_id"
+        if (not skip_state_update) or force_lock:
+            ctx["github_lock_status"] = _lock_in_progress(doc_id)
+        else:
+            ctx["github_lock_status"] = "skipped(test_mode)"
         return ctx
-    if not ids:
-        # nav ko apstrādāt -> beidzam bez kļūdas
+
+    # 2) If title/date filters are provided -> scan sales list (fetch xml per id until match)
+    if override_title or override_date or override_date_from or override_date_to:
+        wanted = (override_title or "").strip()
+        date_eq = (override_date or "").strip() or None
+        date_from = (override_date_from or "").strip() or None
+        date_to = (override_date_to or "").strip() or None
+
+        scan_limit = int(ctx.get("scan_limit") or 200)
+        scanned = 0
+
+        for doc_id in sales_ids[:scan_limit]:
+            scanned += 1
+            st, xml_text = _paytraq_get_sale_xml(int(doc_id))
+            if st < 200 or st >= 300 or not xml_text:
+                continue
+
+            try:
+                root = ET.fromstring(xml_text)
+            except Exception:
+                continue
+
+            document_ref = _xml_text(root, "./Header/Document/DocumentRef")
+            comment = _xml_text(root, "./Header/Comment")
+            doc_date = _xml_text(root, "./Header/Document/DocumentDate")
+
+            title_ok = True
+            date_ok = True
+
+            if wanted:
+                title_ok = _matches_title_or_comment(wanted, document_ref, comment)
+
+            if date_eq or date_from or date_to:
+                date_ok = _matches_date(doc_date, date_eq, date_from, date_to)
+
+            if title_ok and date_ok:
+                ctx["has_next_document"] = True
+                ctx["next_document_id"] = int(doc_id)
+                ctx["in_progress_id"] = int(doc_id)
+                ctx["picked_mode"] = "scan_match"
+                ctx["picked_scan_count"] = scanned
+                ctx["picked_document_ref"] = document_ref
+                ctx["picked_comment"] = comment
+                ctx["picked_document_date"] = doc_date
+
+                if (not skip_state_update) or force_lock:
+                    ctx["github_lock_status"] = _lock_in_progress(int(doc_id))
+                else:
+                    ctx["github_lock_status"] = "skipped(test_mode)"
+                return ctx
+
         ctx["has_next_document"] = False
-        ctx["next_document_id"] = None
-        ctx["halt_pipeline"] = True
-        ctx["halt_reason"] = "No sales IDs returned from PayTraq"
+        ctx["error"] = f"Step02: no match found (title/date) after scanning {scanned} docs"
         return ctx
 
-    # Ja jau ir dokuments apstrādē, NEDODAM nākamo
-    if in_progress and in_progress > 0:
-        ctx["has_next_document"] = False
-        ctx["next_document_id"] = None
-        ctx["halt_pipeline"] = True
-        ctx["halt_reason"] = f"LOCKED: in_progress_id={in_progress}"
-        return ctx
-
-    ids_sorted = sorted(ids)
+    # 3) Default original behavior
+    last_processed_id = int(state.get("last_processed_id") or 0)
     next_id = None
-    for i in ids_sorted:
-        if i > int(last_id):
-            next_id = int(i)
+
+    for doc_id in sales_ids:
+        if int(doc_id) > last_processed_id:
+            next_id = int(doc_id)
             break
 
+    if not next_id:
+        ctx["has_next_document"] = False
+        return ctx
+
+    ctx["has_next_document"] = True
     ctx["next_document_id"] = next_id
-    ctx["has_next_document"] = next_id is not None
-
-    # Ja nav nākamā dokumenta -> beidzam bez kļūdas
-    if next_id is None:
-        ctx["halt_pipeline"] = True
-        ctx["halt_reason"] = "No next unprocessed document"
-        return ctx
-
-    # Uzliekam LOCK uzreiz GitHub state, lai neviens paralēls izsaukums nepaņem nākamo
-    gh_token = os.getenv("GITHUB_TOKEN")
-    if not gh_token:
-        ctx["error"] = "Missing env: GITHUB_TOKEN (needed to set lock)"
-        return ctx
-
-    status_g, snippet = _github_put_text(
-        gh_token,
-        STATE_INPROGRESS_PATH,
-        str(next_id),
-        message=f"lock: set in_progress_id={next_id}",
-    )
-    ctx["github_lock_status"] = status_g
-    if status_g not in (200, 201):
-        ctx["error"] = "Failed to set lock (in_progress_id) in GitHub state"
-        ctx["github_lock_error_snippet"] = snippet
-        return ctx
-
     ctx["in_progress_id"] = next_id
+
+    if not skip_state_update:
+        ctx["github_lock_status"] = _lock_in_progress(next_id)
+    else:
+        ctx["github_lock_status"] = "skipped(test_mode)"
+
     return ctx
