@@ -2,14 +2,21 @@ import os
 import base64
 import requests
 
-REPO = "AlendaSIA/Jaunais_step0-trigger"
+DEFAULT_OWNER = "AlendaSIA"
+DEFAULT_REPO = "Jaunais_step0-trigger"
 
 STATE_LAST_PATH = "state/last_processed_id.txt"
 STATE_INPROGRESS_PATH = "state/in_progress_id.txt"
 
 
+def _repo_full() -> str:
+    owner = os.getenv("GITHUB_OWNER") or DEFAULT_OWNER
+    repo = os.getenv("GITHUB_REPO") or DEFAULT_REPO
+    return f"{owner}/{repo}"
+
+
 def _github_read_text(token: str, path: str):
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+    url = f"https://api.github.com/repos/{_repo_full()}/contents/{path}"
     r = requests.get(url, headers={"Authorization": f"token {token}"}, timeout=20)
 
     if r.status_code == 404:
@@ -29,7 +36,7 @@ def run(ctx: dict):
         ctx["error"] = "Missing env: GITHUB_TOKEN"
         return ctx
 
-    # last_processed_id (obligāts; ja nav faila, uzskatām par 0)
+    # last_processed_id
     last_text, last_status, last_err = _github_read_text(token, STATE_LAST_PATH)
     ctx["github_state_last_status"] = last_status
     if last_status == 404:
@@ -41,7 +48,7 @@ def run(ctx: dict):
     else:
         ctx["last_processed_id"] = int(last_text)
 
-    # in_progress_id (ja nav faila, uzskatām par 0)
+    # in_progress_id
     prog_text, prog_status, prog_err = _github_read_text(token, STATE_INPROGRESS_PATH)
     ctx["github_state_in_progress_status"] = prog_status
     if prog_status == 404:
@@ -51,7 +58,6 @@ def run(ctx: dict):
         ctx["github_state_in_progress_body"] = prog_err
         return ctx
     else:
-        # drošība: tukšs -> 0
         ctx["in_progress_id"] = int(prog_text) if prog_text.strip() else 0
 
     return ctx
