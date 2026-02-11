@@ -2,6 +2,7 @@ import os
 import re
 import requests
 import xml.etree.ElementTree as ET
+from typing import Optional
 
 GITHUB_STATE_URL = os.getenv("GITHUB_STATE_URL")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -24,7 +25,7 @@ def _github_get_state():
     return r.status_code, r.text
 
 
-def _github_put_state(last_processed_id: int, in_progress_id: int | None):
+def _github_put_state(last_processed_id: int, in_progress_id: Optional[int]):
     if not GITHUB_STATE_URL or not GITHUB_TOKEN:
         return None, None
     payload = {
@@ -50,7 +51,6 @@ def _paytraq_sale_xml_by_id(doc_id: int):
 
 
 def _extract_doc_id_from_sales_xml(sales_xml: str):
-    # sales list is XML with multiple <Sale><DocumentID>...</DocumentID>...</Sale>
     try:
         root = ET.fromstring(sales_xml)
     except Exception:
@@ -89,20 +89,28 @@ def _doc_date_from_sale_xml(sale_xml: str):
     return t if t else None
 
 
+def _set_idle(ctx: dict, picked_by: str):
+    # Nothing new: do NOT error, just stop pipeline
+    ctx["has_next_document"] = False
+    ctx["next_document_id"] = None
+    ctx["picked_by"] = picked_by
+    ctx["halt_pipeline"] = True
+    ctx["status"] = "ok"
+    ctx["idle"] = True
+    ctx.pop("error", None)
+    return ctx
+
+
 def run(ctx: dict):
     """
     Step02: pick next document id.
 
-    Supports:
-    - normal mode: pick next doc after last_processed_id
-    - override: user can request a specific document by document_ref OR by date filters
-
-    Input accepted in ctx (from /run JSON):
-      - document_ref or doc_ref (string)  -> find a doc by matching DocumentRef (needs per-doc fetch)
-      - date (YYYY-MM-DD) or date_from/date_to -> filter by DocumentDate by fetching per-doc XML
-      - skip_state_update (bool) -> don't update last_processed_id/in_progress (for test runs)
+    Desired behavior:
+      - Process OLDEST -> NEWEST.
+      - Normal mode: next_id = min([id for id in sales_ids if id > last_processed_id])
+      - Override by date/doc_ref: pick OLDEST match (min id) so date start walks forward.
+      - If nothing new: return status=ok + idle=true (no pipeline error).
     """
-    # Read overrides from ctx (provided by /run body)
     override_ref = ctx.get("document_ref") or ctx.get("doc_ref") or ctx.get("override_document_ref")
     override_date = ctx.get("date") or ctx.get("override_date")
     date_from = ctx.get("date_from")
@@ -118,14 +126,12 @@ def run(ctx: dict):
 
     ids = _extract_doc_id_from_sales_xml(sales_xml)
     ctx["sales_count"] = len(ids)
-    ctx["sales_ids"] = ids[:100]  # debug visibility
+    ctx["sales_ids"] = ids[:100]  # debug visibility (order as received)
 
     if not ids:
-        ctx["has_next_document"] = False
-        ctx["next_document_id"] = None
-        return ctx
+        return _set_idle(ctx, picked_by="no_sales")
 
-    # Override by document_ref or date requires fetching per-doc XML (slower, but test-friendly)
+    # Override by document_ref or date requires fetching per-doc XML
     if override_ref or override_date or date_from or date_to:
         want_ref = override_ref.strip() if isinstance(override_ref, str) else None
 
@@ -134,9 +140,9 @@ def run(ctx: dict):
             date_from = override_date
             date_to = override_date
 
-        # scan newest -> oldest so you get the most recent match first
+        matches = {}  # doc_id -> sale_xml
         for doc_id in ids:
-            sc2, sale_xml = _paytraq_sale_xml_by_id(doc_id)
+            sc2, sale_xml = _paytraq_sale_xml_by_id(int(doc_id))
             if sc2 != 200:
                 continue
 
@@ -158,54 +164,48 @@ def run(ctx: dict):
                 date_ok = False
 
             if ref_ok and date_ok:
-                ctx["has_next_document"] = True
-                ctx["next_document_id"] = int(doc_id)
-                ctx["picked_by"] = "override_ref_or_date"
-                # store for next steps
-                ctx["paytraq_full_xml"] = sale_xml
+                matches[int(doc_id)] = sale_xml
 
-                if not skip_state_update:
-                    # Mark lock as in_progress for safety during processing
-                    ctx["in_progress_id"] = int(doc_id)
-                return ctx
+        if not matches:
+            return _set_idle(ctx, picked_by="override_ref_or_date")
 
-        # no match
-        ctx["has_next_document"] = False
-        ctx["next_document_id"] = None
+        chosen_id = min(matches.keys())  # OLDEST match
+        ctx["has_next_document"] = True
+        ctx["next_document_id"] = int(chosen_id)
         ctx["picked_by"] = "override_ref_or_date"
+        ctx["paytraq_full_xml"] = matches[chosen_id]
+
+        if not skip_state_update:
+            ctx["in_progress_id"] = int(chosen_id)
+
         return ctx
 
-    # Normal mode: pick next doc after last_processed_id
+    # Normal mode: pick OLDEST doc newer than last_processed_id
     last_processed_id = ctx.get("last_processed_id")
     if last_processed_id is None:
-        # IMPORTANT FIX: do NOT depend on ctx["state"], step00 provides last_processed_id directly
-        # If missing, try github state endpoint as fallback
         gsc, gtxt = _github_get_state()
         ctx["github_status_code"] = gsc
         if gsc == 200 and gtxt:
-            # very small parsing without strict schema
             m = re.search(r"last_processed_id[^0-9]*(\d+)", gtxt)
             if m:
                 last_processed_id = int(m.group(1))
 
     last_processed_id = int(last_processed_id) if last_processed_id is not None else None
 
-    next_id = None
     if last_processed_id is None:
-        # pick newest available
-        next_id = ids[0]
+        next_id = min(ids)  # start from OLDEST if nothing set
     else:
-        # pick first id > last_processed_id (ids list is newest->older in our observed outputs)
-        # So scan reversed to find the smallest id greater than last_processed_id, or just pick first > last_processed_id
-        for doc_id in ids:
-            if int(doc_id) > int(last_processed_id):
-                next_id = int(doc_id)
-                break
+        candidates = [int(d) for d in ids if int(d) > int(last_processed_id)]
+        next_id = min(candidates) if candidates else None
 
-    ctx["next_document_id"] = next_id
-    ctx["has_next_document"] = bool(next_id)
+    if not next_id:
+        return _set_idle(ctx, picked_by="normal_after_last_processed")
 
-    if next_id and not skip_state_update:
+    ctx["next_document_id"] = int(next_id)
+    ctx["has_next_document"] = True
+    ctx["picked_by"] = "normal_after_last_processed"
+
+    if not skip_state_update:
         ctx["in_progress_id"] = int(next_id)
 
     return ctx
