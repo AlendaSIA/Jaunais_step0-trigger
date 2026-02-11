@@ -1,0 +1,1159 @@
+{
+  "document_id": 15576121,
+  "client_id": "1116253",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15576121"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "M-860325-29944"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "done"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "1116253"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Gunta Bajāre"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "36.30"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "36.30"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-29944, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "406078"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Gunta Bajāre, +37129894795"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Lāčplēša 25, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "LV-1011"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-10T10:53:07Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-10T10:53:07Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "1319988"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "RNBCM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/ItemLot/LotID",
+      "value": "52479"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/ItemLot/LotNumber",
+      "value": "582505042N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "3.591"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "7.18"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1253155"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "RNBXCM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Pagarināti nitrila cimdi bez pūdera Gripzzly X N100, melni, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
+      "value": "45281"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
+      "value": "492406015N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Pagarināti nitrila cimdi bez pūdera Gripzzly X N100, melni, M izmērs [RNBXCM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "12.141"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "24.28"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "1319987"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "RNBCS10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
+      "value": "52478"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
+      "value": "582505041N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs  [RNBCS10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "3.591"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "3.59"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "1264469"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "SPE12509W"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "FILMplast Adhesive PE tape, 1,25cm x 9,14m_A24"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
+      "value": "46564"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
+      "value": "012406208N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "FILMplast Adhesive PE tape, 1,25cm x 9,14m_A24 [SPE12509W]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "0.351"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "0.35"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "1264470"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "SZO25005S"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/ItemLot/LotID",
+      "value": "46565"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/ItemLot/LotNumber",
+      "value": "012408027N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "0.891"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "0.89"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673529"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "8190"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Citi ieņēmumi"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.01"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "charge"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "amount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262056"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "nav PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "36.29"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "29.99"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "6.30"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "36.30"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "29.99"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "7.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "15577004"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2600896"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1319988"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52479"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582505042N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.591"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "7.18"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCM10003",
+      "item_name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
+      "qty": "2.00",
+      "price": "3.591",
+      "line_total": "7.18",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1253155"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBXCM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Pagarināti nitrila cimdi bez pūdera Gripzzly X N100, melni, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "45281"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "492406015N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Pagarināti nitrila cimdi bez pūdera Gripzzly X N100, melni, M izmērs [RNBXCM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "12.141"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "24.28"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBXCM10003",
+      "item_name": "Pagarināti nitrila cimdi bez pūdera Gripzzly X N100, melni, M izmērs",
+      "qty": "2.00",
+      "price": "12.141",
+      "line_total": "24.28",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1319987"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCS10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52478"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582505041N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs  [RNBCS10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.591"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "3.59"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCS10003",
+      "item_name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs",
+      "qty": "1.00",
+      "price": "3.591",
+      "line_total": "3.59",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1264469"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "SPE12509W"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "FILMplast Adhesive PE tape, 1,25cm x 9,14m_A24"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "46564"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "012406208N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "FILMplast Adhesive PE tape, 1,25cm x 9,14m_A24 [SPE12509W]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.351"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "0.35"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "SPE12509W",
+      "item_name": "FILMplast Adhesive PE tape, 1,25cm x 9,14m_A24",
+      "qty": "1.00",
+      "price": "0.351",
+      "line_total": "0.35",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1264470"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "SZO25005S"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "46565"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "012408027N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.891"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "0.89"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "SZO25005S",
+      "item_name": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12",
+      "qty": "1.00",
+      "price": "0.891",
+      "line_total": "0.89",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "1116253",
+    "client_endpoint": "/api/client/1116253",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "1116253"
+      },
+      {
+        "field": "client/Name",
+        "value": "Gunta Bajāre"
+      },
+      {
+        "field": "client/Email",
+        "value": "gunta@jrt.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "1"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Lāčplēša 25, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-1011"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "2989479"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2025-09-16T11:39:08Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2025-09-16T11:39:08Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/1116253",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/1116253",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "382994"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "Gunta Bajāre, 2989479"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Lāčplēša 25, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "LV-1011"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "382999"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Gunta Bajāre, 29894795"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Lāčplēša 25, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "LV-1011"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "406078"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "Gunta Bajāre, +37129894795"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "Lāčplēša 25, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Zip",
+        "value": "LV-1011"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/1116253",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
