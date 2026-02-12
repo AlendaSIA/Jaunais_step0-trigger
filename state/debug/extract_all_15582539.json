@@ -1,0 +1,2195 @@
+{
+  "document_id": 15582539,
+  "client_id": "1172530",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15582539"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "M-860325-29962"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "done"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "1172530"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA \"A.Bites ārsta prakse\""
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "60.96"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "60.96"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-10"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-29962, Bank Transfer"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "406218"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA \"A.Bites ārsta prakse\", 28722336"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Dobele, Muldavas iela 3a (SmartPosti pakomāts top! Muldavas)"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "3701"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-10T20:06:07Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-10T20:06:08Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "1270418"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "004037"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [004037]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "2.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "2.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1319977"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "RNBWM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
+      "value": "52474"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
+      "value": "582505052N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "3.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "11.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "1319988"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "RNBCM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
+      "value": "52479"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
+      "value": "582505042N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "3.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "11.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "1285343"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "RNBKM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
+      "value": "52457"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
+      "value": "582509007N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "3.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "11.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "968895"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "MelHY"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "2.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "2.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemID",
+      "value": "831003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemCode",
+      "value": "ZARYS-VH-ZKB"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemName",
+      "value": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/ItemLot/LotID",
+      "value": "46537"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/ItemLot/LotNumber",
+      "value": "012407131N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Description",
+      "value": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineTotal",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemID",
+      "value": "831002"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemCode",
+      "value": "ZARYS-VH-ZKG"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemName",
+      "value": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/ItemLot/LotID",
+      "value": "48088"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/ItemLot/LotNumber",
+      "value": "012411306N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Description",
+      "value": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG [ZARYS-VH-ZKG]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Price",
+      "value": "1.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineTotal",
+      "value": "2.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemID",
+      "value": "1105051"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemCode",
+      "value": "YCB-2545-B"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemName",
+      "value": "yellowBAND Pašpielīpošs pārsējs zils, 2,5cm x 4,5m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/ItemLot/LotID",
+      "value": "36024"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/ItemLot/LotNumber",
+      "value": "732304001N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Description",
+      "value": "yellowBAND Pašpielīpošs pārsējs zils, 2,5cm x 4,5m  [YCB-2545-B]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Price",
+      "value": "0.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineTotal",
+      "value": "1.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemID",
+      "value": "1104504"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemCode",
+      "value": "YCB-1045-G"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemName",
+      "value": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/ItemLot/LotID",
+      "value": "39672"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/ItemLot/LotNumber",
+      "value": "732401060N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Description",
+      "value": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m [YCB-1045-G]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineTotal",
+      "value": "3.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemID",
+      "value": "1270864"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemCode",
+      "value": "004006"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemName",
+      "value": "SANITAR - skābs tīrīšanas, dezinfekcijas līdzeklis - 500ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Description",
+      "value": "SANITAR - skābs tīrīšanas, dezinfekcijas līdzeklis - 500ml [004006]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/LineTotal",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemID",
+      "value": "1271017"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemCode",
+      "value": "004891"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemName",
+      "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Description",
+      "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/LineTotal",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemID",
+      "value": "1079721"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemCode",
+      "value": "125-121"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemName",
+      "value": "LDPE 35L aizvelkami atkr.maisi 25mikr 15m\\rullī"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Description",
+      "value": "LDPE 35L aizvelkami atkr.maisi 25mikr 15m\\rullī [125-121]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Price",
+      "value": "1.69"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/LineTotal",
+      "value": "3.38"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemID",
+      "value": "1264470"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemCode",
+      "value": "SZO25005S"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemName",
+      "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/ItemLot/LotID",
+      "value": "46565"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/ItemLot/LotNumber",
+      "value": "012408027N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Description",
+      "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Price",
+      "value": "0.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/LineTotal",
+      "value": "1.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "60.96"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "50.38"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "10.58"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "60.96"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "50.38"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "24.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "15591091"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2600933"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1270418"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "004037"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [004037]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.29"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "004037",
+      "item_name": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml",
+      "qty": "1.00",
+      "price": "2.29",
+      "line_total": "2.29",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1319977"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBWM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52474"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582505052N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "11.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBWM10003",
+      "item_name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
+      "qty": "3.00",
+      "price": "3.99",
+      "line_total": "11.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1319988"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52479"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582505042N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "11.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCM10003",
+      "item_name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
+      "qty": "3.00",
+      "price": "3.99",
+      "line_total": "11.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1285343"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBKM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52457"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582509007N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "11.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBKM10003",
+      "item_name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
+      "qty": "3.00",
+      "price": "3.99",
+      "line_total": "11.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "968895"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "MelHY"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.49"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "MelHY",
+      "item_name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),",
+      "qty": "1.00",
+      "price": "2.49",
+      "line_total": "2.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831003"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "ZARYS-VH-ZKB"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "46537"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "012407131N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "ZARYS-VH-ZKB",
+      "item_name": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB",
+      "qty": "1.00",
+      "price": "1.99",
+      "line_total": "1.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831002"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "ZARYS-VH-ZKG"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "48088"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "012411306N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG [ZARYS-VH-ZKG]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "ZARYS-VH-ZKG",
+      "item_name": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG",
+      "qty": "2.00",
+      "price": "1.49",
+      "line_total": "2.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1105051"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "YCB-2545-B"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "yellowBAND Pašpielīpošs pārsējs zils, 2,5cm x 4,5m"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "36024"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "732304001N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "yellowBAND Pašpielīpošs pārsējs zils, 2,5cm x 4,5m  [YCB-2545-B]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "YCB-2545-B",
+      "item_name": "yellowBAND Pašpielīpošs pārsējs zils, 2,5cm x 4,5m",
+      "qty": "2.00",
+      "price": "0.99",
+      "line_total": "1.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1104504"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "YCB-1045-G"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "39672"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "732401060N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m [YCB-1045-G]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "3.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "YCB-1045-G",
+      "item_name": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m",
+      "qty": "2.00",
+      "price": "1.99",
+      "line_total": "3.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1270864"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "004006"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "SANITAR - skābs tīrīšanas, dezinfekcijas līdzeklis - 500ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "SANITAR - skābs tīrīšanas, dezinfekcijas līdzeklis - 500ml [004006]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "004006",
+      "item_name": "SANITAR - skābs tīrīšanas, dezinfekcijas līdzeklis - 500ml",
+      "qty": "1.00",
+      "price": "1.99",
+      "line_total": "1.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1271017"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "004891"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "004891",
+      "item_name": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml",
+      "qty": "1.00",
+      "price": "1.99",
+      "line_total": "1.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1079721"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "125-121"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "LDPE 35L aizvelkami atkr.maisi 25mikr 15m\\rullī"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "LDPE 35L aizvelkami atkr.maisi 25mikr 15m\\rullī [125-121]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.69"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "3.38"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "125-121",
+      "item_name": "LDPE 35L aizvelkami atkr.maisi 25mikr 15m\\rullī",
+      "qty": "2.00",
+      "price": "1.69",
+      "line_total": "3.38",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1264470"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "SZO25005S"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "46565"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "012408027N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "SZO25005S",
+      "item_name": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12",
+      "qty": "2.00",
+      "price": "0.99",
+      "line_total": "1.98",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "1172530",
+    "client_endpoint": "/api/client/1172530",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "1172530"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA \"A.Bites ārsta prakse\""
+      },
+      {
+        "field": "client/Email",
+        "value": "dr.andabite@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40203676956"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "\"Sprīdītis\", Kroņauce, Tērvete, Dobeles novads"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-3730"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "28722336"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2026-01-06T19:35:08Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2026-01-06T19:35:08Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/1172530",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/1172530",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "400171"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "SIA \"A.Bites ārsta prakse\", 28722336"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "\"Sprīdītis\", Kroņauce, Tērvete, Dobeles novads"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "LV-3730"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "406218"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "SIA \"A.Bites ārsta prakse\", 28722336"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Dobele, Muldavas iela 3a (SmartPosti pakomāts top! Muldavas)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "3701"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/1172530",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
