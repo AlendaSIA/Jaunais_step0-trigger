@@ -1,0 +1,1053 @@
+{
+  "document_id": 15586571,
+  "client_id": "932815",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15586571"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2600924"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "932815"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Klāra Sproģe"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "16.71"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-29978, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "7043"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Latvijas Pasts"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "406292"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Klāra Sproģe, 27745795"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Kolka - \"Zītari\", Kolka, Kolkas pag., Talsu nov., LV-3275"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "3275"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-11T10:05:08Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-11T10:05:18Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "1270421"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "002378"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [002378]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1271017"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "004891"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "1.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "830857"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "FM26166M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
+      "value": "31316"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
+      "value": "0000"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M [FM26166M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "6.95"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "6.95"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "1079725"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "25-025"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "LDPE 35/40L atkr.maisi 30mikr 25m/rullī"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "LDPE 35/40L atkr.maisi 30mikr 25m/rullī [25-025]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "2.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "2.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "3.49"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "16.71"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "13.81"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "2.90"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "16.71"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "13.81"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "4.00"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentID",
+      "value": "15586463"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
+      "value": "M-860325-29978"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "15586575"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0226/00252"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "16.71"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "18322664"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260211/62"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "15591176"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0226/00243"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "18318150"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260211/36"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "18318151"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260211/37"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-02-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1270421"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "002378"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [002378]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "002378",
+      "item_name": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml",
+      "qty": "1.00",
+      "price": "1.99",
+      "line_total": "1.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1271017"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "004891"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "004891",
+      "item_name": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml",
+      "qty": "1.00",
+      "price": "1.99",
+      "line_total": "1.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830857"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM26166M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "31316"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "0000"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M [FM26166M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.95"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "6.95"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM26166M",
+      "item_name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M",
+      "qty": "1.00",
+      "price": "6.95",
+      "line_total": "6.95",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1079725"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "25-025"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "LDPE 35/40L atkr.maisi 30mikr 25m/rullī"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "LDPE 35/40L atkr.maisi 30mikr 25m/rullī [25-025]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.29"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "25-025",
+      "item_name": "LDPE 35/40L atkr.maisi 30mikr 25m/rullī",
+      "qty": "1.00",
+      "price": "2.29",
+      "line_total": "2.29",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "932815",
+    "client_endpoint": "/api/client/932815",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "932815"
+      },
+      {
+        "field": "client/Name",
+        "value": "Klāra Sproģe"
+      },
+      {
+        "field": "client/Email",
+        "value": "klara.sproge@inbox.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "1"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Talsu novads, Kolka \"Jūrkrasti \"11, Talsu novads Kolka"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-3275"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "27745795"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2024-08-31T11:23:06Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2024-08-31T11:23:06Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/932815",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/932815",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "406292"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "Klāra Sproģe, 27745795"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Kolka - \"Zītari\", Kolka, Kolkas pag., Talsu nov., LV-3275"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "3275"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "331451"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Klāra Sproģe, 27745795"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Kolkas Citro pakomāts (Talsu novads, Kolkas pagasts, Kolka, Saulkrasti)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/932815",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
