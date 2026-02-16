@@ -1,0 +1,515 @@
+{
+  "document_id": 15603153,
+  "client_id": "689899",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15603153"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-12"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "0226/00001"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "689899"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Rubenhair Baltika SIA"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_estimate"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "181.50"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "181.50"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-12"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-12"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/Project/ProjectName",
+      "value": "Raimonds"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-12T15:59:31Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-12T15:59:43Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "1338841"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "TK-GS17100810-SSXR"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Transporta kaste: 400 paciņas. KOMPRI lux S sterili marles kompresi ar RTG pavedienu 10 × 10 cm, 17N, 8 kārtas, 10 gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Transporta kaste: 400 paciņas. KOMPRI lux S sterili marles kompresi ar RTG pavedienu 10 × 10 cm, 17N, 8 kārtas, 10 gab. [TK-GS17100810-SSXR]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "150.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "150.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "181.50"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "150.00"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "31.50"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "181.50"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "150.00"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "1.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1338841"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "TK-GS17100810-SSXR"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Transporta kaste: 400 paciņas. KOMPRI lux S sterili marles kompresi ar RTG pavedienu 10 × 10 cm, 17N, 8 kārtas, 10 gab."
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Transporta kaste: 400 paciņas. KOMPRI lux S sterili marles kompresi ar RTG pavedienu 10 × 10 cm, 17N, 8 kārtas, 10 gab. [TK-GS17100810-SSXR]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "150.00"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "150.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "TK-GS17100810-SSXR",
+      "item_name": "Transporta kaste: 400 paciņas. KOMPRI lux S sterili marles kompresi ar RTG pavedienu 10 × 10 cm, 17N, 8 kārtas, 10 gab.",
+      "qty": "1.00",
+      "price": "150.00",
+      "line_total": "150.00",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "689899",
+    "client_endpoint": "/api/client/689899",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "689899"
+      },
+      {
+        "field": "client/Name",
+        "value": "Rubenhair Baltika SIA"
+      },
+      {
+        "field": "client/Email",
+        "value": "info@rubenhair.eu"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40103626380"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40103626380"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Republikas laukums 3-12, Rīga."
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "1010"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "26777776"
+      },
+      {
+        "field": "client/Project/ProjectName",
+        "value": "Raimonds"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-08-02T09:33:49Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-08-02T09:35:11Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/689899",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/689899",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "219372"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "Rubenhair Baltika SIA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Republikas laukums 3-12, Rīga."
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Zip",
+        "value": "1010"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/689899",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
