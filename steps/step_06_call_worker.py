@@ -1,6 +1,39 @@
 import os
+import base64
+import json
 import requests
 import xml.etree.ElementTree as ET
+
+
+REPO = "AlendaSIA/Jaunais_step0-trigger"
+
+
+def _github_get_sha(token: str, path: str):
+    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+    r = requests.get(url, headers={"Authorization": f"token {token}"}, timeout=20)
+    if r.status_code == 200:
+        return (r.json() or {}).get("sha")
+    return None
+
+
+def _github_put_file(token: str, path: str, content_bytes: bytes, message: str):
+    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+    payload = {
+        "message": message,
+        "content": base64.b64encode(content_bytes).decode("utf-8"),
+    }
+
+    sha = _github_get_sha(token, path)
+    if sha:
+        payload["sha"] = sha
+
+    r = requests.put(
+        url,
+        headers={"Authorization": f"token {token}"},
+        json=payload,
+        timeout=30,
+    )
+    return r.status_code, (r.text or "")[:500]
 
 
 def _xml_text(root: ET.Element, path: str):
@@ -12,14 +45,20 @@ def _xml_text(root: ET.Element, path: str):
 
 
 def run(ctx: dict):
-    """
-    Step06: call pipedrive-worker.
+    """Step06: call pipedrive-worker.
+
     Fixes:
       - Uses worker_url from request payload if provided
       - Otherwise uses WORKER_BASE_URL/WORKER_URL env
       - Sends paytraq_full_xml to worker (critical for step02/03)
       - Sets pipedrive_ack=True only on 2xx
+
+    Debug improvements:
+      - Do NOT truncate worker response (was cutting at 2000 chars)
+      - Parse JSON into ctx.worker_response_json when possible
+      - Save full worker response to GitHub state/debug/worker_<doc_id>.json (if GITHUB_TOKEN is set)
     """
+
     enabled = os.getenv("ENABLE_STEP_06_CALL_WORKER", "0") == "1"
     ctx["step_06_enabled"] = enabled
     if not enabled:
@@ -87,8 +126,45 @@ def run(ctx: dict):
         r = requests.post(worker_url, json=payload, timeout=90)
         ctx["worker_status_code"] = r.status_code
 
-        # FIX: do NOT truncate worker response (was [:2000])
-        ctx["worker_response_text"] = (r.text or "")
+        # IMPORTANT: do NOT truncate worker response.
+        ctx["worker_response_text"] = r.text or ""
+
+        # Parse JSON if possible
+        worker_json = None
+        try:
+            worker_json = r.json()
+        except Exception:
+            worker_json = None
+
+        if isinstance(worker_json, dict):
+            ctx["worker_response_json"] = worker_json
+            ctx["worker_summary"] = {
+                "status": worker_json.get("status"),
+                "deal_id": worker_json.get("deal_id"),
+                "title": worker_json.get("title"),
+                "document_id": worker_json.get("document_id"),
+                "line_items_count": worker_json.get("line_items_count"),
+                "attached_count": (worker_json.get("step_03") or {}).get("attached_count"),
+            }
+
+        # Debug: save full worker response into GitHub (same pattern as step_03/04)
+        gh_token = os.getenv("GITHUB_TOKEN")
+        if gh_token:
+            path = f"state/debug/worker_{doc_id}.json"
+            try:
+                content_bytes = (
+                    json.dumps(worker_json, ensure_ascii=False, indent=2).encode("utf-8")
+                    if isinstance(worker_json, (dict, list))
+                    else (r.text or "").encode("utf-8")
+                )
+            except Exception:
+                content_bytes = (r.text or "").encode("utf-8")
+
+            st, sn = _github_put_file(gh_token, path, content_bytes, f"debug: worker response {doc_id}")
+            ctx["github_worker_json_path"] = path
+            ctx["github_worker_json_status"] = st
+            if st not in (200, 201):
+                ctx["github_worker_json_error_snippet"] = sn
 
         if 200 <= r.status_code < 300:
             ctx["pipedrive_ack"] = True
