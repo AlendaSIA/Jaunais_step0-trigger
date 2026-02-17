@@ -1,0 +1,255 @@
+{
+  "status": "created",
+  "deal_id": 66631,
+  "title": "PT 15626034 ALE 2601012",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15626034,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 6,
+  "line_items_preview": [
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, melns, 5cm X 5 metri, ZARYS-YT-55-X [ZARYS-YT-55-X]",
+      "code": "ZARYS-YT-55-X",
+      "quantity": 1.0,
+      "unit_price": 4.12,
+      "gross_unit_price": 4.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, rozā, 5 cm X 5 metri, ZARYS-YT-55-P [ZARYS-YT-55-P]",
+      "code": "ZARYS-YT-55-P",
+      "quantity": 1.0,
+      "unit_price": 4.12,
+      "gross_unit_price": 4.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  zigzag, 5cm X 5 metri [YT-55-RZ]",
+      "code": "YT-55-RZ",
+      "quantity": 1.0,
+      "unit_price": 4.95,
+      "gross_unit_price": 5.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 6
+  },
+  "products_attached": [
+    {
+      "product_id": 7096,
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, melns, 5cm X 5 metri, ZARYS-YT-55-X [ZARYS-YT-55-X]",
+      "quantity": 1.0,
+      "src_unit_price_net": 4.12,
+      "src_gross_unit_price": 4.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 4.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1668
+    },
+    {
+      "product_id": 7097,
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, rozā, 5 cm X 5 metri, ZARYS-YT-55-P [ZARYS-YT-55-P]",
+      "quantity": 1.0,
+      "src_unit_price_net": 4.12,
+      "src_gross_unit_price": 4.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 4.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1669
+    },
+    {
+      "product_id": 6996,
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  zigzag, 5cm X 5 metri [YT-55-RZ]",
+      "quantity": 1.0,
+      "src_unit_price_net": 4.95,
+      "src_gross_unit_price": 5.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 5.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1670
+    },
+    {
+      "product_id": 7001,
+      "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100] [N100]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.97,
+      "src_gross_unit_price": 3.59,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 3.59,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1671
+    },
+    {
+      "product_id": 7004,
+      "name": "Ūdens izturīgu plāksteru komplekts AQUA PRO, 18 gb. dažāda izmēra plāksteri, ZARYS-VH-ZAQ [ZARYS-VH-ZAQ]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.23,
+      "src_gross_unit_price": 1.49,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 1.49,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1672
+    },
+    {
+      "product_id": 7029,
+      "name": "Shipping [Ship1]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.39,
+      "src_gross_unit_price": 2.89,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.89,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1673
+    }
+  ],
+  "products_created": [
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, melns, 5cm X 5 metri, ZARYS-YT-55-X [ZARYS-YT-55-X]",
+      "id": 7096,
+      "reason": "not_found"
+    },
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, rozā, 5 cm X 5 metri, ZARYS-YT-55-P [ZARYS-YT-55-P]",
+      "id": 7097,
+      "reason": "not_found"
+    }
+  ],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 1184961,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 12299,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Tatjana Lipska-Duklava (My Identity)",
+      "email": "t.lipska@inbox.lv",
+      "phone": "+37129484480",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Zemgaļu iela 4, Code, Bauska, LV-3910, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "t.lipska@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "t.lipska@inbox.lv"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "+37129484480"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Zemgaļu iela 4, Code, Bauska, LV-3910, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Zemgaļu iela 4, Code, Bauska, LV-3910, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1",
+    "deal_id": 66631,
+    "org_id": 12299,
+    "found_by": "email",
+    "person_id": 13477,
+    "attached_to_deal": true,
+    "activity_created": true,
+    "activity_id": 22651,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "t.lipska@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "note": null
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
