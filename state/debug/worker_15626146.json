@@ -1,0 +1,276 @@
+{
+  "status": "created",
+  "deal_id": 66632,
+  "title": "PT 15626146 ALE 2601013",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15626146,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 8,
+  "line_items_preview": [
+    {
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+      "code": "RNBCM10003",
+      "quantity": 2.0,
+      "unit_price": 3.3,
+      "gross_unit_price": 3.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Chemisept SPRAY 1000ml [65-085]",
+      "code": "65-085",
+      "quantity": 1.0,
+      "unit_price": 8.26,
+      "gross_unit_price": 9.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Cepurīte gofrēta Clip Cap, balta, N100 [CLIP2/W/16]",
+      "code": "CLIP2/W/16",
+      "quantity": 1.0,
+      "unit_price": 1.64,
+      "gross_unit_price": 1.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 8
+  },
+  "products_attached": [
+    {
+      "product_id": 6977,
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+      "quantity": 2.0,
+      "src_unit_price_net": 3.3,
+      "src_gross_unit_price": 3.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 3.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1674
+    },
+    {
+      "product_id": 7098,
+      "name": "Chemisept SPRAY 1000ml [65-085]",
+      "quantity": 1.0,
+      "src_unit_price_net": 8.26,
+      "src_gross_unit_price": 9.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 9.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1675
+    },
+    {
+      "product_id": 7054,
+      "name": "Cepurīte gofrēta Clip Cap, balta, N100 [CLIP2/W/16]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.64,
+      "src_gross_unit_price": 1.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 1.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1676
+    },
+    {
+      "product_id": 7036,
+      "name": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001 [SLN-001]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.53,
+      "src_gross_unit_price": 1.85,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 1.85,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1677
+    },
+    {
+      "product_id": 7010,
+      "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.47,
+      "src_gross_unit_price": 2.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1678
+    },
+    {
+      "product_id": 7046,
+      "name": "Singclean deguna (nasal) Antigēna COVID-19 Ātrais pašpārbaudes tests N1 [singclean082026]",
+      "quantity": 3.0,
+      "src_unit_price_net": 0.7,
+      "src_gross_unit_price": 0.85,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 0.85,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1679
+    },
+    {
+      "product_id": 6999,
+      "name": "Vinila cimdi Zarys, Easy care, N100 L izmērs, L, BOJRWBL10001 [BOJRWBL10001]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.56,
+      "src_gross_unit_price": 1.89,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 1.89,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1680
+    },
+    {
+      "product_id": 7029,
+      "name": "Shipping [Ship1]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.81,
+      "src_gross_unit_price": 2.19,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.19,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1681
+    }
+  ],
+  "products_created": [
+    {
+      "name": "Chemisept SPRAY 1000ml [65-085]",
+      "id": 7098,
+      "reason": "not_found"
+    }
+  ],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 1193312,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 13920,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Diāna Začeste",
+      "email": "dincits2@inbox.lv",
+      "phone": "26069110",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Gaujaslīču iela 22-15, GAUJA, Siguldas nov., Inčukalna pag., LV-2140, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "dincits2@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "dincits2@inbox.lv"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "26069110"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Gaujaslīču iela 22-15, GAUJA, Siguldas nov., Inčukalna pag., LV-2140, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Gaujaslīču iela 22-15, GAUJA, Siguldas nov., Inčukalna pag., LV-2140, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1",
+    "deal_id": 66632,
+    "org_id": 13920,
+    "found_by": "email",
+    "person_id": 15008,
+    "attached_to_deal": true,
+    "activity_created": true,
+    "activity_id": 22652,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "dincits2@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "note": null
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
