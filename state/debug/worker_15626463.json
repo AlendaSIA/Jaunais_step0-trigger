@@ -1,0 +1,218 @@
+{
+  "status": "created",
+  "deal_id": 66634,
+  "title": "PT 15626463 ALE 2601015",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15626463,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 4,
+  "line_items_preview": [
+    {
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, ādas krāsa, 5cm X 5 metri, ZARYS-YT-55-S [ZARYS-YT-55-S]",
+      "code": "ZARYS-YT-55-S",
+      "quantity": 8.0,
+      "unit_price": 4.12,
+      "gross_unit_price": 4.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "NIVEA SUN After Sun Sensitive nomierinošs un apsārtumu samazinošs krēms-želeja pēc sauļošanās, 175ml [678158]",
+      "code": "678158",
+      "quantity": 1.0,
+      "unit_price": 7.26,
+      "gross_unit_price": 8.79,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "NIVEA SUN Protect&Moisture SPF30 mitrinošs losjons aizsardzībai pret sauli, 200ml [678106]",
+      "code": "678106",
+      "quantity": 1.0,
+      "unit_price": 8.26,
+      "gross_unit_price": 9.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 4
+  },
+  "products_attached": [
+    {
+      "product_id": 6990,
+      "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, ādas krāsa, 5cm X 5 metri, ZARYS-YT-55-S [ZARYS-YT-55-S]",
+      "quantity": 8.0,
+      "src_unit_price_net": 4.12,
+      "src_gross_unit_price": 4.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 4.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1684
+    },
+    {
+      "product_id": 7093,
+      "name": "NIVEA SUN After Sun Sensitive nomierinošs un apsārtumu samazinošs krēms-želeja pēc sauļošanās, 175ml [678158]",
+      "quantity": 1.0,
+      "src_unit_price_net": 7.26,
+      "src_gross_unit_price": 8.79,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 8.79,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1685
+    },
+    {
+      "product_id": 7094,
+      "name": "NIVEA SUN Protect&Moisture SPF30 mitrinošs losjons aizsardzībai pret sauli, 200ml [678106]",
+      "quantity": 1.0,
+      "src_unit_price_net": 8.26,
+      "src_gross_unit_price": 9.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 9.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1686
+    },
+    {
+      "product_id": 7083,
+      "name": "Mitrinošs un kopjošs līdzeklis ādai- BIO care 50ml, 65-165 [65-165]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.47,
+      "src_gross_unit_price": 2.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1687
+    }
+  ],
+  "products_created": [],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 1193883,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 13931,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Raivis Kalējs",
+      "email": "raivo82@inbox.lv",
+      "phone": "+37125960526",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Bārtas 6, Nīca, LV-3473, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "raivo82@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "raivo82@inbox.lv"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "+37125960526"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Bārtas 6, Nīca, LV-3473, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Bārtas 6, Nīca, LV-3473, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1",
+    "deal_id": 66634,
+    "org_id": 13931,
+    "found_by": "email",
+    "person_id": 15018,
+    "attached_to_deal": true,
+    "activity_created": true,
+    "activity_id": 22654,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "raivo82@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "note": null
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
