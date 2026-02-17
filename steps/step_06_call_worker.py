@@ -86,7 +86,9 @@ def run(ctx: dict):
     try:
         r = requests.post(worker_url, json=payload, timeout=90)
         ctx["worker_status_code"] = r.status_code
-        ctx["worker_response_text"] = (r.text or "")[:2000]
+
+        # FIX: do NOT truncate worker response (was [:2000])
+        ctx["worker_response_text"] = (r.text or "")
 
         if 200 <= r.status_code < 300:
             ctx["pipedrive_ack"] = True
