@@ -1,0 +1,218 @@
+{
+  "status": "created",
+  "deal_id": 66635,
+  "title": "PT 15626529 ALE 2601016",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15626529,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 4,
+  "line_items_preview": [
+    {
+      "name": "KLIIN PURE PULP 3.120, tual.pap. [300027]",
+      "code": "300027",
+      "quantity": 1.0,
+      "unit_price": 1.98,
+      "gross_unit_price": 2.39,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]",
+      "code": "65-022",
+      "quantity": 1.0,
+      "unit_price": 18.01,
+      "gross_unit_price": 21.79,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+      "code": "RNBCM10003",
+      "quantity": 1.0,
+      "unit_price": 3.3,
+      "gross_unit_price": 3.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 4
+  },
+  "products_attached": [
+    {
+      "product_id": 7063,
+      "name": "KLIIN PURE PULP 3.120, tual.pap. [300027]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.98,
+      "src_gross_unit_price": 2.39,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.39,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1688
+    },
+    {
+      "product_id": 6985,
+      "name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]",
+      "quantity": 1.0,
+      "src_unit_price_net": 18.01,
+      "src_gross_unit_price": 21.79,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 21.79,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1689
+    },
+    {
+      "product_id": 6977,
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+      "quantity": 1.0,
+      "src_unit_price_net": 3.3,
+      "src_gross_unit_price": 3.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 3.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1690
+    },
+    {
+      "product_id": 7029,
+      "name": "Shipping [Ship1]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.81,
+      "src_gross_unit_price": 2.19,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.19,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1691
+    }
+  ],
+  "products_created": [],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 648145,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 1988,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Vita Purviņa",
+      "email": "vita.kuldiga@gmail.com",
+      "phone": "+3 (712) 612 21-13",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Raiņa 17, Kuldiga, Kuldīga, LV-3301, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "vita.kuldiga@gmail.com",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "vita.kuldiga@gmail.com"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "+3 (712) 612 21-13"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Raiņa 17, Kuldiga, Kuldīga, LV-3301, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Raiņa 17, Kuldiga, Kuldīga, LV-3301, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1",
+    "deal_id": 66635,
+    "org_id": 1988,
+    "found_by": "email",
+    "person_id": 1988,
+    "attached_to_deal": true,
+    "activity_created": true,
+    "activity_id": 22655,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "vita.kuldiga@gmail.com",
+          "found": true
+        }
+      ]
+    },
+    "note": null
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
