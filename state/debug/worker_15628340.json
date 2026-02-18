@@ -1,0 +1,257 @@
+{
+  "status": "created",
+  "deal_id": 66652,
+  "title": "PT 15628340 M-860325-30092",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15628340,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 7,
+  "line_items_preview": [
+    {
+      "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+      "code": "200006",
+      "quantity": 1.0,
+      "unit_price": 0.82,
+      "gross_unit_price": 0.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs  [RNBCS10003]",
+      "code": "RNBCS10003",
+      "quantity": 1.0,
+      "unit_price": 3.3,
+      "gross_unit_price": 3.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+      "code": "MelHY",
+      "quantity": 1.0,
+      "unit_price": 2.06,
+      "gross_unit_price": 2.49,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 7
+  },
+  "products_attached": [
+    {
+      "product_id": 7007,
+      "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+      "quantity": 1.0,
+      "src_unit_price_net": 0.82,
+      "src_gross_unit_price": 0.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 0.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1696
+    },
+    {
+      "product_id": 7041,
+      "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, S izmērs  [RNBCS10003]",
+      "quantity": 1.0,
+      "src_unit_price_net": 3.3,
+      "src_gross_unit_price": 3.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 3.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1697
+    },
+    {
+      "product_id": 7015,
+      "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.06,
+      "src_gross_unit_price": 2.49,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.49,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1698
+    },
+    {
+      "product_id": 6994,
+      "name": "Respirators FFP2 melns , bez vārsta [hyffp2b]",
+      "quantity": 5.0,
+      "src_unit_price_net": 1.9,
+      "src_gross_unit_price": 2.3,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.3,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1699
+    },
+    {
+      "product_id": 6984,
+      "name": "Vismu dezinfekcija- CHEMIPHARM DES NEW MD 1L, 65-011 [65-011]",
+      "quantity": 1.0,
+      "src_unit_price_net": 10.64,
+      "src_gross_unit_price": 12.87,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 12.87,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1700
+    },
+    {
+      "product_id": 7075,
+      "name": "CP DRY WIPES, neausta auduma sausās salvetes N600 [65-175]",
+      "quantity": 1.0,
+      "src_unit_price_net": 6.6,
+      "src_gross_unit_price": 7.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 7.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1701
+    },
+    {
+      "product_id": 7029,
+      "name": "Shipping [Ship1]",
+      "quantity": 1.0,
+      "src_unit_price_net": 1.81,
+      "src_gross_unit_price": 2.19,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.19,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1702
+    }
+  ],
+  "products_created": [],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 1194040,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 13933,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Beāte Cirša",
+      "email": "beate722@inbox.lv",
+      "phone": "+37129819723",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Sarkanmuižas dambis 14, Ventspils, Ventspils, 3601, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "beate722@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "beate722@inbox.lv"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "+37129819723"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Sarkanmuižas dambis 14, Ventspils, Ventspils, 3601, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Sarkanmuižas dambis 14, Ventspils, Ventspils, 3601, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1",
+    "deal_id": 66652,
+    "org_id": 13933,
+    "found_by": "email",
+    "person_id": 15020,
+    "attached_to_deal": true,
+    "activity_created": true,
+    "activity_id": 22670,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "beate722@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "note": null
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
