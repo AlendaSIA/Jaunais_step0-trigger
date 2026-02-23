@@ -6,8 +6,8 @@ from typing import Any, Dict, Optional, Tuple, List
 
 REPO = "AlendaSIA/Jaunais_step0-trigger"
 
-WORKER_URL = os.getenv("WORKER_URL", "").strip()
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+WORKER_URL = (os.getenv("WORKER_URL", "") or "").strip()
+GITHUB_TOKEN = (os.getenv("GITHUB_TOKEN", "") or "").strip()
 
 
 def _trace(ctx: Dict[str, Any], step: str, ok: bool, extra: Optional[Dict[str, Any]] = None) -> None:
@@ -48,6 +48,23 @@ def _github_put_file(token: str, path: str, content_bytes: bytes, message: str) 
 
 
 # --------------------------
+# Worker URL helper (fix /process/process)
+# --------------------------
+def _worker_process_url() -> str:
+    """
+    Accepts:
+      WORKER_URL="https://...run.app"         -> uses https://...run.app/process
+      WORKER_URL="https://...run.app/process" -> uses https://...run.app/process
+    """
+    if not WORKER_URL:
+        return ""
+    base = WORKER_URL.rstrip("/")
+    if base.endswith("/process"):
+        return base
+    return base + "/process"
+
+
+# --------------------------
 # Flatten helper for payload dump
 # --------------------------
 def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
@@ -78,7 +95,8 @@ def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
 def run(ctx: dict) -> dict:
     step_name = "06_call_worker"
 
-    if not WORKER_URL:
+    process_url = _worker_process_url()
+    if not process_url:
         ctx["worker_status_code"] = 0
         ctx["worker_response_text"] = "Missing env WORKER_URL"
         _trace(ctx, step_name, False, {"error": "Missing env WORKER_URL"})
@@ -88,7 +106,7 @@ def run(ctx: dict) -> dict:
     xml = ctx.get("paytraq_full_xml") or ""
     xml_len = len(xml) if isinstance(xml, str) else 0
 
-    # Build payload to worker (source of truth)
+    # Uzbūvējam payload (source of truth)
     payload: Dict[str, Any] = {
         "document": {
             "id": doc_id,
@@ -103,7 +121,7 @@ def run(ctx: dict) -> dict:
         }
     }
 
-    # If requested, expose full list of payload fields (for mapping)
+    # Ja gribi laukus mappingam: izdrukājam “field, id, value”
     if ctx.get("dump_worker_fields") is True:
         dump_payload = json.loads(json.dumps(payload))  # deep copy
         dump_payload["document"]["paytraq_full_xml"] = f"<xml len={xml_len}>"
@@ -121,7 +139,7 @@ def run(ctx: dict) -> dict:
 
     # Call worker
     try:
-        r = requests.post(WORKER_URL.rstrip("/") + "/process", json=payload, timeout=120)
+        r = requests.post(process_url, json=payload, timeout=120)
         ctx["worker_status_code"] = r.status_code
         ctx["worker_response_text"] = (r.text or "")[:200000]
 
@@ -130,12 +148,12 @@ def run(ctx: dict) -> dict:
         except Exception:
             ctx["worker_response_json"] = None
 
-        # store worker response debug to GitHub (optional)
+        # Debug uz GitHub (kā bija)
         if GITHUB_TOKEN and doc_id:
             out_path = f"state/debug/worker_{doc_id}.json"
             pretty = json.dumps(
                 {
-                    "payload_meta": {"doc_id": doc_id, "xml_len": xml_len},
+                    "payload_meta": {"doc_id": doc_id, "xml_len": xml_len, "process_url": process_url},
                     "worker_response": ctx.get("worker_response_json"),
                 },
                 ensure_ascii=False,
@@ -148,11 +166,11 @@ def run(ctx: dict) -> dict:
                 ctx["github_worker_json_error_snippet"] = sn
 
         ok = (r.status_code < 300)
-        _trace(ctx, step_name, ok, {"status_code": r.status_code})
+        _trace(ctx, step_name, ok, {"status_code": r.status_code, "process_url": process_url})
         return ctx
 
     except Exception as e:
         ctx["worker_status_code"] = 0
         ctx["worker_response_text"] = f"ERROR: {e}"
-        _trace(ctx, step_name, False, {"error": str(e)})
+        _trace(ctx, step_name, False, {"error": str(e), "process_url": process_url})
         return ctx
