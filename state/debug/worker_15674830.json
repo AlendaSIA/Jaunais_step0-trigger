@@ -121,14 +121,14 @@
   },
   "step_05": {
     "ok": true,
-    "mode": "person_attach_v1",
+    "mode": "person_attach_v1_no_activity",
     "deal_id": 66781,
     "org_id": 13962,
     "found_by": "email",
     "person_id": 15048,
     "attached_to_deal": true,
-    "activity_created": true,
-    "activity_id": 22757,
+    "activity_created": false,
+    "activity_id": null,
     "pipedrive_search": {
       "attempts": [
         {
@@ -138,7 +138,7 @@
         }
       ]
     },
-    "note": null
+    "note": "Person matched by email. Activity disabled."
   },
   "step_99": {
     "ok": true,
