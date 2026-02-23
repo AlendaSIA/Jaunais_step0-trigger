@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import requests
+import xml.etree.ElementTree as ET
 from typing import Any, Dict, Optional, Tuple, List
 
 REPO = "AlendaSIA/Jaunais_step0-trigger"
@@ -51,11 +52,6 @@ def _github_put_file(token: str, path: str, content_bytes: bytes, message: str) 
 # Worker URL helper (fix /process/process)
 # --------------------------
 def _worker_process_url() -> str:
-    """
-    Accepts:
-      WORKER_URL="https://...run.app"         -> uses https://...run.app/process
-      WORKER_URL="https://...run.app/process" -> uses https://...run.app/process
-    """
     if not WORKER_URL:
         return ""
     base = WORKER_URL.rstrip("/")
@@ -64,12 +60,25 @@ def _worker_process_url() -> str:
     return base + "/process"
 
 
+def _extract_doc_ref_from_xml(xml: str) -> Optional[str]:
+    if not xml or not isinstance(xml, str):
+        return None
+    try:
+        root = ET.fromstring(xml)
+        el = root.find("./Header/Document/DocumentRef")
+        if el is not None and el.text:
+            t = el.text.strip()
+            return t if t else None
+    except Exception:
+        return None
+    return None
+
+
 # --------------------------
 # Flatten helper for payload dump
 # --------------------------
 def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
-
     if isinstance(obj, dict):
         if not obj:
             out.append({"field": prefix, "value": None})
@@ -78,7 +87,6 @@ def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
             p = f"{prefix}.{k}" if prefix else str(k)
             out.extend(_flatten(v, p))
         return out
-
     if isinstance(obj, list):
         if not obj:
             out.append({"field": prefix, "value": []})
@@ -87,15 +95,14 @@ def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
             p = f"{prefix}[{i}]"
             out.extend(_flatten(v, p))
         return out
-
     out.append({"field": prefix, "value": obj})
     return out
 
 
 def run(ctx: dict) -> dict:
     step_name = "06_call_worker"
-
     process_url = _worker_process_url()
+
     if not process_url:
         ctx["worker_status_code"] = 0
         ctx["worker_response_text"] = "Missing env WORKER_URL"
@@ -106,14 +113,24 @@ def run(ctx: dict) -> dict:
     xml = ctx.get("paytraq_full_xml") or ""
     xml_len = len(xml) if isinstance(xml, str) else 0
 
-    # Uzbūvējam payload (source of truth)
+    # DocumentRef: mēģinām no ctx, ja nav — izvelkam no XML
+    document_ref = ctx.get("document_ref")
+    if not document_ref:
+        document_ref = _extract_doc_ref_from_xml(xml)
+
+    # Worker prasa document.deal.title => iedodam vienmēr
+    deal_title = f"PT {doc_id} {document_ref or ''}".strip()
+
     payload: Dict[str, Any] = {
         "document": {
             "id": doc_id,
+            # ja vēlāk gribēsi, te var ielikt strukturētu client; pagaidām nav obligāti schemai
             "client": ctx.get("client") or {},
-            "deal": ctx.get("deal") or {},
+            "deal": {
+                "title": deal_title,
+            },
             "meta": {
-                "document_ref": ctx.get("document_ref"),
+                "document_ref": document_ref,
                 "picked_by": ctx.get("picked_by"),
                 "paytraq_full_endpoint": ctx.get("paytraq_full_endpoint"),
             },
@@ -121,9 +138,9 @@ def run(ctx: dict) -> dict:
         }
     }
 
-    # Ja gribi laukus mappingam: izdrukājam “field, id, value”
+    # Dump laukiem mappingam (tikai tas, ko tieši sūta uz worker)
     if ctx.get("dump_worker_fields") is True:
-        dump_payload = json.loads(json.dumps(payload))  # deep copy
+        dump_payload = json.loads(json.dumps(payload))
         dump_payload["document"]["paytraq_full_xml"] = f"<xml len={xml_len}>"
 
         flat = _flatten(dump_payload, "")
@@ -137,7 +154,7 @@ def run(ctx: dict) -> dict:
         ctx["worker_field_count"] = len(worker_fields)
         ctx["worker_fields"] = worker_fields
 
-    # Call worker
+    # call worker
     try:
         r = requests.post(process_url, json=payload, timeout=120)
         ctx["worker_status_code"] = r.status_code
@@ -148,12 +165,13 @@ def run(ctx: dict) -> dict:
         except Exception:
             ctx["worker_response_json"] = None
 
-        # Debug uz GitHub (kā bija)
+        # debug uz GitHub
         if GITHUB_TOKEN and doc_id:
             out_path = f"state/debug/worker_{doc_id}.json"
             pretty = json.dumps(
                 {
-                    "payload_meta": {"doc_id": doc_id, "xml_len": xml_len, "process_url": process_url},
+                    "payload_meta": {"doc_id": doc_id, "document_ref": document_ref, "xml_len": xml_len, "process_url": process_url},
+                    "payload_sent_to_worker_keys": list((payload.get("document") or {}).keys()),
                     "worker_response": ctx.get("worker_response_json"),
                 },
                 ensure_ascii=False,
