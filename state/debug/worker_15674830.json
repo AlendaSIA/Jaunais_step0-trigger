@@ -1,9 +1,22 @@
 {
   "payload_meta": {
     "doc_id": 15674830,
-    "xml_len": 5213
+    "xml_len": 5213,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
   },
   "worker_response": {
-    "detail": "Not Found"
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "document",
+          "deal",
+          "title"
+        ],
+        "msg": "Field required",
+        "input": {}
+      }
+    ]
   }
 }
