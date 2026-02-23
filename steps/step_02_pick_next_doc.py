@@ -109,6 +109,7 @@ def run(ctx: dict):
       - Process OLDEST -> NEWEST.
       - Normal mode: next_id = min([id for id in sales_ids if id > last_processed_id])
       - Override by date/doc_ref: pick OLDEST match (min id) so date start walks forward.
+      - NEW: Override by document_id (FAST PATH): do NOT scan all docs; just set next_document_id directly.
       - If nothing new: return status=ok + idle=true (no pipeline error).
     """
     override_ref = ctx.get("document_ref") or ctx.get("doc_ref") or ctx.get("override_document_ref")
@@ -117,7 +118,25 @@ def run(ctx: dict):
     date_to = ctx.get("date_to")
     skip_state_update = bool(ctx.get("skip_state_update"))
 
-    # Sales list
+    # FAST OVERRIDE BY DOCUMENT ID (same principle as normal loop: no scanning)
+    override_id = ctx.get("document_id") or ctx.get("override_document_id") or ctx.get("force_document_id")
+    if override_id is not None:
+        try:
+            chosen_id = int(override_id)
+        except Exception:
+            ctx["error"] = f"Invalid document_id override: {override_id}"
+            return ctx
+
+        ctx["has_next_document"] = True
+        ctx["next_document_id"] = chosen_id
+        ctx["picked_by"] = "override_document_id"
+
+        if not skip_state_update:
+            ctx["in_progress_id"] = chosen_id
+
+        return ctx
+
+    # Sales list (normal behavior)
     sc, sales_xml = _paytraq_sales_list()
     ctx["paytraq_sales_status_code"] = sc
     if sc != 200:
@@ -131,7 +150,7 @@ def run(ctx: dict):
     if not ids:
         return _set_idle(ctx, picked_by="no_sales")
 
-    # Override by document_ref or date requires fetching per-doc XML
+    # Override by document_ref or date requires fetching per-doc XML (HEAVY; use only when needed)
     if override_ref or override_date or date_from or date_to:
         want_ref = override_ref.strip() if isinstance(override_ref, str) else None
 
