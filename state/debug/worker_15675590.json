@@ -1,0 +1,205 @@
+{
+  "status": "created",
+  "deal_id": 66783,
+  "title": "PT 15675590 ALE 2601138",
+  "_trace": [
+    {
+      "step": "01_deal_upsert",
+      "ok": true
+    },
+    {
+      "step": "02_parse_line_items",
+      "ok": true
+    },
+    {
+      "step": "03_products_sync",
+      "ok": true
+    },
+    {
+      "step": "04_find_update_organization",
+      "ok": true
+    },
+    {
+      "step": "05_find_update_person",
+      "ok": true
+    },
+    {
+      "step": "99_update_products",
+      "ok": true
+    }
+  ],
+  "document_id": 15675590,
+  "step_02_fetch": {
+    "used_fallback_fetch": false
+  },
+  "step_02": {
+    "ok": true
+  },
+  "line_items_count": 3,
+  "line_items_preview": [
+    {
+      "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+      "code": "RNBWM10003",
+      "quantity": 1.0,
+      "unit_price": 3.3,
+      "gross_unit_price": 3.99,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Mitrinošs un kopjošs līdzeklis ādai- BIO care 200ml, 65-032 [65-032]",
+      "code": "65-032",
+      "quantity": 1.0,
+      "unit_price": 5.45,
+      "gross_unit_price": 6.59,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "paytraq_price_field"
+    },
+    {
+      "name": "Shipping [Ship1]",
+      "code": "Ship1",
+      "quantity": 1.0,
+      "unit_price": 2.39,
+      "gross_unit_price": 2.89,
+      "include_tax": true,
+      "vat_rate": 0.21,
+      "tax_key_name": "PVN 21%",
+      "line_discount_pct": 0.0,
+      "price_source": "shipping_charge"
+    }
+  ],
+  "step_03": {
+    "ok": true,
+    "attached_count": 3
+  },
+  "products_attached": [
+    {
+      "product_id": 7105,
+      "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+      "quantity": 1.0,
+      "src_unit_price_net": 3.3,
+      "src_gross_unit_price": 3.99,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 3.99,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1713
+    },
+    {
+      "product_id": 7106,
+      "name": "Mitrinošs un kopjošs līdzeklis ādai- BIO care 200ml, 65-032 [65-032]",
+      "quantity": 1.0,
+      "src_unit_price_net": 5.45,
+      "src_gross_unit_price": 6.59,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 6.59,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1714
+    },
+    {
+      "product_id": 7107,
+      "name": "Shipping [Ship1]",
+      "quantity": 1.0,
+      "src_unit_price_net": 2.39,
+      "src_gross_unit_price": 2.89,
+      "src_include_tax": true,
+      "src_vat_rate": 0.21,
+      "pipedrive_item_price": 2.89,
+      "pipedrive_tax_method": "inclusive",
+      "pipedrive_tax": 21,
+      "added_id": 1715
+    }
+  ],
+  "products_created": [],
+  "activities_created": [],
+  "step_04": {
+    "ok": true,
+    "mode": "paytraq_direct",
+    "client_id": 879679,
+    "found_by": "email",
+    "org_action": "updated",
+    "org_id": 9672,
+    "attached_to_deal": true,
+    "paytraq_fields": {
+      "name": "Guna Siliņa",
+      "email": "leo002@inbox.lv",
+      "phone": "26321016",
+      "regnr": null,
+      "vatnr": null,
+      "country": "LV",
+      "legal_address_formatted": "Akmeņkaļu 10, Ķekava, ĶEKAVAS NOVADS, LV-2111, LV"
+    },
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "regnr",
+          "term": null,
+          "skipped": true
+        },
+        {
+          "by": "email",
+          "term": "leo002@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "pipedrive_update_fields": {
+      "email": {
+        "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+        "value": "leo002@inbox.lv"
+      },
+      "phone": {
+        "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+        "value": "26321016"
+      },
+      "country": {
+        "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+        "value": "LV"
+      },
+      "address": {
+        "key": "address",
+        "value": "Akmeņkaļu 10, Ķekava, ĶEKAVAS NOVADS, LV-2111, LV"
+      },
+      "shipping_address": {
+        "key": "dae3df0edeadce95ba223719cc18141795387de8",
+        "value": "Akmeņkaļu 10, Ķekava, ĶEKAVAS NOVADS, LV-2111, LV"
+      }
+    },
+    "note": null
+  },
+  "step_05": {
+    "ok": true,
+    "mode": "person_attach_v1_no_activity",
+    "deal_id": 66783,
+    "org_id": 9672,
+    "found_by": "email",
+    "person_id": 11105,
+    "attached_to_deal": true,
+    "activity_created": false,
+    "activity_id": null,
+    "pipedrive_search": {
+      "attempts": [
+        {
+          "by": "email",
+          "term": "leo002@inbox.lv",
+          "found": true
+        }
+      ]
+    },
+    "note": "Person matched by email. Activity disabled."
+  },
+  "step_99": {
+    "ok": true,
+    "mode": "stub",
+    "note": "no-op"
+  }
+}
