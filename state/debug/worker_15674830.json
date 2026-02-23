@@ -1,5 +1,5 @@
 {
-  "status": "created",
+  "status": "updated",
   "deal_id": 66781,
   "title": "PT 15674830 ALE 2601137",
   "_trace": [
@@ -52,21 +52,14 @@
   ],
   "step_03": {
     "ok": true,
-    "attached_count": 1
+    "attached_count": 0
   },
   "products_attached": [
     {
       "product_id": 7104,
-      "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
-      "quantity": 1.0,
-      "src_unit_price_net": 14.87,
-      "src_gross_unit_price": 17.99,
-      "src_include_tax": true,
-      "src_vat_rate": 0.21,
-      "pipedrive_item_price": 17.99,
-      "pipedrive_tax_method": "inclusive",
-      "pipedrive_tax": 21,
-      "added_id": 1709
+      "skipped": true,
+      "reason": "already_on_deal",
+      "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]"
     }
   ],
   "products_created": [],
@@ -135,7 +128,7 @@
     "person_id": 15048,
     "attached_to_deal": true,
     "activity_created": true,
-    "activity_id": 22756,
+    "activity_id": 22757,
     "pipedrive_search": {
       "attempts": [
         {
