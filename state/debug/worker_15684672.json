@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66813,
     "title": "PT 15684672 M-860325-30229",
     "_trace": [
@@ -78,49 +78,29 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7109,
-        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
-        "quantity": 1.0,
-        "src_unit_price_net": 36.18,
-        "src_gross_unit_price": 43.78,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 43.78,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1719
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1720
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
-        "id": 7109,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1197959,
-      "found_by": "email",
+      "found_by": "regnr",
       "org_action": "updated",
       "org_id": 13973,
       "attached_to_deal": true,
@@ -138,11 +118,6 @@
           {
             "by": "regnr",
             "term": "40203434912",
-            "found": false
-          },
-          {
-            "by": "email",
-            "term": "oksanabolta@inbox.lv",
             "found": true
           }
         ]
