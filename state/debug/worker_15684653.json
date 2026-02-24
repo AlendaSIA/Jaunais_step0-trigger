@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66812,
     "title": "PT 15684653 ALE 2601146",
     "_trace": [
@@ -78,34 +78,20 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7104,
-        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
-        "quantity": 2.0,
-        "src_unit_price_net": 14.87,
-        "src_gross_unit_price": 17.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 17.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1717
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.98,
-        "src_gross_unit_price": 2.39,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.39,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1718
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
     "products_created": [],
