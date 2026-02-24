@@ -1,0 +1,195 @@
+{
+  "payload_meta": {
+    "doc_id": 15684653,
+    "document_ref": "ALE 2601146",
+    "xml_len": 5548,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66812,
+    "title": "PT 15684653 ALE 2601146",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15684653,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
+        "code": "YT-55-4",
+        "quantity": 2.0,
+        "unit_price": 14.87,
+        "gross_unit_price": 17.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.98,
+        "gross_unit_price": 2.39,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7104,
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
+        "quantity": 2.0,
+        "src_unit_price_net": 14.87,
+        "src_gross_unit_price": 17.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 17.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1717
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.98,
+        "src_gross_unit_price": 2.39,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.39,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1718
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1197659,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13966,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Žanna Kļava",
+        "email": "zannaklava@gmail.com",
+        "phone": "29105713",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Smilšu 2-41, Baloži, Ķekavas, LV 2112, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "zannaklava@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "zannaklava@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29105713"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Smilšu 2-41, Baloži, Ķekavas, LV 2112, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Smilšu 2-41, Baloži, Ķekavas, LV 2112, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66812,
+      "org_id": 13966,
+      "found_by": "email",
+      "person_id": 15052,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "zannaklava@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "stub",
+      "note": "no-op"
+    }
+  }
+}
