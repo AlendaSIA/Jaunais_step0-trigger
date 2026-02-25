@@ -2,13 +2,16 @@ import os
 import re
 import requests
 import xml.etree.ElementTree as ET
-from typing import Optional
+from typing import Optional, List, Set, Tuple
 
 GITHUB_STATE_URL = os.getenv("GITHUB_STATE_URL")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 PAYTRAQ_BASE_URL = os.getenv("PAYTRAQ_BASE_URL", "https://go.paytraq.com").rstrip("/")
 PAYTRAQ_API_KEY = os.getenv("PAYTRAQ_API_KEY")
 PAYTRAQ_API_TOKEN = os.getenv("PAYTRAQ_API_TOKEN")
+
+# cik deep skenējam ref režīmā (lai nav bezgalīgi lēns)
+REF_SCAN_LIMIT = int(os.getenv("REF_SCAN_LIMIT", "250"))
 
 
 def _github_headers():
@@ -36,11 +39,9 @@ def _github_put_state(last_processed_id: int, in_progress_id: Optional[int]):
     return r.status_code, r.text
 
 
-def _paytraq_sales_list(extra_params: Optional[dict] = None):
+def _paytraq_sales_list():
     url = f"{PAYTRAQ_BASE_URL}/api/sales"
     params = {"APIKey": PAYTRAQ_API_KEY, "APIToken": PAYTRAQ_API_TOKEN}
-    if isinstance(extra_params, dict):
-        params.update(extra_params)
     r = requests.get(url, params=params, timeout=40)
     return r.status_code, r.text
 
@@ -52,13 +53,13 @@ def _paytraq_sale_xml_by_id(doc_id: int):
     return r.status_code, r.text
 
 
-def _extract_doc_id_from_sales_xml(sales_xml: str):
+def _extract_doc_id_from_sales_xml(sales_xml: str) -> List[int]:
     try:
         root = ET.fromstring(sales_xml)
     except Exception:
         return []
 
-    ids = []
+    ids: List[int] = []
     for el in root.findall(".//DocumentID"):
         if el is not None and el.text:
             t = el.text.strip()
@@ -67,19 +68,7 @@ def _extract_doc_id_from_sales_xml(sales_xml: str):
     return ids
 
 
-def _doc_ref_from_sale_xml(sale_xml: str):
-    try:
-        root = ET.fromstring(sale_xml)
-    except Exception:
-        return None
-    el = root.find("./Header/Document/DocumentRef")
-    if el is None or not el.text:
-        return None
-    t = el.text.strip()
-    return t if t else None
-
-
-def _doc_date_from_sale_xml(sale_xml: str):
+def _doc_date_from_sale_xml(sale_xml: str) -> Optional[str]:
     try:
         root = ET.fromstring(sale_xml)
     except Exception:
@@ -91,8 +80,34 @@ def _doc_date_from_sale_xml(sale_xml: str):
     return t if t else None
 
 
+def _all_refs_from_sale_xml(sale_xml: str) -> Set[str]:
+    """
+    Atgriež VISAS ref vērtības, kuras šajā sale dokumentā var parādīties:
+      1) Header/Document/DocumentRef  (piem. ALE xxxx)
+      2) jebkurš .../DocumentLink/DocumentRef (pasūtījumi, piegādes, maksājumi utt.)
+    """
+    refs: Set[str] = set()
+    try:
+        root = ET.fromstring(sale_xml)
+    except Exception:
+        return refs
+
+    # 1) galvenais DocumentRef
+    el = root.find("./Header/Document/DocumentRef")
+    if el is not None and el.text and el.text.strip():
+        refs.add(el.text.strip())
+
+    # 2) visi DocumentLink/DocumentRef (OrderReference, MovementReference, Payments, utt.)
+    for el2 in root.findall(".//DocumentLink/DocumentRef"):
+        if el2 is not None and el2.text:
+            t = el2.text.strip()
+            if t:
+                refs.add(t)
+
+    return refs
+
+
 def _set_idle(ctx: dict, picked_by: str):
-    # Nothing new: do NOT error, just stop pipeline
     ctx["has_next_document"] = False
     ctx["next_document_id"] = None
     ctx["picked_by"] = picked_by
@@ -111,8 +126,12 @@ def run(ctx: dict):
       - Process OLDEST -> NEWEST.
       - Normal mode: next_id = min([id for id in sales_ids if id > last_processed_id])
       - Override by date/doc_ref: pick OLDEST match (min id) so date start walks forward.
-      - NEW: Override by document_id (FAST PATH): do NOT scan all docs; just set next_document_id directly.
+      - Override by document_id (FAST PATH): do NOT scan all docs; just set next_document_id directly.
       - If nothing new: return status=ok + idle=true (no pipeline error).
+
+    FIX:
+      - document_ref tagad tiek meklēts ne tikai Header/Document/DocumentRef,
+        bet arī visos .//DocumentLink/DocumentRef (PAS/PIEG/M-... u.c.).
     """
     override_ref = ctx.get("document_ref") or ctx.get("doc_ref") or ctx.get("override_document_ref")
     override_date = ctx.get("date") or ctx.get("override_date")
@@ -120,7 +139,7 @@ def run(ctx: dict):
     date_to = ctx.get("date_to")
     skip_state_update = bool(ctx.get("skip_state_update"))
 
-    # FAST OVERRIDE BY DOCUMENT ID (same principle as normal loop: no scanning)
+    # FAST OVERRIDE BY DOCUMENT ID
     override_id = ctx.get("document_id") or ctx.get("override_document_id") or ctx.get("force_document_id")
     if override_id is not None:
         try:
@@ -138,33 +157,7 @@ def run(ctx: dict):
 
         return ctx
 
-    # FAST OVERRIDE BY DOCUMENT REF (NO SCAN) - only when no date filters
-    if isinstance(override_ref, str) and override_ref.strip() and not (override_date or date_from or date_to):
-        want_ref = override_ref.strip()
-        sc_ref, sales_xml_ref = _paytraq_sales_list(extra_params={"DocumentRef": want_ref})
-        ctx["paytraq_sales_status_code"] = sc_ref
-        if sc_ref != 200:
-            ctx["_trace"] = (ctx.get("_trace") or []) + [{"step02": f"paytraq sales list(ref) error {sc_ref}"}]
-            return ctx
-
-        ids_ref = _extract_doc_id_from_sales_xml(sales_xml_ref)
-        ctx["sales_count"] = len(ids_ref)
-        ctx["sales_ids"] = ids_ref[:100]  # debug visibility
-
-        if not ids_ref:
-            return _set_idle(ctx, picked_by="override_document_ref_fast_not_found")
-
-        chosen_id = min(int(x) for x in ids_ref)  # OLDEST match (same principle)
-        ctx["has_next_document"] = True
-        ctx["next_document_id"] = chosen_id
-        ctx["picked_by"] = "override_document_ref_fast"
-
-        if not skip_state_update:
-            ctx["in_progress_id"] = chosen_id
-
-        return ctx
-
-    # Sales list (normal behavior)
+    # Sales list
     sc, sales_xml = _paytraq_sales_list()
     ctx["paytraq_sales_status_code"] = sc
     if sc != 200:
@@ -173,33 +166,32 @@ def run(ctx: dict):
 
     ids = _extract_doc_id_from_sales_xml(sales_xml)
     ctx["sales_count"] = len(ids)
-    ctx["sales_ids"] = ids[:100]  # debug visibility (order as received)
+    ctx["sales_ids"] = ids[:100]  # debug visibility
 
     if not ids:
         return _set_idle(ctx, picked_by="no_sales")
 
-    # Override by document_ref or date requires fetching per-doc XML (HEAVY; use only when needed)
+    # Override by document_ref or date (fetch per-doc XML)
     if override_ref or override_date or date_from or date_to:
-        want_ref = override_ref.strip() if isinstance(override_ref, str) else None
+        want_ref = override_ref.strip() if isinstance(override_ref, str) and override_ref.strip() else None
 
         # normalize date filters
         if override_date and not date_from and not date_to:
             date_from = override_date
             date_to = override_date
 
-        matches = {}  # doc_id -> sale_xml
-        for doc_id in ids:
+        # skenējam tikai daļu (lai nav kosmiski lēni)
+        scan_ids = ids[:REF_SCAN_LIMIT] if len(ids) > REF_SCAN_LIMIT else ids
+
+        matches: List[Tuple[int, str, Optional[str]]] = []  # (doc_id, sale_xml, matched_ref)
+        for doc_id in scan_ids:
             sc2, sale_xml = _paytraq_sale_xml_by_id(int(doc_id))
             if sc2 != 200:
                 continue
 
-            ref = _doc_ref_from_sale_xml(sale_xml)
             dd = _doc_date_from_sale_xml(sale_xml)
 
-            ref_ok = True
-            if want_ref:
-                ref_ok = (ref == want_ref)
-
+            # date filtrs
             date_ok = True
             if date_from and date_to and dd:
                 date_ok = (date_from <= dd <= date_to)
@@ -210,17 +202,34 @@ def run(ctx: dict):
             elif (date_from or date_to) and not dd:
                 date_ok = False
 
-            if ref_ok and date_ok:
-                matches[int(doc_id)] = sale_xml
+            if not date_ok:
+                continue
+
+            # ref filtrs (JA ir)
+            matched_ref = None
+            if want_ref:
+                all_refs = _all_refs_from_sale_xml(sale_xml)
+                if want_ref in all_refs:
+                    matched_ref = want_ref
+                else:
+                    continue
+
+            matches.append((int(doc_id), sale_xml, matched_ref))
 
         if not matches:
-            return _set_idle(ctx, picked_by="override_ref_or_date")
+            ctx["ref_scan_limit"] = REF_SCAN_LIMIT
+            return _set_idle(ctx, picked_by="override_ref_or_date_not_found")
 
-        chosen_id = min(matches.keys())  # OLDEST match
+        # OLDEST match (min id)
+        matches.sort(key=lambda x: x[0])
+        chosen_id, chosen_xml, matched_ref = matches[0]
+
         ctx["has_next_document"] = True
         ctx["next_document_id"] = int(chosen_id)
         ctx["picked_by"] = "override_ref_or_date"
-        ctx["paytraq_full_xml"] = matches[chosen_id]
+        ctx["paytraq_full_xml"] = chosen_xml
+        if matched_ref:
+            ctx["document_ref_matched"] = matched_ref
 
         if not skip_state_update:
             ctx["in_progress_id"] = int(chosen_id)
@@ -240,13 +249,13 @@ def run(ctx: dict):
     last_processed_id = int(last_processed_id) if last_processed_id is not None else None
 
     if last_processed_id is None:
-        next_id = min(ids)  # start from OLDEST if nothing set
+        next_id = min(ids)
     else:
         candidates = [int(d) for d in ids if int(d) > int(last_processed_id)]
         next_id = min(candidates) if candidates else None
 
     if not next_id:
-        return _set_idle(ctx, picked_by="normal_after_last_processed")
+        return _set_idle(ctx, picked_by="normal_after_last_processed_none")
 
     ctx["next_document_id"] = int(next_id)
     ctx["has_next_document"] = True
