@@ -1,0 +1,275 @@
+{
+  "payload_meta": {
+    "doc_id": 15691949,
+    "document_ref": "ALE 2601189",
+    "xml_len": 8129,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66880,
+    "title": "M-860325-30219 _ ALE 2601189",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15691949,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», melnā krāsā, 50 gb., XL, 50 gb, FM270708M [FM270708M]",
+        "code": "FM270708M",
+        "quantity": 2.0,
+        "unit_price": 7.02,
+        "gross_unit_price": 8.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», Oranžā krāsā, 50 gb., M, 50 gb, FM270755M [FM270755M]",
+        "code": "FM270755M",
+        "quantity": 1.0,
+        "unit_price": 7.02,
+        "gross_unit_price": 8.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vienreizlietojamie priekšauti uz ruļļa, zilā krāsā, 15my | LDPE N190, 75X125 cm [ROLL.I.75/125 B/4]",
+        "code": "ROLL.I.75/125 B/4",
+        "quantity": 1.0,
+        "unit_price": 11.28,
+        "gross_unit_price": 13.65,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 5
+    },
+    "products_attached": [
+      {
+        "product_id": 7153,
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», melnā krāsā, 50 gb., XL, 50 gb, FM270708M [FM270708M]",
+        "quantity": 2.0,
+        "src_unit_price_net": 7.02,
+        "src_gross_unit_price": 8.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 8.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1831
+      },
+      {
+        "product_id": 7154,
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», Oranžā krāsā, 50 gb., M, 50 gb, FM270755M [FM270755M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 7.02,
+        "src_gross_unit_price": 8.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 8.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1832
+      },
+      {
+        "product_id": 7155,
+        "name": "Vienreizlietojamie priekšauti uz ruļļa, zilā krāsā, 15my | LDPE N190, 75X125 cm [ROLL.I.75/125 B/4]",
+        "quantity": 1.0,
+        "src_unit_price_net": 11.28,
+        "src_gross_unit_price": 13.65,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 13.65,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1833
+      },
+      {
+        "product_id": 7111,
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1834
+      },
+      {
+        "product_id": 7104,
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
+        "quantity": 1.0,
+        "src_unit_price_net": 14.87,
+        "src_gross_unit_price": 17.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 17.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1835
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», melnā krāsā, 50 gb., XL, 50 gb, FM270708M [FM270708M]",
+        "id": 7153,
+        "reason": "not_found"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», Oranžā krāsā, 50 gb., M, 50 gb, FM270755M [FM270755M]",
+        "id": 7154,
+        "reason": "not_found"
+      },
+      {
+        "name": "Vienreizlietojamie priekšauti uz ruļļa, zilā krāsā, 15my | LDPE N190, 75X125 cm [ROLL.I.75/125 B/4]",
+        "id": 7155,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 872301,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 178,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kundziņu salas SIA",
+        "email": "ilze.grasmane@gmail.com",
+        "phone": "+37129339977",
+        "regnr": "40103846054",
+        "vatnr": "LV40103846054",
+        "country": "LV",
+        "legal_address_formatted": "Kundziņsala, Vidriži, LV4013, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103846054",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "ilze.grasmane@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "ilze.grasmane@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37129339977"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103846054"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103846054"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kundziņsala, Vidriži, LV4013, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kundziņsala, Vidriži, LV4013, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66880,
+      "org_id": 178,
+      "found_by": "email",
+      "person_id": 178,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "ilze.grasmane@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66880,
+        "document_id": 15691949
+      },
+      "message_id": "17982791396256043"
+    }
+  }
+}
