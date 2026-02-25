@@ -1,0 +1,285 @@
+{
+  "payload_meta": {
+    "doc_id": 15697676,
+    "document_ref": "M-860325-30281",
+    "xml_len": 6534,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66919,
+    "title": "PT 15697676 M-860325-30281",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15697676,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "Vienreizlietojamās cepurītes (berete) «Bettina Light», zila N100, 53 cm, FM12609 [FM12609]",
+        "code": "FM12609",
+        "quantity": 3.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "STRONG 50 hospitālie ruļļi [870086]",
+        "code": "870086",
+        "quantity": 1.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]",
+        "code": "SZO25005S",
+        "quantity": 2.0,
+        "unit_price": 0.82,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 6
+    },
+    "products_attached": [
+      {
+        "product_id": 7197,
+        "name": "Vienreizlietojamās cepurītes (berete) «Bettina Light», zila N100, 53 cm, FM12609 [FM12609]",
+        "quantity": 3.0,
+        "src_unit_price_net": 3.71,
+        "src_gross_unit_price": 4.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1999
+      },
+      {
+        "product_id": 7198,
+        "name": "STRONG 50 hospitālie ruļļi [870086]",
+        "quantity": 1.0,
+        "src_unit_price_net": 4.95,
+        "src_gross_unit_price": 5.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2000
+      },
+      {
+        "product_id": 7199,
+        "name": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]",
+        "quantity": 2.0,
+        "src_unit_price_net": 0.82,
+        "src_gross_unit_price": 0.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 0.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2001
+      },
+      {
+        "product_id": 7108,
+        "name": "Singclean siekalu tests exp12/25 [sing1225s]",
+        "quantity": 4.0,
+        "src_unit_price_net": 0.7,
+        "src_gross_unit_price": 0.85,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 0.85,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2002
+      },
+      {
+        "product_id": 7200,
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XL izmērs  [RNBCXL10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2003
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2004
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Vienreizlietojamās cepurītes (berete) «Bettina Light», zila N100, 53 cm, FM12609 [FM12609]",
+        "id": 7197,
+        "reason": "not_found"
+      },
+      {
+        "name": "STRONG 50 hospitālie ruļļi [870086]",
+        "id": 7198,
+        "reason": "not_found"
+      },
+      {
+        "name": "PLASTIplast Adhesive fabric tape, 2,5cm x 5m_A12 [SZO25005S]",
+        "id": 7199,
+        "reason": "not_found"
+      },
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XL izmērs  [RNBCXL10003]",
+        "id": 7200,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1199452,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9423,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Ligita Brežinska",
+        "email": "maksmorics9@inbox.lv",
+        "phone": "26623677",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Mežrozīšu iela 26-29, Riga, 1016, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "maksmorics9@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "maksmorics9@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26623677"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Mežrozīšu iela 26-29, Riga, 1016, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Mežrozīšu iela 26-29, Riga, 1016, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66919,
+      "org_id": 9423,
+      "found_by": "email",
+      "person_id": 10895,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "maksmorics9@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66919,
+        "document_id": 15697676
+      },
+      "message_id": "17983270124229054"
+    }
+  }
+}
