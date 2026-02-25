@@ -1,0 +1,244 @@
+{
+  "payload_meta": {
+    "doc_id": 15691326,
+    "document_ref": "M-860325-30252",
+    "xml_len": 5081,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66867,
+    "title": "PT 15691326 M-860325-30252",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15691326,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "NITRYLEX PF PINK, M izm. Med cimdi [3604-3]",
+        "code": "3604-3",
+        "quantity": 6.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
+        "code": "FOL-CPE/B/22",
+        "quantity": 2.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]",
+        "code": "FM29175M",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 4
+    },
+    "products_attached": [
+      {
+        "product_id": 7143,
+        "name": "NITRYLEX PF PINK, M izm. Med cimdi [3604-3]",
+        "quantity": 6.0,
+        "src_unit_price_net": 4.62,
+        "src_gross_unit_price": 5.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1796
+      },
+      {
+        "product_id": 7109,
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
+        "quantity": 2.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1797
+      },
+      {
+        "product_id": 7142,
+        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1798
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1799
+      }
+    ],
+    "products_created": [
+      {
+        "name": "NITRYLEX PF PINK, M izm. Med cimdi [3604-3]",
+        "id": 7143,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 923949,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 10218,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Viktorija Šarigina",
+        "email": "victorijaza@gmail.com",
+        "phone": "+37125612430",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Atbrīvošanas aleja 163A, Rēzekne, 4601, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "victorijaza@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "victorijaza@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37125612430"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Atbrīvošanas aleja 163A, Rēzekne, 4601, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Atbrīvošanas aleja 163A, Rēzekne, 4601, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66867,
+      "org_id": 10218,
+      "found_by": "email",
+      "person_id": 13596,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "victorijaza@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66867,
+        "document_id": 15691326
+      },
+      "message_id": "17982691206370532"
+    }
+  }
+}
