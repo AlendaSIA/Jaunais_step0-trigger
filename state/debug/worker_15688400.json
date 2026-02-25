@@ -1,7 +1,7 @@
 {
   "payload_meta": {
     "doc_id": 15688400,
-    "document_ref": "PAS/0226/00034",
+    "document_ref": "ALE 2601173",
     "xml_len": 7906,
     "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
   },
@@ -13,9 +13,9 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
-    "deal_id": 66840,
-    "title": "PT 15688400 PAS/0226/00034",
+    "status": "updated",
+    "deal_id": 66839,
+    "title": "PT 15688400 ALE 2601173",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -90,73 +90,38 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 5
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7105,
-        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.3,
-        "src_gross_unit_price": 3.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1737
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]"
       },
       {
         "product_id": 7118,
-        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]",
-        "quantity": 1.0,
-        "src_unit_price_net": 2.97,
-        "src_gross_unit_price": 3.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1738
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]"
       },
       {
         "product_id": 7119,
-        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.54,
-        "src_gross_unit_price": 5.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1739
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]"
       },
       {
         "product_id": 7120,
-        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.86,
-        "src_gross_unit_price": 2.25,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.25,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1740
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 2.39,
-        "src_gross_unit_price": 2.89,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.89,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1741
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
     "products_created": [],
@@ -219,7 +184,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 66840,
+      "deal_id": 66839,
       "org_id": 4682,
       "found_by": "email",
       "person_id": 4616,
@@ -242,10 +207,10 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 66840,
+        "deal_id": 66839,
         "document_id": 15688400
       },
-      "message_id": "17982636345405797"
+      "message_id": "17979451933433943"
     }
   }
 }
