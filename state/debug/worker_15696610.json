@@ -1,0 +1,277 @@
+{
+  "payload_meta": {
+    "doc_id": 15696610,
+    "document_ref": "PAS/0226/00033",
+    "xml_len": 6359,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66907,
+    "title": "PT 15696610 PAS/0226/00033",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15696610,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "CLINEX W3 FORTE 1L Sanitāro telpu mazgāšanas līdzeklis, 1000ML, 77-634 [77-634]",
+        "code": "77-634",
+        "quantity": 1.0,
+        "unit_price": 2.0,
+        "gross_unit_price": 2.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CLINEX W3 MULTI 1L [77-076]",
+        "code": "77-076",
+        "quantity": 1.0,
+        "unit_price": 2.0,
+        "gross_unit_price": 2.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "code": "JSS223",
+        "quantity": 2.0,
+        "unit_price": 3.79,
+        "gross_unit_price": 3.79,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 5
+    },
+    "products_attached": [
+      {
+        "product_id": 7179,
+        "name": "CLINEX W3 FORTE 1L Sanitāro telpu mazgāšanas līdzeklis, 1000ML, 77-634 [77-634]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.0,
+        "src_gross_unit_price": 2.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1949
+      },
+      {
+        "product_id": 7180,
+        "name": "CLINEX W3 MULTI 1L [77-076]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.0,
+        "src_gross_unit_price": 2.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1950
+      },
+      {
+        "product_id": 7181,
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "quantity": 2.0,
+        "src_unit_price_net": 3.79,
+        "src_gross_unit_price": 3.79,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.79,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1951
+      },
+      {
+        "product_id": 7182,
+        "name": "HDPE 25/30L atkritumu maisi, 12mkr, melni, 20m/rullī [25-021]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.0,
+        "src_gross_unit_price": 1.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1952
+      },
+      {
+        "product_id": 7183,
+        "name": "LDPE 70/75L atkritumu maisi 50mikr 10m/rullī [PP25-114]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.0,
+        "src_gross_unit_price": 1.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1953
+      }
+    ],
+    "products_created": [
+      {
+        "name": "CLINEX W3 FORTE 1L Sanitāro telpu mazgāšanas līdzeklis, 1000ML, 77-634 [77-634]",
+        "id": 7179,
+        "reason": "not_found"
+      },
+      {
+        "name": "CLINEX W3 MULTI 1L [77-076]",
+        "id": 7180,
+        "reason": "not_found"
+      },
+      {
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "id": 7181,
+        "reason": "not_found"
+      },
+      {
+        "name": "HDPE 25/30L atkritumu maisi, 12mkr, melni, 20m/rullī [25-021]",
+        "id": 7182,
+        "reason": "not_found"
+      },
+      {
+        "name": "LDPE 70/75L atkritumu maisi 50mikr 10m/rullī [PP25-114]",
+        "id": 7183,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 617942,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 1087,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "RAIVIS PARAUGI",
+        "email": "info@tiktik.lv",
+        "phone": "26711822",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Atmodas iela 86-41, Jelgava, 3007, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "info@tiktik.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "info@tiktik.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26711822"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Atmodas iela 86-41, Jelgava, 3007, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Atmodas iela 86-41, Jelgava, 3007, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66907,
+      "org_id": 1087,
+      "found_by": "email",
+      "person_id": 10714,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "info@tiktik.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66907,
+        "document_id": 15696610
+      },
+      "message_id": "17983071865566176"
+    }
+  }
+}
