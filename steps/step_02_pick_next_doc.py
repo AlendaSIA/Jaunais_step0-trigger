@@ -36,9 +36,11 @@ def _github_put_state(last_processed_id: int, in_progress_id: Optional[int]):
     return r.status_code, r.text
 
 
-def _paytraq_sales_list():
+def _paytraq_sales_list(extra_params: Optional[dict] = None):
     url = f"{PAYTRAQ_BASE_URL}/api/sales"
     params = {"APIKey": PAYTRAQ_API_KEY, "APIToken": PAYTRAQ_API_TOKEN}
+    if isinstance(extra_params, dict):
+        params.update(extra_params)
     r = requests.get(url, params=params, timeout=40)
     return r.status_code, r.text
 
@@ -130,6 +132,32 @@ def run(ctx: dict):
         ctx["has_next_document"] = True
         ctx["next_document_id"] = chosen_id
         ctx["picked_by"] = "override_document_id"
+
+        if not skip_state_update:
+            ctx["in_progress_id"] = chosen_id
+
+        return ctx
+
+    # FAST OVERRIDE BY DOCUMENT REF (NO SCAN) - only when no date filters
+    if isinstance(override_ref, str) and override_ref.strip() and not (override_date or date_from or date_to):
+        want_ref = override_ref.strip()
+        sc_ref, sales_xml_ref = _paytraq_sales_list(extra_params={"DocumentRef": want_ref})
+        ctx["paytraq_sales_status_code"] = sc_ref
+        if sc_ref != 200:
+            ctx["_trace"] = (ctx.get("_trace") or []) + [{"step02": f"paytraq sales list(ref) error {sc_ref}"}]
+            return ctx
+
+        ids_ref = _extract_doc_id_from_sales_xml(sales_xml_ref)
+        ctx["sales_count"] = len(ids_ref)
+        ctx["sales_ids"] = ids_ref[:100]  # debug visibility
+
+        if not ids_ref:
+            return _set_idle(ctx, picked_by="override_document_ref_fast_not_found")
+
+        chosen_id = min(int(x) for x in ids_ref)  # OLDEST match (same principle)
+        ctx["has_next_document"] = True
+        ctx["next_document_id"] = chosen_id
+        ctx["picked_by"] = "override_document_ref_fast"
 
         if not skip_state_update:
             ctx["in_progress_id"] = chosen_id
