@@ -1,0 +1,203 @@
+{
+  "payload_meta": {
+    "doc_id": 15691830,
+    "document_ref": "ALE 2601188",
+    "xml_len": 5224,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66879,
+    "title": "ALE 2601188",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15691830,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
+        "code": "FOL-CPE/B/22",
+        "quantity": 22.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7109,
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
+        "quantity": 22.0,
+        "src_unit_price_net": 1.64,
+        "src_gross_unit_price": 1.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1829
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1830
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1197959,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 13973,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA Swastha",
+        "email": "oksanabolta@inbox.lv",
+        "phone": "20416720",
+        "regnr": "40203434912",
+        "vatnr": "40203434912",
+        "country": "LV",
+        "legal_address_formatted": "Martas iela 9-22a, Rīga, LV - 1011, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203434912",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "oksanabolta@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "20416720"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40203434912"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "40203434912"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Martas iela 9-22a, Rīga, LV - 1011, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Martas iela 9-22a, Rīga, LV - 1011, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66879,
+      "org_id": 13973,
+      "found_by": "email",
+      "person_id": 15059,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "oksanabolta@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66879,
+        "document_id": 15691830
+      },
+      "message_id": "17983032178435114"
+    }
+  }
+}
