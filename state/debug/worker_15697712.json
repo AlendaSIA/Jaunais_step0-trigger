@@ -1,0 +1,228 @@
+{
+  "payload_meta": {
+    "doc_id": 15697712,
+    "document_ref": "ALE 2601209",
+    "xml_len": 9276,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66906,
+    "title": "M-860325-30269 _ ALE 2601209",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15697712,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]",
+        "code": "SAFECARECOMBO",
+        "quantity": 6.0,
+        "unit_price": 2.47,
+        "gross_unit_price": 2.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , M, 100 gb, FM2705M [FM2705M]",
+        "code": "FM2705M",
+        "quantity": 1.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]",
+        "code": "RNBM10001",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7117,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]"
+      },
+      {
+        "product_id": 7113,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , M, 100 gb, FM2705M [FM2705M]"
+      },
+      {
+        "product_id": 7162,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+      },
+      {
+        "product_id": 7123,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]"
+      },
+      {
+        "product_id": 7177,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Ūdens izturīgu plāksteru komplekts AQUA PRO, 18 gb. dažāda izmēra plāksteri, ZARYS-VH-ZAQ [ZARYS-VH-ZAQ]"
+      },
+      {
+        "product_id": 7178,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Bros odu atbaidīšanas līdzeklis bērniem 50 ml [TR209547]"
+      },
+      {
+        "product_id": 7107,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 925861,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 10247,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Laine Brice -Trūbiņa",
+        "email": "laine.brice@inbox.lv",
+        "phone": "26606992",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Kadaga 13 -62, Kadaga, Ādažu novads, Ādažu pagasts, 2103, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "laine.brice@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "laine.brice@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26606992"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kadaga 13 -62, Kadaga, Ādažu novads, Ādažu pagasts, 2103, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kadaga 13 -62, Kadaga, Ādažu novads, Ādažu pagasts, 2103, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66906,
+      "org_id": 10247,
+      "found_by": "email",
+      "person_id": 11578,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "laine.brice@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66906,
+        "document_id": 15697712
+      },
+      "message_id": "17983102397521899"
+    }
+  }
+}
