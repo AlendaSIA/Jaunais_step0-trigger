@@ -1,0 +1,331 @@
+{
+  "payload_meta": {
+    "doc_id": 15695611,
+    "document_ref": "ALE 2601204",
+    "xml_len": 10059,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66901,
+    "title": "PT 15695611 ALE 2601204",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15695611,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 9,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNBXL10001]",
+        "code": "RNBXL10001",
+        "quantity": 30.0,
+        "unit_price": 2.05,
+        "gross_unit_price": 2.05,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]",
+        "code": "RNBM10001",
+        "quantity": 50.0,
+        "unit_price": 2.05,
+        "gross_unit_price": 2.05,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, L, 100 gb  [ZZ_BERRY_L]",
+        "code": "ZZ_BERRY_L",
+        "quantity": 50.0,
+        "unit_price": 2.05,
+        "gross_unit_price": 2.05,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 8
+    },
+    "products_attached": [
+      {
+        "product_id": 7162,
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]",
+        "quantity": 30.0,
+        "src_unit_price_net": 2.05,
+        "src_gross_unit_price": 2.05,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.05,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1913
+      },
+      {
+        "product_id": 7162,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+      },
+      {
+        "product_id": 7169,
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, L, 100 gb  [ZZ_BERRY_L]",
+        "quantity": 50.0,
+        "src_unit_price_net": 2.05,
+        "src_gross_unit_price": 2.05,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.05,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1914
+      },
+      {
+        "product_id": 7170,
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, S, 100 gb  [ZZ_BERRY_S]",
+        "quantity": 20.0,
+        "src_unit_price_net": 2.05,
+        "src_gross_unit_price": 2.05,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.05,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1915
+      },
+      {
+        "product_id": 7109,
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
+        "quantity": 10.0,
+        "src_unit_price_net": 1.0,
+        "src_gross_unit_price": 1.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1916
+      },
+      {
+        "product_id": 7171,
+        "name": "Priekšauti Berry zili 20 mic N100  [Berryprblu20]",
+        "quantity": 5.0,
+        "src_unit_price_net": 4.5,
+        "src_gross_unit_price": 4.5,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.5,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1917
+      },
+      {
+        "product_id": 7172,
+        "name": "Berete, vienreizlietojama cepurīte, N100 Balta, Berry [BerbeW]",
+        "quantity": 30.0,
+        "src_unit_price_net": 2.6,
+        "src_gross_unit_price": 2.6,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.6,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1918
+      },
+      {
+        "product_id": 7173,
+        "name": "Halās vienreizlietojams XXL, Zils, N10 [HYhalZilN10]",
+        "quantity": 9.0,
+        "src_unit_price_net": 7.0,
+        "src_gross_unit_price": 7.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1919
+      },
+      {
+        "product_id": 7174,
+        "name": "Halās ar velcro vienreizlietojams XXXL, zils, N10 [HYHALZILN10XXXL]",
+        "quantity": 9.0,
+        "src_unit_price_net": 7.0,
+        "src_gross_unit_price": 7.0,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1920
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, L, 100 gb  [ZZ_BERRY_L]",
+        "id": 7169,
+        "reason": "not_found"
+      },
+      {
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, S, 100 gb  [ZZ_BERRY_S]",
+        "id": 7170,
+        "reason": "not_found"
+      },
+      {
+        "name": "Priekšauti Berry zili 20 mic N100  [Berryprblu20]",
+        "id": 7171,
+        "reason": "not_found"
+      },
+      {
+        "name": "Berete, vienreizlietojama cepurīte, N100 Balta, Berry [BerbeW]",
+        "id": 7172,
+        "reason": "not_found"
+      },
+      {
+        "name": "Halās vienreizlietojams XXL, Zils, N10 [HYhalZilN10]",
+        "id": 7173,
+        "reason": "not_found"
+      },
+      {
+        "name": "Halās ar velcro vienreizlietojams XXXL, zils, N10 [HYHALZILN10XXXL]",
+        "id": 7174,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 893316,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9809,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "A/S SMILTENES PIENS",
+        "email": "velnav@smiltenespiens.lv",
+        "phone": null,
+        "regnr": "43903002031",
+        "vatnr": "LV43903002031",
+        "country": "LV",
+        "legal_address_formatted": "Mūrnieku iela 2, Smiltene, Smiltenes nov.,, 4729, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "43903002031",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "velnav@smiltenespiens.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "velnav@smiltenespiens.lv"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "43903002031"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV43903002031"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Mūrnieku iela 2, Smiltene, Smiltenes nov.,, 4729, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Mūrnieku iela 2, Smiltene, Smiltenes nov.,, 4729, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66901,
+      "org_id": 9809,
+      "found_by": "email",
+      "person_id": 11212,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "velnav@smiltenespiens.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66901,
+        "document_id": 15695611
+      },
+      "message_id": "17984686996941226"
+    }
+  }
+}
