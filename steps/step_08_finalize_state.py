@@ -55,10 +55,48 @@ def _github_put_text(token: str, path: str, text: str, message: str):
     return r.json() if r.content else None, r.status_code, None
 
 
+def _worker_all_steps_ok(ctx: dict) -> bool:
+    """
+    Auto-ACK only if worker truly completed everything:
+      - worker_status_code == 200
+      - worker_response_json.status in {"created","updated"}
+      - worker_response_json._trace exists and every item has ok == True
+    """
+    try:
+        code = int(ctx.get("worker_status_code") or 0)
+    except Exception:
+        code = 0
+    if code != 200:
+        return False
+
+    wrj = ctx.get("worker_response_json") or {}
+    if not isinstance(wrj, dict):
+        return False
+
+    status = (wrj.get("status") or "").strip().lower()
+    if status not in ("created", "updated"):
+        return False
+
+    tr = wrj.get("_trace") or []
+    if not isinstance(tr, list) or not tr:
+        return False
+
+    for it in tr:
+        if not isinstance(it, dict):
+            return False
+        if it.get("ok") is not True:
+            return False
+
+    return True
+
+
 def run(ctx: dict):
     """
     Step08: finalize state.
-    Ja ctx["pipedrive_ack"] True -> ieraksta last_processed_id un notīra in_progress_id (0).
+
+    NEW:
+      - No manual ack required.
+      - Finalize if worker_all_steps_ok(ctx) == True.
 
     Ja ctx["skip_state_update"] True -> neraksta neko (test mode).
     """
@@ -73,8 +111,11 @@ def run(ctx: dict):
         ctx["github_finalize_last_status"] = "skipped(test_mode)"
         return ctx
 
-    ack = bool(ctx.get("pipedrive_ack"))
+    ack = _worker_all_steps_ok(ctx)
     doc_id = ctx.get("in_progress_id") or ctx.get("next_document_id")
+
+    # Debug (palīdzēs redzēt kāpēc finalize notika/nenotika)
+    ctx["github_finalize_ack"] = ack
 
     if not ack or not doc_id:
         ctx["github_finalize_clear_status"] = "skipped(no_ack_or_no_doc)"
