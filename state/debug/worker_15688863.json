@@ -97,13 +97,13 @@
     "products_created": [],
     "activities_created": [],
     "step_04": {
-      "ok": false,
+      "ok": true,
       "mode": "paytraq_direct",
       "client_id": 626719,
-      "found_by": null,
-      "org_action": null,
-      "org_id": null,
-      "attached_to_deal": false,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12279,
+      "attached_to_deal": true,
       "paytraq_fields": {
         "name": "Svetlana Batarāga",
         "email": "bataraga2727@gmail.com",
@@ -113,15 +113,49 @@
         "country": "LV",
         "legal_address_formatted": "Bērzu iela 5, Izvalta, Izvaltas pagasti, LV-5652, LV"
       },
-      "pipedrive_search": {},
-      "pipedrive_update_fields": {},
-      "note": "ERROR: HTTPSConnectionPool(host='api.pipedrive.com', port=443): Max retries exceeded with url: /v1/organizations/search?api_token=d93f43e2c35a60cc21c8d229cd86bf9f8e59c370&term=bataraga2727%40gmail.com&fields=custom_fields&exact_match=1&limit=10 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "bataraga2727@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "bataraga2727@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "25906930"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Bērzu iela 5, Izvalta, Izvaltas pagasti, LV-5652, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Bērzu iela 5, Izvalta, Izvaltas pagasti, LV-5652, LV"
+        }
+      },
+      "note": null
     },
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
       "deal_id": 66848,
-      "org_id": null,
+      "org_id": 12279,
       "found_by": "email",
       "person_id": 13455,
       "attached_to_deal": true,
@@ -146,7 +180,7 @@
         "deal_id": 66848,
         "document_id": 15688863
       },
-      "message_id": "17981660726277652"
+      "message_id": "17981596579027109"
     }
   }
 }
