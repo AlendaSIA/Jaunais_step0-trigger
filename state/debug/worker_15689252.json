@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66852,
     "title": "PT 15689252 M-860325-30244",
     "_trace": [
@@ -66,36 +66,23 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 1
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7126,
-        "name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]",
-        "quantity": 6.0,
-        "src_unit_price_net": 30.54,
-        "src_gross_unit_price": 36.95,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 36.95,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1759
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]"
       }
     ],
-    "products_created": [
-      {
-        "name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]",
-        "id": 7126,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1104828,
-      "found_by": "email",
+      "found_by": "regnr",
       "org_action": "updated",
       "org_id": 12992,
       "attached_to_deal": true,
@@ -113,11 +100,6 @@
           {
             "by": "regnr",
             "term": "44103111851",
-            "found": false
-          },
-          {
-            "by": "email",
-            "term": "noliktava@labakaritdiena.lv",
             "found": true
           }
         ]
@@ -183,7 +165,7 @@
         "deal_id": 66852,
         "document_id": 15689252
       },
-      "message_id": "17981598199870857"
+      "message_id": "17981793148849989"
     }
   }
 }
