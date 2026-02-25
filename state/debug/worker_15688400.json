@@ -1,0 +1,267 @@
+{
+  "payload_meta": {
+    "doc_id": 15688400,
+    "document_ref": "ALE 2601173",
+    "xml_len": 7906,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66839,
+    "title": "PT 15688400 ALE 2601173",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15688400,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+        "code": "RNBWM10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]",
+        "code": "SUPREME/VB/M/100",
+        "quantity": 1.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]",
+        "code": "RNBMM10003",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 5
+    },
+    "products_attached": [
+      {
+        "product_id": 7105,
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1732
+      },
+      {
+        "product_id": 7118,
+        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.97,
+        "src_gross_unit_price": 3.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1733
+      },
+      {
+        "product_id": 7119,
+        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 4.54,
+        "src_gross_unit_price": 5.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1734
+      },
+      {
+        "product_id": 7120,
+        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.86,
+        "src_gross_unit_price": 2.25,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.25,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1735
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1736
+      }
+    ],
+    "products_created": [
+      {
+        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]",
+        "id": 7118,
+        "reason": "not_found"
+      },
+      {
+        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]",
+        "id": 7119,
+        "reason": "not_found"
+      },
+      {
+        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]",
+        "id": 7120,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 739156,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 4682,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Alena Mikulionak",
+        "email": "l.mikulenok@gmail.com",
+        "phone": "+37126512311",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Cidoniju Iela 42, Dreiliņi, Stopiņu novads, 2130, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "l.mikulenok@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "l.mikulenok@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37126512311"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Cidoniju Iela 42, Dreiliņi, Stopiņu novads, 2130, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Cidoniju Iela 42, Dreiliņi, Stopiņu novads, 2130, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66839,
+      "org_id": 4682,
+      "found_by": "email",
+      "person_id": 4616,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "l.mikulenok@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66839,
+        "document_id": 15688400
+      },
+      "message_id": "17981569845093065"
+    }
+  }
+}
