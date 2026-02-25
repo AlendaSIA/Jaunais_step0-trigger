@@ -1,0 +1,236 @@
+{
+  "payload_meta": {
+    "doc_id": 15690854,
+    "document_ref": "M-860325-30250",
+    "xml_len": 4333,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66865,
+    "title": "PT 15690854 M-860325-30250",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15690854,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "CHEMISEPT VIR+ 250ML dez.līdz. [PP65-812]",
+        "code": "PP65-812",
+        "quantity": 2.0,
+        "unit_price": 3.79,
+        "gross_unit_price": 4.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Dezinfekcijas salvetes BACTICIDE N200, 65-889 [65-334]",
+        "code": "65-334",
+        "quantity": 1.0,
+        "unit_price": 9.91,
+        "gross_unit_price": 11.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7139,
+        "name": "CHEMISEPT VIR+ 250ML dez.līdz. [PP65-812]",
+        "quantity": 2.0,
+        "src_unit_price_net": 3.79,
+        "src_gross_unit_price": 4.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1790
+      },
+      {
+        "product_id": 7140,
+        "name": "Dezinfekcijas salvetes BACTICIDE N200, 65-889 [65-334]",
+        "quantity": 1.0,
+        "src_unit_price_net": 9.91,
+        "src_gross_unit_price": 11.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 11.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1791
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1792
+      }
+    ],
+    "products_created": [
+      {
+        "name": "CHEMISEPT VIR+ 250ML dez.līdz. [PP65-812]",
+        "id": 7139,
+        "reason": "not_found"
+      },
+      {
+        "name": "Dezinfekcijas salvetes BACTICIDE N200, 65-889 [65-334]",
+        "id": 7140,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 739131,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 7607,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kira Voitova",
+        "email": "kira.v86@inbox.lv",
+        "phone": "26 751 468",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Auru Pag.kirpeni 1-5, Dobele, 3701, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "kira.v86@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "kira.v86@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26 751 468"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Auru Pag.kirpeni 1-5, Dobele, 3701, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Auru Pag.kirpeni 1-5, Dobele, 3701, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66865,
+      "org_id": 7607,
+      "found_by": "email",
+      "person_id": 8383,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kira.v86@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66865,
+        "document_id": 15690854
+      },
+      "message_id": "17981754527079440"
+    }
+  }
+}
