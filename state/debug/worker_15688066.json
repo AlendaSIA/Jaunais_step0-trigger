@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66836,
     "title": "PT 15688066 ALE 2601170",
     "_trace": [
@@ -78,43 +78,23 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7117,
-        "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]",
-        "quantity": 10.0,
-        "src_unit_price_net": 2.47,
-        "src_gross_unit_price": 2.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1730
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1731
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "Safe care, COMBO Covid-19 un gripas antigēna tests  [SAFECARECOMBO]",
-        "id": 7117,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
@@ -200,7 +180,7 @@
         "deal_id": 66836,
         "document_id": 15688066
       },
-      "message_id": "17643483238181869"
+      "message_id": "17981757953624610"
     }
   }
 }
