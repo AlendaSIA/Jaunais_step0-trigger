@@ -1,0 +1,285 @@
+{
+  "payload_meta": {
+    "doc_id": 15688629,
+    "document_ref": "ALE 2601175",
+    "xml_len": 8427,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66847,
+    "title": "PT 15688629 ALE 2601175",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15688629,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Katrin Plus, roku dvieļi loksnēs NonStop L3, 3-slāņu, 90 loksnes/pac, 21 gb. iepakojums [PP87099]",
+        "code": "PP87099",
+        "quantity": 3.0,
+        "unit_price": 54.85,
+        "gross_unit_price": 66.37,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CLINEX SCENT STICKS HIPNOTIC NIGHTS 45ml [77-802]",
+        "code": "77-802",
+        "quantity": 2.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]",
+        "code": "ZARYS-VH-ZKB",
+        "quantity": 6.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 5
+    },
+    "products_attached": [
+      {
+        "product_id": 7121,
+        "name": "Katrin Plus, roku dvieļi loksnēs NonStop L3, 3-slāņu, 90 loksnes/pac, 21 gb. iepakojums [PP87099]",
+        "quantity": 3.0,
+        "src_unit_price_net": 54.85,
+        "src_gross_unit_price": 66.37,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 66.37,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1752
+      },
+      {
+        "product_id": 7122,
+        "name": "CLINEX SCENT STICKS HIPNOTIC NIGHTS 45ml [77-802]",
+        "quantity": 2.0,
+        "src_unit_price_net": 4.95,
+        "src_gross_unit_price": 5.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1753
+      },
+      {
+        "product_id": 7123,
+        "name": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]",
+        "quantity": 6.0,
+        "src_unit_price_net": 1.64,
+        "src_gross_unit_price": 1.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1754
+      },
+      {
+        "product_id": 7124,
+        "name": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG [ZARYS-VH-ZKG]",
+        "quantity": 6.0,
+        "src_unit_price_net": 1.23,
+        "src_gross_unit_price": 1.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1755
+      },
+      {
+        "product_id": 7125,
+        "name": "WC KURMIS, Svaigums - tīrīšanas un dezinfekcijas gēls - 750ml [004044]",
+        "quantity": 12.0,
+        "src_unit_price_net": 1.89,
+        "src_gross_unit_price": 2.29,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.29,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1756
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Katrin Plus, roku dvieļi loksnēs NonStop L3, 3-slāņu, 90 loksnes/pac, 21 gb. iepakojums [PP87099]",
+        "id": 7121,
+        "reason": "not_found"
+      },
+      {
+        "name": "CLINEX SCENT STICKS HIPNOTIC NIGHTS 45ml [77-802]",
+        "id": 7122,
+        "reason": "not_found"
+      },
+      {
+        "name": "Plāksteru komplekts KIDS PRO BOYS, 16gb dažada izmēra plāksteri,  ZARYS-VH-ZKB [ZARYS-VH-ZKB]",
+        "id": 7123,
+        "reason": "not_found"
+      },
+      {
+        "name": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG [ZARYS-VH-ZKG]",
+        "id": 7124,
+        "reason": "not_found"
+      },
+      {
+        "name": "WC KURMIS, Svaigums - tīrīšanas un dezinfekcijas gēls - 750ml [004044]",
+        "id": 7125,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1126554,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13258,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA ”Ķīpsalas peldbaseins”",
+        "email": "martins@baseins.eu",
+        "phone": "26133612",
+        "regnr": "50003510191",
+        "vatnr": "LV50003510191",
+        "country": "LV",
+        "legal_address_formatted": "Ķīpsalas iela 5, Rīga, LV-1048, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "50003510191",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "martins@baseins.eu",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "martins@baseins.eu"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26133612"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "50003510191"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV50003510191"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Ķīpsalas iela 5, Rīga, LV-1048, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Ķīpsalas iela 5, Rīga, LV-1048, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66847,
+      "org_id": 13258,
+      "found_by": "email",
+      "person_id": 14380,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "martins@baseins.eu",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66847,
+        "document_id": 15688629
+      },
+      "message_id": "17981763352393896"
+    }
+  }
+}
