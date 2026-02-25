@@ -1,0 +1,184 @@
+{
+  "payload_meta": {
+    "doc_id": 15692567,
+    "document_ref": "ALE 2601191",
+    "xml_len": 4732,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66884,
+    "title": "ALE 2601191",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15692567,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Bahilas Overshoes for Hygomat | PE, 110 gb. [28509H ]",
+        "code": "28509H",
+        "quantity": 20.0,
+        "unit_price": 13.21,
+        "gross_unit_price": 15.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7158,
+        "name": "Bahilas Overshoes for Hygomat | PE, 110 gb. [28509H ] [28509H]",
+        "quantity": 20.0,
+        "src_unit_price_net": 13.21,
+        "src_gross_unit_price": 15.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 15.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1847
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Bahilas Overshoes for Hygomat | PE, 110 gb. [28509H ] [28509H]",
+        "id": 7158,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1191307,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 13897,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Saldus novada pašvaldība",
+        "email": "dzintars.siksna@saldus.lv",
+        "phone": "29406223",
+        "regnr": "90009114646",
+        "vatnr": "LV90009114646",
+        "country": "LV",
+        "legal_address_formatted": "Striķu iela 3, Saldus, Saldus nov., 3801, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "90009114646",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "dzintars.siksna@saldus.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29406223"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "90009114646"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV90009114646"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Striķu iela 3, Saldus, Saldus nov., 3801, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Striķu iela 3, Saldus, Saldus nov., 3801, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66884,
+      "org_id": 13897,
+      "found_by": "email",
+      "person_id": 14986,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "dzintars.siksna@saldus.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66884,
+        "document_id": 15692567
+      },
+      "message_id": "17983030965145924"
+    }
+  }
+}
