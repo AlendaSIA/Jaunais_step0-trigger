@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66854,
     "title": "PT 15689730 M-860325-30246",
     "_trace": [
@@ -90,74 +90,35 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 4
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7112,
-        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
-        "quantity": 2.0,
-        "src_unit_price_net": 4.12,
-        "src_gross_unit_price": 4.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1762
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
       },
       {
         "product_id": 7127,
-        "name": "Dezinfekcijas salvetes Chemisept Wipes N200, 65-889 [65-889]",
-        "quantity": 1.0,
-        "src_unit_price_net": 9.08,
-        "src_gross_unit_price": 10.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 10.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1763
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Dezinfekcijas salvetes Chemisept Wipes N200, 65-889 [65-889]"
       },
       {
         "product_id": 7128,
-        "name": "MIDOCID virsmu dezinf. līdz 1L [S008035]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.2,
-        "src_gross_unit_price": 6.29,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.29,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1764
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "MIDOCID virsmu dezinf. līdz 1L [S008035]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1765
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "Dezinfekcijas salvetes Chemisept Wipes N200, 65-889 [65-889]",
-        "id": 7127,
-        "reason": "not_found"
-      },
-      {
-        "name": "MIDOCID virsmu dezinf. līdz 1L [S008035]",
-        "id": 7128,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
@@ -243,7 +204,7 @@
         "deal_id": 66854,
         "document_id": 15689730
       },
-      "message_id": "17982632358383057"
+      "message_id": "17982610141219025"
     }
   }
 }
