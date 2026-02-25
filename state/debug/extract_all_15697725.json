@@ -1,0 +1,627 @@
+{
+  "document_id": 15697725,
+  "client_id": "1199348",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15697725"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2601210"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "1199348"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Ina Trama"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "22.36"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-30274, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "7043"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Latvijas Pasts"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "408677"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Ina Trama, 25579796"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Kuldīga - Gravas iela 1, Kuldīga, Kuldīgas nov., LV-3301"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "3301"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-25T05:57:56Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-25T05:58:49Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "1172817"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "S008035"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "MIDOCID virsmu dezinf. līdz 1L"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "MIDOCID virsmu dezinf. līdz 1L [S008035]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "6.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "18.87"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "3.49"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "22.36"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "18.48"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "3.88"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "22.36"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "18.48"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentID",
+      "value": "15696837"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
+      "value": "M-860325-30274"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "15697726"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0226/00549"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-02-24"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "22.36"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "18445340"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260224/70"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "15698272"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0226/00537"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "18444782"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260225/5"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "18444783"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260225/6"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1172817"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "S008035"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "MIDOCID virsmu dezinf. līdz 1L"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "MIDOCID virsmu dezinf. līdz 1L [S008035]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "18.87"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "S008035",
+      "item_name": "MIDOCID virsmu dezinf. līdz 1L",
+      "qty": "3.00",
+      "price": "6.29",
+      "line_total": "18.87",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "1199348",
+    "client_endpoint": "/api/client/1199348",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "1199348"
+      },
+      {
+        "field": "client/Name",
+        "value": "Ina Trama"
+      },
+      {
+        "field": "client/Email",
+        "value": "relaksacijaterapija@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "1"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Piltenes iela, Kuldīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "Y"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "25579796"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2026-02-24T19:58:06Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2026-02-24T19:58:06Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/1199348",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/1199348",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "408677"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "Ina Trama, 25579796"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Kuldīga - Gravas iela 1, Kuldīga, Kuldīgas nov., LV-3301"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Zip",
+        "value": "3301"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/1199348",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
