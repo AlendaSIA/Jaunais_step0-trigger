@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66871,
     "title": "PT 15691763 ALE 2601183",
     "_trace": [
@@ -90,47 +90,26 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 3
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7141,
-        "name": "Rozā  BERRY Nitrila cimdi, bez pūdera N100, S 100 gb [RR_Berry_S]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.54,
-        "src_gross_unit_price": 5.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1817
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Rozā  BERRY Nitrila cimdi, bez pūdera N100, S 100 gb [RR_Berry_S]"
       },
       {
         "product_id": 7142,
-        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.3,
-        "src_gross_unit_price": 3.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1818
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 2.06,
-        "src_gross_unit_price": 2.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 1819
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
     "products_created": [],
@@ -218,7 +197,7 @@
         "deal_id": 66871,
         "document_id": 15691763
       },
-      "message_id": "18398543701458022"
+      "message_id": "17982598631977767"
     }
   }
 }
