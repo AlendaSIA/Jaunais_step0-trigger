@@ -1,7 +1,7 @@
 {
   "payload_meta": {
     "doc_id": 15688400,
-    "document_ref": "ALE 2601173",
+    "document_ref": "PAS/0226/00034",
     "xml_len": 7906,
     "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
   },
@@ -14,8 +14,8 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 66839,
-    "title": "PT 15688400 ALE 2601173",
+    "deal_id": 66840,
+    "title": "PT 15688400 PAS/0226/00034",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -104,7 +104,7 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 1732
+        "added_id": 1737
       },
       {
         "product_id": 7118,
@@ -117,7 +117,7 @@
         "pipedrive_item_price": 3.59,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 1733
+        "added_id": 1738
       },
       {
         "product_id": 7119,
@@ -130,7 +130,7 @@
         "pipedrive_item_price": 5.49,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 1734
+        "added_id": 1739
       },
       {
         "product_id": 7120,
@@ -143,7 +143,7 @@
         "pipedrive_item_price": 2.25,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 1735
+        "added_id": 1740
       },
       {
         "product_id": 7107,
@@ -156,26 +156,10 @@
         "pipedrive_item_price": 2.89,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 1736
+        "added_id": 1741
       }
     ],
-    "products_created": [
-      {
-        "name": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]",
-        "id": 7118,
-        "reason": "not_found"
-      },
-      {
-        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, [RNBMM10003]",
-        "id": 7119,
-        "reason": "not_found"
-      },
-      {
-        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]",
-        "id": 7120,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
@@ -235,7 +219,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 66839,
+      "deal_id": 66840,
       "org_id": 4682,
       "found_by": "email",
       "person_id": 4616,
@@ -258,10 +242,10 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 66839,
+        "deal_id": 66840,
         "document_id": 15688400
       },
-      "message_id": "17981569845093065"
+      "message_id": "17982636345405797"
     }
   }
 }
