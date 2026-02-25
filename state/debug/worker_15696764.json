@@ -1,0 +1,235 @@
+{
+  "payload_meta": {
+    "doc_id": 15696764,
+    "document_ref": "M-860325-30271",
+    "xml_len": 4419,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66909,
+    "title": "PT 15696764 M-860325-30271",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15696764,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
+        "code": "RNBCL10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, L izmērs    [RNBWL10003]",
+        "code": "RNBWL10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7175,
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
+        "quantity": 3.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1958
+      },
+      {
+        "product_id": 7185,
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, L izmērs    [RNBWL10003]",
+        "quantity": 3.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1959
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1960
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, L izmērs    [RNBWL10003]",
+        "id": 7185,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 844546,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9166,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kristīne Šahurova",
+        "email": "kristine.sahurova@gmail.com",
+        "phone": "22110560",
+        "regnr": "05049010027",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Gravas iela 20, Ogres novads, Ogresgals, LV-5041, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "05049010027",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "kristine.sahurova@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "kristine.sahurova@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "22110560"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "05049010027"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Gravas iela 20, Ogres novads, Ogresgals, LV-5041, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Gravas iela 20, Ogres novads, Ogresgals, LV-5041, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66909,
+      "org_id": 9166,
+      "found_by": "email",
+      "person_id": 10622,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kristine.sahurova@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66909,
+        "document_id": 15696764
+      },
+      "message_id": "17983099549682481"
+    }
+  }
+}
