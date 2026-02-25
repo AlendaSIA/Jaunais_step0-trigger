@@ -1,0 +1,303 @@
+{
+  "payload_meta": {
+    "doc_id": 15697622,
+    "document_ref": "M-860325-30280",
+    "xml_len": 7093,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66918,
+    "title": "PT 15697622 M-860325-30280",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15697622,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, \tPastels abstrakts ,  [YT-55-PA]",
+        "code": "YT-55-PA",
+        "quantity": 1.0,
+        "unit_price": 6.19,
+        "gross_unit_price": 7.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  Pantera, 5cm X 5 metri [COPY] [YT-55-PP]",
+        "code": "YT-55-PP",
+        "quantity": 1.0,
+        "unit_price": 6.19,
+        "gross_unit_price": 7.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Rozā, YT-55-P",
+        "code": null,
+        "quantity": 1.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 7
+    },
+    "products_attached": [
+      {
+        "product_id": 7192,
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, \tPastels abstrakts ,  [YT-55-PA]",
+        "quantity": 1.0,
+        "src_unit_price_net": 6.19,
+        "src_gross_unit_price": 7.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1992
+      },
+      {
+        "product_id": 7193,
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  Pantera, 5cm X 5 metri [COPY] [YT-55-PP]",
+        "quantity": 1.0,
+        "src_unit_price_net": 6.19,
+        "src_gross_unit_price": 7.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1993
+      },
+      {
+        "product_id": 7194,
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Rozā, YT-55-P [YT-55-P]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1994
+      },
+      {
+        "product_id": 7195,
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Dzeltana, YT-55-Y [YT-55-Y]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1995
+      },
+      {
+        "product_id": 7196,
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, zaļā krāsā, 5cm X 5 metri [YT-55-G]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1996
+      },
+      {
+        "product_id": 7167,
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, ādas krāsa, 5cm X 5 metri, ZARYS-YT-55-S [ZARYS-YT-55-S]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1997
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 1998
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, \tPastels abstrakts ,  [YT-55-PA]",
+        "id": 7192,
+        "reason": "not_found"
+      },
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  Pantera, 5cm X 5 metri [COPY] [YT-55-PP]",
+        "id": 7193,
+        "reason": "not_found"
+      },
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Rozā, YT-55-P [YT-55-P]",
+        "id": 7194,
+        "reason": "not_found"
+      },
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Dzeltana, YT-55-Y [YT-55-Y]",
+        "id": 7195,
+        "reason": "not_found"
+      },
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, zaļā krāsā, 5cm X 5 metri [YT-55-G]",
+        "id": 7196,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1199448,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13984,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Виктория Тараскина",
+        "email": "sigaletova93@inbox.lv",
+        "phone": "22385507",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Ozolciema iela, 32/4-36, Riga, LV1058, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "sigaletova93@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "sigaletova93@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "22385507"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Ozolciema iela, 32/4-36, Riga, LV1058, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Ozolciema iela, 32/4-36, Riga, LV1058, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66918,
+      "org_id": 13984,
+      "found_by": "email",
+      "person_id": 15071,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "sigaletova93@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66918,
+        "document_id": 15697622
+      },
+      "message_id": "17984795460190840"
+    }
+  }
+}
