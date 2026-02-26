@@ -1,0 +1,236 @@
+{
+  "payload_meta": {
+    "doc_id": 15698063,
+    "document_ref": "ALE 2601215",
+    "xml_len": 9002,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66917,
+    "title": "M-860325-30279 _ ALE 2601215",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15698063,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+        "code": "RNBWM10003",
+        "quantity": 5.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "code": "RNBRM10003",
+        "quantity": 5.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
+        "code": "RNBCM10001",
+        "quantity": 5.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7105,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]"
+      },
+      {
+        "product_id": 7112,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      },
+      {
+        "product_id": 7137,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]"
+      },
+      {
+        "product_id": 7109,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]"
+      },
+      {
+        "product_id": 7205,
+        "name": "Belinno Z- salvetes 2 kārtas 100% celuloze, 1 paciņa, [JS2649]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.07,
+        "src_gross_unit_price": 1.29,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.29,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2014
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Belinno Z- salvetes 2 kārtas 100% celuloze, 1 paciņa, [JS2649]",
+        "id": 7205,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1043733,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2381,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Irina Barbuca",
+        "email": "skoromko.irina@gmail.com",
+        "phone": "29942965",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Dobeles šoseja 2a, Jelgava LV3001, Jelgava, LV3001, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "skoromko.irina@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "skoromko.irina@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29942965"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Dobeles šoseja 2a, Jelgava LV3001, Jelgava, LV3001, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Dobeles šoseja 2a, Jelgava LV3001, Jelgava, LV3001, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66917,
+      "org_id": 2381,
+      "found_by": "email",
+      "person_id": 2380,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "skoromko.irina@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66917,
+        "document_id": 15698063,
+        "client_id": 1043733
+      },
+      "message_id": "17991144787309365"
+    }
+  }
+}
