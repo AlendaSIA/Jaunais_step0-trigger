@@ -1,0 +1,235 @@
+{
+  "payload_meta": {
+    "doc_id": 15697995,
+    "document_ref": "ALE 2601214",
+    "xml_len": 10525,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66916,
+    "title": "M-860325-30278 _ ALE 2601214",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15697995,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., S, 100 gb, FM27068M [FM27068M]",
+        "code": "FM27068M",
+        "quantity": 1.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "BACTICID WIPES N100, dez.lidz. [65-033]",
+        "code": "65-033",
+        "quantity": 1.0,
+        "unit_price": 6.19,
+        "gross_unit_price": 7.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7130,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M [FM27058M]"
+      },
+      {
+        "product_id": 7189,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "BACTICID WIPES N100, dez.lidz. [65-033]"
+      },
+      {
+        "product_id": 7135,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]"
+      },
+      {
+        "product_id": 7160,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M [FM29148M]"
+      },
+      {
+        "product_id": 7137,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]"
+      },
+      {
+        "product_id": 7190,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "BETAtex_SuperAbsorbent underpad, non-sterile 40cm x 60cm_A25 [BT-PCS4060]"
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      },
+      {
+        "product_id": 7191,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Melni BERRY Nitrila cimdi, bez pūdera N100, S, 100 gb [MM_Berry_S]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1199371,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13983,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Violeta Petkevičienė",
+        "email": "violetoss17@gmail.com",
+        "phone": "+37065058212",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LT",
+        "legal_address_formatted": "Švyturio g. 16a, Palanga, Palangos m. sav., 00333, LT"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "violetoss17@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "violetoss17@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37065058212"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LT"
+        },
+        "address": {
+          "key": "address",
+          "value": "Švyturio g. 16a, Palanga, Palangos m. sav., 00333, LT"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Švyturio g. 16a, Palanga, Palangos m. sav., 00333, LT"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66916,
+      "org_id": 13983,
+      "found_by": "email",
+      "person_id": 15070,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "violetoss17@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66916,
+        "document_id": 15697995,
+        "client_id": 1199371
+      },
+      "message_id": "17991278590751278"
+    }
+  }
+}
