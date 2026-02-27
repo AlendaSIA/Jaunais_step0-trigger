@@ -1,0 +1,209 @@
+{
+  "payload_meta": {
+    "doc_id": 7434599,
+    "document_ref": "ALE 2300008",
+    "xml_len": 5907,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66977,
+    "title": "PT 7434599 ALE 2300008",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7434599,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L]",
+        "code": "RNBRL10003",
+        "quantity": 1.0,
+        "unit_price": 6.11,
+        "gross_unit_price": 7.39,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7225,
+        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L] [RNBRL10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 6.11,
+        "src_gross_unit_price": 7.39,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7.39,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2062
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.97,
+        "src_gross_unit_price": 3.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2063
+      }
+    ],
+    "products_created": [
+      {
+        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L] [RNBRL10003]",
+        "id": 7225,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 570982,
+      "found_by": "name",
+      "org_action": "updated",
+      "org_id": 1672,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Andrejs Simacovs",
+        "email": null,
+        "phone": null,
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "Andrejs Simacovs",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66977,
+      "org_id": 1672,
+      "found_by": "org_existing",
+      "person_id": 1672,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66977,
+        "document_id": 7434599,
+        "client_id": 570982
+      },
+      "message_id": "18003596413240350"
+    }
+  }
+}
