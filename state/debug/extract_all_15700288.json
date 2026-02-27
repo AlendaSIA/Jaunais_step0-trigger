@@ -1,0 +1,631 @@
+{
+  "document_id": 15700288,
+  "client_id": "1104828",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15700288"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2601222"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "1104828"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA SP ''Labāka Rītdiena''"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "221.70"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-30244, Bank Transfer"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "392013"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA SP ''Labāka Rītdiena'', 26529020"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Cesis,Kr.Valdemara iela-11, cesis"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "LV-4101"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-25T11:16:17Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-25T11:16:43Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "831065"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "65-514-5L"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "6.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "36.95"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "221.70"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "221.70"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "183.22"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "38.48"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "221.70"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "183.22"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "6.00"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentID",
+      "value": "15689252"
+    },
+    {
+      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
+      "value": "M-860325-30244"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "15700292"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0226/00561"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-02-23"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "221.70"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "18450891"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260223/118"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "15702901"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0226/00553"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalID",
+      "value": "18447775"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalRef",
+      "value": "20260225/35"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalDate",
+      "value": "2026-02-25"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831065"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-514-5L"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "6.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "36.95"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "221.70"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-514-5L",
+      "item_name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L",
+      "qty": "6.00",
+      "price": "36.95",
+      "line_total": "221.70",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "1104828",
+    "client_endpoint": "/api/client/1104828",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "1104828"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA SP ''Labāka Rītdiena''"
+      },
+      {
+        "field": "client/Email",
+        "value": "noliktava@labakaritdiena.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "44103111851"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV44103111851"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Cesis,Kr.Valdemara iela-11, cesis"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-4101"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "26529020"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2025-08-20T05:22:07Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2025-08-20T05:22:07Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/1104828",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/1104828",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "392013"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "SIA SP ''Labāka Rītdiena'', 26529020"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Cesis,Kr.Valdemara iela-11, cesis"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "LV-4101"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "379999"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "SIA SP ''Labāka Rītdiena'', 26529020"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Cēsu T/C SOLO pakomāts (Cēsu novads, Cēsis, Jāņa Poruka iela 19)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/1104828",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
