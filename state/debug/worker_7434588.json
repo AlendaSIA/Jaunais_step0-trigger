@@ -1,0 +1,244 @@
+{
+  "payload_meta": {
+    "doc_id": 7434588,
+    "document_ref": "ALE 2300007",
+    "xml_len": 7428,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66974,
+    "title": "PT 7434588 ALE 2300007",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7434588,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [ZARYS-RNB-S-100]",
+        "code": "RNBS10001",
+        "quantity": 10.0,
+        "unit_price": 3.88,
+        "gross_unit_price": 4.69,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vienreizlietojamie priekšauti maisiņā, 12my | HDPE N100, 125 x 70 cm | HDPE, FM23180M [FM23180M]",
+        "code": "FM23180M",
+        "quantity": 1.0,
+        "unit_price": 4.89,
+        "gross_unit_price": 5.92,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Higieniskās sejas maskas vienreiz lietojamas N50, 1 kastīte, HIG-unt-50 [HIG-unt-50]",
+        "code": "HIG-unt-50",
+        "quantity": 1.0,
+        "unit_price": 0.83,
+        "gross_unit_price": 1.0,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7221,
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [ZARYS-RNB-S-100] [RNBS10001]",
+        "quantity": 10.0,
+        "src_unit_price_net": 3.88,
+        "src_gross_unit_price": 4.69,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.69,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2055
+      },
+      {
+        "product_id": 7222,
+        "name": "Vienreizlietojamie priekšauti maisiņā, 12my | HDPE N100, 125 x 70 cm | HDPE, FM23180M [FM23180M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 4.89,
+        "src_gross_unit_price": 5.92,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.92,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2056
+      },
+      {
+        "product_id": 7223,
+        "name": "Higieniskās sejas maskas vienreiz lietojamas N50, 1 kastīte, HIG-unt-50 [HIG-unt-50]",
+        "quantity": 1.0,
+        "src_unit_price_net": 0.83,
+        "src_gross_unit_price": 1.0,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2057
+      }
+    ],
+    "products_created": [
+      {
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [ZARYS-RNB-S-100] [RNBS10001]",
+        "id": 7221,
+        "reason": "not_found"
+      },
+      {
+        "name": "Vienreizlietojamie priekšauti maisiņā, 12my | HDPE N100, 125 x 70 cm | HDPE, FM23180M [FM23180M]",
+        "id": 7222,
+        "reason": "not_found"
+      },
+      {
+        "name": "Higieniskās sejas maskas vienreiz lietojamas N50, 1 kastīte, HIG-unt-50 [HIG-unt-50]",
+        "id": 7223,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 570981,
+      "found_by": "name",
+      "org_action": "updated",
+      "org_id": 10639,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Līva Stivriņa",
+        "email": null,
+        "phone": null,
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Pasta iela 21-14, Tukums, Tukums, Lv-3101, Latvia, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "Līva Stivriņa",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Pasta iela 21-14, Tukums, Tukums, Lv-3101, Latvia, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Pasta iela 21-14, Tukums, Tukums, Lv-3101, Latvia, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66974,
+      "org_id": 10639,
+      "found_by": "org_existing",
+      "person_id": 11921,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66974,
+        "document_id": 7434588,
+        "client_id": 570981
+      },
+      "message_id": "18003543444781663"
+    }
+  }
+}
