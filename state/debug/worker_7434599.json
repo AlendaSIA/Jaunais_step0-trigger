@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66977,
     "title": "PT 7434599 ALE 2300008",
     "_trace": [
@@ -78,43 +78,23 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7225,
-        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L] [RNBRL10003]",
-        "quantity": 1.0,
-        "src_unit_price_net": 6.11,
-        "src_gross_unit_price": 7.39,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 7.39,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2062
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L] [RNBRL10003]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 2.97,
-        "src_gross_unit_price": 3.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2063
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [ZARYS-RNBR03L] [RNBRL10003]",
-        "id": 7225,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
@@ -203,7 +183,7 @@
         "document_id": 7434599,
         "client_id": 570982
       },
-      "message_id": "18003596413240350"
+      "message_id": "18004156999163036"
     }
   }
 }
