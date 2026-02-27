@@ -1,0 +1,172 @@
+{
+  "payload_meta": {
+    "doc_id": 15700288,
+    "document_ref": "ALE 2601222",
+    "xml_len": 5247,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66852,
+    "title": "M-860325-30244 _ ALE 2601222",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15700288,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]",
+        "code": "65-514-5L",
+        "quantity": 6.0,
+        "unit_price": 30.54,
+        "gross_unit_price": 36.95,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7126,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Smakas iznīcinošs skābi saturošs dezinfekcijas līdzeklis virsmām SMELL NET MD 5L, 65-514-5L [65-514-5L]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1104828,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 12992,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA SP ''Labāka Rītdiena''",
+        "email": "noliktava@labakaritdiena.lv",
+        "phone": "26529020",
+        "regnr": "44103111851",
+        "vatnr": "LV44103111851",
+        "country": "LV",
+        "legal_address_formatted": "Cesis,Kr.Valdemara iela-11, cesis, LV-4101, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "44103111851",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "noliktava@labakaritdiena.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26529020"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "44103111851"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV44103111851"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Cesis,Kr.Valdemara iela-11, cesis, LV-4101, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Cesis,Kr.Valdemara iela-11, cesis, LV-4101, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66852,
+      "org_id": 12992,
+      "found_by": "email",
+      "person_id": 14119,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "noliktava@labakaritdiena.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66852,
+        "document_id": 15700288,
+        "client_id": 1104828
+      },
+      "message_id": "18002484109547752"
+    }
+  }
+}
