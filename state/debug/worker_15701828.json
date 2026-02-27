@@ -1,0 +1,216 @@
+{
+  "payload_meta": {
+    "doc_id": 15701828,
+    "document_ref": "ALE 2601227",
+    "xml_len": 8390,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66969,
+    "title": "M-860325-30291 _ ALE 2601227",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15701828,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003",
+        "quantity": 4.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]",
+        "code": "RNBCS10001",
+        "quantity": 4.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2 [56926]",
+        "code": "56926",
+        "quantity": 2.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7135,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]"
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      },
+      {
+        "product_id": 7216,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2 [56926]"
+      },
+      {
+        "product_id": 7160,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M [FM29148M]"
+      },
+      {
+        "product_id": 7120,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE II zilas, 1 kastīte (50 gb), [50-046]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1162426,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 13626,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA Ādas ārsts",
+        "email": "agnese@adasarsts.lv",
+        "phone": "28377971",
+        "regnr": "40103953894",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Saules aleja 2 -1, Rīga, 1002, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103953894",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "agnese@adasarsts.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "28377971"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103953894"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Saules aleja 2 -1, Rīga, 1002, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Saules aleja 2 -1, Rīga, 1002, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66969,
+      "org_id": 13626,
+      "found_by": "email",
+      "person_id": 14738,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "agnese@adasarsts.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66969,
+        "document_id": 15701828,
+        "client_id": 1162426
+      },
+      "message_id": "18004938318684322"
+    }
+  }
+}
