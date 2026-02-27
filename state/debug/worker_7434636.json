@@ -1,0 +1,252 @@
+{
+  "payload_meta": {
+    "doc_id": 7434636,
+    "document_ref": "ALE 2300010",
+    "xml_len": 7314,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66979,
+    "title": "PT 7434636 ALE 2300010",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7434636,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi Rozā MAXSAFE, XS-M izmēŗi. 100 gb kastīte, M, 100 gb, SOR-013 [SOR-013]",
+        "code": "SOR-013",
+        "quantity": 2.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [ZARYS-RNBC03M]",
+        "code": "RNBCM10001",
+        "quantity": 2.0,
+        "unit_price": 4.86,
+        "gross_unit_price": 5.88,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Pacienta salvetes, 125gb iepakojums, Violeta, FM53326M [FM53326M]",
+        "code": "FM53326M",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 4
+    },
+    "products_attached": [
+      {
+        "product_id": 7226,
+        "name": "Nitrila cimdi Rozā MAXSAFE, XS-M izmēŗi. 100 gb kastīte, M, 100 gb, SOR-013 [SOR-013]",
+        "quantity": 2.0,
+        "src_unit_price_net": 4.95,
+        "src_gross_unit_price": 5.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2066
+      },
+      {
+        "product_id": 7144,
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
+        "quantity": 2.0,
+        "src_unit_price_net": 4.86,
+        "src_gross_unit_price": 5.88,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.88,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2067
+      },
+      {
+        "product_id": 7227,
+        "name": "Pacienta salvetes, 125gb iepakojums, Violeta, FM53326M [FM53326M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 8.26,
+        "src_gross_unit_price": 9.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 9.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2068
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.61,
+        "src_gross_unit_price": 1.95,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.95,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2069
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Nitrila cimdi Rozā MAXSAFE, XS-M izmēŗi. 100 gb kastīte, M, 100 gb, SOR-013 [SOR-013]",
+        "id": 7226,
+        "reason": "not_found"
+      },
+      {
+        "name": "Pacienta salvetes, 125gb iepakojums, Violeta, FM53326M [FM53326M]",
+        "id": 7227,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 570984,
+      "found_by": "name",
+      "org_action": "updated",
+      "org_id": 697,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Agnese Litkina",
+        "email": null,
+        "phone": null,
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Viesītes iela, 18B-43, Jekabpils, LV-5201, Latvia, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "Agnese Litkina",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Viesītes iela, 18B-43, Jekabpils, LV-5201, Latvia, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Viesītes iela, 18B-43, Jekabpils, LV-5201, Latvia, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66979,
+      "org_id": 697,
+      "found_by": "org_existing",
+      "person_id": 697,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66979,
+        "document_id": 7434636,
+        "client_id": 570984
+      },
+      "message_id": "18004230518701296"
+    }
+  }
+}
