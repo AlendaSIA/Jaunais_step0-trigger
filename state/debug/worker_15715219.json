@@ -1,0 +1,255 @@
+{
+  "payload_meta": {
+    "doc_id": 15715219,
+    "document_ref": "ALE 2601273",
+    "xml_len": 6146,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66985,
+    "title": "PT 15715219 ALE 2601273",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15715219,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "CHEMISEPT G 500 ml, dez.lidz. [65-104]",
+        "code": "65-104",
+        "quantity": 1.0,
+        "unit_price": 5.69,
+        "gross_unit_price": 6.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Chemisept FG 1 litrs [PP65-018]",
+        "code": "PP65-018",
+        "quantity": 1.0,
+        "unit_price": 11.15,
+        "gross_unit_price": 13.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml.  [S008325]",
+        "code": "S008325",
+        "quantity": 1.0,
+        "unit_price": 7.36,
+        "gross_unit_price": 8.9,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 4
+    },
+    "products_attached": [
+      {
+        "product_id": 7233,
+        "name": "CHEMISEPT G 500 ml, dez.lidz. [65-104]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.69,
+        "src_gross_unit_price": 6.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2083
+      },
+      {
+        "product_id": 7234,
+        "name": "Chemisept FG 1 litrs [PP65-018]",
+        "quantity": 1.0,
+        "src_unit_price_net": 11.15,
+        "src_gross_unit_price": 13.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 13.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2084
+      },
+      {
+        "product_id": 7235,
+        "name": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml.  [S008325]",
+        "quantity": 1.0,
+        "src_unit_price_net": 7.36,
+        "src_gross_unit_price": 8.9,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 8.9,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2085
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.97,
+        "src_gross_unit_price": 3.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2086
+      }
+    ],
+    "products_created": [
+      {
+        "name": "CHEMISEPT G 500 ml, dez.lidz. [65-104]",
+        "id": 7233,
+        "reason": "not_found"
+      },
+      {
+        "name": "Chemisept FG 1 litrs [PP65-018]",
+        "id": 7234,
+        "reason": "not_found"
+      },
+      {
+        "name": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml.  [S008325]",
+        "id": 7235,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1201640,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13578,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Jelena Jelena Jurševiča",
+        "email": "lenajursevica@gmail.com",
+        "phone": "+37128338976",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Dainu Iela 11, Dobele, 3701, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "lenajursevica@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "lenajursevica@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37128338976"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Dainu Iela 11, Dobele, 3701, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Dainu Iela 11, Dobele, 3701, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66985,
+      "org_id": 13578,
+      "found_by": "email",
+      "person_id": 14692,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "lenajursevica@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66985,
+        "document_id": 15715219,
+        "client_id": 1201640
+      },
+      "message_id": "18004307901640574"
+    }
+  }
+}
