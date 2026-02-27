@@ -1,0 +1,250 @@
+{
+  "payload_meta": {
+    "doc_id": 15715399,
+    "document_ref": "PAS/0226/00036",
+    "xml_len": 5784,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66986,
+    "title": "PT 15715399 PAS/0226/00036",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15715399,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "code": "JSS223",
+        "quantity": 1.0,
+        "unit_price": 2.15,
+        "gross_unit_price": 2.6,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Papīra rullis ar perf.2 kārtas 60m [JS1706]",
+        "code": "JS1706",
+        "quantity": 1.0,
+        "unit_price": 0.91,
+        "gross_unit_price": 1.1,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
+        "code": "300057",
+        "quantity": 1.0,
+        "unit_price": 2.08,
+        "gross_unit_price": 2.52,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 4
+    },
+    "products_attached": [
+      {
+        "product_id": 7181,
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.15,
+        "src_gross_unit_price": 2.6,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.6,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2087
+      },
+      {
+        "product_id": 7236,
+        "name": "Papīra rullis ar perf.2 kārtas 60m [JS1706]",
+        "quantity": 1.0,
+        "src_unit_price_net": 0.91,
+        "src_gross_unit_price": 1.1,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.1,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2088
+      },
+      {
+        "product_id": 7237,
+        "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.08,
+        "src_gross_unit_price": 2.52,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.52,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2089
+      },
+      {
+        "product_id": 7112,
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "quantity": 10.0,
+        "src_unit_price_net": 2.48,
+        "src_gross_unit_price": 3.0,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2090
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Papīra rullis ar perf.2 kārtas 60m [JS1706]",
+        "id": 7236,
+        "reason": "not_found"
+      },
+      {
+        "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
+        "id": 7237,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 643144,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13205,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Raimonds paraugi",
+        "email": "raimonds@alenda.lv",
+        "phone": "25902644",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Atmodas iela 86-41, Jelgava, 3007, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "raimonds@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "raimonds@alenda.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "25902644"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Atmodas iela 86-41, Jelgava, 3007, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Atmodas iela 86-41, Jelgava, 3007, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66986,
+      "org_id": 13205,
+      "found_by": "email",
+      "person_id": 14333,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "raimonds@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66986,
+        "document_id": 15715399,
+        "client_id": 643144
+      },
+      "message_id": "18003483039853113"
+    }
+  }
+}
