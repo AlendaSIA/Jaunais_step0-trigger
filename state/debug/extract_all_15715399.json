@@ -1,0 +1,929 @@
+{
+  "document_id": 15715399,
+  "client_id": "643144",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15715399"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-27"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "PAS/0226/00036"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "643144"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Raimonds paraugi"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "36.22"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "36.22"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-27"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-27"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-27T14:42:15Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-27T14:52:11Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "831109"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "JSS223"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "2.60"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "2.60"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1036970"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "JS1706"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Papīra rullis ar perf.2 kārtas 60m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Papīra rullis ar perf.2 kārtas 60m [JS1706]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "1.10"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "1.10"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "1172695"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "300057"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "2.52"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "2.52"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "830798"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "RNBRM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
+      "value": "52817"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
+      "value": "492508046N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "30.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "36.22"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "29.93"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "6.29"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "36.22"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "29.93"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "13.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831109"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "JSS223"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.60"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.60"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "JSS223",
+      "item_name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223",
+      "qty": "1.00",
+      "price": "2.60",
+      "line_total": "2.60",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1036970"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "JS1706"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Papīra rullis ar perf.2 kārtas 60m"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Papīra rullis ar perf.2 kārtas 60m [JS1706]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.10"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.10"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "JS1706",
+      "item_name": "Papīra rullis ar perf.2 kārtas 60m",
+      "qty": "1.00",
+      "price": "1.10",
+      "line_total": "1.10",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1172695"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "300057"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep."
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.52"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "2.52"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "300057",
+      "item_name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep.",
+      "qty": "1.00",
+      "price": "2.52",
+      "line_total": "2.52",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830798"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52817"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "492508046N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "30.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRM10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M",
+      "qty": "10.00",
+      "price": "3.00",
+      "line_total": "30.00",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "643144",
+    "client_endpoint": "/api/client/643144",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "643144"
+      },
+      {
+        "field": "client/Name",
+        "value": "Raimonds paraugi"
+      },
+      {
+        "field": "client/Email",
+        "value": "raimonds@alenda.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "1"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Atmodas iela 86-41, Jelgava"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "3007"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "25902644"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-05-03T07:31:42Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-05-03T07:31:42Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/643144",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/643144",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "201486"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "Raimonds paraugi, 25902644"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Atmodas iela 86-41, Jelgava"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "3007"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "218954"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Edgars"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Omniva TC Apelsīns Āsaži"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "2164"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/643144",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
