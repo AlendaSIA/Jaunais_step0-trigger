@@ -1,0 +1,307 @@
+{
+  "payload_meta": {
+    "doc_id": 15713955,
+    "document_ref": "ALE 2601269",
+    "xml_len": 9748,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 66981,
+    "title": "PT 15713955 ALE 2601269",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15713955,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBKXS10003]",
+        "code": "RNBKXS10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
+        "code": "FOL-CPE/B/22",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]",
+        "code": "FM29175M",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 8
+    },
+    "products_attached": [
+      {
+        "product_id": 7228,
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBKXS10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2070
+      },
+      {
+        "product_id": 7109,
+        "name": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast [22-Kast]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2071
+      },
+      {
+        "product_id": 7142,
+        "name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2072
+      },
+      {
+        "product_id": 7160,
+        "name": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M [FM29148M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.14,
+        "src_gross_unit_price": 2.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2073
+      },
+      {
+        "product_id": 7229,
+        "name": "NITRYLEX PF PINK, XS izm. Med cimdi  [C37885M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 4.62,
+        "src_gross_unit_price": 5.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 5.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2074
+      },
+      {
+        "product_id": 7230,
+        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M [FM26166M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.74,
+        "src_gross_unit_price": 6.95,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.95,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2075
+      },
+      {
+        "product_id": 7188,
+        "name": "Nitrila cimdi, nepūderēti «Safe light», oranžā krāsā,  S, 100 gb, [FM270653M]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.74,
+        "src_gross_unit_price": 6.95,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.95,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2076
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.81,
+        "src_gross_unit_price": 2.19,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.19,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2077
+      }
+    ],
+    "products_created": [
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBKXS10003]",
+        "id": 7228,
+        "reason": "not_found"
+      },
+      {
+        "name": "NITRYLEX PF PINK, XS izm. Med cimdi  [C37885M]",
+        "id": 7229,
+        "reason": "not_found"
+      },
+      {
+        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., S, 100 gb, FM26166M [FM26166M]",
+        "id": 7230,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 941821,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 10472,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Laura Lazda",
+        "email": "laura_strode2@inbox.lv",
+        "phone": "28336780",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Pils Iela 7, Varakļāni, 4838, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "laura_strode2@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "laura_strode2@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "28336780"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Pils Iela 7, Varakļāni, 4838, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Pils Iela 7, Varakļāni, 4838, LV"
+        }
+      },
+      "note": null
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66981,
+      "org_id": 10472,
+      "found_by": "email",
+      "person_id": 3188,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "laura_strode2@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66981,
+        "document_id": 15713955,
+        "client_id": 941821
+      },
+      "message_id": "18003583773751899"
+    }
+  }
+}
