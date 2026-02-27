@@ -109,7 +109,7 @@ def run(ctx: dict):
       - Process OLDEST -> NEWEST.
       - Normal mode: next_id = min([id for id in sales_ids if id > last_processed_id])
       - Override by date/doc_ref: pick OLDEST match (min id) so date start walks forward.
-      - NEW: Override by document_id (FAST PATH): do NOT scan all docs; just set next_document_id directly.
+      - Override by document_id (FAST PATH): do NOT scan all docs; just set next_document_id directly.
       - If nothing new: return status=ok + idle=true (no pipeline error).
     """
     override_ref = ctx.get("document_ref") or ctx.get("doc_ref") or ctx.get("override_document_ref")
@@ -136,16 +136,21 @@ def run(ctx: dict):
 
         return ctx
 
-    # Sales list (normal behavior)
-    sc, sales_xml = _paytraq_sales_list()
-    ctx["paytraq_sales_status_code"] = sc
-    if sc != 200:
-        ctx["_trace"] = (ctx.get("_trace") or []) + [{"step02": f"paytraq sales list error {sc}"}]
-        return ctx
-
-    ids = _extract_doc_id_from_sales_xml(sales_xml)
-    ctx["sales_count"] = len(ids)
-    ctx["sales_ids"] = ids[:100]  # debug visibility (order as received)
+    # Sales list
+    # Preferred: use IDs already fetched in step_01_fetch_sales_list (which uses id_after => ID asc).
+    ids = ctx.get("sales_ids") if isinstance(ctx.get("sales_ids"), list) else None
+    if ids is None:
+        sc, sales_xml = _paytraq_sales_list()
+        ctx["paytraq_sales_status_code"] = sc
+        if sc != 200:
+            ctx["_trace"] = (ctx.get("_trace") or []) + [{"step02": f"paytraq sales list error {sc}"}]
+            return ctx
+        ids = _extract_doc_id_from_sales_xml(sales_xml)
+        ctx["sales_count"] = len(ids)
+        ctx["sales_ids"] = ids[:100]  # debug visibility (order as received)
+    else:
+        # Keep debug fields consistent
+        ctx["sales_count"] = len(ids)
 
     if not ids:
         return _set_idle(ctx, picked_by="no_sales")
@@ -212,8 +217,10 @@ def run(ctx: dict):
     last_processed_id = int(last_processed_id) if last_processed_id is not None else None
 
     if last_processed_id is None:
-        next_id = min(ids)  # start from OLDEST if nothing set
+        # start from OLDEST if nothing set
+        next_id = min(int(d) for d in ids)
     else:
+        # Even though step_01 uses id_after, keep this guard for safety.
         candidates = [int(d) for d in ids if int(d) > int(last_processed_id)]
         next_id = min(candidates) if candidates else None
 
