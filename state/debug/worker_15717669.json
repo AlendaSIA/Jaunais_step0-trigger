@@ -1,0 +1,297 @@
+{
+  "payload_meta": {
+    "doc_id": 15717669,
+    "document_ref": "M-860325-30351",
+    "xml_len": 6200,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67008,
+    "title": "PT 15717669 M-860325-30351",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15717669,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]",
+        "code": "RNBCS10001",
+        "quantity": 1.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Cepurīte gofrēta Clip Cap, balta, N100 [CLIP2/W/16]",
+        "code": "CLIP2/W/16",
+        "quantity": 1.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Bacticide AF 1 litrs [65-010]",
+        "code": "65-010",
+        "quantity": 1.0,
+        "unit_price": 7.43,
+        "gross_unit_price": 8.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 5
+    },
+    "products_attached": [
+      {
+        "product_id": 7144,
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.71,
+        "src_gross_unit_price": 4.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2182
+      },
+      {
+        "product_id": 7129,
+        "name": "Cepurīte gofrēta Clip Cap, balta, N100 [CLIP2/W/16]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.64,
+        "src_gross_unit_price": 1.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2183
+      },
+      {
+        "product_id": 7138,
+        "name": "Bacticide AF 1 litrs [65-010]",
+        "quantity": 1.0,
+        "src_unit_price_net": 7.43,
+        "src_gross_unit_price": 8.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 8.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2184
+      },
+      {
+        "product_id": 7140,
+        "name": "Dezinfekcijas salvetes BACTICIDE N200, 65-889 [65-334]",
+        "quantity": 1.0,
+        "src_unit_price_net": 9.91,
+        "src_gross_unit_price": 11.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 11.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2185
+      },
+      {
+        "product_id": 7147,
+        "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.06,
+        "src_gross_unit_price": 2.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2186
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1201950,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 14006,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kristine Senkane",
+        "email": "kristine.senkane@inbox.lv",
+        "phone": "+37126192287",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Zemnieku 44-29, Rēzekne, Lv-4601, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "kristine.senkane@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "kristine.senkane@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37126192287"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Zemnieku 44-29, Rēzekne, Lv-4601, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Zemnieku 44-29, Rēzekne, Lv-4601, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "kristine.senkane@inbox.lv",
+              "candidates": [
+                {
+                  "id": 14006,
+                  "name": "Kristine Senkane"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+37126192287",
+              "candidates": [
+                {
+                  "id": 14006,
+                  "name": "Kristine Senkane"
+                }
+              ]
+            },
+            "name": {
+              "term": "Kristine Senkane",
+              "candidates": [
+                {
+                  "id": 14006,
+                  "name": "Kristine Senkane"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14006
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67008,
+      "org_id": 14006,
+      "found_by": "email",
+      "person_id": 15088,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kristine.senkane@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67008,
+        "document_id": 15717669,
+        "client_id": 1201950
+      },
+      "message_id": "18007024221494669"
+    }
+  }
+}
