@@ -1,0 +1,865 @@
+{
+  "document_id": 15717317,
+  "client_id": "584103",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15717317"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-02-28"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "M-860325-30347"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "584103"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Pašnodarbināta"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "31.78"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "31.78"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-02-28"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-02-28"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-30347, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "409218"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "pašnodarbináta, +37129489252"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Rîga, Slāvu iela24-20, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "LV 1073"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-02-28T07:10:07Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-02-28T07:10:07Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "1092754"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "65-085"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Chemisept SPRAY 1000ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Chemisept SPRAY 1000ml [65-085]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "9.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "9.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "831072"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "65-022"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "21.79"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "21.79"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "31.78"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "26.26"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "5.52"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "31.78"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "26.26"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "2.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1092754"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-085"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Chemisept SPRAY 1000ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Chemisept SPRAY 1000ml [65-085]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "9.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "9.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-085",
+      "item_name": "Chemisept SPRAY 1000ml",
+      "qty": "1.00",
+      "price": "9.99",
+      "line_total": "9.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831072"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-022"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "21.79"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "21.79"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-022",
+      "item_name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L",
+      "qty": "1.00",
+      "price": "21.79",
+      "line_total": "21.79",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "584103",
+    "client_endpoint": "/api/client/584103",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "584103"
+      },
+      {
+        "field": "client/Name",
+        "value": "Pašnodarbināta"
+      },
+      {
+        "field": "client/Email",
+        "value": "nav@xn--panodarbinata-cuc.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "28037211528"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Rîga, Slāvu iela24-20, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV 1073"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "+37126386786"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-17T17:05:07Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2024-04-02T03:49:11Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/584103",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/584103",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "337413"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "Pašnodarbinātā, 28301412"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Jēkabpils - Nākotnes iela 2, Jēkabpils nov., Jēkabpils, LV-5201"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "5201"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "327400"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Pašnodarbināta, 26912260"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Jelgava, Satiksmes iela 35 (Jelgavas Satiksmes ielas RIMI Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "3007"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "255418"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "Pašnodarbinata, 29942965"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "Jelgavas Lielās ielas ELVI pakomāts (Jelgava, Lielā iela 49)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/AddressID",
+        "value": "373812"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/ShipTo",
+        "value": "Pašnodarbināta, 29623352"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Address",
+        "value": "Rēzekne, Galdnieku iela 8 (Rēzeknes Galdnieku ielas RIMI Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Zip",
+        "value": "4601"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/AddressID",
+        "value": "395639"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/ShipTo",
+        "value": "Pasnodarbinata, +37122303149"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Address",
+        "value": "Rīga, Gaiļezera iela 8 (Rīgas TC Gaiļezers DROGAS Venipak Pickup punkts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Zip",
+        "value": "1079"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/AddressID",
+        "value": "316420"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/ShipTo",
+        "value": "pašnodarbinātā, 29244690"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Address",
+        "value": "Rīga, Grostonas iela 1 (Rīgas Grostonas ielas MAXIMA Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Zip",
+        "value": "1013"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/AddressID",
+        "value": "404465"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/ShipTo",
+        "value": "Pašnodarbināta, 28660998"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Address",
+        "value": "Rīga, Kurzemes prospekts 1 (Rīgas TC Damme Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Zip",
+        "value": "1067"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/AddressID",
+        "value": "168408"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/ShipTo",
+        "value": "Pašnodarbināta, +37126386786"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/Address",
+        "value": "Rīga, Maskavas iela 257 (Paku Skapis Akropole)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/Zip",
+        "value": "1019"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[7]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/AddressID",
+        "value": "303672"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/ShipTo",
+        "value": "Pašnodarbināta, 25555115"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/Address",
+        "value": "Rīga, Nometņu iela 61 (Smartpost terminālis Arcada Nometņu)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/Zip",
+        "value": "1002"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[8]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/AddressID",
+        "value": "202796"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/ShipTo",
+        "value": "pašnodarbināta, 28660998"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/Address",
+        "value": "Rîga, Slāvu iela24-20, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/Zip",
+        "value": "LV 1073"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[9]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/AddressID",
+        "value": "409218"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/ShipTo",
+        "value": "pašnodarbináta, +37129489252"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/Address",
+        "value": "Rîga, Slāvu iela24-20, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/Zip",
+        "value": "LV 1073"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[10]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/AddressID",
+        "value": "212335"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/ShipTo",
+        "value": "Pašnodarbināta, +37129256143"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/Address",
+        "value": "Sigulda, Vidus iela 1 (Siguldas Vidus ielas ELVI Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/Zip",
+        "value": "2150"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[11]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/584103",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
