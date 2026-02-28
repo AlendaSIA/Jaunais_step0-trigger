@@ -1,0 +1,260 @@
+{
+  "payload_meta": {
+    "doc_id": 15717317,
+    "document_ref": "M-860325-30347",
+    "xml_len": 4054,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67004,
+    "title": "PT 15717317 M-860325-30347",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15717317,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "code": "65-085",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]",
+        "code": "65-022",
+        "quantity": 1.0,
+        "unit_price": 18.01,
+        "gross_unit_price": 21.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7276,
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "quantity": 1.0,
+        "src_unit_price_net": 8.26,
+        "src_gross_unit_price": 9.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 9.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2166
+      },
+      {
+        "product_id": 7245,
+        "name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]",
+        "quantity": 1.0,
+        "src_unit_price_net": 18.01,
+        "src_gross_unit_price": 21.79,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 21.79,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2167
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "id": 7276,
+        "reason": "multiple_matches"
+      }
+    ],
+    "activities_created": [
+      {
+        "deal_id": 67004,
+        "subject": "⚠️ Manual check: multiple product matches"
+      }
+    ],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 584103,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12720,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Pašnodarbināta",
+        "email": "nav@xn--panodarbinata-cuc.lv",
+        "phone": "+37126386786",
+        "regnr": "28037211528",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "28037211528",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "nav@xn--panodarbinata-cuc.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "nav@xn--panodarbinata-cuc.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37126386786"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "28037211528"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 22829,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "28037211528",
+              "candidates": []
+            },
+            "email": {
+              "term": "nav@xn--panodarbinata-cuc.lv",
+              "candidates": [
+                {
+                  "id": 12720,
+                  "name": "Pašnodarbināta"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+37126386786",
+              "candidates": []
+            },
+            "name": {
+              "term": "Pašnodarbināta",
+              "candidates": [
+                {
+                  "id": 12720,
+                  "name": "Pašnodarbināta"
+                },
+                {
+                  "id": 216,
+                  "name": "Pašnodarbināta"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12720,
+            216
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67004,
+      "org_id": 12720,
+      "found_by": "email",
+      "person_id": 216,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "nav@xn--panodarbinata-cuc.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67004,
+        "document_id": 15717317,
+        "client_id": 584103
+      },
+      "message_id": "18006659843489929"
+    }
+  }
+}
