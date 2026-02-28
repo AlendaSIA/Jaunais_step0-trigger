@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66993,
     "title": "PT 12539358 ALE 2500304",
     "_trace": [
@@ -90,110 +90,47 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 6
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7231,
-        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , S, 100 gb, FM2706M [FM2706M]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.79,
-        "src_gross_unit_price": 4.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2121
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , S, 100 gb, FM2706M [FM2706M]"
       },
       {
         "product_id": 7257,
-        "name": "NITRYLEX PINK PF N100 S izmērs , med.cimdi [3604-2]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.62,
-        "src_gross_unit_price": 5.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2122
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "NITRYLEX PINK PF N100 S izmērs , med.cimdi [3604-2]"
       },
       {
         "product_id": 7258,
-        "name": "Nitrila cimdi, nepūderēti «Safe light», dzelteni 100 gb, S, 100 gb, FM261668M [FM261668M]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.36,
-        "src_gross_unit_price": 6.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2123
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Safe light», dzelteni 100 gb, S, 100 gb, FM261668M [FM261668M]"
       },
       {
         "product_id": 7259,
-        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., M, 100 gb, FM26156M [FM26156M]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.36,
-        "src_gross_unit_price": 6.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2124
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., M, 100 gb, FM26156M [FM26156M]"
       },
       {
         "product_id": 7260,
-        "name": "Nitrila cimdi, nepūderēti «Safe light», zaļā krāsā, 100 gb, S, 100 gb, FM27067M [FM27067M]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.36,
-        "src_gross_unit_price": 6.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2125
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zaļā krāsā, 100 gb, S, 100 gb, FM27067M [FM27067M]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2126
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "NITRYLEX PINK PF N100 S izmērs , med.cimdi [3604-2]",
-        "id": 7257,
-        "reason": "not_found"
-      },
-      {
-        "name": "Nitrila cimdi, nepūderēti «Safe light», dzelteni 100 gb, S, 100 gb, FM261668M [FM261668M]",
-        "id": 7258,
-        "reason": "not_found"
-      },
-      {
-        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., M, 100 gb, FM26156M [FM26156M]",
-        "id": 7259,
-        "reason": "not_found"
-      },
-      {
-        "name": "Nitrila cimdi, nepūderēti «Safe light», zaļā krāsā, 100 gb, S, 100 gb, FM27067M [FM27067M]",
-        "id": 7260,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
@@ -250,10 +187,10 @@
       },
       "note": null,
       "dup_check": {
-        "potential_duplicates": true,
-        "activity_created": true,
-        "activity_id": 22820,
-        "skipped_reason": null,
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "override_filled",
         "debug": {
           "by": {
             "regnr": {
@@ -285,17 +222,12 @@
                 {
                   "id": 10472,
                   "name": "Laura Lazda"
-                },
-                {
-                  "id": 3205,
-                  "name": "Laura Lazda"
                 }
               ]
             }
           },
           "unique_ids": [
-            10472,
-            3205
+            10472
           ]
         }
       }
@@ -330,7 +262,7 @@
         "document_id": 12539358,
         "client_id": 941821
       },
-      "message_id": "18005047403582005"
+      "message_id": "18006607093956215"
     }
   }
 }
