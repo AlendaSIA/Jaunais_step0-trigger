@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66994,
     "title": "PT 12539495 ALE 2500305",
     "_trace": [
@@ -78,34 +78,20 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7116,
-        "name": "Melni nitrylex clasic Nitrila cimdi, bez pūdera N100, M, 100 gb, MM-NITRI_M, 36897 [3602-3]",
-        "quantity": 6.0,
-        "src_unit_price_net": 4.54,
-        "src_gross_unit_price": 5.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2127
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Melni nitrylex clasic Nitrila cimdi, bez pūdera N100, M, 100 gb, MM-NITRI_M, 36897 [3602-3]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2128
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
     "products_created": [],
@@ -167,7 +153,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 22821,
+        "activity_id": 22823,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -190,6 +176,10 @@
               "candidates": [
                 {
                   "id": 10218,
+                  "name": "Viktorija Šarigina"
+                },
+                {
+                  "id": 11932,
                   "name": "Viktorija Šarigina"
                 }
               ]
@@ -245,7 +235,7 @@
         "document_id": 12539495,
         "client_id": 1004525
       },
-      "message_id": "18006848889458520"
+      "message_id": "17691457619246811"
     }
   }
 }
