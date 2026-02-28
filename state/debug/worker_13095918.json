@@ -1,0 +1,247 @@
+{
+  "payload_meta": {
+    "doc_id": 13095918,
+    "document_ref": "ALE 2501530",
+    "xml_len": 5479,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67001,
+    "title": "PT 13095918 ALE 2501530",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 13095918,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Melni DIAMANTE nitrila cimdi bez pūdera, , N100 M izmērs [Z-DIAMANTE/BL/M/100/8 ]",
+        "code": "Z-DIAMANTE/BL/M/100/8",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.996,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7267,
+        "name": "Melni DIAMANTE nitrila cimdi bez pūdera, , N100 M izmērs [Z-DIAMANTE/BL/M/100/8 ] [Z-DIAMANTE/BL/M/100/8]",
+        "quantity": 2.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.996,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.996,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2146
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2147
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Melni DIAMANTE nitrila cimdi bez pūdera, , N100 M izmērs [Z-DIAMANTE/BL/M/100/8 ] [Z-DIAMANTE/BL/M/100/8]",
+        "id": 7267,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1035058,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12298,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Jūlija S.",
+        "email": "julikasalina@gmail.com",
+        "phone": "26064569",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Kurpnieku iela 5, Olaines Novads, OLAINES PAGASTS, Lv-2127, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "julikasalina@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "julikasalina@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26064569"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kurpnieku iela 5, Olaines Novads, OLAINES PAGASTS, Lv-2127, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kurpnieku iela 5, Olaines Novads, OLAINES PAGASTS, Lv-2127, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "julikasalina@gmail.com",
+              "candidates": [
+                {
+                  "id": 12298,
+                  "name": "Jūlija S."
+                }
+              ]
+            },
+            "phone": {
+              "term": "26064569",
+              "candidates": []
+            },
+            "name": {
+              "term": "Jūlija S.",
+              "candidates": [
+                {
+                  "id": 12298,
+                  "name": "Jūlija S."
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12298
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67001,
+      "org_id": 12298,
+      "found_by": "email",
+      "person_id": 13476,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "julikasalina@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67001,
+        "document_id": 13095918,
+        "client_id": 1035058
+      },
+      "message_id": "18006860140464363"
+    }
+  }
+}
