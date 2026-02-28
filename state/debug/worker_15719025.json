@@ -1,0 +1,352 @@
+{
+  "payload_meta": {
+    "doc_id": 15719025,
+    "document_ref": "M-860325-30353",
+    "xml_len": 8337,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67010,
+    "title": "PT 15719025 M-860325-30353",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15719025,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "code": "RNBWS10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 S izmērs  [3616-2]",
+        "code": "3616-2",
+        "quantity": 1.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 8
+    },
+    "products_attached": [
+      {
+        "product_id": 7136,
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2192
+      },
+      {
+        "product_id": 7135,
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2193
+      },
+      {
+        "product_id": 7282,
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 S izmērs  [3616-2]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.97,
+        "src_gross_unit_price": 3.59,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.59,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2194
+      },
+      {
+        "product_id": 7283,
+        "name": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]",
+        "quantity": 1.0,
+        "src_unit_price_net": 1.64,
+        "src_gross_unit_price": 1.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 1.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2195
+      },
+      {
+        "product_id": 7284,
+        "name": "KUPER - tīrīšanas līdzeklis akrilam, plastmasai - 500ml [855660]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.72,
+        "src_gross_unit_price": 3.29,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.29,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2196
+      },
+      {
+        "product_id": 7285,
+        "name": "KUPER FLOOREX - lavanda - grīdas mazgāšanas koncentrāts - 1L [002781]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.11,
+        "src_gross_unit_price": 2.55,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.55,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2197
+      },
+      {
+        "product_id": 7181,
+        "name": "Papīra rullis Jumbo, ar perforāciju 130 metri, 2 kārtas, JS223 [JSS223]",
+        "quantity": 1.0,
+        "src_unit_price_net": 4.12,
+        "src_gross_unit_price": 4.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2198
+      },
+      {
+        "product_id": 7236,
+        "name": "Papīra rullis ar perf.2 kārtas 60m [JS1706]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.06,
+        "src_gross_unit_price": 2.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2199
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 S izmērs  [3616-2]",
+        "id": 7282,
+        "reason": "not_found"
+      },
+      {
+        "name": "BINGO - tīrīšanas līdzeklis stikliem, vitrīnām - 500ml [004891]",
+        "id": 7283,
+        "reason": "not_found"
+      },
+      {
+        "name": "KUPER - tīrīšanas līdzeklis akrilam, plastmasai - 500ml [855660]",
+        "id": 7284,
+        "reason": "not_found"
+      },
+      {
+        "name": "KUPER FLOOREX - lavanda - grīdas mazgāšanas koncentrāts - 1L [002781]",
+        "id": 7285,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 616869,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2597,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Gunita Kanča",
+        "email": "kancagunita@gmail.com",
+        "phone": "27173161",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Bērzu iela 7-89, Baloži, Ķekavas novads, LV-2112, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "kancagunita@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "kancagunita@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "27173161"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Bērzu iela 7-89, Baloži, Ķekavas novads, LV-2112, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Bērzu iela 7-89, Baloži, Ķekavas novads, LV-2112, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "kancagunita@gmail.com",
+              "candidates": [
+                {
+                  "id": 2597,
+                  "name": "Gunita Kanča"
+                }
+              ]
+            },
+            "phone": {
+              "term": "27173161",
+              "candidates": []
+            },
+            "name": {
+              "term": "Gunita Kanča",
+              "candidates": [
+                {
+                  "id": 2597,
+                  "name": "Gunita Kanča"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            2597
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67010,
+      "org_id": 2597,
+      "found_by": "email",
+      "person_id": 2595,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kancagunita@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67010,
+        "document_id": 15719025,
+        "client_id": 616869
+      },
+      "message_id": "18008104867000405"
+    }
+  }
+}
