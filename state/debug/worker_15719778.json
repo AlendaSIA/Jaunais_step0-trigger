@@ -1,0 +1,277 @@
+{
+  "payload_meta": {
+    "doc_id": 15719778,
+    "document_ref": "M-860325-30358",
+    "xml_len": 4873,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67015,
+    "title": "PT 15719778 M-860325-30358",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15719778,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  Pantera, 5cm X 5 metri [COPY] [YT-55-PP]",
+        "code": "YT-55-PP",
+        "quantity": 1.0,
+        "unit_price": 6.19,
+        "gross_unit_price": 7.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Melna, YT-55-X",
+        "code": null,
+        "quantity": 1.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Rozā, YT-55-P",
+        "code": null,
+        "quantity": 2.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7193,
+        "name": "Kinezioloģiskais teips -yellowTAPE - kinesiotape, varavīksnes  Pantera, 5cm X 5 metri [COPY] [YT-55-PP]",
+        "quantity": 1.0,
+        "src_unit_price_net": 6.19,
+        "src_gross_unit_price": 7.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 7.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2218
+      },
+      {
+        "product_id": 7288,
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Melna, YT-55-X [YT-55-X]",
+        "quantity": 1.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2219
+      },
+      {
+        "product_id": 7194,
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Rozā, YT-55-P [YT-55-P]",
+        "quantity": 2.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2220
+      }
+    ],
+    "products_created": [
+      {
+        "name": "5 cm. X 5m. Kinezioloģiskais teips -yellowTAPE - kinesiotape, Melna, YT-55-X [YT-55-X]",
+        "id": 7288,
+        "reason": "multiple_matches"
+      }
+    ],
+    "activities_created": [
+      {
+        "deal_id": 67015,
+        "subject": "⚠️ Manual check: multiple product matches"
+      }
+    ],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1057848,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12541,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Mārcis Ruķeris",
+        "email": "glizlijs7@gmail.com",
+        "phone": "26268543",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Kalnlejas Gailīšū pagasts, Bauska, Gailīšu pagasts, LV3901, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "glizlijs7@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "glizlijs7@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26268543"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kalnlejas Gailīšū pagasts, Bauska, Gailīšu pagasts, LV3901, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kalnlejas Gailīšū pagasts, Bauska, Gailīšu pagasts, LV3901, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "glizlijs7@gmail.com",
+              "candidates": [
+                {
+                  "id": 12541,
+                  "name": "Mārcis Ruķeris"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26268543",
+              "candidates": []
+            },
+            "name": {
+              "term": "Mārcis Ruķeris",
+              "candidates": [
+                {
+                  "id": 12541,
+                  "name": "Mārcis Ruķeris"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12541
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67015,
+      "org_id": 12541,
+      "found_by": "email",
+      "person_id": 13708,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "glizlijs7@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67015,
+        "document_id": 15719778,
+        "client_id": 1057848
+      },
+      "message_id": "18008827504534285"
+    }
+  }
+}
