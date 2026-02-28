@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 66999,
     "title": "PT 15717256 M-860325-30344",
     "_trace": [
@@ -66,21 +66,14 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 1
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7115,
-        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 M izmērs [3616-3]",
-        "quantity": 7.0,
-        "src_unit_price_net": 2.97,
-        "src_gross_unit_price": 3.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2142
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 M izmērs [3616-3]"
       }
     ],
     "products_created": [],
@@ -142,7 +135,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 22824,
+        "activity_id": 22826,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -162,7 +155,12 @@
             },
             "phone": {
               "term": "28240797",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 9702,
+                  "name": "Olga Bērziņa"
+                }
+              ]
             },
             "name": {
               "term": "Olga Jankovska",
@@ -211,7 +209,7 @@
         "document_id": 15717256,
         "client_id": 1201930
       },
-      "message_id": "18006245114449152"
+      "message_id": "18006792358487179"
     }
   }
 }
