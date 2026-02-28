@@ -90,189 +90,78 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 10
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7144,
-        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.71,
-        "src_gross_unit_price": 4.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2111
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
       },
       {
         "product_id": 7249,
-        "name": "Clinex Nano Protect Glass 5 Ltr [77-330]",
-        "quantity": 1.0,
-        "src_unit_price_net": 8.26,
-        "src_gross_unit_price": 9.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 9.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2112
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Clinex Nano Protect Glass 5 Ltr [77-330]"
       },
       {
         "product_id": 7250,
-        "name": "CLINEX FAST PLAST 1000ml [77-695]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.17,
-        "src_gross_unit_price": 6.25,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.25,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2113
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX FAST PLAST 1000ml [77-695]"
       },
       {
         "product_id": 7251,
-        "name": "CLINEX GASTRO STEEL 1000ml [77-515]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.35,
-        "src_gross_unit_price": 6.47,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.47,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2114
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX GASTRO STEEL 1000ml [77-515]"
       },
       {
         "product_id": 7252,
-        "name": "CLINEX PROFIT Glass - augsti koncentrēts līdzeklis stikla virsmu tīrīšanai, 1000ml [77-701]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.78,
-        "src_gross_unit_price": 6.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2115
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX PROFIT Glass - augsti koncentrēts līdzeklis stikla virsmu tīrīšanai, 1000ml [77-701]"
       },
       {
         "product_id": 7253,
-        "name": "CLINEX WOOD PANEL 1L [77-689]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.12,
-        "src_gross_unit_price": 4.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2116
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX WOOD PANEL 1L [77-689]"
       },
       {
         "product_id": 7254,
-        "name": "CLINEX STRONGER 750ml [77-686]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.95,
-        "src_gross_unit_price": 5.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2117
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX STRONGER 750ml [77-686]"
       },
       {
         "product_id": 7255,
-        "name": "CLINEX DESTONER 1 L [77-501]",
-        "quantity": 1.0,
-        "src_unit_price_net": 5.74,
-        "src_gross_unit_price": 6.94,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 6.94,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2118
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "CLINEX DESTONER 1 L [77-501]"
       },
       {
         "product_id": 7256,
-        "name": "Krāšņu un grilu manuālai tīrīšanai \"Kiilto Grill\", 1 litrs [KX63239]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.12,
-        "src_gross_unit_price": 4.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2119
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Krāšņu un grilu manuālai tīrīšanai \"Kiilto Grill\", 1 litrs [KX63239]"
       },
       {
         "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.62,
-        "src_gross_unit_price": 5.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2120
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
       }
     ],
-    "products_created": [
-      {
-        "name": "Clinex Nano Protect Glass 5 Ltr [77-330]",
-        "id": 7249,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX FAST PLAST 1000ml [77-695]",
-        "id": 7250,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX GASTRO STEEL 1000ml [77-515]",
-        "id": 7251,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX PROFIT Glass - augsti koncentrēts līdzeklis stikla virsmu tīrīšanai, 1000ml [77-701]",
-        "id": 7252,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX WOOD PANEL 1L [77-689]",
-        "id": 7253,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX STRONGER 750ml [77-686]",
-        "id": 7254,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX DESTONER 1 L [77-501]",
-        "id": 7255,
-        "reason": "not_found"
-      },
-      {
-        "name": "Krāšņu un grilu manuālai tīrīšanai \"Kiilto Grill\", 1 litrs [KX63239]",
-        "id": 7256,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1201927,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "email",
+      "org_action": "updated",
       "org_id": 14004,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -294,12 +183,7 @@
           {
             "by": "email",
             "term": "anna.pole@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "name",
-            "term": "Anna Pole",
-            "found": false
+            "found": true
           }
         ]
       },
@@ -325,14 +209,59 @@
           "value": "Zaharija Stopija 15 - 55, Upeslejas, Stopiņu novads, 2118, LV"
         }
       },
-      "note": null
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "anna.pole@inbox.lv",
+              "candidates": [
+                {
+                  "id": 14004,
+                  "name": "Anna Pole"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29944084",
+              "candidates": [
+                {
+                  "id": 14004,
+                  "name": "Anna Pole"
+                }
+              ]
+            },
+            "name": {
+              "term": "Anna Pole",
+              "candidates": [
+                {
+                  "id": 14004,
+                  "name": "Anna Pole"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14004
+          ]
+        }
+      }
     },
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
       "deal_id": 66992,
       "org_id": 14004,
-      "found_by": "created",
+      "found_by": "email",
       "person_id": 15087,
       "attached_to_deal": true,
       "activity_created": false,
@@ -342,16 +271,11 @@
           {
             "by": "email",
             "term": "anna.pole@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "29944084",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled."
+      "note": "Person matched by email. Activity disabled."
     },
     "step_99": {
       "ok": true,
@@ -362,7 +286,7 @@
         "document_id": 15716908,
         "client_id": 1201927
       },
-      "message_id": "18006627437449974"
+      "message_id": "18006893434066452"
     }
   }
 }
