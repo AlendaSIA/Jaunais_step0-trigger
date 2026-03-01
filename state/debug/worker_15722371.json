@@ -1,0 +1,271 @@
+{
+  "payload_meta": {
+    "doc_id": 15722371,
+    "document_ref": "M-860325-30362",
+    "xml_len": 4350,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67019,
+    "title": "PT 15722371 M-860325-30362",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15722371,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]",
+        "code": "RNBCS10001",
+        "quantity": 1.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CHEMISEPT VIR+1000ml ar dozatoru,dez.līdz [65-036]",
+        "code": "65-036",
+        "quantity": 1.0,
+        "unit_price": 7.43,
+        "gross_unit_price": 8.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7144,
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.71,
+        "src_gross_unit_price": 4.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2227
+      },
+      {
+        "product_id": 7202,
+        "name": "CHEMISEPT VIR+1000ml ar dozatoru,dez.līdz [65-036]",
+        "quantity": 1.0,
+        "src_unit_price_net": 7.43,
+        "src_gross_unit_price": 8.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 8.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2228
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2229
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 623888,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 1278,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kristīne Vasiļevska",
+        "email": "kristinesa2@inbox.lv",
+        "phone": "20483138",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Grīvas iela 3 -42, Rīga, Rīga, LV-1055, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "kristinesa2@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "kristinesa2@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "20483138"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Grīvas iela 3 -42, Rīga, Rīga, LV-1055, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Grīvas iela 3 -42, Rīga, Rīga, LV-1055, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "kristinesa2@inbox.lv",
+              "candidates": [
+                {
+                  "id": 1278,
+                  "name": "Kristīne Vasiļevska"
+                }
+              ]
+            },
+            "phone": {
+              "term": "20483138",
+              "candidates": [
+                {
+                  "id": 1278,
+                  "name": "Kristīne Vasiļevska"
+                }
+              ]
+            },
+            "name": {
+              "term": "Kristīne Vasiļevska",
+              "candidates": [
+                {
+                  "id": 1278,
+                  "name": "Kristīne Vasiļevska"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            1278
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67019,
+      "org_id": 1278,
+      "found_by": "email",
+      "person_id": 1277,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kristinesa2@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67019,
+        "document_id": 15722371,
+        "client_id": 623888
+      },
+      "message_id": "18011819886916081"
+    }
+  }
+}
