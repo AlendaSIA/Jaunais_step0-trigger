@@ -1,0 +1,246 @@
+{
+  "payload_meta": {
+    "doc_id": 15722961,
+    "document_ref": "M-860325-30369",
+    "xml_len": 3629,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67026,
+    "title": "PT 15722961 M-860325-30369",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15722961,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "code": "RNBWS10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 2
+    },
+    "products_attached": [
+      {
+        "product_id": 7136,
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "quantity": 3.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2241
+      },
+      {
+        "product_id": 7107,
+        "name": "Shipping [Ship1]",
+        "quantity": 1.0,
+        "src_unit_price_net": 2.39,
+        "src_gross_unit_price": 2.89,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 2.89,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2242
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 935368,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 10391,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Lelde Lotuhova",
+        "email": "lelde.dudare@inbox.lv",
+        "phone": "29190265",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rīgas iela 13, Pļaviņas, LV-5120, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "lelde.dudare@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "lelde.dudare@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29190265"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Rīgas iela 13, Pļaviņas, LV-5120, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Rīgas iela 13, Pļaviņas, LV-5120, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "lelde.dudare@inbox.lv",
+              "candidates": [
+                {
+                  "id": 10391,
+                  "name": "Lelde Lotuhova"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29190265",
+              "candidates": [
+                {
+                  "id": 10391,
+                  "name": "Lelde Lotuhova"
+                }
+              ]
+            },
+            "name": {
+              "term": "Lelde Lotuhova",
+              "candidates": [
+                {
+                  "id": 10391,
+                  "name": "Lelde Lotuhova"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            10391
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67026,
+      "org_id": 10391,
+      "found_by": "email",
+      "person_id": 11706,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "lelde.dudare@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67026,
+        "document_id": 15722961,
+        "client_id": 935368
+      },
+      "message_id": "18015352054856142"
+    }
+  }
+}
