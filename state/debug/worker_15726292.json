@@ -1,0 +1,201 @@
+{
+  "payload_meta": {
+    "doc_id": 15726292,
+    "document_ref": "ALE 2601294",
+    "xml_len": 2204,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67045,
+    "title": "PT 15726292 ALE 2601294",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15726292,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 745641,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13109,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "DDM Solutions SIA",
+        "email": "maksims.gerasimovs@ddmsolutions.lv",
+        "phone": "29493879",
+        "regnr": "40103631199",
+        "vatnr": "LV40103631199",
+        "country": "LV",
+        "legal_address_formatted": "Brīvības gatve 401c, Rīga, LV1024, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103631199",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "maksims.gerasimovs@ddmsolutions.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "maksims.gerasimovs@ddmsolutions.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29493879"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103631199"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103631199"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Brīvības gatve 401c, Rīga, LV1024, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Brīvības gatve 401c, Rīga, LV1024, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 22863,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40103631199",
+              "candidates": []
+            },
+            "email": {
+              "term": "maksims.gerasimovs@ddmsolutions.lv",
+              "candidates": [
+                {
+                  "id": 13109,
+                  "name": "DDM Solutions SIA"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29493879",
+              "candidates": []
+            },
+            "name": {
+              "term": "DDM Solutions SIA",
+              "candidates": [
+                {
+                  "id": 13109,
+                  "name": "DDM Solutions SIA"
+                },
+                {
+                  "id": 7774,
+                  "name": "DDM Solutions SIA"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            13109,
+            7774
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67045,
+      "org_id": 13109,
+      "found_by": "email",
+      "person_id": 9441,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "maksims.gerasimovs@ddmsolutions.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67045,
+        "document_id": 15726292,
+        "client_id": 745641
+      },
+      "message_id": "18019008476236076"
+    }
+  }
+}
