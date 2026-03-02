@@ -1,0 +1,266 @@
+{
+  "payload_meta": {
+    "doc_id": 15725685,
+    "document_ref": "M-860325-30381",
+    "xml_len": 5064,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67043,
+    "title": "PT 15725685 M-860325-30381",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15725685,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBCXS10003]",
+        "code": "RNBCXS10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "code": "RNBWS10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]",
+        "code": "RNBCS10001",
+        "quantity": 3.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 3
+    },
+    "products_attached": [
+      {
+        "product_id": 7201,
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBCXS10003]",
+        "quantity": 2.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2284
+      },
+      {
+        "product_id": 7136,
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "quantity": 1.0,
+        "src_unit_price_net": 3.3,
+        "src_gross_unit_price": 3.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 3.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2285
+      },
+      {
+        "product_id": 7144,
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]",
+        "quantity": 3.0,
+        "src_unit_price_net": 3.71,
+        "src_gross_unit_price": 4.49,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 4.49,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2286
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 855506,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9271,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Amanda Merca",
+        "email": "mercaamanda@gmail.com",
+        "phone": "22171848",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rožu prospekts 48a, Rīga, Garkalnes novads, LV-1024, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "mercaamanda@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "mercaamanda@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "22171848"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Rožu prospekts 48a, Rīga, Garkalnes novads, LV-1024, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Rožu prospekts 48a, Rīga, Garkalnes novads, LV-1024, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "mercaamanda@gmail.com",
+              "candidates": [
+                {
+                  "id": 9271,
+                  "name": "Amanda Merca"
+                }
+              ]
+            },
+            "phone": {
+              "term": "22171848",
+              "candidates": []
+            },
+            "name": {
+              "term": "Amanda Merca",
+              "candidates": [
+                {
+                  "id": 9271,
+                  "name": "Amanda Merca"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            9271
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67043,
+      "org_id": 9271,
+      "found_by": "email",
+      "person_id": 10741,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "mercaamanda@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67043,
+        "document_id": 15725685,
+        "client_id": 855506
+      },
+      "message_id": "18019197547337904"
+    }
+  }
+}
