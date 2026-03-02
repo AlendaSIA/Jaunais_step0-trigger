@@ -1,0 +1,232 @@
+{
+  "payload_meta": {
+    "doc_id": 15724281,
+    "document_ref": "ALE 2601275",
+    "xml_len": 5008,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67021,
+    "title": "M-860325-30364 _ ALE 2601275",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15724281,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», Oranžā krāsā, 50 gb., M, 50 gb, FM270755M [FM270755M]",
+        "code": "FM270755M",
+        "quantity": 1.0,
+        "unit_price": 7.02,
+        "gross_unit_price": 8.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.88,
+        "gross_unit_price": 3.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7154,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Dimond Grip», Oranžā krāsā, 50 gb., M, 50 gb, FM270755M [FM270755M]"
+      },
+      {
+        "product_id": 7107,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1202867,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 14009,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Marīna Āriņa",
+        "email": "marina_1968@inbox.lv",
+        "phone": "26538347",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Ķekava Gaismas19/9    - 1, Ķekava, Ķekavas novads, 2123, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "marina_1968@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "marina_1968@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26538347"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Ķekava Gaismas19/9    - 1, Ķekava, Ķekavas novads, 2123, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Ķekava Gaismas19/9    - 1, Ķekava, Ķekavas novads, 2123, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "marina_1968@inbox.lv",
+              "candidates": [
+                {
+                  "id": 14009,
+                  "name": "Marīna Āriņa"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26538347",
+              "candidates": [
+                {
+                  "id": 14009,
+                  "name": "Marīna Āriņa"
+                }
+              ]
+            },
+            "name": {
+              "term": "Marīna Āriņa",
+              "candidates": [
+                {
+                  "id": 14009,
+                  "name": "Marīna Āriņa"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14009
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67021,
+      "org_id": 14009,
+      "found_by": "email",
+      "person_id": 15091,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "marina_1968@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67021,
+        "document_id": 15724281,
+        "client_id": 1202867
+      },
+      "message_id": "18019075265785981"
+    }
+  }
+}
