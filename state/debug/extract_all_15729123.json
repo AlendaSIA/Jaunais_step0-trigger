@@ -1,0 +1,280 @@
+{
+  "document_id": 15729123,
+  "client_id": "689914",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15729123"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-03-02"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2601311"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "689914"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Solus industry sia"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-03-02"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-03-02T12:25:44Z"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "0.00"
+    }
+  ],
+  "line_items": [],
+  "client_bundle": {
+    "client_id": "689914",
+    "client_endpoint": "/api/client/689914",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "689914"
+      },
+      {
+        "field": "client/Name",
+        "value": "Solus industry sia"
+      },
+      {
+        "field": "client/Email",
+        "value": "intars.sitniks@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "55403021011"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV55403021011"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Lizuma iela 1, Riga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-1006"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "26005853"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-08-02T10:03:01Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-08-02T10:03:01Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/689914",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/689914",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "219385"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "Solus industry sia, 26005853"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Lizuma iela 1, Riga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Zip",
+        "value": "LV-1006"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/689914",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
