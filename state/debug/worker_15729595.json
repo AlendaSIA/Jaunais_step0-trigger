@@ -13,12 +13,11 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "deal exists",
     "document_id": 15729595,
     "deal_id": 67054,
-    "created_title": "TEST PT 15729595 ALE 2601312",
+    "matched_title": "TEST PT 15729595 ALE 2601312",
     "pipeline_id": 7,
-    "stage_id": 50,
     "matched_tokens": [
       "15729595",
       "2601312"
