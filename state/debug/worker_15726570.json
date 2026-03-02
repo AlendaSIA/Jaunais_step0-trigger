@@ -1,0 +1,274 @@
+{
+  "payload_meta": {
+    "doc_id": 15726570,
+    "document_ref": "ALE 2601297",
+    "xml_len": 8983,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67012,
+    "title": "M-860325-30355 _ ALE 2601297",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15726570,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]",
+        "code": "RNBM10001",
+        "quantity": 5.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003",
+        "quantity": 5.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]",
+        "code": "RNBCS10001",
+        "quantity": 5.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7162,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+      },
+      {
+        "product_id": 7135,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]"
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      },
+      {
+        "product_id": 7111,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]"
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      },
+      {
+        "product_id": 7112,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+      },
+      {
+        "product_id": 7107,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 756011,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 7945,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Jolanta Reinfelde",
+        "email": "jolantareinfelde14@gmail.com",
+        "phone": "+37128294692",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Ezermalas iela 2k-1, Rīga, Lv-1006, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "jolantareinfelde14@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "jolantareinfelde14@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37128294692"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Ezermalas iela 2k-1, Rīga, Lv-1006, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Ezermalas iela 2k-1, Rīga, Lv-1006, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "jolantareinfelde14@gmail.com",
+              "candidates": [
+                {
+                  "id": 7945,
+                  "name": "Jolanta Reinfelde"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+37128294692",
+              "candidates": [
+                {
+                  "id": 7945,
+                  "name": "Jolanta Reinfelde"
+                }
+              ]
+            },
+            "name": {
+              "term": "Jolanta Reinfelde",
+              "candidates": [
+                {
+                  "id": 7945,
+                  "name": "Jolanta Reinfelde"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            7945
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67012,
+      "org_id": 7945,
+      "found_by": "email",
+      "person_id": 4051,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "jolantareinfelde14@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67012,
+        "document_id": 15726570,
+        "client_id": 756011
+      },
+      "message_id": "18019429347833370"
+    }
+  }
+}
