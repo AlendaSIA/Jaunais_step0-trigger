@@ -1,0 +1,225 @@
+{
+  "payload_meta": {
+    "doc_id": 15724293,
+    "document_ref": "ALE 2601276",
+    "xml_len": 4369,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67035,
+    "title": "PT 15724293 ALE 2601276",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15724293,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "LATEX DERMAGEL COATED PF L N100, med.cimdi [56818]",
+        "code": "56818",
+        "quantity": 2.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7297,
+        "name": "LATEX DERMAGEL COATED PF L N100, med.cimdi [56818]",
+        "quantity": 2.0,
+        "src_unit_price_net": 5.78,
+        "src_gross_unit_price": 6.99,
+        "src_include_tax": true,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.99,
+        "pipedrive_tax_method": "inclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2266
+      }
+    ],
+    "products_created": [
+      {
+        "name": "LATEX DERMAGEL COATED PF L N100, med.cimdi [56818]",
+        "id": 7297,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1013040,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12063,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Anda Āboliņa",
+        "email": "anda.abolina@hotmail.com",
+        "phone": "29449960",
+        "regnr": "310179-12236",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Bērzu iela 9, k-2, dz.75, Baloži, Ķekavas nov., LV-2112, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "310179-12236",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "anda.abolina@hotmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "anda.abolina@hotmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29449960"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "310179-12236"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Bērzu iela 9, k-2, dz.75, Baloži, Ķekavas nov., LV-2112, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Bērzu iela 9, k-2, dz.75, Baloži, Ķekavas nov., LV-2112, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "310179-12236",
+              "candidates": []
+            },
+            "email": {
+              "term": "anda.abolina@hotmail.com",
+              "candidates": [
+                {
+                  "id": 12063,
+                  "name": "Anda Āboliņa"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29449960",
+              "candidates": []
+            },
+            "name": {
+              "term": "Anda Āboliņa",
+              "candidates": [
+                {
+                  "id": 12063,
+                  "name": "Anda Āboliņa"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12063
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67035,
+      "org_id": 12063,
+      "found_by": "email",
+      "person_id": 13269,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "anda.abolina@hotmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67035,
+        "document_id": 15724293,
+        "client_id": 1013040
+      },
+      "message_id": "18019194746707306"
+    }
+  }
+}
