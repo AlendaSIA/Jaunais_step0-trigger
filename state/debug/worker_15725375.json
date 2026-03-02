@@ -1,0 +1,289 @@
+{
+  "payload_meta": {
+    "doc_id": 15725375,
+    "document_ref": "ALE 2601289",
+    "xml_len": 8326,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66989,
+    "title": "M-860325-30340 _ ALE 2601289",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15725375,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 7.0,
+        "unit_price": 0.82,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
+        "code": "RNBWM10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "HYDRA+ Medicare nitrila cimdi, M, 100 gb, ZARYS-RNBH03M [RNBHM10003]",
+        "code": "RNBHM10003",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7137,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]"
+      },
+      {
+        "product_id": 7105,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]"
+      },
+      {
+        "product_id": 7239,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "HYDRA+ Medicare nitrila cimdi, M, 100 gb, ZARYS-RNBH03M [RNBHM10003]"
+      },
+      {
+        "product_id": 7240,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "LATEX DERMAGEL COATED PF M N100, med.cimdi [3500-3]"
+      },
+      {
+        "product_id": 7241,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "BINGO traukiem - Citrons - 500ml [005249]"
+      },
+      {
+        "product_id": 7242,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [002378]"
+      },
+      {
+        "product_id": 7243,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Darba cimdi ASSEMBLY, XXL/11, P2826 / 11 [P2826]"
+      },
+      {
+        "product_id": 7244,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Darba cimdi PU-EKO, ar PU pārklājumu, pelēki XL/11  [1803 GREY / 11]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 738605,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13420,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Dace Jurševska",
+        "email": "dsso@inbox.lv",
+        "phone": "29331313",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Zemaišu 1, Rīga, LV-1002, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "dsso@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "dsso@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29331313"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Zemaišu 1, Rīga, LV-1002, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Zemaišu 1, Rīga, LV-1002, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 22860,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "dsso@inbox.lv",
+              "candidates": [
+                {
+                  "id": 13420,
+                  "name": "Dace Jurševska"
+                },
+                {
+                  "id": 12850,
+                  "name": "Dace Jurševska"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29331313",
+              "candidates": [
+                {
+                  "id": 13420,
+                  "name": "Dace Jurševska"
+                }
+              ]
+            },
+            "name": {
+              "term": "Dace Jurševska",
+              "candidates": [
+                {
+                  "id": 13420,
+                  "name": "Dace Jurševska"
+                },
+                {
+                  "id": 12850,
+                  "name": "Dace Jurševska"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            13420,
+            12850
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66989,
+      "org_id": 13420,
+      "found_by": "email",
+      "person_id": 28,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "dsso@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66989,
+        "document_id": 15725375,
+        "client_id": 738605
+      },
+      "message_id": "18019302653494240"
+    }
+  }
+}
