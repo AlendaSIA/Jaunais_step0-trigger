@@ -1,0 +1,255 @@
+{
+  "payload_meta": {
+    "doc_id": 15724389,
+    "document_ref": "ALE 2601279",
+    "xml_len": 5741,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 66987,
+    "title": "M-860325-30338 _ ALE 2601279",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15724389,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
+        "code": "RNBCL10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "code": "RNBRM10003",
+        "quantity": 1.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.39,
+        "gross_unit_price": 2.89,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 0
+    },
+    "products_attached": [
+      {
+        "product_id": 7175,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]"
+      },
+      {
+        "product_id": 7112,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+      },
+      {
+        "product_id": 7107,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Shipping [Ship1]"
+      }
+    ],
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1005729,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 11957,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Gundars Samoška",
+        "email": "gundars.samoska@gmail.com",
+        "phone": "26327686",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Jelgavas iela 25, Saldus, LV-3801, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "gundars.samoska@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "gundars.samoska@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "26327686"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Jelgavas iela 25, Saldus, LV-3801, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Jelgavas iela 25, Saldus, LV-3801, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 22855,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "gundars.samoska@gmail.com",
+              "candidates": [
+                {
+                  "id": 11957,
+                  "name": "Gundars Samoška"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26327686",
+              "candidates": [
+                {
+                  "id": 11957,
+                  "name": "Gundars Samoška"
+                }
+              ]
+            },
+            "name": {
+              "term": "Gundars Samoška",
+              "candidates": [
+                {
+                  "id": 11957,
+                  "name": "Gundars Samoška"
+                },
+                {
+                  "id": 3855,
+                  "name": "Gundars Samoška"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            11957,
+            3855
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 66987,
+      "org_id": 11957,
+      "found_by": "email",
+      "person_id": 3810,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "gundars.samoska@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 66987,
+        "document_id": 15724389,
+        "client_id": 1005729
+      },
+      "message_id": "18019230171524689"
+    }
+  }
+}
