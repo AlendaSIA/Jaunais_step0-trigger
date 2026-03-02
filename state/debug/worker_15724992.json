@@ -1,0 +1,244 @@
+{
+  "payload_meta": {
+    "doc_id": 15724992,
+    "document_ref": "ALE 2601285",
+    "xml_len": 2207,
+    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67036,
+    "title": "PT 15724992 ALE 2601285",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15724992,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 570878,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 10475,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA \"KRZ\"",
+        "email": "info@medeka.lv",
+        "phone": null,
+        "regnr": "40103533381",
+        "vatnr": "LV40103533381",
+        "country": "LV",
+        "legal_address_formatted": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103533381",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "info@medeka.lv"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103533381"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103533381"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 22857,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40103533381",
+              "candidates": [
+                {
+                  "id": 10475,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            },
+            "email": {
+              "term": "info@medeka.lv",
+              "candidates": [
+                {
+                  "id": 10475,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 13393,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "SIA \"KRZ\"",
+              "candidates": [
+                {
+                  "id": 10092,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10073,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10075,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10050,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10022,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10044,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 10043,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9992,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9993,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 129,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            10475,
+            13393,
+            10092,
+            10073,
+            10075,
+            10050,
+            10022,
+            10044,
+            10043,
+            9992,
+            9993,
+            129
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67036,
+      "org_id": 10475,
+      "found_by": "email",
+      "person_id": 11780,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "info@medeka.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67036,
+        "document_id": 15724992,
+        "client_id": 570878
+      },
+      "message_id": "18019065784195768"
+    }
+  }
+}
