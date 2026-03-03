@@ -14,8 +14,8 @@
   ],
   "worker_response": {
     "detail": {
-      "step": "03_products_sync",
-      "error": "429 Client Error: Too Many Requests for url: https://api.pipedrive.com/v1/products/search?term=65-889&limit=20&api_token=d93f43e2c35a60cc21c8d229cd86bf9f8e59c370"
+      "step": "99_update_products",
+      "error": "Missing GOOGLE_CLOUD_PROJECT (or GCP_PROJECT) env var for Pub/Sub topic_path"
     }
   }
 }
