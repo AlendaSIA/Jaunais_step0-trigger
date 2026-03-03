@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15729595,
     "document_ref": "ALE 2601312",
-    "xml_len": 6968,
+    "xml_len": 7485,
     "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,14 +13,8 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "deal exists",
-    "document_id": 15729595,
-    "deal_id": 67054,
-    "matched_title": "TEST PT 15729595 ALE 2601312",
-    "pipeline_id": 7,
-    "matched_tokens": [
-      "15729595",
-      "2601312"
-    ]
+    "ok": true,
+    "skipped": true,
+    "reason": "no_message_data"
   }
 }
