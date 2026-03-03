@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67088,
+    "deal_id": 67089,
     "title": "PT 15729775 ALE 2601313",
     "_trace": [
       {
@@ -104,7 +104,7 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2415
+        "added_id": 2418
       },
       {
         "product_id": 7398,
@@ -117,7 +117,7 @@
         "pipedrive_item_price": 3.59,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2416
+        "added_id": 2419
       },
       {
         "product_id": 7400,
@@ -130,7 +130,7 @@
         "pipedrive_item_price": 2.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2417
+        "added_id": 2420
       }
     ],
     "products_created": [],
@@ -238,7 +238,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67088,
+      "deal_id": 67089,
       "org_id": 10515,
       "found_by": "email",
       "person_id": 11816,
@@ -261,11 +261,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67088,
+        "deal_id": 67089,
         "document_id": 15729775,
         "client_id": 944459
       },
-      "message_id": "18028397343282151"
+      "message_id": "18028347638711369"
     }
   }
 }
