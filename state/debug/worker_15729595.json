@@ -3,7 +3,7 @@
     "doc_id": 15729595,
     "document_ref": "ALE 2601312",
     "xml_len": 7485,
-    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+    "process_url": "https://pipedrive-worker-v2-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
     "id",
@@ -13,8 +13,109 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "ok": true,
-    "skipped": true,
-    "reason": "no_message_data"
+    "status": "updated",
+    "deal_id": 67054,
+    "title": "PT 15729595 ALE 2601312",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      }
+    ],
+    "document_id": 15729595,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+        "code": "MelHY",
+        "quantity": 1.0,
+        "unit_price": 2.06,
+        "gross_unit_price": 2.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "price_source": "gross_divided"
+      },
+      {
+        "name": "Bacticide AF 1 litrs [65-010]",
+        "code": "65-010",
+        "quantity": 2.0,
+        "unit_price": 7.43,
+        "gross_unit_price": 8.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "price_source": "gross_divided"
+      },
+      {
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "code": "65-085",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "price_source": "gross_divided"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7147,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]"
+      },
+      {
+        "product_id": 7138,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Bacticide AF 1 litrs [65-010]"
+      },
+      {
+        "product_id": 7396,
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "added_id": 2401
+      },
+      {
+        "product_id": 7144,
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "id": 7396,
+        "reason": "multiple_matches"
+      }
+    ],
+    "activities_created": [
+      {
+        "deal_id": 67054,
+        "subject": "⚠️ Manual check: multiple product matches"
+      }
+    ]
   }
 }
