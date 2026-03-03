@@ -1,0 +1,76 @@
+{
+  "payload_meta": {
+    "doc_id": 15736399,
+    "document_ref": "M-860325-30404",
+    "xml_len": 3695,
+    "process_url": "https://pipedrive-worker-v2-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67080,
+    "title": "PT 15736399 M-860325-30404",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      }
+    ],
+    "document_id": 15736399,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Respirators FFP2 melns , bez vārsta [hyffp2b]",
+        "code": "hyffp2b",
+        "quantity": 5.0,
+        "unit_price": 1.9,
+        "gross_unit_price": 2.3,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "price_source": "gross_divided"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7399,
+        "name": "Respirators FFP2 melns , bez vārsta [hyffp2b]",
+        "quantity": 5.0,
+        "unit_price": 1.9,
+        "added_id": 2404
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Respirators FFP2 melns , bez vārsta [hyffp2b]",
+        "id": 7399,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": []
+  }
+}
