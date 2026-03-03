@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67100,
+    "deal_id": 67104,
     "title": "PT 15730112 M-860325-30387",
     "_trace": [
       {
@@ -82,7 +82,7 @@
     },
     "products_attached": [
       {
-        "product_id": 7417,
+        "product_id": 7447,
         "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
         "quantity": 10.0,
         "src_unit_price_net": 3.3,
@@ -92,10 +92,10 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2445
+        "added_id": 2475
       },
       {
-        "product_id": 7418,
+        "product_id": 7448,
         "name": "Shipping [Ship1]",
         "quantity": 1.0,
         "src_unit_price_net": 1.81,
@@ -105,18 +105,18 @@
         "pipedrive_item_price": 2.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2446
+        "added_id": 2476
       }
     ],
     "products_created": [
       {
         "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
-        "id": 7417,
+        "id": 7447,
         "reason": "not_found"
       },
       {
         "name": "Shipping [Ship1]",
-        "id": 7418,
+        "id": 7448,
         "reason": "not_found"
       }
     ],
@@ -178,7 +178,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 22977,
+        "activity_id": 22978,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -198,7 +198,12 @@
             },
             "phone": {
               "term": "25123594",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14015,
+                  "name": "Ieva Socka"
+                }
+              ]
             },
             "name": {
               "term": "Ieva Socka",
@@ -224,7 +229,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67100,
+      "deal_id": 67104,
       "org_id": 14015,
       "found_by": "email",
       "person_id": 15098,
@@ -247,11 +252,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67100,
+        "deal_id": 67104,
         "document_id": 15730112,
         "client_id": 1204154
       },
-      "message_id": "18028356677325762"
+      "message_id": "18029870233199054"
     }
   }
 }
