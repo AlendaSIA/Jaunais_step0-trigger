@@ -1,0 +1,21 @@
+{
+  "payload_meta": {
+    "doc_id": 15730136,
+    "document_ref": "ALE 2601315",
+    "xml_len": 14288,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "detail": {
+      "step": "99_update_products",
+      "error": "Missing GOOGLE_CLOUD_PROJECT (or GCP_PROJECT) env var for Pub/Sub topic_path"
+    }
+  }
+}
