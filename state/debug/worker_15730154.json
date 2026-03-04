@@ -1,0 +1,229 @@
+{
+  "payload_meta": {
+    "doc_id": 15730154,
+    "document_ref": "ALE 2601316",
+    "xml_len": 5455,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67125,
+    "title": "PT 15730154 ALE 2601316",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15730154,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
+        "code": "FM28509KM",
+        "quantity": 10.0,
+        "unit_price": 6.6,
+        "gross_unit_price": 6.6,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "attached_count": 1
+    },
+    "products_attached": [
+      {
+        "product_id": 7471,
+        "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
+        "quantity": 10.0,
+        "src_unit_price_net": 6.6,
+        "src_gross_unit_price": 6.6,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.6,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2510
+      }
+    ],
+    "products_created": [
+      {
+        "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
+        "id": 7471,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1199572,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13986,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA “Mītavas Būve’’",
+        "email": "sili@hostelsili.lv",
+        "phone": "24807777",
+        "regnr": "40003939555",
+        "vatnr": "LV40003939555",
+        "country": "LV",
+        "legal_address_formatted": "Viskaļu iela 87–1, Jelgava, 3008, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40003939555",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "sili@hostelsili.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "sili@hostelsili.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "24807777"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40003939555"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40003939555"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Viskaļu iela 87–1, Jelgava, 3008, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Viskaļu iela 87–1, Jelgava, 3008, LV"
+        }
+      },
+      "note": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40003939555",
+              "candidates": []
+            },
+            "email": {
+              "term": "sili@hostelsili.lv",
+              "candidates": [
+                {
+                  "id": 13986,
+                  "name": "SIA “Mītavas Būve’’"
+                }
+              ]
+            },
+            "phone": {
+              "term": "24807777",
+              "candidates": []
+            },
+            "name": {
+              "term": "SIA “Mītavas Būve’’",
+              "candidates": [
+                {
+                  "id": 13986,
+                  "name": "SIA “Mītavas Būve’’"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            13986
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67125,
+      "org_id": 13986,
+      "found_by": "email",
+      "person_id": 15073,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "sili@hostelsili.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67125,
+        "document_id": 15730154,
+        "client_id": 1199572
+      },
+      "message_id": "18035038468413766"
+    }
+  }
+}
