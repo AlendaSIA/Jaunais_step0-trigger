@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67124,
+    "deal_id": 67140,
     "title": "PT 15730136 ALE 2601315",
     "_trace": [
       {
@@ -94,8 +94,9 @@
     },
     "products_attached": [
       {
-        "product_id": 7450,
-        "name": null,
+        "product_id": 8143,
+        "code": "200006",
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
         "quantity": 10.0,
         "src_unit_price_net": 0.82,
         "src_gross_unit_price": 0.99,
@@ -104,10 +105,11 @@
         "pipedrive_item_price": 0.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2496
+        "added_id": 2532
       },
       {
         "product_id": 7458,
+        "code": "FOL-CPE/B/22",
         "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
         "quantity": 1.0,
         "src_unit_price_net": 1.81,
@@ -117,10 +119,11 @@
         "pipedrive_item_price": 2.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2497
+        "added_id": 2533
       },
       {
-        "product_id": 7459,
+        "product_id": 8920,
+        "code": "YPB-G-1M",
         "name": "yellowPOWER Band vingrošanas (pretestības)  gumija,208 cm x 1,3 cm, 6-11 kg [YPB-G-1M]",
         "quantity": 1.0,
         "src_unit_price_net": 6.6,
@@ -130,10 +133,11 @@
         "pipedrive_item_price": 7.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2498
+        "added_id": 2534
       },
       {
-        "product_id": 7460,
+        "product_id": 7705,
+        "code": "65-104",
         "name": "CHEMISEPT G 500 ml, dez.lidz. [65-104]",
         "quantity": 1.0,
         "src_unit_price_net": 5.69,
@@ -143,10 +147,11 @@
         "pipedrive_item_price": 6.89,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2499
+        "added_id": 2535
       },
       {
-        "product_id": 7461,
+        "product_id": 7695,
+        "code": "65-109",
         "name": "CHEMISEPT FG 250ML dez.līdz. [65-109]",
         "quantity": 1.0,
         "src_unit_price_net": 5.78,
@@ -156,10 +161,11 @@
         "pipedrive_item_price": 6.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2500
+        "added_id": 2536
       },
       {
-        "product_id": 7462,
+        "product_id": 8744,
+        "code": "PP65-210",
         "name": "SWELL EXTRA CHG 500 ml. ar dozat., dez.līdz. [PP65-210]",
         "quantity": 1.0,
         "src_unit_price_net": 4.95,
@@ -169,10 +175,11 @@
         "pipedrive_item_price": 5.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2501
+        "added_id": 2537
       },
       {
-        "product_id": 7463,
+        "product_id": 8000,
+        "code": "67-055",
         "name": "GOLD DROP BOOSTER STAIN REMOVER 500 ML mazg. līdz [67-055]",
         "quantity": 1.0,
         "src_unit_price_net": 2.64,
@@ -182,10 +189,11 @@
         "pipedrive_item_price": 3.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2502
+        "added_id": 2538
       },
       {
-        "product_id": 7464,
+        "product_id": 8905,
+        "code": "004037",
         "name": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [004037]",
         "quantity": 1.0,
         "src_unit_price_net": 1.89,
@@ -195,10 +203,11 @@
         "pipedrive_item_price": 2.29,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2503
+        "added_id": 2539
       },
       {
-        "product_id": 7465,
+        "product_id": 7925,
+        "code": "65-054",
         "name": "Ecosoft LOTION 1000 ml, ziepes [65-054]",
         "quantity": 1.0,
         "src_unit_price_net": 3.79,
@@ -208,10 +217,11 @@
         "pipedrive_item_price": 4.59,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2504
+        "added_id": 2540
       },
       {
-        "product_id": 7466,
+        "product_id": 8223,
+        "code": "25-122",
         "name": "LDPE 60L AIZVELKAMI atkr.maisi 25mikr 10m/rullī [25-122]",
         "quantity": 3.0,
         "src_unit_price_net": 1.4,
@@ -221,10 +231,11 @@
         "pipedrive_item_price": 1.69,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2505
+        "added_id": 2541
       },
       {
-        "product_id": 7467,
+        "product_id": 8025,
+        "code": "25-325",
         "name": "HDPE 25L atkritumu maisi, 9mkr,48X60cm,20m rulllī [25-325]",
         "quantity": 2.0,
         "src_unit_price_net": 0.65,
@@ -234,10 +245,11 @@
         "pipedrive_item_price": 0.79,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2506
+        "added_id": 2542
       },
       {
-        "product_id": 7468,
+        "product_id": 7898,
+        "code": "65-889",
         "name": "Dezinfekcijas salvetes Chemisept Wipes N200, 65-889 [65-889]",
         "quantity": 1.0,
         "src_unit_price_net": 9.08,
@@ -247,10 +259,11 @@
         "pipedrive_item_price": 10.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2507
+        "added_id": 2543
       },
       {
-        "product_id": 7469,
+        "product_id": 7626,
+        "code": "RNBWM10003",
         "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
         "quantity": 1.0,
         "src_unit_price_net": 3.3,
@@ -260,10 +273,11 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2508
+        "added_id": 2544
       },
       {
-        "product_id": 7470,
+        "product_id": 7623,
+        "code": "RNBWS10003",
         "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
         "quantity": 1.0,
         "src_unit_price_net": 3.3,
@@ -273,83 +287,17 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2509
+        "added_id": 2545
       }
     ],
-    "products_created": [
-      {
-        "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
-        "id": 7458,
-        "reason": "not_found"
-      },
-      {
-        "name": "yellowPOWER Band vingrošanas (pretestības)  gumija,208 cm x 1,3 cm, 6-11 kg [YPB-G-1M]",
-        "id": 7459,
-        "reason": "not_found"
-      },
-      {
-        "name": "CHEMISEPT G 500 ml, dez.lidz. [65-104]",
-        "id": 7460,
-        "reason": "not_found"
-      },
-      {
-        "name": "CHEMISEPT FG 250ML dez.līdz. [65-109]",
-        "id": 7461,
-        "reason": "not_found"
-      },
-      {
-        "name": "SWELL EXTRA CHG 500 ml. ar dozat., dez.līdz. [PP65-210]",
-        "id": 7462,
-        "reason": "not_found"
-      },
-      {
-        "name": "GOLD DROP BOOSTER STAIN REMOVER 500 ML mazg. līdz [67-055]",
-        "id": 7463,
-        "reason": "not_found"
-      },
-      {
-        "name": "WC KURMIS, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [004037]",
-        "id": 7464,
-        "reason": "not_found"
-      },
-      {
-        "name": "Ecosoft LOTION 1000 ml, ziepes [65-054]",
-        "id": 7465,
-        "reason": "not_found"
-      },
-      {
-        "name": "LDPE 60L AIZVELKAMI atkr.maisi 25mikr 10m/rullī [25-122]",
-        "id": 7466,
-        "reason": "not_found"
-      },
-      {
-        "name": "HDPE 25L atkritumu maisi, 9mkr,48X60cm,20m rulllī [25-325]",
-        "id": 7467,
-        "reason": "not_found"
-      },
-      {
-        "name": "Dezinfekcijas salvetes Chemisept Wipes N200, 65-889 [65-889]",
-        "id": 7468,
-        "reason": "not_found"
-      },
-      {
-        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, M izmērs   [RNBWM10003]",
-        "id": 7469,
-        "reason": "not_found"
-      },
-      {
-        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
-        "id": 7470,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 932849,
       "found_by": "regnr",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 10349,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -370,33 +318,51 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "kristiine.musinska@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "27486295"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "060192-12458"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Strēlnieku 39-22, Tukums, Tukums, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Strēlnieku 39-22, Tukums, Tukums, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "kristiine.musinska@gmail.com",
+            "old": "kristiine.musinska@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "27486295",
+            "old": "27486295",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "060192-12458",
+            "old": "060192-12458",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Strēlnieku 39-22, Tukums, Tukums, LV",
+            "old": "Strēlnieku 39-22, Tukums, Tukums, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Strēlnieku 39-22, Tukums, Tukums, LV",
+            "old": "Strēlnieku 39-22, Tukums, Tukums, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -450,7 +416,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67124,
+      "deal_id": 67140,
       "org_id": 10349,
       "found_by": "email",
       "person_id": 11667,
@@ -473,11 +439,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67124,
+        "deal_id": 67140,
         "document_id": 15730136,
         "client_id": 932849
       },
-      "message_id": "18034827314862147"
+      "message_id": "18036761949699589"
     }
   }
 }
