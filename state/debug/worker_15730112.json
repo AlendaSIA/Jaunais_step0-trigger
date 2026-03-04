@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67137,
+    "deal_id": 67138,
     "title": "PT 15730112 M-860325-30387",
     "_trace": [
       {
@@ -82,7 +82,7 @@
     },
     "products_attached": [
       {
-        "product_id": 7447,
+        "product_id": 7911,
         "name": null,
         "quantity": 10.0,
         "src_unit_price_net": 3.3,
@@ -92,11 +92,11 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2528
+        "added_id": 2530
       },
       {
-        "product_id": 7448,
-        "name": null,
+        "product_id": 8977,
+        "name": "Shipping [Ship1]",
         "quantity": 1.0,
         "src_unit_price_net": 1.81,
         "src_gross_unit_price": 2.19,
@@ -105,7 +105,7 @@
         "pipedrive_item_price": 2.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2529
+        "added_id": 2531
       }
     ],
     "products_created": [],
@@ -114,8 +114,8 @@
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1204154,
-      "found_by": "email",
-      "org_action": "skipped_no_changes",
+      "found_by": "name",
+      "org_action": "updated",
       "org_id": 14015,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -137,27 +137,33 @@
           {
             "by": "email",
             "term": "ievasocka@gmail.com",
+            "found": false
+          },
+          {
+            "by": "name",
+            "term": "Ieva Socka",
             "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {},
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "ievasocka@gmail.com"
+        }
+      },
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [],
+        "kept_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc"
+        ],
         "skipped_same_keys": [
-          "faac2c792221bf18216ef17eae1941feef9a17cc",
           "4b4db855bb2ac128d585e2d84c554eb099e588f7",
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
-          "faac2c792221bf18216ef17eae1941feef9a17cc": {
-            "new": "ievasocka@gmail.com",
-            "old": "ievasocka@gmail.com",
-            "reason": "same"
-          },
           "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
             "new": "25123594",
             "old": "25123594",
@@ -181,10 +187,10 @@
         }
       },
       "dup_check": {
-        "potential_duplicates": true,
-        "activity_created": true,
-        "activity_id": 22997,
-        "skipped_reason": null,
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
         "debug": {
           "by": {
             "regnr": {
@@ -194,12 +200,7 @@
             },
             "email": {
               "term": "ievasocka@gmail.com",
-              "candidates": [
-                {
-                  "id": 14015,
-                  "name": "Ieva Socka"
-                }
-              ]
+              "candidates": []
             },
             "phone": {
               "term": "25123594",
@@ -216,17 +217,12 @@
                 {
                   "id": 14015,
                   "name": "Ieva Socka"
-                },
-                {
-                  "id": 13408,
-                  "name": "Ieva Socka"
                 }
               ]
             }
           },
           "unique_ids": [
-            14015,
-            13408
+            14015
           ]
         }
       }
@@ -234,7 +230,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67137,
+      "deal_id": 67138,
       "org_id": 14015,
       "found_by": "email",
       "person_id": 15098,
@@ -257,11 +253,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67137,
+        "deal_id": 67138,
         "document_id": 15730112,
         "client_id": 1204154
       },
-      "message_id": "18546198703735955"
+      "message_id": "18034923638555518"
     }
   }
 }
