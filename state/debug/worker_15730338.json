@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67126,
+    "deal_id": 67144,
     "title": "PT 15730338 ALE 2601318",
     "_trace": [
       {
@@ -94,7 +94,8 @@
     },
     "products_attached": [
       {
-        "product_id": 7472,
+        "product_id": 8288,
+        "code": "RNBCL10003",
         "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
         "quantity": 2.0,
         "src_unit_price_net": 3.3,
@@ -104,10 +105,11 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2511
+        "added_id": 2550
       },
       {
-        "product_id": 7473,
+        "product_id": 7785,
+        "code": "77-190",
         "name": "CLINEX TEXTILE EXT 1L Līdzeklis tekstila tīrīšanai ar putekļu sūcējiem, 1 L, 77-190 [77-190]",
         "quantity": 1.0,
         "src_unit_price_net": 9.91,
@@ -117,10 +119,11 @@
         "pipedrive_item_price": 11.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2512
+        "added_id": 2551
       },
       {
-        "product_id": 7474,
+        "product_id": 7790,
+        "code": "77-614",
         "name": "CLINEX TEXTILE FOAM 1000ML AR SMIDZINĀTĀJU Tīrīšanas putas tekstilam, 1 L, 77-614 [77-614]",
         "quantity": 1.0,
         "src_unit_price_net": 4.92,
@@ -130,10 +133,11 @@
         "pipedrive_item_price": 5.95,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2513
+        "added_id": 2552
       },
       {
-        "product_id": 7475,
+        "product_id": 8048,
+        "code": "JS300Z",
         "name": "Indrustriālais papīrs 300 metri 1 kārta [JS300Z]",
         "quantity": 1.0,
         "src_unit_price_net": 8.1,
@@ -143,10 +147,11 @@
         "pipedrive_item_price": 9.8,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2514
+        "added_id": 2553
       },
       {
-        "product_id": 7476,
+        "product_id": 8145,
+        "code": "300057",
         "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
         "quantity": 1.0,
         "src_unit_price_net": 4.54,
@@ -156,10 +161,11 @@
         "pipedrive_item_price": 5.49,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2515
+        "added_id": 2554
       },
       {
-        "product_id": 7477,
+        "product_id": 7913,
+        "code": "RNBKM10003",
         "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
         "quantity": 1.0,
         "src_unit_price_net": 3.3,
@@ -169,48 +175,17 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2516
+        "added_id": 2555
       }
     ],
-    "products_created": [
-      {
-        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
-        "id": 7472,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX TEXTILE EXT 1L Līdzeklis tekstila tīrīšanai ar putekļu sūcējiem, 1 L, 77-190 [77-190]",
-        "id": 7473,
-        "reason": "not_found"
-      },
-      {
-        "name": "CLINEX TEXTILE FOAM 1000ML AR SMIDZINĀTĀJU Tīrīšanas putas tekstilam, 1 L, 77-614 [77-614]",
-        "id": 7474,
-        "reason": "not_found"
-      },
-      {
-        "name": "Indrustriālais papīrs 300 metri 1 kārta [JS300Z]",
-        "id": 7475,
-        "reason": "not_found"
-      },
-      {
-        "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
-        "id": 7476,
-        "reason": "not_found"
-      },
-      {
-        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
-        "id": 7477,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1202917,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 14011,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -236,29 +211,45 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "ilze.renemane@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "+37126981771"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "ilze.renemane@gmail.com",
+            "old": "ilze.renemane@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37126981771",
+            "old": "+37126981771",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV",
+            "old": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV",
+            "old": "Sēņu Iela 36, Carnikava Pagasts, Ādažu novads, 2163, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -308,7 +299,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67126,
+      "deal_id": 67144,
       "org_id": 14011,
       "found_by": "email",
       "person_id": 15093,
@@ -331,11 +322,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67126,
+        "deal_id": 67144,
         "document_id": 15730338,
         "client_id": 1202917
       },
-      "message_id": "18034898047859707"
+      "message_id": "18037485886854810"
     }
   }
 }
