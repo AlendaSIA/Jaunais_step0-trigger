@@ -13,8 +13,8 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "updated",
-    "deal_id": 67091,
+    "status": "created",
+    "deal_id": 67116,
     "title": "PT 15729775 ALE 2601313",
     "_trace": [
       {
@@ -94,7 +94,7 @@
     },
     "products_attached": [
       {
-        "product_id": 7415,
+        "product_id": 7456,
         "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XL izmērs  [RNBCXL10003]",
         "quantity": 2.0,
         "src_unit_price_net": 3.3,
@@ -104,10 +104,10 @@
         "pipedrive_item_price": 3.99,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2442
+        "added_id": 2493
       },
       {
-        "product_id": 7416,
+        "product_id": 7457,
         "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 S izmērs  [3616-2]",
         "quantity": 6.0,
         "src_unit_price_net": 2.97,
@@ -117,11 +117,11 @@
         "pipedrive_item_price": 3.59,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2443
+        "added_id": 2494
       },
       {
-        "product_id": 7414,
-        "name": "Shipping [Ship1]",
+        "product_id": 7448,
+        "name": null,
         "quantity": 1.0,
         "src_unit_price_net": 1.81,
         "src_gross_unit_price": 2.19,
@@ -130,18 +130,18 @@
         "pipedrive_item_price": 2.19,
         "pipedrive_tax_method": "inclusive",
         "pipedrive_tax": 21,
-        "added_id": 2444
+        "added_id": 2495
       }
     ],
     "products_created": [
       {
         "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, XL izmērs  [RNBCXL10003]",
-        "id": 7415,
+        "id": 7456,
         "reason": "not_found"
       },
       {
         "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 S izmērs  [3616-2]",
-        "id": 7416,
+        "id": 7457,
         "reason": "not_found"
       }
     ],
@@ -249,7 +249,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67091,
+      "deal_id": 67116,
       "org_id": 10515,
       "found_by": "email",
       "person_id": 11816,
@@ -272,11 +272,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67091,
+        "deal_id": 67116,
         "document_id": 15729775,
         "client_id": 944459
       },
-      "message_id": "18028984204497672"
+      "message_id": "18034306022232091"
     }
   }
 }
