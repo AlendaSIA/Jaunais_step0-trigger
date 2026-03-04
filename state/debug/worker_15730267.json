@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "updated",
-    "deal_id": 67108,
+    "deal_id": 67138,
     "title": "M-860325-30387 _ ALE 2601317",
     "_trace": [
       {
@@ -82,16 +82,18 @@
     },
     "products_attached": [
       {
-        "product_id": 7447,
+        "product_id": 7911,
         "skipped": true,
         "reason": "already_on_deal",
-        "name": null
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003"
       },
       {
-        "product_id": 7448,
+        "product_id": 8977,
         "skipped": true,
         "reason": "already_on_deal",
-        "name": null
+        "name": "Shipping [Ship1]",
+        "code": "Ship1"
       }
     ],
     "products_created": [],
@@ -101,7 +103,7 @@
       "mode": "paytraq_direct",
       "client_id": 1204154,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 14015,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -127,34 +129,50 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "ievasocka@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "25123594"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Nameja 1, Jekabpils, Lv-5201, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Nameja 1, Jekabpils, Lv-5201, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "ievasocka@gmail.com",
+            "old": "ievasocka@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "25123594",
+            "old": "25123594",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Nameja 1, Jekabpils, Lv-5201, LV",
+            "old": "Nameja 1, Jekabpils, Lv-5201, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Nameja 1, Jekabpils, Lv-5201, LV",
+            "old": "Nameja 1, Jekabpils, Lv-5201, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
       "dup_check": {
-        "potential_duplicates": true,
-        "activity_created": true,
-        "activity_id": 22990,
-        "skipped_reason": null,
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
         "debug": {
           "by": {
             "regnr": {
@@ -186,17 +204,12 @@
                 {
                   "id": 14015,
                   "name": "Ieva Socka"
-                },
-                {
-                  "id": 13408,
-                  "name": "Ieva Socka"
                 }
               ]
             }
           },
           "unique_ids": [
-            14015,
-            13408
+            14015
           ]
         }
       }
@@ -204,7 +217,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67108,
+      "deal_id": 67138,
       "org_id": 14015,
       "found_by": "email",
       "person_id": 15098,
@@ -227,11 +240,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67108,
+        "deal_id": 67138,
         "document_id": 15730267,
         "client_id": 1204154
       },
-      "message_id": "18034135666786755"
+      "message_id": "18036989802012931"
     }
   }
 }
