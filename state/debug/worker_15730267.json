@@ -78,24 +78,12 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 0
+      "added": 0,
+      "updated": 1,
+      "deleted": 0,
+      "skipped": 1
     },
-    "products_attached": [
-      {
-        "product_id": 7911,
-        "skipped": true,
-        "reason": "already_on_deal",
-        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
-        "code": "RNBKS10003"
-      },
-      {
-        "product_id": 8977,
-        "skipped": true,
-        "reason": "already_on_deal",
-        "name": "Shipping [Ship1]",
-        "code": "Ship1"
-      }
-    ],
+    "products_attached": null,
     "products_created": [],
     "activities_created": [],
     "step_04": {
@@ -244,7 +232,7 @@
         "document_id": 15730267,
         "client_id": 1204154
       },
-      "message_id": "18548442185077361"
+      "message_id": "18036107775928568"
     }
   }
 }
