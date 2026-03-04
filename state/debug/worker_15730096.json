@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67134,
     "title": "PT 15730096 ALE 2601314",
     "_trace": [
@@ -90,99 +90,50 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 7
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7449,
-        "name": null,
-        "quantity": 2.0,
-        "src_unit_price_net": 2.97,
-        "src_gross_unit_price": 3.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2521
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7450,
-        "name": null,
-        "quantity": 2.0,
-        "src_unit_price_net": 0.82,
-        "src_gross_unit_price": 0.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 0.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2522
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7451,
-        "name": null,
-        "quantity": 1.0,
-        "src_unit_price_net": 4.12,
-        "src_gross_unit_price": 4.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2523
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7452,
-        "name": null,
-        "quantity": 1.0,
-        "src_unit_price_net": 7.43,
-        "src_gross_unit_price": 8.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 8.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2524
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7453,
-        "name": null,
-        "quantity": 2.0,
-        "src_unit_price_net": 0.98,
-        "src_gross_unit_price": 1.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 1.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2525
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7454,
-        "name": null,
-        "quantity": 4.0,
-        "src_unit_price_net": 3.71,
-        "src_gross_unit_price": 4.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2526
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       },
       {
         "product_id": 7448,
-        "name": null,
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2527
+        "skipped": true,
+        "reason": "already_on_deal",
+        "name": null
       }
     ],
     "products_created": [],
@@ -192,7 +143,7 @@
       "mode": "paytraq_direct",
       "client_id": 1204054,
       "found_by": "regnr",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 14014,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -213,33 +164,51 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "lapsinustudija@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "28350891"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40203691616"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Sporta Iela 5, Augšlīgatne, LV-4108, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Sporta Iela 5, Augšlīgatne, LV-4108, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "lapsinustudija@gmail.com",
+            "old": "lapsinustudija@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "28350891",
+            "old": "28350891",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203691616",
+            "old": "40203691616",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Sporta Iela 5, Augšlīgatne, LV-4108, LV",
+            "old": "Sporta Iela 5, Augšlīgatne, LV-4108, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Sporta Iela 5, Augšlīgatne, LV-4108, LV",
+            "old": "Sporta Iela 5, Augšlīgatne, LV-4108, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -320,7 +289,7 @@
         "document_id": 15730096,
         "client_id": 1204054
       },
-      "message_id": "18034993738501501"
+      "message_id": "17742203110457859"
     }
   }
 }
