@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67143,
     "title": "PT 15730267 ALE 2601317",
     "_trace": [
@@ -78,36 +78,22 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "attached_count": 0
     },
     "products_attached": [
       {
         "product_id": 7911,
-        "code": "RNBKS10003",
+        "skipped": true,
+        "reason": "already_on_deal",
         "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
-        "quantity": 10.0,
-        "src_unit_price_net": 3.3,
-        "src_gross_unit_price": 3.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2548
+        "code": "RNBKS10003"
       },
       {
         "product_id": 8977,
-        "code": "Ship1",
+        "skipped": true,
+        "reason": "already_on_deal",
         "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 1.81,
-        "src_gross_unit_price": 2.19,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 2.19,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2549
+        "code": "Ship1"
       }
     ],
     "products_created": [],
@@ -258,7 +244,7 @@
         "document_id": 15730267,
         "client_id": 1204154
       },
-      "message_id": "18037059446880651"
+      "message_id": "18036989318073929"
     }
   }
 }
