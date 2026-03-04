@@ -13,8 +13,8 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "updated",
-    "deal_id": 67141,
+    "status": "created",
+    "deal_id": 67142,
     "title": "PT 15730154 ALE 2601316",
     "_trace": [
       {
@@ -66,15 +66,22 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 0
+      "attached_count": 1
     },
     "products_attached": [
       {
         "product_id": 8519,
-        "skipped": true,
-        "reason": "already_on_deal",
+        "code": "FM28509KM",
         "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
-        "code": "FM28509KM"
+        "quantity": 10.0,
+        "src_unit_price_net": 6.6,
+        "src_gross_unit_price": 6.6,
+        "src_include_tax": false,
+        "src_vat_rate": 0.21,
+        "pipedrive_item_price": 6.6,
+        "pipedrive_tax_method": "exclusive",
+        "pipedrive_tax": 21,
+        "added_id": 2547
       }
     ],
     "products_created": [],
@@ -209,7 +216,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67141,
+      "deal_id": 67142,
       "org_id": 13986,
       "found_by": "email",
       "person_id": 15073,
@@ -232,11 +239,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67141,
+        "deal_id": 67142,
         "document_id": 15730154,
         "client_id": 1199572
       },
-      "message_id": "18037612294900274"
+      "message_id": "18036435242075030"
     }
   }
 }
