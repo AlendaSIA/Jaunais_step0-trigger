@@ -1,0 +1,252 @@
+{
+  "payload_meta": {
+    "doc_id": 15730463,
+    "document_ref": "ALE 2601319",
+    "xml_len": 10100,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67147,
+    "title": "PT 15730463 ALE 2601319",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15730463,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "code": "RNBWS10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, S izmērs, [RNBKS10003]",
+        "code": "RNBKS10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Spilgti  Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, [RNBMS10003]",
+        "code": "RNBMS10003",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 8,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 854645,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 9247,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Elīna Hremenkina",
+        "email": "elina.hremenkina@inbox.lv",
+        "phone": "26147216",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Celtnieku iela 2, Saldus, Saldus, LV-3801, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "elina.hremenkina@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "elina.hremenkina@inbox.lv",
+            "old": "elina.hremenkina@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26147216",
+            "old": "26147216",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Celtnieku iela 2, Saldus, Saldus, LV-3801, LV",
+            "old": "Celtnieku iela 2, Saldus, Saldus, LV-3801, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Celtnieku iela 2, Saldus, Saldus, LV-3801, LV",
+            "old": "Celtnieku iela 2, Saldus, Saldus, LV-3801, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "elina.hremenkina@inbox.lv",
+              "candidates": [
+                {
+                  "id": 9247,
+                  "name": "Elīna Hremenkina"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26147216",
+              "candidates": [
+                {
+                  "id": 9247,
+                  "name": "Elīna Hremenkina"
+                }
+              ]
+            },
+            "name": {
+              "term": "Elīna Hremenkina",
+              "candidates": [
+                {
+                  "id": 9247,
+                  "name": "Elīna Hremenkina"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            9247
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67147,
+      "org_id": 9247,
+      "found_by": "email",
+      "person_id": 10716,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "elina.hremenkina@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67147,
+        "document_id": 15730463,
+        "client_id": 854645
+      },
+      "message_id": "18034361761659028"
+    }
+  }
+}
