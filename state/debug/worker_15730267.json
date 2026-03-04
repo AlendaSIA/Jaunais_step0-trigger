@@ -80,7 +80,7 @@
       "ok": true,
       "added": 0,
       "updated": 0,
-      "deleted": 0,
+      "deleted": 1,
       "skipped": 2,
       "delete_allowed": true,
       "missing_code_count": 0
@@ -234,7 +234,7 @@
         "document_id": 15730267,
         "client_id": 1204154
       },
-      "message_id": "18035931961552203"
+      "message_id": "18036076759017181"
     }
   }
 }
