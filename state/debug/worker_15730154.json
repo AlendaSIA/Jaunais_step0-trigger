@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67125,
+    "deal_id": 67141,
     "title": "PT 15730154 ALE 2601316",
     "_trace": [
       {
@@ -70,7 +70,8 @@
     },
     "products_attached": [
       {
-        "product_id": 7471,
+        "product_id": 8519,
+        "code": "FM28509KM",
         "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
         "quantity": 10.0,
         "src_unit_price_net": 6.6,
@@ -80,23 +81,17 @@
         "pipedrive_item_price": 6.6,
         "pipedrive_tax_method": "exclusive",
         "pipedrive_tax": 21,
-        "added_id": 2510
+        "added_id": 2546
       }
     ],
-    "products_created": [
-      {
-        "name": "Overshoes for Easy Box, blue | PE 100 pcs [FM28509KM]",
-        "id": 7471,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1199572,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
       "org_id": 13986,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -113,46 +108,61 @@
           {
             "by": "regnr",
             "term": "40003939555",
-            "found": false
-          },
-          {
-            "by": "email",
-            "term": "sili@hostelsili.lv",
             "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "sili@hostelsili.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "24807777"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40003939555"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40003939555"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Viskaļu iela 87–1, Jelgava, 3008, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Viskaļu iela 87–1, Jelgava, 3008, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "sili@hostelsili.lv",
+            "old": "sili@hostelsili.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "24807777",
+            "old": "24807777",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40003939555",
+            "old": "40003939555",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40003939555",
+            "old": "LV40003939555",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Viskaļu iela 87–1, Jelgava, 3008, LV",
+            "old": "Viskaļu iela 87–1, Jelgava, 3008, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Viskaļu iela 87–1, Jelgava, 3008, LV",
+            "old": "Viskaļu iela 87–1, Jelgava, 3008, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -162,7 +172,12 @@
           "by": {
             "regnr": {
               "term": "40003939555",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13986,
+                  "name": "SIA “Mītavas Būve’’"
+                }
+              ]
             },
             "email": {
               "term": "sili@hostelsili.lv",
@@ -175,7 +190,12 @@
             },
             "phone": {
               "term": "24807777",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13986,
+                  "name": "SIA “Mītavas Būve’’"
+                }
+              ]
             },
             "name": {
               "term": "SIA “Mītavas Būve’’",
@@ -196,7 +216,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67125,
+      "deal_id": 67141,
       "org_id": 13986,
       "found_by": "email",
       "person_id": 15073,
@@ -219,11 +239,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67125,
+        "deal_id": 67141,
         "document_id": 15730154,
         "client_id": 1199572
       },
-      "message_id": "18035038468413766"
+      "message_id": "18035042027953544"
     }
   }
 }
