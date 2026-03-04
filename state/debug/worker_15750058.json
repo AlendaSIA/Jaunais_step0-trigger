@@ -79,9 +79,9 @@
     "step_03": {
       "ok": true,
       "added": 0,
-      "updated": 1,
-      "deleted": 1,
-      "skipped": 1,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -161,7 +161,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23002,
+        "activity_id": 23003,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -245,7 +245,7 @@
         "document_id": 15750058,
         "client_id": 838310
       },
-      "message_id": "18037529009258061"
+      "message_id": "18037016378427173"
     }
   }
 }
