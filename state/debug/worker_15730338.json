@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67144,
     "title": "PT 15730338 ALE 2601318",
     "_trace": [
@@ -90,94 +90,14 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 6
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 6,
+      "delete_allowed": true,
+      "missing_code_count": 0
     },
-    "products_attached": [
-      {
-        "product_id": 8288,
-        "code": "RNBCL10003",
-        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
-        "quantity": 2.0,
-        "src_unit_price_net": 3.3,
-        "src_gross_unit_price": 3.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2550
-      },
-      {
-        "product_id": 7785,
-        "code": "77-190",
-        "name": "CLINEX TEXTILE EXT 1L Līdzeklis tekstila tīrīšanai ar putekļu sūcējiem, 1 L, 77-190 [77-190]",
-        "quantity": 1.0,
-        "src_unit_price_net": 9.91,
-        "src_gross_unit_price": 11.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 11.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2551
-      },
-      {
-        "product_id": 7790,
-        "code": "77-614",
-        "name": "CLINEX TEXTILE FOAM 1000ML AR SMIDZINĀTĀJU Tīrīšanas putas tekstilam, 1 L, 77-614 [77-614]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.92,
-        "src_gross_unit_price": 5.95,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.95,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2552
-      },
-      {
-        "product_id": 8048,
-        "code": "JS300Z",
-        "name": "Indrustriālais papīrs 300 metri 1 kārta [JS300Z]",
-        "quantity": 1.0,
-        "src_unit_price_net": 8.1,
-        "src_gross_unit_price": 9.8,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 9.8,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2553
-      },
-      {
-        "product_id": 8145,
-        "code": "300057",
-        "name": "Kliin Pure Pulp 3 kārtu MAXI WC papīrs 8 ruļļi iep. [300057]",
-        "quantity": 1.0,
-        "src_unit_price_net": 4.54,
-        "src_gross_unit_price": 5.49,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 5.49,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2554
-      },
-      {
-        "product_id": 7913,
-        "code": "RNBKM10003",
-        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.3,
-        "src_gross_unit_price": 3.99,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.99,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2555
-      }
-    ],
+    "products_attached": null,
     "products_created": [],
     "activities_created": [],
     "step_04": {
@@ -326,7 +246,7 @@
         "document_id": 15730338,
         "client_id": 1202917
       },
-      "message_id": "18037485886854810"
+      "message_id": "18037894433979903"
     }
   }
 }
