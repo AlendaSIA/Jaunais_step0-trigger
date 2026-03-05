@@ -1,0 +1,253 @@
+{
+  "payload_meta": {
+    "doc_id": 15734752,
+    "document_ref": "ALE 2601335",
+    "xml_len": 7531,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67249,
+    "title": "ALE2601335",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15734752,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Elastopor IV E – sterils pašlīmējošs IV kanulas pārsējs 5,1 x 7,6 cm (100 gab.) [811012E]",
+        "code": "811012E",
+        "quantity": 5.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 4.95,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 15.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "ElastoDOT – nesterili injekciju plāksteri Ø25 mm (100 gab.) [PP25]",
+        "code": "PP25",
+        "quantity": 5.0,
+        "unit_price": 1.5,
+        "gross_unit_price": 1.5,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 15.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Ķirurga kostīms, SMS, N1, , BT-017-S35B2-L-SMS [PP-BT-017-S35B3-L-SMS]",
+        "code": "PP-BT-017-S35B3-L-SMS",
+        "quantity": 100.0,
+        "unit_price": 1.5,
+        "gross_unit_price": 1.5,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 15.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 5,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 931246,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 10303,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Eksept, Sabiedrība ar ierobežotu atbildību",
+        "email": "velnav@eksept.lv",
+        "phone": null,
+        "regnr": "40103529916",
+        "vatnr": "LV40103529916",
+        "country": "LV",
+        "legal_address_formatted": "Birznieki, Liepupes pagasts, Limbažu novads, 4023, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103529916",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "address": {
+          "key": "address",
+          "value": "Birznieki, Liepupes pagasts, Limbažu novads, 4023, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Birznieki, Liepupes pagasts, Limbažu novads, 4023, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "velnav@eksept.lv",
+            "old": "velnav@eksept.lv",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40103529916",
+            "old": "40103529916",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40103529916",
+            "old": "LV40103529916",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40103529916",
+              "candidates": [
+                {
+                  "id": 10303,
+                  "name": "Eksept, Sabiedrība ar ierobežotu atbildību"
+                }
+              ]
+            },
+            "email": {
+              "term": "velnav@eksept.lv",
+              "candidates": [
+                {
+                  "id": 10303,
+                  "name": "Eksept, Sabiedrība ar ierobežotu atbildību"
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "Eksept, Sabiedrība ar ierobežotu atbildību",
+              "candidates": [
+                {
+                  "id": 10303,
+                  "name": "Eksept, Sabiedrība ar ierobežotu atbildību"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            10303
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67249,
+      "org_id": 10303,
+      "found_by": "email",
+      "person_id": 11627,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "velnav@eksept.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67249,
+        "document_id": 15734752,
+        "client_id": 931246
+      },
+      "message_id": "18051126304732124"
+    }
+  }
+}
