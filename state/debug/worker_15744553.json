@@ -1,0 +1,257 @@
+{
+  "payload_meta": {
+    "doc_id": 15744553,
+    "document_ref": "ALE 2601358",
+    "xml_len": 6151,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67273,
+    "title": "M-860325-30416 _ ALE 2601358",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15744553,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 M izmērs [3616-3]",
+        "code": "3616-3",
+        "quantity": 5.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "NITRYLEX PF GREEN N100 M izmers, med.cimdi [3603-3]",
+        "code": "3603-3",
+        "quantity": 5.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.88,
+        "gross_unit_price": 3.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 3,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 586710,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 527,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Vita Lukjančika",
+        "email": "vita.lukjancika@inbox.lv",
+        "phone": "29330418",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rēzeknes 1, Daugavpils, 5422, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "vita.lukjancika@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "vita.lukjancika@inbox.lv",
+            "old": "vita.lukjancika@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29330418",
+            "old": "29330418",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Rēzeknes 1, Daugavpils, 5422, LV",
+            "old": "Rēzeknes 1, Daugavpils, 5422, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Rēzeknes 1, Daugavpils, 5422, LV",
+            "old": "Rēzeknes 1, Daugavpils, 5422, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23047,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "vita.lukjancika@inbox.lv",
+              "candidates": [
+                {
+                  "id": 527,
+                  "name": "Vita Lukjančika"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29330418",
+              "candidates": [
+                {
+                  "id": 527,
+                  "name": "Vita Lukjančika"
+                }
+              ]
+            },
+            "name": {
+              "term": "Vita Lukjančika",
+              "candidates": [
+                {
+                  "id": 527,
+                  "name": "Vita Lukjančika"
+                },
+                {
+                  "id": 9498,
+                  "name": "Vita Lukjančika"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            527,
+            9498
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67273,
+      "org_id": 527,
+      "found_by": "email",
+      "person_id": 13588,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "vita.lukjancika@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67273,
+        "document_id": 15744553,
+        "client_id": 586710
+      },
+      "message_id": "18051440245521297"
+    }
+  }
+}
