@@ -1,0 +1,257 @@
+{
+  "payload_meta": {
+    "doc_id": 15732179,
+    "document_ref": "M-860325-30394",
+    "xml_len": 4521,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67241,
+    "title": "M-860325-30394",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15732179,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, S izmērs   [RNBWS10003]",
+        "code": "RNBWS10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , S, 100 gb, FM2706M [FM2706M]",
+        "code": "FM2706M",
+        "quantity": 1.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.88,
+        "gross_unit_price": 3.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 3,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 888860,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 9731,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Sintija Sakne",
+        "email": "sintijadilaane@inbox.lv",
+        "phone": "29398919",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Pērnavas iela 22, Jelgava, LV3004, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "sintijadilaane@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "sintijadilaane@inbox.lv",
+            "old": "sintijadilaane@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29398919",
+            "old": "29398919",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Pērnavas iela 22, Jelgava, LV3004, LV",
+            "old": "Pērnavas iela 22, Jelgava, LV3004, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Pērnavas iela 22, Jelgava, LV3004, LV",
+            "old": "Pērnavas iela 22, Jelgava, LV3004, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23026,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "sintijadilaane@inbox.lv",
+              "candidates": [
+                {
+                  "id": 9731,
+                  "name": "Sintija Sakne"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29398919",
+              "candidates": [
+                {
+                  "id": 9731,
+                  "name": "Sintija Sakne"
+                }
+              ]
+            },
+            "name": {
+              "term": "Sintija Sakne",
+              "candidates": [
+                {
+                  "id": 9731,
+                  "name": "Sintija Sakne"
+                },
+                {
+                  "id": 3595,
+                  "name": "Sintija Sakne"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            9731,
+            3595
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67241,
+      "org_id": 9731,
+      "found_by": "email",
+      "person_id": 3558,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "sintijadilaane@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67241,
+        "document_id": 15732179,
+        "client_id": 888860
+      },
+      "message_id": "18564742473703100"
+    }
+  }
+}
