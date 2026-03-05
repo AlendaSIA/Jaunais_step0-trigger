@@ -1,0 +1,252 @@
+{
+  "payload_meta": {
+    "doc_id": 15741217,
+    "document_ref": "ALE 2601352",
+    "xml_len": 7733,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67270,
+    "title": "M-860325-30413 _ ALE 2601352",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15741217,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, L izmērs    [RNBWL10003]",
+        "code": "RNBWL10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBCL10003]",
+        "code": "RNBCL10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, L izmērs [RNBKL10003]",
+        "code": "RNBKL10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 5,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 692548,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 51,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Dace Puriņa",
+        "email": "dace2608@gmail.com",
+        "phone": "26336762",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Juglas iela, Rīga, LV-1024, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "dace2608@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "dace2608@gmail.com",
+            "old": "dace2608@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26336762",
+            "old": "26336762",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Juglas iela, Rīga, LV-1024, LV",
+            "old": "Juglas iela, Rīga, LV-1024, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Juglas iela, Rīga, LV-1024, LV",
+            "old": "Juglas iela, Rīga, LV-1024, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "dace2608@gmail.com",
+              "candidates": [
+                {
+                  "id": 51,
+                  "name": "Dace Puriņa"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26336762",
+              "candidates": [
+                {
+                  "id": 51,
+                  "name": "Dace Puriņa"
+                }
+              ]
+            },
+            "name": {
+              "term": "Dace Puriņa",
+              "candidates": [
+                {
+                  "id": 51,
+                  "name": "Dace Puriņa"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            51
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67270,
+      "org_id": 51,
+      "found_by": "email",
+      "person_id": 51,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "dace2608@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67270,
+        "document_id": 15741217,
+        "client_id": 692548
+      },
+      "message_id": "18051119100867223"
+    }
+  }
+}
