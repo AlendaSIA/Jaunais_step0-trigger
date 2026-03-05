@@ -1,0 +1,262 @@
+{
+  "payload_meta": {
+    "doc_id": 15735902,
+    "document_ref": "PAS/0326/00001",
+    "xml_len": 6968,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67256,
+    "title": "PAS/0326/00001",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15735902,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Lideks WC 1 Litrs [Lideks]",
+        "code": "LWC-1",
+        "quantity": 20.0,
+        "unit_price": 2.9,
+        "gross_unit_price": 2.9,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "\"CIF PRO\"  Universāls virsmu uzkopšanas līdzeklis 5L [718659]",
+        "code": "718659",
+        "quantity": 3.0,
+        "unit_price": 18.0,
+        "gross_unit_price": 18.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "\"DIAMANT\" spīdīgs noturīgs polimēru vasks linolejam, 10L [701110]",
+        "code": "701110",
+        "quantity": 10.0,
+        "unit_price": 89.5,
+        "gross_unit_price": 89.5,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 5,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [
+      {
+        "name": "Lideks WC 1 Litrs [Lideks] [LWC-1]",
+        "id": 8980,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 614041,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9403,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Rīgas valstspilsētas pašvaldība",
+        "email": "velnav@rigaspas.lv",
+        "phone": null,
+        "regnr": "90011524360",
+        "vatnr": "LV90011524360",
+        "country": "LV",
+        "legal_address_formatted": "Rātslaukums 1, Rīga, 1050, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "90011524360",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "velnav@rigaspas.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "90011524360"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV90011524360"
+        },
+        "address": {
+          "key": "address",
+          "value": "Rātslaukums 1, Rīga, 1050, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Rātslaukums 1, Rīga, 1050, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "velnav@rigaspas.lv",
+            "old": "velnav@rigaspas.lv",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23034,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "90011524360",
+              "candidates": []
+            },
+            "email": {
+              "term": "velnav@rigaspas.lv",
+              "candidates": [
+                {
+                  "id": 9403,
+                  "name": "Rīgas valstspilsētas pašvaldība"
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "Rīgas valstspilsētas pašvaldība",
+              "candidates": [
+                {
+                  "id": 9403,
+                  "name": "Rīgas valstspilsētas pašvaldība"
+                },
+                {
+                  "id": 357,
+                  "name": "Rīgas valstspilsētas pašvaldība"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            9403,
+            357
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67256,
+      "org_id": 9403,
+      "found_by": "email",
+      "person_id": 10878,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "velnav@rigaspas.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67256,
+        "document_id": 15735902,
+        "client_id": 614041
+      },
+      "message_id": "18561907145063022"
+    }
+  }
+}
