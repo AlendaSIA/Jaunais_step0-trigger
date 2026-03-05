@@ -14,8 +14,8 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67148,
-    "title": "PT 15730600 ALE 2601320",
+    "deal_id": 67227,
+    "title": "ALE2601320",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -93,7 +93,7 @@
       "mode": "paytraq_direct",
       "client_id": 1119699,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 13181,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -119,30 +119,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26400064"
-        },
-        "address": {
-          "key": "address",
-          "value": "Talsu iela, Rīga, --, LV-1002, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Talsu iela, Rīga, --, LV-1002, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -150,9 +136,24 @@
             "old": "ieva.rozukalne@gmail.com",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26400064",
+            "old": "26400064",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Talsu iela, Rīga, --, LV-1002, LV",
+            "old": "Talsu iela, Rīga, --, LV-1002, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Talsu iela, Rīga, --, LV-1002, LV",
+            "old": "Talsu iela, Rīga, --, LV-1002, LV",
             "reason": "same"
           }
         }
@@ -180,7 +181,12 @@
             },
             "phone": {
               "term": "26400064",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13181,
+                  "name": "Ieva Rožukalne"
+                }
+              ]
             },
             "name": {
               "term": "Ieva Rožukalne",
@@ -201,7 +207,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67148,
+      "deal_id": 67227,
       "org_id": 13181,
       "found_by": "email",
       "person_id": 14309,
@@ -224,11 +230,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67148,
+        "deal_id": 67227,
         "document_id": 15730600,
         "client_id": 1119699
       },
-      "message_id": "18037038153700898"
+      "message_id": "18050892414152319"
     }
   }
 }
