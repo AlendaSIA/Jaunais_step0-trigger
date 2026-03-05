@@ -1,0 +1,238 @@
+{
+  "payload_meta": {
+    "doc_id": 15736009,
+    "document_ref": "M-860325-30403",
+    "xml_len": 4487,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67258,
+    "title": "M-860325-30403",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15736009,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs  [RNBWXS10003]",
+        "code": "RNBWXS10003",
+        "quantity": 7.0,
+        "unit_price": 3.298,
+        "gross_unit_price": 3.298,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, XS izmērs [RNBKXS10003]",
+        "code": "RNBKXS10003",
+        "quantity": 20.0,
+        "unit_price": 3.298,
+        "gross_unit_price": 3.298,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 906491,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9144,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Iloinen kauneushoitola Oy",
+        "email": "rrajavuo@gmail.com",
+        "phone": "+358456300488",
+        "regnr": "3142289-8",
+        "vatnr": "FI31422898",
+        "country": "FI",
+        "legal_address_formatted": "Ahjokatu 1, Jyväskylä, Jyväskylä, 40320, FI"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "3142289-8",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "rrajavuo@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+358456300488"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "3142289-8"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "FI31422898"
+        },
+        "address": {
+          "key": "address",
+          "value": "Ahjokatu 1, Jyväskylä, Jyväskylä, 40320, FI"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Ahjokatu 1, Jyväskylä, Jyväskylä, 40320, FI"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "rrajavuo@gmail.com",
+            "old": "rrajavuo@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "FI",
+            "old": "FI",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "3142289-8",
+              "candidates": []
+            },
+            "email": {
+              "term": "rrajavuo@gmail.com",
+              "candidates": [
+                {
+                  "id": 9144,
+                  "name": "studio C-kaari / Iloinen kauneushoitola oy"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+358456300488",
+              "candidates": []
+            },
+            "name": {
+              "term": "Iloinen kauneushoitola Oy",
+              "candidates": []
+            }
+          },
+          "unique_ids": [
+            9144
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67258,
+      "org_id": 9144,
+      "found_by": "email",
+      "person_id": 10610,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "rrajavuo@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67258,
+        "document_id": 15736009,
+        "client_id": 906491
+      },
+      "message_id": "18564609654078825"
+    }
+  }
+}
