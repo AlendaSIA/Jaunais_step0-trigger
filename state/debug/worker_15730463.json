@@ -14,8 +14,8 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67147,
-    "title": "PT 15730463 ALE 2601319",
+    "deal_id": 67226,
+    "title": "ALE2601319",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -219,7 +219,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67147,
+      "deal_id": 67226,
       "org_id": 9247,
       "found_by": "email",
       "person_id": 10716,
@@ -242,11 +242,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67147,
+        "deal_id": 67226,
         "document_id": 15730463,
         "client_id": 854645
       },
-      "message_id": "18034361761659028"
+      "message_id": "18562541936000904"
     }
   }
 }
