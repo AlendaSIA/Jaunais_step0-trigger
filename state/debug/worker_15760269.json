@@ -1,0 +1,221 @@
+{
+  "payload_meta": {
+    "doc_id": 15760269,
+    "document_ref": "PAS/0326/00002",
+    "xml_len": 2200,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67291,
+    "title": "PAS/0326/00002",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15760269,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 838310,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 7905,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Raivis Tests",
+        "email": "raivis@alenda.lv",
+        "phone": "26711822",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "raivis@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "raivis@alenda.lv",
+            "old": "raivis@alenda.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26711822",
+            "old": "26711822",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "old": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "old": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23048,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "raivis@alenda.lv",
+              "candidates": [
+                {
+                  "id": 7905,
+                  "name": "Raivis Zvejnieks Zvejnieks"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26711822",
+              "candidates": [
+                {
+                  "id": 7905,
+                  "name": "Raivis Zvejnieks Zvejnieks"
+                },
+                {
+                  "id": 1087,
+                  "name": "Alenda"
+                },
+                {
+                  "id": 369,
+                  "name": "Raivis Zvejnieks"
+                }
+              ]
+            },
+            "name": {
+              "term": "Raivis Tests",
+              "candidates": [
+                {
+                  "id": 12661,
+                  "name": "Raivis Tests"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            7905,
+            1087,
+            369,
+            12661
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67291,
+      "org_id": 7905,
+      "found_by": "email",
+      "person_id": 369,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "raivis@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67291,
+        "document_id": 15760269,
+        "client_id": 838310
+      },
+      "message_id": "18565884631222712"
+    }
+  }
+}
