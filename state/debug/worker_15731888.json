@@ -1,0 +1,258 @@
+{
+  "payload_meta": {
+    "doc_id": 15731888,
+    "document_ref": "ALE 2601329",
+    "xml_len": 6207,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67230,
+    "title": "M-860325-30388 _ ALE 2601329",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15731888,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», baltā krāsā, 100 gb, XS, 100 gb,  [FM27079M]",
+        "code": "FM27079M",
+        "quantity": 6.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vismu dezinfekcija- CHEMIPHARM DES NEW MD 1L, 65-011 [65-011]",
+        "code": "65-011",
+        "quantity": 1.0,
+        "unit_price": 10.64,
+        "gross_unit_price": 12.87,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 3,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1204207,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 12265,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Sia MEDICAL AESTHETICS",
+        "email": "z.paskovecka@gmail.com",
+        "phone": "26210616",
+        "regnr": "40203479306",
+        "vatnr": "LV40203479306",
+        "country": "LV",
+        "legal_address_formatted": "Jelgavas iela 20, Olaine, Olaines, LV-2114, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203479306",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "z.paskovecka@gmail.com",
+            "old": "z.paskovecka@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26210616",
+            "old": "26210616",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203479306",
+            "old": "40203479306",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40203479306",
+            "old": "LV40203479306",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Jelgavas iela 20, Olaine, Olaines, LV-2114, LV",
+            "old": "Jelgavas iela 20, Olaine, Olaines, LV-2114, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Jelgavas iela 20, Olaine, Olaines, LV-2114, LV",
+            "old": "Jelgavas iela 20, Olaine, Olaines, LV-2114, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40203479306",
+              "candidates": [
+                {
+                  "id": 12265,
+                  "name": "Zane Paskovecka"
+                }
+              ]
+            },
+            "email": {
+              "term": "z.paskovecka@gmail.com",
+              "candidates": [
+                {
+                  "id": 12265,
+                  "name": "Zane Paskovecka"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26210616",
+              "candidates": [
+                {
+                  "id": 12265,
+                  "name": "Zane Paskovecka"
+                }
+              ]
+            },
+            "name": {
+              "term": "Sia MEDICAL AESTHETICS",
+              "candidates": []
+            }
+          },
+          "unique_ids": [
+            12265
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67230,
+      "org_id": 12265,
+      "found_by": "email",
+      "person_id": 13442,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "z.paskovecka@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67230,
+        "document_id": 15731888,
+        "client_id": 1204207
+      },
+      "message_id": "18562583172238287"
+    }
+  }
+}
