@@ -13,9 +13,9 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "updated",
-    "deal_id": 67143,
-    "title": "PT 15730267 ALE 2601317",
+    "status": "created",
+    "deal_id": 67223,
+    "title": "ALE2601317",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -78,12 +78,12 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 0,
+      "added": 2,
       "updated": 0,
-      "deleted": 1,
-      "skipped": 2,
-      "delete_allowed": true,
-      "missing_code_count": 0
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
     },
     "products_attached": null,
     "products_created": [],
@@ -207,7 +207,7 @@
     "step_05": {
       "ok": true,
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67143,
+      "deal_id": 67223,
       "org_id": 14015,
       "found_by": "email",
       "person_id": 15098,
@@ -230,11 +230,11 @@
       "mode": "pubsub_publish",
       "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
       "payload": {
-        "deal_id": 67143,
+        "deal_id": 67223,
         "document_id": 15730267,
         "client_id": 1204154
       },
-      "message_id": "18036076759017181"
+      "message_id": "18051071266214269"
     }
   }
 }
