@@ -1,0 +1,245 @@
+{
+  "payload_meta": {
+    "doc_id": 15753198,
+    "document_ref": "ALE 2601375",
+    "xml_len": 5524,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67206,
+    "title": "PT 15753198 ALE 2601375",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15753198,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Pagarināti nitrila cimdi \"POWER GRIP LONG\", L, 50 gb, FM270916M [FM270916M]",
+        "code": "FM270916M",
+        "quantity": 2.0,
+        "unit_price": 10.74,
+        "gross_unit_price": 12.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1068427,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 12638,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "VIESTURS LORE",
+        "email": "sniedzel@inbox.lv",
+        "phone": "22324334",
+        "regnr": "06027612312",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "EZERA IELA 18A-56, RIGA, LV 1034, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "06027612312",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "sniedzel@inbox.lv",
+            "old": "sniedzel@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "22324334",
+            "old": "22324334",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "06027612312",
+            "old": "06027612312",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "EZERA IELA 18A-56, RIGA, LV 1034, LV",
+            "old": "EZERA IELA 18A-56, RIGA, LV 1034, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "EZERA IELA 18A-56, RIGA, LV 1034, LV",
+            "old": "EZERA IELA 18A-56, RIGA, LV 1034, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "06027612312",
+              "candidates": [
+                {
+                  "id": 12638,
+                  "name": "VIESTURS LORE"
+                }
+              ]
+            },
+            "email": {
+              "term": "sniedzel@inbox.lv",
+              "candidates": [
+                {
+                  "id": 12638,
+                  "name": "VIESTURS LORE"
+                }
+              ]
+            },
+            "phone": {
+              "term": "22324334",
+              "candidates": [
+                {
+                  "id": 12638,
+                  "name": "VIESTURS LORE"
+                }
+              ]
+            },
+            "name": {
+              "term": "VIESTURS LORE",
+              "candidates": [
+                {
+                  "id": 12638,
+                  "name": "VIESTURS LORE"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12638
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67206,
+      "org_id": 12638,
+      "found_by": "email",
+      "person_id": 13801,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "sniedzel@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67206,
+        "document_id": 15753198,
+        "client_id": 1068427
+      },
+      "message_id": "18560626534537681"
+    }
+  }
+}
