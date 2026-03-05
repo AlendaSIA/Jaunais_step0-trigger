@@ -49,7 +49,7 @@ def _github_put_file(token: str, path: str, content_bytes: bytes, message: str) 
 
 
 # --------------------------
-# Worker URL helper (fix /process/process)
+# Worker URL helper
 # --------------------------
 def _worker_process_url() -> str:
     if not WORKER_URL:
@@ -75,7 +75,7 @@ def _extract_doc_ref_from_xml(xml: str) -> Optional[str]:
 
 
 # --------------------------
-# Flatten helper for payload dump
+# Flatten helper
 # --------------------------
 def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
@@ -119,12 +119,12 @@ def run(ctx: dict) -> dict:
         document_ref = _extract_doc_ref_from_xml(xml)
 
     # Worker prasa document.deal.title => iedodam vienmēr
-    deal_title = f"PT {doc_id} {document_ref or ''}".strip()
+    ref_clean = (document_ref or "").replace(" ", "").strip()
+    deal_title = ref_clean or f"PT {doc_id}"
 
     payload: Dict[str, Any] = {
         "document": {
             "id": doc_id,
-            # ja vēlāk gribēsi, te var ielikt strukturētu client; pagaidām nav obligāti schemai
             "client": ctx.get("client") or {},
             "deal": {
                 "title": deal_title,
@@ -138,7 +138,6 @@ def run(ctx: dict) -> dict:
         }
     }
 
-    # Dump laukiem mappingam (tikai tas, ko tieši sūta uz worker)
     if ctx.get("dump_worker_fields") is True:
         dump_payload = json.loads(json.dumps(payload))
         dump_payload["document"]["paytraq_full_xml"] = f"<xml len={xml_len}>"
@@ -154,7 +153,6 @@ def run(ctx: dict) -> dict:
         ctx["worker_field_count"] = len(worker_fields)
         ctx["worker_fields"] = worker_fields
 
-    # call worker
     try:
         r = requests.post(process_url, json=payload, timeout=120)
         ctx["worker_status_code"] = r.status_code
@@ -165,7 +163,6 @@ def run(ctx: dict) -> dict:
         except Exception:
             ctx["worker_response_json"] = None
 
-        # debug uz GitHub
         if GITHUB_TOKEN and doc_id:
             out_path = f"state/debug/worker_{doc_id}.json"
             pretty = json.dumps(
