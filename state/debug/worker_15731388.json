@@ -1,0 +1,240 @@
+{
+  "payload_meta": {
+    "doc_id": 15731388,
+    "document_ref": "ALE 2601324",
+    "xml_len": 5715,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67234,
+    "title": "ALE2601324",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15731388,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Chemisept SPRAY 1000ml [65-085]",
+        "code": "65-085",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Instrumentu dezinfekcija- STERISEPT INSTRU 1L (SPORICĪDS), 65-0221L [65-022]",
+        "code": "65-022",
+        "quantity": 1.0,
+        "unit_price": 18.01,
+        "gross_unit_price": 21.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 584103,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 12720,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Daiga Tilcena",
+        "email": "nav@xn--panodarbinata-cuc.lv",
+        "phone": "+37126386786",
+        "regnr": "28037211528",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "28037211528",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "nav@xn--panodarbinata-cuc.lv",
+            "old": "nav@xn--panodarbinata-cuc.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37126386786",
+            "old": "+37126386786",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "28037211528",
+            "old": "28037211528",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV",
+            "old": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV",
+            "old": "Rîga, Slāvu iela24-20, Rīga, LV 1073, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "28037211528",
+              "candidates": [
+                {
+                  "id": 12720,
+                  "name": "Pašnodarbināta"
+                }
+              ]
+            },
+            "email": {
+              "term": "nav@xn--panodarbinata-cuc.lv",
+              "candidates": [
+                {
+                  "id": 12720,
+                  "name": "Pašnodarbināta"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+37126386786",
+              "candidates": [
+                {
+                  "id": 12720,
+                  "name": "Pašnodarbināta"
+                }
+              ]
+            },
+            "name": {
+              "term": "Daiga Tilcena",
+              "candidates": []
+            }
+          },
+          "unique_ids": [
+            12720
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67234,
+      "org_id": 12720,
+      "found_by": "email",
+      "person_id": 216,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "nav@xn--panodarbinata-cuc.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67234,
+        "document_id": 15731388,
+        "client_id": 584103
+      },
+      "message_id": "18563159692413370"
+    }
+  }
+}
