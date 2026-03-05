@@ -1,0 +1,255 @@
+{
+  "payload_meta": {
+    "doc_id": 15735590,
+    "document_ref": "M-860325-30401",
+    "xml_len": 5820,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67253,
+    "title": "M-860325-30401",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15735590,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 M izmērs [3616-3]",
+        "code": "3616-3",
+        "quantity": 2.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera L N100  izmērs  [3616-4]",
+        "code": "3616-4",
+        "quantity": 1.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Balti easyCARE nitrile flex Nitrila cimdi, N100, L izmērs    [RNBWL10003]",
+        "code": "RNBWL10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 4,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1204426,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 14018,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Liene Belova",
+        "email": "kashalots113@gmail.com",
+        "phone": "25969254",
+        "regnr": "170286- 12262",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Varavīksnes Gatve 16, 31, Rīga, LV-1082, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "170286- 12262",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "kashalots113@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "25969254"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "170286- 12262"
+        },
+        "address": {
+          "key": "address",
+          "value": "Varavīksnes Gatve 16, 31, Rīga, LV-1082, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Varavīksnes Gatve 16, 31, Rīga, LV-1082, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "kashalots113@gmail.com",
+            "old": "kashalots113@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23031,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "170286- 12262",
+              "candidates": []
+            },
+            "email": {
+              "term": "kashalots113@gmail.com",
+              "candidates": [
+                {
+                  "id": 14018,
+                  "name": "Liene Belova"
+                }
+              ]
+            },
+            "phone": {
+              "term": "25969254",
+              "candidates": []
+            },
+            "name": {
+              "term": "Liene Belova",
+              "candidates": [
+                {
+                  "id": 14018,
+                  "name": "Liene Belova"
+                },
+                {
+                  "id": 9772,
+                  "name": "Liene Belova"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14018,
+            9772
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67253,
+      "org_id": 14018,
+      "found_by": "email",
+      "person_id": 15101,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kashalots113@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled."
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67253,
+        "document_id": 15735590,
+        "client_id": 1204426
+      },
+      "message_id": "18051124346823637"
+    }
+  }
+}
