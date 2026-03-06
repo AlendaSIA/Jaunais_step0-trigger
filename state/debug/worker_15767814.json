@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15767814,
     "document_ref": "M-860325-30506",
-    "xml_len": 7260,
+    "xml_len": 7265,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67323,
     "title": "M-860325-30506",
     "_trace": [
@@ -90,10 +90,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 7,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 7,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -104,8 +104,8 @@
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1206197,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
       "org_id": 14038,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -127,39 +127,49 @@
           {
             "by": "email",
             "term": "dambeniece12@gmail.com",
-            "found": false
-          },
-          {
-            "by": "name",
-            "term": "Daiga Grinberga",
-            "found": false
+            "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "dambeniece12@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26078468"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "dambeniece12@gmail.com",
+            "old": "dambeniece12@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26078468",
+            "old": "26078468",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV",
+            "old": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV",
+            "old": "Dūdas, Dienvidkurzemes novads, Rucava, Rucavas, 3477, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -174,7 +184,12 @@
             },
             "email": {
               "term": "dambeniece12@gmail.com",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14038,
+                  "name": "Daiga Grinberga"
+                }
+              ]
             },
             "phone": {
               "term": "26078468",
@@ -206,7 +221,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67323,
       "org_id": 14038,
-      "found_by": "created",
+      "found_by": "email",
       "person_id": 15119,
       "attached_to_deal": true,
       "activity_created": false,
@@ -216,27 +231,34 @@
           {
             "by": "email",
             "term": "dambeniece12@gmail.com",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "26078468",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled."
+      "note": "Person matched by email. Activity disabled."
     },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
-      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
-      "payload": {
-        "deal_id": 67323,
-        "document_id": 15767814,
-        "client_id": 1206197
+      "doc_ref": "M-860325-30506",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67323,
+          "document_id": 15767814,
+          "client_id": 1206197
+        },
+        "message_id": "18055873966921606"
       },
-      "message_id": "18055889500242387"
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67323,
+          "document_id": 15767814,
+          "doc_ref": "M-860325-30506"
+        },
+        "message_id": "18055847651988785"
+      }
     }
   }
 }
