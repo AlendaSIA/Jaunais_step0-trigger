@@ -105,7 +105,7 @@
       "mode": "paytraq_direct",
       "client_id": 1206197,
       "found_by": "email",
-      "org_action": "skipped_no_changes",
+      "org_action": "updated",
       "org_id": 14038,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -131,14 +131,20 @@
           }
         ]
       },
-      "pipedrive_update_fields": {},
+      "pipedrive_update_fields": {
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        }
+      },
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [],
+        "kept_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
           "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
@@ -151,11 +157,6 @@
           "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
             "new": "26078468",
             "old": "26078468",
-            "reason": "same"
-          },
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
-            "new": "LV",
-            "old": "LV",
             "reason": "same"
           },
           "address": {
@@ -235,7 +236,12 @@
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled."
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": null,
+      "person_country_updated": true,
+      "person_country_checked": true
     },
     "step_99": {
       "ok": true,
@@ -248,7 +254,7 @@
           "document_id": 15767814,
           "client_id": 1206197
         },
-        "message_id": "18055873966921606"
+        "message_id": "18055395087914253"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -257,7 +263,7 @@
           "document_id": 15767814,
           "doc_ref": "M-860325-30506"
         },
-        "message_id": "18055847651988785"
+        "message_id": "18053248285139215"
       }
     }
   }
