@@ -1,0 +1,269 @@
+{
+  "payload_meta": {
+    "doc_id": 15769758,
+    "document_ref": "M-860325-30515",
+    "xml_len": 8106,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67332,
+    "title": "M-860325-30515",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15769758,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 9,
+    "line_items_preview": [
+      {
+        "name": "Violeti nitrylex Basic nitrila cimdi, bez pūdera N100 M izmērs [3616-3]",
+        "code": "3616-3",
+        "quantity": 1.0,
+        "unit_price": 2.97,
+        "gross_unit_price": 3.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Zili nitrylex clasic Nitrila cimdi, bez pūdera N100 XL [3600-5]",
+        "code": "3600-5",
+        "quantity": 1.0,
+        "unit_price": 3.79,
+        "gross_unit_price": 4.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Darba cimdi PU-EKO, ar PU pārklājumu, pelēki XL/11  [1803 GREY / 11]",
+        "code": "1803 GREY / 11",
+        "quantity": 1.0,
+        "unit_price": 0.49,
+        "gross_unit_price": 0.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 9,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 799812,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 8513,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Oksana mocaka",
+        "email": "oksana.mocaka@inbox.lv",
+        "phone": "26992066",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Verdinu iela 11, Parolaine, Olaines, Lv-2127, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "oksana.mocaka@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "oksana.mocaka@inbox.lv",
+            "old": "oksana.mocaka@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26992066",
+            "old": "26992066",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Verdinu iela 11, Parolaine, Olaines, Lv-2127, LV",
+            "old": "Verdinu iela 11, Parolaine, Olaines, Lv-2127, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Verdinu iela 11, Parolaine, Olaines, Lv-2127, LV",
+            "old": "Verdinu iela 11, Parolaine, Olaines, Lv-2127, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "oksana.mocaka@inbox.lv",
+              "candidates": [
+                {
+                  "id": 8513,
+                  "name": "Oksana mocaka"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26992066",
+              "candidates": [
+                {
+                  "id": 8513,
+                  "name": "Oksana mocaka"
+                }
+              ]
+            },
+            "name": {
+              "term": "Oksana mocaka",
+              "candidates": [
+                {
+                  "id": 8513,
+                  "name": "Oksana mocaka"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            8513
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67332,
+      "org_id": 8513,
+      "found_by": "email",
+      "person_id": 10094,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "oksana.mocaka@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-30515",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67332,
+          "document_id": 15769758,
+          "client_id": 799812
+        },
+        "message_id": "18060068415067359"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67332,
+          "document_id": 15769758,
+          "doc_ref": "M-860325-30515"
+        },
+        "message_id": "18060012109432786"
+      }
+    }
+  }
+}
