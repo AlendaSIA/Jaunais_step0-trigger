@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67389,
     "title": "ALE 2601486",
     "_trace": [
@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -109,7 +109,7 @@
       "mode": "paytraq_direct",
       "client_id": 1197907,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 13970,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -135,30 +135,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "27422483"
-        },
-        "address": {
-          "key": "address",
-          "value": "Partizānu Iela, Jūrmala, LV-2012, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Partizānu Iela, Jūrmala, LV-2012, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -166,9 +152,24 @@
             "old": "sintija_stade@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "27422483",
+            "old": "27422483",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Partizānu Iela, Jūrmala, LV-2012, LV",
+            "old": "Partizānu Iela, Jūrmala, LV-2012, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Partizānu Iela, Jūrmala, LV-2012, LV",
+            "old": "Partizānu Iela, Jūrmala, LV-2012, LV",
             "reason": "same"
           }
         }
@@ -196,7 +197,12 @@
             },
             "phone": {
               "term": "27422483",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13970,
+                  "name": "Sintija Stāde"
+                }
+              ]
             },
             "name": {
               "term": "Sintija Stāde",
@@ -258,7 +264,7 @@
           "document_id": 15782706,
           "client_id": 1197907
         },
-        "message_id": "18593361973779601"
+        "message_id": "17790376273325890"
       },
       "mozello_enrich": {
         "skipped": true,
