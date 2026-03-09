@@ -38,10 +38,6 @@
         "ok": true
       },
       {
-        "step": "98_save_mozello_map",
-        "ok": true
-      },
-      {
         "step": "99_update_products",
         "ok": true
       }
@@ -227,47 +223,18 @@
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
-      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
-      "person_country_value": "LV",
-      "person_country_previous": "LV",
-      "person_country_updated": false,
-      "person_country_checked": true
-    },
-    "step_98": {
-      "ok": true,
-      "saved": true,
-      "collection": "mozello_deal_map",
-      "doc_ref": "M-860325-30567",
-      "payload": {
-        "pipedrive_deal_id": 67385,
-        "paytraq_document_id": 15780681,
-        "pipedrive_person_id": 15119,
-        "pipedrive_org_id": 14039
-      }
+      "note": "Person matched by email. Activity disabled."
     },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
-      "doc_ref": "M-860325-30567",
-      "org_update": {
-        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
-        "payload": {
-          "deal_id": 67385,
-          "document_id": 15780681,
-          "client_id": 1206211
-        },
-        "message_id": "18593727809993421"
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67385,
+        "document_id": 15780681,
+        "client_id": 1206211
       },
-      "mozello_enrich": {
-        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
-        "payload": {
-          "deal_id": 67385,
-          "document_id": 15780681,
-          "doc_ref": "M-860325-30567"
-        },
-        "message_id": "18593435915322621"
-      }
+      "message_id": "18068809430267442"
     }
   }
 }
