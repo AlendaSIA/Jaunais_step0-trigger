@@ -1,0 +1,277 @@
+{
+  "payload_meta": {
+    "doc_id": 15777520,
+    "document_ref": "ALE 2601465",
+    "xml_len": 4837,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67351,
+    "title": "M-860325-30534 _ ALE 2601465",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15777520,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "NITRYLEX PINK PF N100 S izmērs , med.cimdi [3604-2]",
+        "code": "3604-2",
+        "quantity": 3.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "NITRYLEX PF PINK, M izm. Med cimdi [3604-3]",
+        "code": "3604-3",
+        "quantity": 3.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 3,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 959915,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 11107,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Denims Kronbergs",
+        "email": "denim.kronberg@gmail.com",
+        "phone": "20001008",
+        "regnr": "19029110829",
+        "vatnr": "LV19029110829",
+        "country": "LV",
+        "legal_address_formatted": "Vānes iela 3-10, Liepāja, LV-3405, Liepāja, LV3405, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "19029110829",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "denim.kronberg@gmail.com",
+            "old": "denim.kronberg@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "20001008",
+            "old": "20001008",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "19029110829",
+            "old": "19029110829",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV19029110829",
+            "old": "LV19029110829",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Vānes iela 3-10, Liepāja, LV-3405, Liepāja, LV3405, LV",
+            "old": "Vānes iela 3-10, Liepāja, LV-3405, Liepāja, LV3405, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Vānes iela 3-10, Liepāja, LV-3405, Liepāja, LV3405, LV",
+            "old": "Vānes iela 3-10, Liepāja, LV-3405, Liepāja, LV3405, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "19029110829",
+              "candidates": [
+                {
+                  "id": 11107,
+                  "name": "Denims Kronbergs"
+                }
+              ]
+            },
+            "email": {
+              "term": "denim.kronberg@gmail.com",
+              "candidates": [
+                {
+                  "id": 11107,
+                  "name": "Denims Kronbergs"
+                }
+              ]
+            },
+            "phone": {
+              "term": "20001008",
+              "candidates": [
+                {
+                  "id": 11107,
+                  "name": "Denims Kronbergs"
+                }
+              ]
+            },
+            "name": {
+              "term": "Denims Kronbergs",
+              "candidates": [
+                {
+                  "id": 11107,
+                  "name": "Denims Kronbergs"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            11107
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67351,
+      "org_id": 11107,
+      "found_by": "email",
+      "person_id": 12397,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "denim.kronberg@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601465",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67351,
+          "document_id": 15777520,
+          "client_id": 959915
+        },
+        "message_id": "18592793054803258"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601465"
+      }
+    }
+  }
+}
