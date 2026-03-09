@@ -38,6 +38,10 @@
         "ok": true
       },
       {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
         "step": "99_update_products",
         "ok": true
       }
@@ -162,7 +166,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23126,
+        "activity_id": 23127,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -197,43 +201,43 @@
               "term": "SIA \"KRZ\"",
               "candidates": [
                 {
-                  "id": 10092,
+                  "id": 9787,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10073,
+                  "id": 9774,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10075,
+                  "id": 9773,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10050,
+                  "id": 9862,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10022,
+                  "id": 9801,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10044,
+                  "id": 9848,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 10043,
+                  "id": 9831,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 9992,
+                  "id": 9818,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 9993,
+                  "id": 9817,
                   "name": "SIA \"KRZ\""
                 },
                 {
-                  "id": 129,
+                  "id": 9733,
                   "name": "SIA \"KRZ\""
                 }
               ]
@@ -242,16 +246,16 @@
           "unique_ids": [
             10475,
             13393,
-            10092,
-            10073,
-            10075,
-            10050,
-            10022,
-            10044,
-            10043,
-            9992,
-            9993,
-            129
+            9787,
+            9774,
+            9773,
+            9862,
+            9801,
+            9848,
+            9831,
+            9818,
+            9817,
+            9733
           ]
         }
       }
@@ -275,18 +279,39 @@
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled."
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2601482"
     },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
-      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
-      "payload": {
-        "deal_id": 67386,
-        "document_id": 15782155,
-        "client_id": 570878
+      "doc_ref": "ALE 2601482",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67386,
+          "document_id": 15782155,
+          "client_id": 570878
+        },
+        "message_id": "18593486379761044"
       },
-      "message_id": "18592961703176813"
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601482"
+      }
     }
   }
 }
