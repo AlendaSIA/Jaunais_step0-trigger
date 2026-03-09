@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15768120,
     "document_ref": "M-860325-30509",
-    "xml_len": 3694,
+    "xml_len": 3838,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67326,
     "title": "M-860325-30509",
     "_trace": [
@@ -78,10 +78,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -93,7 +93,7 @@
       "mode": "paytraq_direct",
       "client_id": 1141572,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 13385,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -119,30 +119,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "29475430"
-        },
-        "address": {
-          "key": "address",
-          "value": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -150,9 +136,24 @@
             "old": "ligucisbelovs@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29475430",
+            "old": "29475430",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV",
+            "old": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV",
+            "old": "Robežu iela 21, Alūksne, Alūksnes novads, LV-4301, LV",
             "reason": "same"
           }
         }
@@ -180,7 +181,12 @@
             },
             "phone": {
               "term": "29475430",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13385,
+                  "name": "Ligita Belova"
+                }
+              ]
             },
             "name": {
               "term": "Ligita Belova",
@@ -235,7 +241,7 @@
           "document_id": 15768120,
           "client_id": 1141572
         },
-        "message_id": "18056776567803709"
+        "message_id": "18067915568692219"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -244,7 +250,7 @@
           "document_id": 15768120,
           "doc_ref": "M-860325-30509"
         },
-        "message_id": "18055910570074581"
+        "message_id": "18068720409608231"
       }
     }
   }
