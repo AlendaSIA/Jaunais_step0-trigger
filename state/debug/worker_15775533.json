@@ -1,0 +1,228 @@
+{
+  "payload_meta": {
+    "doc_id": 15775533,
+    "document_ref": "ALE 2601454",
+    "xml_len": 2236,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67368,
+    "title": "ALE 2601454",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15775533,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 623854,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 8340,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "WWTP Latvia, SIA",
+        "email": "wwtp@velnav.lv",
+        "phone": null,
+        "regnr": "40203334057",
+        "vatnr": "LV40203334057",
+        "country": "LV",
+        "legal_address_formatted": "Marsa gatve 1–38, Rīga,, 1082, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203334057",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "wwtp@velnav.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40203334057"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40203334057"
+        },
+        "address": {
+          "key": "address",
+          "value": "Marsa gatve 1–38, Rīga,, 1082, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Marsa gatve 1–38, Rīga,, 1082, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "wwtp@velnav.lv",
+            "old": "wwtp@velnav.lv",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23107,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40203334057",
+              "candidates": []
+            },
+            "email": {
+              "term": "wwtp@velnav.lv",
+              "candidates": [
+                {
+                  "id": 8340,
+                  "name": "WWTP Latvia, SIA"
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "WWTP Latvia, SIA",
+              "candidates": [
+                {
+                  "id": 522,
+                  "name": "WWTP Latvia, SIA"
+                },
+                {
+                  "id": 8340,
+                  "name": "WWTP Latvia, SIA"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            8340,
+            522
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67368,
+      "org_id": 8340,
+      "found_by": "email",
+      "person_id": 9970,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "wwtp@velnav.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601454",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67368,
+          "document_id": 15775533,
+          "client_id": 623854
+        },
+        "message_id": "18592507443261273"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601454"
+      }
+    }
+  }
+}
