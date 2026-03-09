@@ -1,0 +1,271 @@
+{
+  "payload_meta": {
+    "doc_id": 15776893,
+    "document_ref": "ALE 2601459",
+    "xml_len": 7874,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67343,
+    "title": "M-860325-30526 _ ALE 2601459",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15776893,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», sarkani 100 gb, M, 100 gb, FM26159M [FM26159M]",
+        "code": "FM26159M",
+        "quantity": 1.0,
+        "unit_price": 5.36,
+        "gross_unit_price": 6.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», dzelteni 100 gb, M, 100 gb, FM261568M [FM261568M]",
+        "code": "FM261568M",
+        "quantity": 1.0,
+        "unit_price": 5.74,
+        "gross_unit_price": 6.95,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M [FM27058M]",
+        "code": "FM27058M",
+        "quantity": 1.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 6,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1206516,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 14044,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "V.M.K. Teenused OÜ",
+        "email": "viivikas@hotmail.com",
+        "phone": "+37256641474",
+        "regnr": "14533839",
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Käärasoo tee 13, Paikuse, Pärnu, 86602, EE"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "14533839",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "viivikas@hotmail.com",
+            "old": "viivikas@hotmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37256641474",
+            "old": "+37256641474",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "14533839",
+            "old": "14533839",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Käärasoo tee 13, Paikuse, Pärnu, 86602, EE",
+            "old": "Käärasoo tee 13, Paikuse, Pärnu, 86602, EE",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Käärasoo tee 13, Paikuse, Pärnu, 86602, EE",
+            "old": "Käärasoo tee 13, Paikuse, Pärnu, 86602, EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "14533839",
+              "candidates": [
+                {
+                  "id": 14044,
+                  "name": "V.M.K. Teenused OÜ"
+                }
+              ]
+            },
+            "email": {
+              "term": "viivikas@hotmail.com",
+              "candidates": [
+                {
+                  "id": 14044,
+                  "name": "V.M.K. Teenused OÜ"
+                }
+              ]
+            },
+            "phone": {
+              "term": "+37256641474",
+              "candidates": [
+                {
+                  "id": 14044,
+                  "name": "V.M.K. Teenused OÜ"
+                }
+              ]
+            },
+            "name": {
+              "term": "V.M.K. Teenused OÜ",
+              "candidates": [
+                {
+                  "id": 14044,
+                  "name": "V.M.K. Teenused OÜ"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14044
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67343,
+      "org_id": 14044,
+      "found_by": "email",
+      "person_id": 15126,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "viivikas@hotmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601459",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67343,
+          "document_id": 15776893,
+          "client_id": 1206516
+        },
+        "message_id": "18592508706992523"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601459"
+      }
+    }
+  }
+}
