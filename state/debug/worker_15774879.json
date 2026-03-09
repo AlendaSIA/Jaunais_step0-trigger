@@ -1,0 +1,228 @@
+{
+  "payload_meta": {
+    "doc_id": 15774879,
+    "document_ref": "0326/00001",
+    "xml_len": 2217,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67153,
+    "title": "0326/00001",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15774879,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 614271,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12349,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA \"Kārumu fabrika\"",
+        "email": "velnav@karumufabrika.lv",
+        "phone": null,
+        "regnr": "40103627757",
+        "vatnr": "LV40103627757",
+        "country": "LV",
+        "legal_address_formatted": "Slokas iela 48A - 85, Rīga, LV-1007, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103627757",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "velnav@karumufabrika.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103627757"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103627757"
+        },
+        "address": {
+          "key": "address",
+          "value": "Slokas iela 48A - 85, Rīga, LV-1007, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Slokas iela 48A - 85, Rīga, LV-1007, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "velnav@karumufabrika.lv",
+            "old": "velnav@karumufabrika.lv",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23106,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40103627757",
+              "candidates": []
+            },
+            "email": {
+              "term": "velnav@karumufabrika.lv",
+              "candidates": [
+                {
+                  "id": 12349,
+                  "name": "SIA \"Kārumu fabrika\""
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "SIA \"Kārumu fabrika\"",
+              "candidates": [
+                {
+                  "id": 8957,
+                  "name": "SIA \"Kārumu fabrika\""
+                },
+                {
+                  "id": 12349,
+                  "name": "SIA \"Kārumu fabrika\""
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12349,
+            8957
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67153,
+      "org_id": 12349,
+      "found_by": "email",
+      "person_id": 13534,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "velnav@karumufabrika.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "0326/00001",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67153,
+          "document_id": 15774879,
+          "client_id": 614271
+        },
+        "message_id": "18592444024828586"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "0326/00001"
+      }
+    }
+  }
+}
