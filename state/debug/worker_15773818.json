@@ -1,0 +1,248 @@
+{
+  "payload_meta": {
+    "doc_id": 15773818,
+    "document_ref": "ALE 2601442",
+    "xml_len": 3464,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67345,
+    "title": "M-860325-30528 _ ALE 2601442",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15773818,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 30.0,
+        "unit_price": 0.82,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 1,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1141579,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 12999,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Edgars",
+        "email": "edgarsmiglans14@gmail.com",
+        "phone": "26546422",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "S.Eizenšteina 19-19, Rīga, LV1079, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "edgarsmiglans14@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "edgarsmiglans14@gmail.com",
+            "old": "edgarsmiglans14@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26546422",
+            "old": "26546422",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "S.Eizenšteina 19-19, Rīga, LV1079, LV",
+            "old": "S.Eizenšteina 19-19, Rīga, LV1079, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "S.Eizenšteina 19-19, Rīga, LV1079, LV",
+            "old": "S.Eizenšteina 19-19, Rīga, LV1079, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23096,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "edgarsmiglans14@gmail.com",
+              "candidates": [
+                {
+                  "id": 12999,
+                  "name": "Edgars Miglāns"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26546422",
+              "candidates": [
+                {
+                  "id": 12999,
+                  "name": "Edgars Miglāns"
+                }
+              ]
+            },
+            "name": {
+              "term": "Edgars",
+              "candidates": [
+                {
+                  "id": 11841,
+                  "name": "Edgars"
+                },
+                {
+                  "id": 2972,
+                  "name": "Edgars"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            12999,
+            11841,
+            2972
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67345,
+      "org_id": 12999,
+      "found_by": "email",
+      "person_id": 14126,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "edgarsmiglans14@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601442",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67345,
+          "document_id": 15773818,
+          "client_id": 1141579
+        },
+        "message_id": "18592525970937612"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601442"
+      }
+    }
+  }
+}
