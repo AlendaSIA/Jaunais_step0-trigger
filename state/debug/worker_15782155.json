@@ -38,10 +38,6 @@
         "ok": true
       },
       {
-        "step": "98_save_mozello_map",
-        "ok": true
-      },
-      {
         "step": "99_update_products",
         "ok": true
       }
@@ -83,9 +79,9 @@
     "step_03": {
       "ok": true,
       "added": 0,
-      "updated": 2,
+      "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -166,7 +162,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23123,
+        "activity_id": 23126,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -266,7 +262,7 @@
       "deal_id": 67386,
       "org_id": 10475,
       "found_by": "email",
-      "person_id": 14513,
+      "person_id": 11780,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
@@ -279,39 +275,18 @@
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
-      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
-      "person_country_value": "LV",
-      "person_country_previous": "LV",
-      "person_country_updated": false,
-      "person_country_checked": true
-    },
-    "step_98": {
-      "ok": true,
-      "saved": false,
-      "skipped": true,
-      "reason": "doc_ref_not_mozello",
-      "doc_ref": "ALE 2601482"
+      "note": "Person matched by email. Activity disabled."
     },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
-      "doc_ref": "ALE 2601482",
-      "org_update": {
-        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
-        "payload": {
-          "deal_id": 67386,
-          "document_id": 15782155,
-          "client_id": 570878
-        },
-        "message_id": "18068952082085050"
+      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+      "payload": {
+        "deal_id": 67386,
+        "document_id": 15782155,
+        "client_id": 570878
       },
-      "mozello_enrich": {
-        "skipped": true,
-        "reason": "doc_ref_not_mozello",
-        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
-        "doc_ref": "ALE 2601482"
-      }
+      "message_id": "18592961703176813"
     }
   }
 }
