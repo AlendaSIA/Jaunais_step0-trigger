@@ -1,0 +1,272 @@
+{
+  "payload_meta": {
+    "doc_id": 15774356,
+    "document_ref": "ALE 2601450",
+    "xml_len": 7523,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67327,
+    "title": "M-860325-30510 _ ALE 2601450",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15774356,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "Bahilas Zilas N100 [FOL-CPE/B/22]",
+        "code": "FOL-CPE/B/22",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Plāksteru komplekts TRANSPARENT, 24 gb dažada izmēra CAURSPĪDĪGI plāksteri, ZARYS-VH-ZTR [ZARYS-VH-ZTR]",
+        "code": "ZARYS-VH-ZTR",
+        "quantity": 1.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Dezinfekcijas salvetes BACTICIDE N200, 65-889 [65-334]",
+        "code": "65-334",
+        "quantity": 1.0,
+        "unit_price": 9.91,
+        "gross_unit_price": 11.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 6,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 1206245,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 13497,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Lelde Valere",
+        "email": "leldevalere@gmail.com",
+        "phone": "25154842",
+        "regnr": "130390-11085",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "130390-11085",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "leldevalere@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "130390-11085"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "leldevalere@gmail.com",
+            "old": "leldevalere@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "25154842",
+            "old": "25154842",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "old": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "old": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "130390-11085",
+              "candidates": []
+            },
+            "email": {
+              "term": "leldevalere@gmail.com",
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
+            },
+            "phone": {
+              "term": "25154842",
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
+            },
+            "name": {
+              "term": "Lelde Valere",
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            13497
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67327,
+      "org_id": 13497,
+      "found_by": "email",
+      "person_id": 14614,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "leldevalere@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601450",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67327,
+          "document_id": 15774356,
+          "client_id": 1206245
+        },
+        "message_id": "18592430630374309"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601450"
+      }
+    }
+  }
+}
