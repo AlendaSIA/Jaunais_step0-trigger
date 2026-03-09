@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15767979,
     "document_ref": "M-860325-30507",
-    "xml_len": 3509,
+    "xml_len": 3505,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67324,
     "title": "M-860325-30507",
     "_trace": [
@@ -78,10 +78,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -92,8 +92,8 @@
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1206211,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
       "org_id": 14039,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -115,39 +115,49 @@
           {
             "by": "email",
             "term": "testakl11@gmail.coo",
-            "found": false
-          },
-          {
-            "by": "name",
-            "term": "testa klients 11",
-            "found": false
+            "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "testakl11@gmail.coo"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "65656565"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Bauskas iela 22,, Rīga, 1004, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Bauskas iela 22,, Rīga, 1004, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "testakl11@gmail.coo",
+            "old": "testakl11@gmail.coo",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "65656565",
+            "old": "65656565",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Bauskas iela 22,, Rīga, 1004, LV",
+            "old": "Bauskas iela 22,, Rīga, 1004, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Bauskas iela 22,, Rīga, 1004, LV",
+            "old": "Bauskas iela 22,, Rīga, 1004, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -162,18 +172,35 @@
             },
             "email": {
               "term": "testakl11@gmail.coo",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14039,
+                  "name": "testa klients 11"
+                }
+              ]
             },
             "phone": {
               "term": "65656565",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14039,
+                  "name": "testa klients 11"
+                }
+              ]
             },
             "name": {
               "term": "testa klients 11",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14039,
+                  "name": "testa klients 11"
+                }
+              ]
             }
           },
-          "unique_ids": []
+          "unique_ids": [
+            14039
+          ]
         }
       }
     },
@@ -182,7 +209,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67324,
       "org_id": 14039,
-      "found_by": "created",
+      "found_by": "email",
       "person_id": 15120,
       "attached_to_deal": true,
       "activity_created": false,
@@ -192,16 +219,11 @@
           {
             "by": "email",
             "term": "testakl11@gmail.coo",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "65656565",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person matched by email. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -219,7 +241,7 @@
           "document_id": 15767979,
           "client_id": 1206211
         },
-        "message_id": "18056436623352460"
+        "message_id": "18593214172160459"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -228,7 +250,7 @@
           "document_id": 15767979,
           "doc_ref": "M-860325-30507"
         },
-        "message_id": "18055845643751336"
+        "message_id": "18593310179058494"
       }
     }
   }
