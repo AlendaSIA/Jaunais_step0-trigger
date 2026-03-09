@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67317,
     "title": "M-860325-30488",
     "_trace": [
@@ -90,10 +90,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -105,7 +105,7 @@
       "mode": "paytraq_direct",
       "client_id": 647733,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 78,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -131,30 +131,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26156702"
-        },
-        "address": {
-          "key": "address",
-          "value": "Spuņciema 15-9, Mārupes nov, 2105, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Spuņciema 15-9, Mārupes nov, 2105, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -162,9 +148,24 @@
             "old": "salons.lea@gmail.com",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26156702",
+            "old": "26156702",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Spuņciema 15-9, Mārupes nov, 2105, LV",
+            "old": "Spuņciema 15-9, Mārupes nov, 2105, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Spuņciema 15-9, Mārupes nov, 2105, LV",
+            "old": "Spuņciema 15-9, Mārupes nov, 2105, LV",
             "reason": "same"
           }
         }
@@ -192,7 +193,12 @@
             },
             "phone": {
               "term": "26156702",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 78,
+                  "name": "Indra Liepa"
+                }
+              ]
             },
             "name": {
               "term": "Indra Liepa",
@@ -240,7 +246,7 @@
         "document_id": 15760496,
         "client_id": 647733
       },
-      "message_id": "18570928152770575"
+      "message_id": "18593644579850239"
     }
   }
 }
