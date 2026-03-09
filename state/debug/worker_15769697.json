@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15769697,
     "document_ref": "M-860325-30513",
-    "xml_len": 5195,
+    "xml_len": 5339,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67330,
     "title": "M-860325-30513",
     "_trace": [
@@ -90,10 +90,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -104,8 +104,8 @@
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1206353,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
       "org_id": 14042,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -127,39 +127,49 @@
           {
             "by": "email",
             "term": "marina.ribakova77@gmail.com",
-            "found": false
-          },
-          {
-            "by": "name",
-            "term": "Marina Ribakova",
-            "found": false
+            "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "marina.ribakova77@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "29635653"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Inženieru 93-61, Ventspils, LV-3601, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Inženieru 93-61, Ventspils, LV-3601, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "marina.ribakova77@gmail.com",
+            "old": "marina.ribakova77@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29635653",
+            "old": "29635653",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Inženieru 93-61, Ventspils, LV-3601, LV",
+            "old": "Inženieru 93-61, Ventspils, LV-3601, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Inženieru 93-61, Ventspils, LV-3601, LV",
+            "old": "Inženieru 93-61, Ventspils, LV-3601, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -211,7 +221,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67330,
       "org_id": 14042,
-      "found_by": "created",
+      "found_by": "email",
       "person_id": 15123,
       "attached_to_deal": true,
       "activity_created": false,
@@ -221,16 +231,11 @@
           {
             "by": "email",
             "term": "marina.ribakova77@gmail.com",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "29635653",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person matched by email. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -248,7 +253,7 @@
           "document_id": 15769697,
           "client_id": 1206353
         },
-        "message_id": "18059997901871691"
+        "message_id": "18068720323353102"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -257,7 +262,7 @@
           "document_id": 15769697,
           "doc_ref": "M-860325-30513"
         },
-        "message_id": "18059361147957214"
+        "message_id": "18067902113059655"
       }
     }
   }
