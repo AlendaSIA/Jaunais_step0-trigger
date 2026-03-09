@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67328,
     "title": "M-860325-30511",
     "_trace": [
@@ -90,10 +90,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -105,7 +105,7 @@
       "mode": "paytraq_direct",
       "client_id": 914882,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 10117,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -131,30 +131,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "+37126196962"
-        },
-        "address": {
-          "key": "address",
-          "value": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -162,9 +148,24 @@
             "old": "ikeisa@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37126196962",
+            "old": "+37126196962",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV",
+            "old": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV",
+            "old": "Zaļā iela 2, Balvi, Balvu novads, Kubuli, LV-4566, LV",
             "reason": "same"
           }
         }
@@ -192,7 +193,12 @@
             },
             "phone": {
               "term": "+37126196962",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 10117,
+                  "name": "Inga Keisa"
+                }
+              ]
             },
             "name": {
               "term": "Inga Keisa",
@@ -247,7 +253,7 @@
           "document_id": 15768369,
           "client_id": 914882
         },
-        "message_id": "18056761004036792"
+        "message_id": "18593002129820062"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -256,7 +262,7 @@
           "document_id": 15768369,
           "doc_ref": "M-860325-30511"
         },
-        "message_id": "18056764173556117"
+        "message_id": "18068595286628139"
       }
     }
   }
