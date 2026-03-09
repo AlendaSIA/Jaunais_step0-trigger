@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15782670,
     "document_ref": "ALE 2601484",
-    "xml_len": 5211,
+    "xml_len": 5210,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67387,
     "title": "ALE 2601484",
     "_trace": [
@@ -59,9 +59,9 @@
         "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
         "code": "RNBKM10003",
         "quantity": 2.0,
-        "unit_price": 3.47,
+        "unit_price": 2.87,
         "gross_unit_price": 3.47,
-        "include_tax": false,
+        "include_tax": true,
         "vat_rate": 0.21,
         "tax_key_name": "PVN 21%",
         "line_discount_pct": 0.0,
@@ -71,9 +71,9 @@
         "name": "BETAtex_SuperAbsorbent underpad, non-sterile 40cm x 60cm_A25 [BT-PCS4060]",
         "code": "BT-PCS4060",
         "quantity": 1.0,
-        "unit_price": 6.99,
+        "unit_price": 5.78,
         "gross_unit_price": 6.99,
-        "include_tax": false,
+        "include_tax": true,
         "vat_rate": 0.21,
         "tax_key_name": "PVN 21%",
         "line_discount_pct": 0.0,
@@ -82,8 +82,8 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
-      "updated": 0,
+      "added": 0,
+      "updated": 2,
       "deleted": 0,
       "skipped": 0,
       "missing_code_count": 0,
@@ -97,7 +97,7 @@
       "mode": "paytraq_direct",
       "client_id": 1205424,
       "found_by": "email",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 14031,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -123,30 +123,16 @@
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26302320"
-        },
-        "address": {
-          "key": "address",
-          "value": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -154,9 +140,24 @@
             "old": "midzuks@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26302320",
+            "old": "26302320",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV",
+            "old": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV",
+            "old": "Bebru 5-1, Jēkabpils, Jēkabpils, Jēkabpils novads, 5201, LV",
             "reason": "same"
           }
         }
@@ -164,7 +165,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23124,
+        "activity_id": 23128,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -184,7 +185,12 @@
             },
             "phone": {
               "term": "26302320",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 14031,
+                  "name": "Līga Midzene"
+                }
+              ]
             },
             "name": {
               "term": "Līga Midzene",
@@ -251,7 +257,7 @@
           "document_id": 15782670,
           "client_id": 1205424
         },
-        "message_id": "18068817879871464"
+        "message_id": "18595121689289002"
       },
       "mozello_enrich": {
         "skipped": true,
