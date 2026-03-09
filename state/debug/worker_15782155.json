@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15782155,
     "document_ref": "ALE 2601482",
-    "xml_len": 4681,
+    "xml_len": 5375,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67386,
     "title": "ALE 2601482",
     "_trace": [
@@ -59,8 +59,8 @@
         "name": "Lateksa cimdi, nepūderēti \"Easy care\", baltā krāsā, 100 gb, S izmers, 100 gb, RLB03s_m [RLBS10007]",
         "code": "RLBS10007",
         "quantity": 10.0,
-        "unit_price": 5.45,
-        "gross_unit_price": 5.45,
+        "unit_price": 1.0,
+        "gross_unit_price": 1.0,
         "include_tax": false,
         "vat_rate": 0.21,
         "tax_key_name": "PVN 21%",
@@ -71,8 +71,8 @@
         "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [RNBS10001]",
         "code": "RNBS10001",
         "quantity": 10.0,
-        "unit_price": 3.96,
-        "gross_unit_price": 3.96,
+        "unit_price": 1.0,
+        "gross_unit_price": 1.0,
         "include_tax": false,
         "vat_rate": 0.21,
         "tax_key_name": "PVN 21%",
@@ -82,8 +82,8 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
-      "updated": 0,
+      "added": 0,
+      "updated": 2,
       "deleted": 0,
       "skipped": 0,
       "missing_code_count": 0,
@@ -166,7 +166,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23122,
+        "activity_id": 23123,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -266,7 +266,7 @@
       "deal_id": 67386,
       "org_id": 10475,
       "found_by": "email",
-      "person_id": 11780,
+      "person_id": 14513,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
@@ -304,7 +304,7 @@
           "document_id": 15782155,
           "client_id": 570878
         },
-        "message_id": "18068821035845497"
+        "message_id": "18068952082085050"
       },
       "mozello_enrich": {
         "skipped": true,
