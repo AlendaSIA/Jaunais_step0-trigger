@@ -1,0 +1,271 @@
+{
+  "payload_meta": {
+    "doc_id": 15776049,
+    "document_ref": "ALE 2601458",
+    "xml_len": 8839,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67344,
+    "title": "M-860325-30527 _ ALE 2601458",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15776049,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+        "code": "RNBCM10003",
+        "quantity": 3.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
+        "code": "RNBKM10003",
+        "quantity": 2.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "code": "RNBRM10003",
+        "quantity": 1.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 7,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 830926,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 9032,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Terje Tamm",
+        "email": "terjetamm24@gmail.com",
+        "phone": "56454193",
+        "regnr": null,
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Kaare tee11, Imavere, 72401, EE"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "terjetamm24@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "terjetamm24@gmail.com",
+            "old": "terjetamm24@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "56454193",
+            "old": "56454193",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Kaare tee11, Imavere, 72401, EE",
+            "old": "Kaare tee11, Imavere, 72401, EE",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Kaare tee11, Imavere, 72401, EE",
+            "old": "Kaare tee11, Imavere, 72401, EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23110,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "terjetamm24@gmail.com",
+              "candidates": [
+                {
+                  "id": 9032,
+                  "name": "Terje Tamm"
+                }
+              ]
+            },
+            "phone": {
+              "term": "56454193",
+              "candidates": [
+                {
+                  "id": 9032,
+                  "name": "Terje Tamm"
+                }
+              ]
+            },
+            "name": {
+              "term": "Terje Tamm",
+              "candidates": [
+                {
+                  "id": 9032,
+                  "name": "Terje Tamm"
+                },
+                {
+                  "id": 1915,
+                  "name": "Terje Tamm"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            9032,
+            1915
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67344,
+      "org_id": 9032,
+      "found_by": "email",
+      "person_id": 1915,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "terjetamm24@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601458",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67344,
+          "document_id": 15776049,
+          "client_id": 830926
+        },
+        "message_id": "18592428029902728"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601458"
+      }
+    }
+  }
+}
