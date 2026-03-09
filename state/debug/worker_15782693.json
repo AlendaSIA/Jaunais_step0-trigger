@@ -1,0 +1,305 @@
+{
+  "payload_meta": {
+    "doc_id": 15782693,
+    "document_ref": "ALE 2601485",
+    "xml_len": 4604,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67388,
+    "title": "ALE 2601485",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15782693,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "code": "RNBRM10003",
+        "quantity": 50.0,
+        "unit_price": 2.42,
+        "gross_unit_price": 2.42,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 1,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 570878,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 10475,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA \"KRZ\"",
+        "email": "info@medeka.lv",
+        "phone": null,
+        "regnr": "40103533381",
+        "vatnr": "LV40103533381",
+        "country": "LV",
+        "legal_address_formatted": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103533381",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "info@medeka.lv",
+            "old": "info@medeka.lv",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40103533381",
+            "old": "40103533381",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40103533381",
+            "old": "LV40103533381",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "old": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "old": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23125,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40103533381",
+              "candidates": [
+                {
+                  "id": 10475,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            },
+            "email": {
+              "term": "info@medeka.lv",
+              "candidates": [
+                {
+                  "id": 10475,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 13393,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "SIA \"KRZ\"",
+              "candidates": [
+                {
+                  "id": 9787,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9774,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9773,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9862,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9801,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9848,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9831,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9818,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9817,
+                  "name": "SIA \"KRZ\""
+                },
+                {
+                  "id": 9733,
+                  "name": "SIA \"KRZ\""
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            10475,
+            13393,
+            9787,
+            9774,
+            9773,
+            9862,
+            9801,
+            9848,
+            9831,
+            9818,
+            9817,
+            9733
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67388,
+      "org_id": 10475,
+      "found_by": "email",
+      "person_id": 11780,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "info@medeka.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2601485"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601485",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67388,
+          "document_id": 15782693,
+          "client_id": 570878
+        },
+        "message_id": "18594370537007641"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601485"
+      }
+    }
+  }
+}
