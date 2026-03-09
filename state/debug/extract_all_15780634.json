@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-03-09T12:48:06Z"
+      "value": "2026-03-09T14:59:06Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
