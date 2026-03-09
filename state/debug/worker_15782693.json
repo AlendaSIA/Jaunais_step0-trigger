@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67388,
     "title": "ALE 2601485",
     "_trace": [
@@ -70,10 +70,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 1,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 1,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -154,7 +154,7 @@
       "dup_check": {
         "potential_duplicates": true,
         "activity_created": true,
-        "activity_id": 23125,
+        "activity_id": 23129,
         "skipped_reason": null,
         "debug": {
           "by": {
@@ -254,7 +254,7 @@
       "deal_id": 67388,
       "org_id": 10475,
       "found_by": "email",
-      "person_id": 11780,
+      "person_id": 14513,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
@@ -292,7 +292,7 @@
           "document_id": 15782693,
           "client_id": 570878
         },
-        "message_id": "18594370537007641"
+        "message_id": "18594968858625783"
       },
       "mozello_enrich": {
         "skipped": true,
