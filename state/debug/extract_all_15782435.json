@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-30557, Bank Transfer"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "410674"
     },
@@ -179,6 +183,10 @@
       "value": "2026-03-09T14:11:43Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-03-09T14:12:33Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
       "value": "2673477"
     },
@@ -191,20 +199,28 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem/Description",
-      "value": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast"
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "978825"
     },
     {
-      "field": "Sale/LineItems/LineItem/ItemDescription",
-      "value": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast"
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "FOL-CPE/B/22"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Bahilas Zilas N100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Bahilas Zilas N100 [FOL-CPE/B/22]"
     },
     {
       "field": "Sale/LineItems/LineItem/Qty",
-      "value": "3.00"
+      "value": "66.00"
     },
     {
       "field": "Sale/LineItems/LineItem/Price",
-      "value": "43.78"
+      "value": "1.99"
     },
     {
       "field": "Sale/LineItems/LineItem/LineDiscount",
@@ -228,6 +244,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -272,15 +344,63 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "3.00"
+      "value": "66.00"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentID",
-      "value": "15777898"
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "15782451"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
-      "value": "M-860325-30557"
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0326/00218"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "18557058"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260309/108"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-03-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "18557059"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260309/109"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-03-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -299,20 +419,28 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast"
+          "field": "LineItem/Item/ItemID",
+          "value": "978825"
         },
         {
-          "field": "LineItem/ItemDescription",
-          "value": "Vienreizlietojamas Bahilas 100gb zilas, 22 paciņas - 1 transporta kaste, FOL-CPE/B/22-Kast"
+          "field": "LineItem/Item/ItemCode",
+          "value": "FOL-CPE/B/22"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Bahilas Zilas N100"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Bahilas Zilas N100 [FOL-CPE/B/22]"
         },
         {
           "field": "LineItem/Qty",
-          "value": "3.00"
+          "value": "66.00"
         },
         {
           "field": "LineItem/Price",
-          "value": "43.78"
+          "value": "1.99"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -339,10 +467,10 @@
           "value": "PVN 21%"
         }
       ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "3.00",
-      "price": "43.78",
+      "item_code": "FOL-CPE/B/22",
+      "item_name": "Bahilas Zilas N100",
+      "qty": "66.00",
+      "price": "1.99",
       "line_total": "131.34",
       "tax": "PVN 21%"
     }
