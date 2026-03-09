@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "in_process"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -557,6 +557,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "6.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "15774356"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2601450"
     }
   ],
   "line_items": [
@@ -931,7 +939,7 @@
       },
       {
         "field": "client/Name",
-        "value": "130390-11085"
+        "value": "Lelde Valere"
       },
       {
         "field": "client/Email",
@@ -944,6 +952,10 @@
       {
         "field": "client/Status",
         "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "130390-11085"
       },
       {
         "field": "client/LegalAddress/Address",
@@ -987,7 +999,7 @@
       },
       {
         "field": "client/TimeStamps/Updated",
-        "value": "2026-03-06T18:36:06Z"
+        "value": "2026-03-09T07:22:09Z"
       }
     ],
     "contacts_endpoint": "/api/client/contacts/1206245",
