@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67385,
     "title": "M-860325-30567",
     "_trace": [
@@ -78,10 +78,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -241,7 +241,7 @@
           "document_id": 15780681,
           "client_id": 1206211
         },
-        "message_id": "18068725388774577"
+        "message_id": "18593665387963527"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -250,7 +250,7 @@
           "document_id": 15780681,
           "doc_ref": "M-860325-30567"
         },
-        "message_id": "18068756680301120"
+        "message_id": "18068698897959212"
       }
     }
   }
