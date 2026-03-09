@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15768213,
     "document_ref": "M-860325-30510",
-    "xml_len": 6348,
+    "xml_len": 6492,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67327,
     "title": "M-860325-30510",
     "_trace": [
@@ -90,10 +90,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 6,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 6,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -104,15 +104,15 @@
       "ok": true,
       "mode": "paytraq_direct",
       "client_id": 1206245,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
       "org_id": 13497,
       "attached_to_deal": true,
       "paytraq_fields": {
-        "name": "130390-11085",
+        "name": "Lelde Valere",
         "email": "leldevalere@gmail.com",
         "phone": "25154842",
-        "regnr": null,
+        "regnr": "130390-11085",
         "vatnr": null,
         "country": "LV",
         "legal_address_formatted": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV"
@@ -121,40 +121,22 @@
         "attempts": [
           {
             "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "leldevalere@gmail.com",
+            "term": "130390-11085",
             "found": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "25154842"
-        },
-        "address": {
-          "key": "address",
-          "value": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -162,9 +144,29 @@
             "old": "leldevalere@gmail.com",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "25154842",
+            "old": "25154842",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "130390-11085",
+            "old": "130390-11085",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "old": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
+            "old": "\"Kurzemnieki\", Kekavas novads, Ķekavas novads, LV-2123, LV",
             "reason": "same"
           }
         }
@@ -177,9 +179,13 @@
         "debug": {
           "by": {
             "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
+              "term": "130390-11085",
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
             },
             "email": {
               "term": "leldevalere@gmail.com",
@@ -192,11 +198,21 @@
             },
             "phone": {
               "term": "25154842",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
             },
             "name": {
-              "term": "130390-11085",
-              "candidates": []
+              "term": "Lelde Valere",
+              "candidates": [
+                {
+                  "id": 13497,
+                  "name": "Lelde Valere"
+                }
+              ]
             }
           },
           "unique_ids": [
@@ -242,7 +258,7 @@
           "document_id": 15768213,
           "client_id": 1206245
         },
-        "message_id": "18055947688976712"
+        "message_id": "18592529055326252"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -251,7 +267,7 @@
           "document_id": 15768213,
           "doc_ref": "M-860325-30510"
         },
-        "message_id": "18056490841590296"
+        "message_id": "18592819462379674"
       }
     }
   }
