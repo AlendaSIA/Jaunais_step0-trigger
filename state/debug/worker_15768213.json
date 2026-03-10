@@ -38,6 +38,10 @@
         "ok": true
       },
       {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
         "step": "99_update_products",
         "ok": true
       }
@@ -247,6 +251,18 @@
       "person_country_updated": false,
       "person_country_checked": true
     },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-30510",
+      "payload": {
+        "pipedrive_deal_id": 67327,
+        "paytraq_document_id": 15768213,
+        "pipedrive_person_id": 14614,
+        "pipedrive_org_id": 13497
+      }
+    },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
@@ -258,7 +274,7 @@
           "document_id": 15768213,
           "client_id": 1206245
         },
-        "message_id": "18592529055326252"
+        "message_id": "18069935759498963"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -267,7 +283,7 @@
           "document_id": 15768213,
           "doc_ref": "M-860325-30510"
         },
-        "message_id": "18592819462379674"
+        "message_id": "18070049307819926"
       }
     }
   }
