@@ -1,0 +1,233 @@
+{
+  "payload_meta": {
+    "doc_id": 15786804,
+    "document_ref": "ALE 2601501",
+    "xml_len": 2196,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67421,
+    "title": "ALE 2601501",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15786804,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 689916,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 894,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA TROPI",
+        "email": "drpiskunova@gmail.com",
+        "phone": "29263653",
+        "regnr": "50103086850",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Birzes iela 2-8, ALLAŽI, SIGULDAS NOV., LV-2154, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "50103086850",
+            "found": false
+          },
+          {
+            "by": "email",
+            "term": "drpiskunova@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29263653"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "50103086850"
+        },
+        "address": {
+          "key": "address",
+          "value": "Birzes iela 2-8, ALLAŽI, SIGULDAS NOV., LV-2154, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Birzes iela 2-8, ALLAŽI, SIGULDAS NOV., LV-2154, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "drpiskunova@gmail.com",
+            "old": "drpiskunova@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "50103086850",
+              "candidates": []
+            },
+            "email": {
+              "term": "drpiskunova@gmail.com",
+              "candidates": [
+                {
+                  "id": 894,
+                  "name": "SIA TROPI"
+                }
+              ]
+            },
+            "phone": {
+              "term": "29263653",
+              "candidates": []
+            },
+            "name": {
+              "term": "SIA TROPI",
+              "candidates": [
+                {
+                  "id": 894,
+                  "name": "SIA TROPI"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            894
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67421,
+      "org_id": 894,
+      "found_by": "email",
+      "person_id": 892,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "drpiskunova@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2601501"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601501",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67421,
+          "document_id": 15786804,
+          "client_id": 689916
+        },
+        "message_id": "18069803711243198"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601501"
+      }
+    }
+  }
+}
