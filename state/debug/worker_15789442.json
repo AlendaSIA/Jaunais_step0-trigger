@@ -1,0 +1,282 @@
+{
+  "payload_meta": {
+    "doc_id": 15789442,
+    "document_ref": "ALE 2601515",
+    "xml_len": 5731,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67433,
+    "title": "M-860325-30613 _ ALE 2601515",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15789442,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 10.0,
+        "unit_price": 0.82,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vinila cimdi Zarys, N100, L izmērs  [RWBL10001]",
+        "code": "RWBL10001",
+        "quantity": 10.0,
+        "unit_price": 2.06,
+        "gross_unit_price": 2.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vinila cimdi Zarys, N100, M izmērs [RWBM10001]",
+        "code": "RWBM10001",
+        "quantity": 10.0,
+        "unit_price": 2.06,
+        "gross_unit_price": 2.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 4,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 626811,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 185,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Triibuliine OÜ",
+        "email": "kkathylaar@gmail.com",
+        "phone": "53422104",
+        "regnr": "12877949",
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Männi 13, Saue, Harjumaa, 76506, EE"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "12877949",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "kkathylaar@gmail.com",
+            "old": "kkathylaar@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "53422104",
+            "old": "53422104",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "12877949",
+            "old": "12877949",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Männi 13, Saue, Harjumaa, 76506, EE",
+            "old": "Männi 13, Saue, Harjumaa, 76506, EE",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Männi 13, Saue, Harjumaa, 76506, EE",
+            "old": "Männi 13, Saue, Harjumaa, 76506, EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "12877949",
+              "candidates": [
+                {
+                  "id": 185,
+                  "name": "Triibuliine OÜ"
+                }
+              ]
+            },
+            "email": {
+              "term": "kkathylaar@gmail.com",
+              "candidates": [
+                {
+                  "id": 185,
+                  "name": "Triibuliine OÜ"
+                }
+              ]
+            },
+            "phone": {
+              "term": "53422104",
+              "candidates": [
+                {
+                  "id": 185,
+                  "name": "Triibuliine OÜ"
+                }
+              ]
+            },
+            "name": {
+              "term": "Triibuliine OÜ",
+              "candidates": [
+                {
+                  "id": 185,
+                  "name": "Triibuliine OÜ"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            185
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67433,
+      "org_id": 185,
+      "found_by": "email",
+      "person_id": 185,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kkathylaar@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2601515"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2601515",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67433,
+          "document_id": 15789442,
+          "client_id": 626811
+        },
+        "message_id": "18598075532343601"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2601515"
+      }
+    }
+  }
+}
