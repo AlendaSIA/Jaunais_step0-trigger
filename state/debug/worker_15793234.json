@@ -1,0 +1,293 @@
+{
+  "payload_meta": {
+    "doc_id": 15793234,
+    "document_ref": "PR/0326/00006",
+    "xml_len": 8346,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 67452,
+    "title": "PAS/0326/00011 _ PR/0326/00006",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15793234,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "gross_unit_price": 1.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [RNBS10001]",
+        "code": "RNBS10001",
+        "quantity": 1.0,
+        "unit_price": 3.96,
+        "gross_unit_price": 3.96,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+        "code": "RNBCM10003",
+        "quantity": 1.0,
+        "unit_price": 2.0,
+        "gross_unit_price": 2.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 7,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 838310,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 7905,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Raivis Tests",
+        "email": "raivis@alenda.lv",
+        "phone": "26711822",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "raivis@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "raivis@alenda.lv",
+            "old": "raivis@alenda.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26711822",
+            "old": "26711822",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "old": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "old": "Jurmala talsu sos. 31 korp.8 dz.16, Jurmala, latvia, LV-2016, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23182,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "raivis@alenda.lv",
+              "candidates": [
+                {
+                  "id": 7905,
+                  "name": "Raivis Zvejnieks Zvejnieks"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26711822",
+              "candidates": [
+                {
+                  "id": 369,
+                  "name": "Raivis Zvejnieks"
+                },
+                {
+                  "id": 1087,
+                  "name": "Alenda"
+                },
+                {
+                  "id": 7905,
+                  "name": "Raivis Zvejnieks Zvejnieks"
+                },
+                {
+                  "id": 7872,
+                  "name": "Alenda SIA"
+                }
+              ]
+            },
+            "name": {
+              "term": "Raivis Tests",
+              "candidates": [
+                {
+                  "id": 12661,
+                  "name": "Raivis Tests"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            7905,
+            369,
+            1087,
+            7872,
+            12661
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67452,
+      "org_id": 7905,
+      "found_by": "email",
+      "person_id": 15148,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "raivis@alenda.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "PR/0326/00006"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "PR/0326/00006",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67452,
+          "document_id": 15793234,
+          "client_id": 838310
+        },
+        "message_id": "18070387490257141"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "PR/0326/00006"
+      }
+    }
+  }
+}
