@@ -463,27 +463,51 @@
     "shipping_addresses_auth_used": "query_normal",
     "shipping_addresses_fields": [
       {
-        "field": "shipping_addresses/ShippingAddress/AddressID",
-        "value": "410362"
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "410746"
       },
       {
-        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
         "value": "testa klients 11, 65656565"
       },
       {
-        "field": "shipping_addresses/ShippingAddress/Address",
-        "value": "Cesvaine - Augusta Saulieša iela 2, Cesvaine, Madonas nov., LV-4871"
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Bauskas iela 22,, Rīga"
       },
       {
-        "field": "shipping_addresses/ShippingAddress/Zip",
-        "value": "4871"
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "1004"
       },
       {
-        "field": "shipping_addresses/ShippingAddress/Country",
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
         "value": "LV"
       },
       {
-        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "410362"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "testa klients 11, 65656565"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Cesvaine - Augusta Saulieša iela 2, Cesvaine, Madonas nov., LV-4871"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "4871"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
         "value": "false"
       }
     ],
