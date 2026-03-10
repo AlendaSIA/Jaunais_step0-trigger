@@ -38,6 +38,10 @@
         "ok": true
       },
       {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
         "step": "99_update_products",
         "ok": true
       }
@@ -221,7 +225,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67323,
       "org_id": 14038,
-      "found_by": "email",
+      "found_by": "org_existing",
       "person_id": 15119,
       "attached_to_deal": true,
       "activity_created": false,
@@ -231,16 +235,33 @@
           {
             "by": "email",
             "term": "dambeniece12@gmail.com",
-            "found": true
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "26078468",
+            "found": false
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person attached from org (most recent). Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
       "person_country_updated": false,
       "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-30506",
+      "payload": {
+        "pipedrive_deal_id": 67323,
+        "paytraq_document_id": 15767814,
+        "pipedrive_person_id": 15119,
+        "pipedrive_org_id": 14038
+      }
     },
     "step_99": {
       "ok": true,
@@ -253,7 +274,7 @@
           "document_id": 15767814,
           "client_id": 1206197
         },
-        "message_id": "18592740127140135"
+        "message_id": "18602362615687459"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -262,7 +283,7 @@
           "document_id": 15767814,
           "doc_ref": "M-860325-30506"
         },
-        "message_id": "18593363338169039"
+        "message_id": "18601240811088388"
       }
     }
   }
