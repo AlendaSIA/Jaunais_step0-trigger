@@ -1,0 +1,305 @@
+{
+  "payload_meta": {
+    "doc_id": 15792755,
+    "document_ref": "M-860325-30625",
+    "xml_len": 8336,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67451,
+    "title": "M-860325-30625",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15792755,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "easyCARE nitrile flex Melni elastīgie nitrila diagnostikas cimdi bez pūdera (100 gab.), Alternativa easy care S, melna, CPRNBCS10001",
+        "code": null,
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]",
+        "code": "RNBCM10003",
+        "quantity": 1.0,
+        "unit_price": 3.3,
+        "gross_unit_price": 3.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Lateksa cimdi, nepūderēti \"Easy care\", baltā krāsā, 100 gb, XS izmers, 100 gb, [RLBXS10007]",
+        "code": "RLBXS10007",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 7,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "mode": "paytraq_direct",
+      "client_id": 581833,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 7872,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Alenda SIA",
+        "email": "raivis@helender.com",
+        "phone": "26711822",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Mūkusalas ielā 47, RĪGA, Rīga, 1004, LV"
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "raivis@helender.com",
+            "found": true
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "raivis@helender.com",
+            "old": "raivis@helender.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26711822",
+            "old": "26711822",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Mūkusalas ielā 47, RĪGA, Rīga, 1004, LV",
+            "old": "Mūkusalas ielā 47, RĪGA, Rīga, 1004, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Mūkusalas ielā 47, RĪGA, Rīga, 1004, LV",
+            "old": "Mūkusalas ielā 47, RĪGA, Rīga, 1004, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": true,
+        "activity_created": true,
+        "activity_id": 23178,
+        "skipped_reason": null,
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "raivis@helender.com",
+              "candidates": [
+                {
+                  "id": 7872,
+                  "name": "Alenda SIA"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26711822",
+              "candidates": [
+                {
+                  "id": 369,
+                  "name": "Raivis Zvejnieks"
+                },
+                {
+                  "id": 1087,
+                  "name": "Alenda"
+                },
+                {
+                  "id": 7905,
+                  "name": "Raivis Zvejnieks Zvejnieks"
+                },
+                {
+                  "id": 7872,
+                  "name": "Alenda SIA"
+                }
+              ]
+            },
+            "name": {
+              "term": "Alenda SIA",
+              "candidates": [
+                {
+                  "id": 7872,
+                  "name": "Alenda SIA"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            7872,
+            369,
+            1087,
+            7905
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67451,
+      "org_id": 7872,
+      "found_by": "phone",
+      "person_id": 10127,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "raivis@helender.com",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "26711822",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by phone. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-30625",
+      "payload": {
+        "pipedrive_deal_id": 67451,
+        "paytraq_document_id": 15792755,
+        "pipedrive_person_id": 10127,
+        "pipedrive_org_id": 7872
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-30625",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67451,
+          "document_id": 15792755,
+          "client_id": 581833
+        },
+        "message_id": "18603527330199108"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67451,
+          "document_id": 15792755,
+          "doc_ref": "M-860325-30625"
+        },
+        "message_id": "18602813757175381"
+      }
+    }
+  }
+}
