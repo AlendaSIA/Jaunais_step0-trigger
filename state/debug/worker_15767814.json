@@ -225,7 +225,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67323,
       "org_id": 14038,
-      "found_by": "org_existing",
+      "found_by": "email",
       "person_id": 15119,
       "attached_to_deal": true,
       "activity_created": false,
@@ -235,16 +235,11 @@
           {
             "by": "email",
             "term": "dambeniece12@gmail.com",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "26078468",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person attached from org (most recent). Activity disabled.",
+      "note": "Person matched by email. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -274,7 +269,7 @@
           "document_id": 15767814,
           "client_id": 1206197
         },
-        "message_id": "18602362615687459"
+        "message_id": "18599939099245347"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -283,7 +278,7 @@
           "document_id": 15767814,
           "doc_ref": "M-860325-30506"
         },
-        "message_id": "18601240811088388"
+        "message_id": "18069714518420490"
       }
     }
   }
