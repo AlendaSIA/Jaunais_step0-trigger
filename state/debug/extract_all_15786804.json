@@ -1,0 +1,344 @@
+{
+  "document_id": 15786804,
+  "client_id": "689916",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15786804"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-03-10"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2601501"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "689916"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA TROPI"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-03-10"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Raivis Zvejnieks"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-03-10T07:32:47Z"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "0.00"
+    }
+  ],
+  "line_items": [],
+  "client_bundle": {
+    "client_id": "689916",
+    "client_endpoint": "/api/client/689916",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "689916"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA TROPI"
+      },
+      {
+        "field": "client/Email",
+        "value": "drpiskunova@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "50103086850"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Birzes iela 2-8, ALLAŽI, SIGULDAS NOV."
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-2154"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "29263653"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-08-02T10:07:11Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-08-02T10:07:11Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/689916",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/689916",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "219387"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "SIA TROPI, 29263653"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Rīga, Ieriķu iela 3 (Rīgas TC DOMINA Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "1084"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "289943"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "SIA \"TROPI\", 29263653"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Rīga, Ieriķu iela 3 (Rīgas TC DOMINA Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "1084"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "328018"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "TROPI SIA, 29263653"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "Rīga, Ieriķu iela 3 (Rīgas TC DOMINA Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Zip",
+        "value": "1084"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/AddressID",
+        "value": "302615"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/ShipTo",
+        "value": "TROPI SIA, 29263653"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Address",
+        "value": "Rīgas Stirnu ielas RIMI pakomāts (Rīga, Stirnu iela 26)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/689916",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
