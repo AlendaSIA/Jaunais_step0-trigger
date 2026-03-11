@@ -2,7 +2,6 @@ import os
 import base64
 import requests
 
-# Defaults (ja env nav uzlikts)
 DEFAULT_OWNER = "AlendaSIA"
 DEFAULT_REPO = "Jaunais_step0-trigger"
 
@@ -21,6 +20,13 @@ def _headers(token: str) -> dict:
         "Authorization": f"token {token}",
         "Accept": "application/vnd.github+json",
     }
+
+
+def _commit_message(message: str) -> str:
+    msg = (message or "").strip()
+    if msg.startswith("[skip ci]"):
+        return msg
+    return f"[skip ci] {msg}"
 
 
 def _github_get_sha(token: str, path: str):
@@ -45,7 +51,7 @@ def _github_put_text(token: str, path: str, text: str, message: str):
 
     url = f"https://api.github.com/repos/{_repo_full()}/contents/{path}"
     payload = {
-        "message": message,
+        "message": _commit_message(message),
         "content": base64.b64encode(text.encode("utf-8")).decode("utf-8"),
     }
     if sha:
@@ -56,12 +62,6 @@ def _github_put_text(token: str, path: str, text: str, message: str):
 
 
 def _worker_all_steps_ok(ctx: dict) -> bool:
-    """
-    Auto-ACK only if worker truly completed everything:
-      - worker_status_code == 200
-      - worker_response_json.status in {"created","updated"}
-      - worker_response_json._trace exists and every item has ok == True
-    """
     try:
         code = int(ctx.get("worker_status_code") or 0)
     except Exception:
@@ -91,15 +91,6 @@ def _worker_all_steps_ok(ctx: dict) -> bool:
 
 
 def run(ctx: dict):
-    """
-    Step08: finalize state.
-
-    NEW:
-      - No manual ack required.
-      - Finalize if worker_all_steps_ok(ctx) == True.
-
-    Ja ctx["skip_state_update"] True -> neraksta neko (test mode).
-    """
     token = os.getenv("GITHUB_TOKEN")
     if not token:
         ctx["error"] = "Missing env: GITHUB_TOKEN"
@@ -114,14 +105,12 @@ def run(ctx: dict):
     ack = _worker_all_steps_ok(ctx)
     doc_id = ctx.get("in_progress_id") or ctx.get("next_document_id")
 
-    # Debug (palīdzēs redzēt kāpēc finalize notika/nenotika)
     ctx["github_finalize_ack"] = ack
 
     if not ack or not doc_id:
         ctx["github_finalize_clear_status"] = "skipped(no_ack_or_no_doc)"
         return ctx
 
-    # 1) set last_processed_id.txt
     _, st_last, _ = _github_put_text(
         token,
         STATE_LAST_PATH,
@@ -130,7 +119,6 @@ def run(ctx: dict):
     )
     ctx["github_finalize_last_status"] = st_last
 
-    # 2) clear in_progress_id.txt
     _, st_clear, _ = _github_put_text(
         token,
         STATE_INPROGRESS_PATH,
