@@ -11,6 +11,13 @@ WORKER_URL = (os.getenv("WORKER_URL", "") or "").strip()
 GITHUB_TOKEN = (os.getenv("GITHUB_TOKEN", "") or "").strip()
 
 
+def _commit_message(message: str) -> str:
+    msg = (message or "").strip()
+    if msg.startswith("[skip ci]"):
+        return msg
+    return f"[skip ci] {msg}"
+
+
 def _trace(ctx: Dict[str, Any], step: str, ok: bool, extra: Optional[Dict[str, Any]] = None) -> None:
     payload = {"step": step, "ok": ok}
     if extra:
@@ -18,9 +25,6 @@ def _trace(ctx: Dict[str, Any], step: str, ok: bool, extra: Optional[Dict[str, A
     ctx.setdefault("_trace", []).append(payload)
 
 
-# --------------------------
-# GitHub helpers
-# --------------------------
 def _github_get_sha(token: str, path: str) -> Optional[str]:
     url = f"https://api.github.com/repos/{REPO}/contents/{path}"
     r = requests.get(url, headers={"Authorization": f"token {token}"}, timeout=20)
@@ -32,7 +36,7 @@ def _github_get_sha(token: str, path: str) -> Optional[str]:
 def _github_put_file(token: str, path: str, content_bytes: bytes, message: str) -> Tuple[int, str]:
     url = f"https://api.github.com/repos/{REPO}/contents/{path}"
     payload: Dict[str, Any] = {
-        "message": message,
+        "message": _commit_message(message),
         "content": base64.b64encode(content_bytes).decode("utf-8"),
     }
     sha = _github_get_sha(token, path)
@@ -48,9 +52,6 @@ def _github_put_file(token: str, path: str, content_bytes: bytes, message: str) 
     return r.status_code, (r.text or "")[:500]
 
 
-# --------------------------
-# Worker URL helper
-# --------------------------
 def _worker_process_url() -> str:
     if not WORKER_URL:
         return ""
@@ -74,9 +75,6 @@ def _extract_doc_ref_from_xml(xml: str) -> Optional[str]:
     return None
 
 
-# --------------------------
-# Flatten helper
-# --------------------------
 def _flatten(obj: Any, prefix: str = "") -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
     if isinstance(obj, dict):
@@ -113,12 +111,10 @@ def run(ctx: dict) -> dict:
     xml = ctx.get("paytraq_full_xml") or ""
     xml_len = len(xml) if isinstance(xml, str) else 0
 
-    # DocumentRef: mēģinām no ctx, ja nav — izvelkam no XML
     document_ref = ctx.get("document_ref")
     if not document_ref:
         document_ref = _extract_doc_ref_from_xml(xml)
 
-    # Worker prasa document.deal.title => iedodam vienmēr
     ref_clean = (document_ref or "").replace(" ", "").strip()
     deal_title = ref_clean or f"PT {doc_id}"
 
@@ -167,14 +163,24 @@ def run(ctx: dict) -> dict:
             out_path = f"state/debug/worker_{doc_id}.json"
             pretty = json.dumps(
                 {
-                    "payload_meta": {"doc_id": doc_id, "document_ref": document_ref, "xml_len": xml_len, "process_url": process_url},
+                    "payload_meta": {
+                        "doc_id": doc_id,
+                        "document_ref": document_ref,
+                        "xml_len": xml_len,
+                        "process_url": process_url,
+                    },
                     "payload_sent_to_worker_keys": list((payload.get("document") or {}).keys()),
                     "worker_response": ctx.get("worker_response_json"),
                 },
                 ensure_ascii=False,
                 indent=2,
             )
-            st, sn = _github_put_file(GITHUB_TOKEN, out_path, pretty.encode("utf-8"), f"debug: worker response {doc_id}")
+            st, sn = _github_put_file(
+                GITHUB_TOKEN,
+                out_path,
+                pretty.encode("utf-8"),
+                f"debug: worker response {doc_id}",
+            )
             ctx["github_worker_json_path"] = out_path
             ctx["github_worker_json_status"] = st
             if st not in (200, 201):
