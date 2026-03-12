@@ -1,0 +1,21 @@
+{
+  "payload_meta": {
+    "doc_id": 7434961,
+    "document_ref": "ALE 2300011",
+    "xml_len": 6030,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "detail": {
+      "step": "01_deal_upsert",
+      "error": "Pipedrive PUT failed: HTTP 400 body={'success': False, 'error': 'Entity is archived. You must first unarchive it before you can edit', 'error_info': 'Please check developers.pipedrive.com for more information about Pipedrive API.', 'data': None, 'additional_data': None, 'code': 'ERR_DEAL_ARCHIVED'}"
+    }
+  }
+}
