@@ -1,0 +1,1675 @@
+{
+  "document_id": 7448027,
+  "client_id": "570876",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "7448027"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2023-01-04"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2300051"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "570876"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA Klīnika DiaMed"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "1165.96"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2023-02-03"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2023-01-04"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Raimonds Šidlovskis"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "4"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "30"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4260"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2330"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Slokas iela  126B, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1067"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "159083"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA Klīnika DiaMed"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Brīvības gatve 214, Rīga,1039"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/Project/ProjectName",
+      "value": "RAIVIS"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2023-01-04T12:37:51Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2023-01-04T12:54:37Z"
+    },
+    {
+      "field": "Sale/CustomData/CustomField/FieldName",
+      "value": "kontaktpersona"
+    },
+    {
+      "field": "Sale/CustomData/CustomField/FieldValue",
+      "value": "Romāns 20038045"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "831619"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "FM279386M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Ārstu komplekts, SMS, N1, L, FM279386M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Ārstu komplekts, SMS, N1, L, FM279386M [FM279386M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "2.18"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "109.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "831614"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "FM279376M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Ārstu komplekts, SMS, N1, XL, FM279376M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Ārstu komplekts, SMS, N1, XL, FM279376M [FM279376M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "2.18"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "109.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "831617"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "FM279356M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Ārstu komplekts, SMS, N1, XXL, FM279356M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Ārstu komplekts, SMS, N1, XXL, FM279356M [FM279356M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "2.18"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "109.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "831324"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "FM27536M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "Vienreizlietojamas BIKSES SMS, L, FM27536M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "Vienreizlietojamas BIKSES SMS, L, FM27536M [FM27536M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "1.15"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "57.50"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "831325"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "FM27526M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "Vienreizlietojamas BIKSES SMS, XL, FM27526M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "Vienreizlietojamas BIKSES SMS, XL, FM27526M [FM27526M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "1.15"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "57.50"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemID",
+      "value": "831310"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemCode",
+      "value": "FM27586M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemName",
+      "value": "Krekls vienreizlietojams SMS, N1, L, FM27586M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Description",
+      "value": "Krekls vienreizlietojams SMS, N1, L, FM27586M [FM27586M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Price",
+      "value": "1.22"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineTotal",
+      "value": "61.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemID",
+      "value": "831311"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemCode",
+      "value": "FM27576M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemName",
+      "value": "Krekls vienreizlietojams SMS, N1, XL, FM27576M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Description",
+      "value": "Krekls vienreizlietojams SMS, N1, XL, FM27576M [FM27576M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Qty",
+      "value": "50.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Price",
+      "value": "1.22"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineTotal",
+      "value": "61.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemID",
+      "value": "831031"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemCode",
+      "value": "FM285094M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemName",
+      "value": "Vienreizlietojamas Bahilas 100gb zilas, FM285094M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Description",
+      "value": "Vienreizlietojamas Bahilas 100gb zilas, FM285094M [FM285094M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Qty",
+      "value": "40.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Price",
+      "value": "3.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineTotal",
+      "value": "139.60"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemID",
+      "value": "831308"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemCode",
+      "value": "FM27703M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemName",
+      "value": "Pacienta Halāts zils, vienreizlietojams N10, XXL, FM27703M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Description",
+      "value": "Pacienta Halāts zils, vienreizlietojams N10, XXL, FM27703M [FM27703M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Qty",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Price",
+      "value": "13.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineTotal",
+      "value": "260.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "1165.96"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "963.60"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "202.36"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "1165.96"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "963.60"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "410.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "7448168"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0123/00053"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2023-02-02"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "1165.96"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "8310209"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20230202/28"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "7734086"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0223/00010"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "8056085"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20230104/41"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2023-01-04"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "8056086"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20230104/42"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2023-01-04"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831619"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM279386M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Ārstu komplekts, SMS, N1, L, FM279386M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Ārstu komplekts, SMS, N1, L, FM279386M [FM279386M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.18"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "109.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM279386M",
+      "item_name": "Ārstu komplekts, SMS, N1, L, FM279386M",
+      "qty": "50.00",
+      "price": "2.18",
+      "line_total": "109.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831614"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM279376M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Ārstu komplekts, SMS, N1, XL, FM279376M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Ārstu komplekts, SMS, N1, XL, FM279376M [FM279376M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.18"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "109.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM279376M",
+      "item_name": "Ārstu komplekts, SMS, N1, XL, FM279376M",
+      "qty": "50.00",
+      "price": "2.18",
+      "line_total": "109.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831617"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM279356M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Ārstu komplekts, SMS, N1, XXL, FM279356M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Ārstu komplekts, SMS, N1, XXL, FM279356M [FM279356M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.18"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "109.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM279356M",
+      "item_name": "Ārstu komplekts, SMS, N1, XXL, FM279356M",
+      "qty": "50.00",
+      "price": "2.18",
+      "line_total": "109.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831324"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27536M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Vienreizlietojamas BIKSES SMS, L, FM27536M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Vienreizlietojamas BIKSES SMS, L, FM27536M [FM27536M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.15"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "57.50"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM27536M",
+      "item_name": "Vienreizlietojamas BIKSES SMS, L, FM27536M",
+      "qty": "50.00",
+      "price": "1.15",
+      "line_total": "57.50",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831325"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27526M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Vienreizlietojamas BIKSES SMS, XL, FM27526M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Vienreizlietojamas BIKSES SMS, XL, FM27526M [FM27526M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.15"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "57.50"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM27526M",
+      "item_name": "Vienreizlietojamas BIKSES SMS, XL, FM27526M",
+      "qty": "50.00",
+      "price": "1.15",
+      "line_total": "57.50",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831310"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27586M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Krekls vienreizlietojams SMS, N1, L, FM27586M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Krekls vienreizlietojams SMS, N1, L, FM27586M [FM27586M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.22"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "61.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM27586M",
+      "item_name": "Krekls vienreizlietojams SMS, N1, L, FM27586M",
+      "qty": "50.00",
+      "price": "1.22",
+      "line_total": "61.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831311"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27576M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Krekls vienreizlietojams SMS, N1, XL, FM27576M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Krekls vienreizlietojams SMS, N1, XL, FM27576M [FM27576M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "50.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.22"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "61.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM27576M",
+      "item_name": "Krekls vienreizlietojams SMS, N1, XL, FM27576M",
+      "qty": "50.00",
+      "price": "1.22",
+      "line_total": "61.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831031"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM285094M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Vienreizlietojamas Bahilas 100gb zilas, FM285094M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Vienreizlietojamas Bahilas 100gb zilas, FM285094M [FM285094M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "40.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "139.60"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM285094M",
+      "item_name": "Vienreizlietojamas Bahilas 100gb zilas, FM285094M",
+      "qty": "40.00",
+      "price": "3.49",
+      "line_total": "139.60",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831308"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27703M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Pacienta Halāts zils, vienreizlietojams N10, XXL, FM27703M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Pacienta Halāts zils, vienreizlietojams N10, XXL, FM27703M [FM27703M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "13.00"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "260.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM27703M",
+      "item_name": "Pacienta Halāts zils, vienreizlietojams N10, XXL, FM27703M",
+      "qty": "20.00",
+      "price": "13.00",
+      "line_total": "260.00",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "570876",
+    "client_endpoint": "/api/client/570876",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "570876"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA Klīnika DiaMed"
+      },
+      {
+        "field": "client/Email",
+        "value": "Romans.Cvetkovs@olainmed.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40003873785"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40003873785"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Brīvības gatve 214, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-1039"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/ClientGroup/GroupID",
+        "value": "2215"
+      },
+      {
+        "field": "client/ClientGroup/GroupName",
+        "value": "Pastāvīgs Klients"
+      },
+      {
+        "field": "client/Project/ProjectName",
+        "value": "RAIVIS"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "30"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-01T19:34:45Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-09-15T07:54:42Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/570876",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/570876",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "159083"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "SIA Klīnika DiaMed"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Brīvības gatve 214, Rīga,1039"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/570876",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
