@@ -3,7 +3,7 @@
     "doc_id": 7434609,
     "document_ref": "ALE 2300009",
     "xml_len": 5943,
-    "process_url": "https://pipedrive-worker-142693968214.europe-west1.run.app/process"
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
     "id",
@@ -13,9 +13,9 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
-    "deal_id": 66978,
-    "title": "PT 7434609 ALE 2300009",
+    "status": "updated",
+    "deal_id": 17074,
+    "title": "ALE 2300009",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -35,6 +35,10 @@
       },
       {
         "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
         "ok": true
       },
       {
@@ -78,44 +82,23 @@
     ],
     "step_03": {
       "ok": true,
-      "attached_count": 2
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
     },
-    "products_attached": [
-      {
-        "product_id": 7221,
-        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [ZARYS-RNB-S-100] [RNBS10001]",
-        "quantity": 1.0,
-        "src_unit_price_net": 3.96,
-        "src_gross_unit_price": 4.79,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 4.79,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2064
-      },
-      {
-        "product_id": 7107,
-        "name": "Shipping [Ship1]",
-        "quantity": 1.0,
-        "src_unit_price_net": 2.97,
-        "src_gross_unit_price": 3.59,
-        "src_include_tax": true,
-        "src_vat_rate": 0.21,
-        "pipedrive_item_price": 3.59,
-        "pipedrive_tax_method": "inclusive",
-        "pipedrive_tax": 21,
-        "added_id": 2065
-      }
-    ],
+    "products_attached": null,
     "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
-      "mode": "paytraq_direct",
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
       "client_id": 570982,
-      "found_by": "name",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 1672,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -127,47 +110,58 @@
         "country": "LV",
         "legal_address_formatted": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
       },
-      "pipedrive_search": {
+      "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "Andrejs Simacovs",
-            "found": true
+            "by": "deal_org_id",
+            "found": true,
+            "term": 1672,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Slokas 114-33, Riga, Lv-1083, Латвия, LV"
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Slokas 114-33, Riga, Lv-1083, Латвия, LV",
+            "old": "Slokas 114-33, Riga, Lv-1083, Латвия, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Slokas 114-33, Riga, Lv-1083, Латвия, LV",
+            "old": "Slokas 114-33, Riga, Lv-1083, Латвия, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "skipped_updated_deal_existing_org"
+      }
     },
     "step_05": {
       "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 66978,
+      "deal_id": 17074,
       "org_id": 1672,
-      "found_by": "org_existing",
+      "found_by": "deal_person_id",
       "person_id": 1672,
       "attached_to_deal": true,
       "activity_created": false,
@@ -175,29 +169,46 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 1672,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person attached from org (most recent). Activity disabled."
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2300009"
     },
     "step_99": {
       "ok": true,
       "mode": "pubsub_publish",
-      "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
-      "payload": {
-        "deal_id": 66978,
-        "document_id": 7434609,
-        "client_id": 570982
+      "doc_ref": "ALE 2300009",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 17074,
+          "document_id": 7434609,
+          "client_id": 570982
+        },
+        "message_id": "18663435202957745"
       },
-      "message_id": "18004251800573813"
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2300009"
+      }
     }
   }
 }
