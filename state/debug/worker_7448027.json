@@ -1,0 +1,292 @@
+{
+  "payload_meta": {
+    "doc_id": 7448027,
+    "document_ref": "ALE 2300051",
+    "xml_len": 10738,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 39697,
+    "title": "ALE 2300051",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7448027,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 9,
+    "line_items_preview": [
+      {
+        "name": "Ārstu komplekts, SMS, N1, L, FM279386M [FM279386M]",
+        "code": "FM279386M",
+        "quantity": 50.0,
+        "unit_price": 2.18,
+        "gross_unit_price": 2.18,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Ārstu komplekts, SMS, N1, XL, FM279376M [FM279376M]",
+        "code": "FM279376M",
+        "quantity": 50.0,
+        "unit_price": 2.18,
+        "gross_unit_price": 2.18,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Ārstu komplekts, SMS, N1, XXL, FM279356M [FM279356M]",
+        "code": "FM279356M",
+        "quantity": 50.0,
+        "unit_price": 2.18,
+        "gross_unit_price": 2.18,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 9,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 570876,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 14079,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA Klīnika DiaMed",
+        "email": "Romans.Cvetkovs@olainmed.lv",
+        "phone": null,
+        "regnr": "40003873785",
+        "vatnr": "LV40003873785",
+        "country": "LV",
+        "legal_address_formatted": "Brīvības gatve 214, Rīga, LV-1039, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40003873785",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "romans.cvetkovs@olainmed.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "sia klīnika diamed",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40003873785",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "romans.cvetkovs@olainmed.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "sia klīnika diamed",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "Romans.Cvetkovs@olainmed.lv"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40003873785"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40003873785"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Brīvības gatve 214, Rīga, LV-1039, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Brīvības gatve 214, Rīga, LV-1039, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40003873785",
+              "candidates": []
+            },
+            "email": {
+              "term": "romans.cvetkovs@olainmed.lv",
+              "candidates": []
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "sia klīnika diamed",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 39697,
+      "org_id": 14079,
+      "found_by": "deal_person_id",
+      "person_id": 13168,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 13168,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2300051"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2300051",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 39697,
+          "document_id": 7448027,
+          "client_id": 570876
+        },
+        "message_id": "18074736087128097"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2300051"
+      }
+    }
+  }
+}
