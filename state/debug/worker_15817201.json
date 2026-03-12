@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67538,
     "title": "PAS/0326/00024",
     "_trace": [
@@ -70,10 +70,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 1,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 1,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -82,11 +82,11 @@
     "activities_created": [],
     "step_04": {
       "ok": true,
-      "version": "v2026-03-12-step04-db-first-01",
-      "mode": "paytraq_direct_db_first",
+      "version": "v2026-03-10-step04-single-search-03",
+      "mode": "paytraq_direct",
       "client_id": 1209351,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14080,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -98,106 +98,54 @@
         "country": "LV",
         "legal_address_formatted": "LV"
       },
-      "db_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "testa klients 24",
-            "found": false,
-            "candidate_count": 0
-          }
-        ]
-      },
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "testa klients 24",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14080,
+            "skipped_research": true
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "TESTAKLIENTS24@TESTS.LV"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "TESTAKLIENTS24@TESTS.LV",
+            "old": "TESTAKLIENTS24@TESTS.LV",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "testaklients24@tests.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "name": {
-              "term": "testa klients 24",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -206,7 +154,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67538,
       "org_id": 14080,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 15176,
       "attached_to_deal": true,
       "activity_created": false,
@@ -214,18 +162,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15176,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -250,7 +194,7 @@
           "document_id": 15817201,
           "client_id": 1209351
         },
-        "message_id": "18074680673042033"
+        "message_id": "18074388077208245"
       },
       "mozello_enrich": {
         "skipped": true,
