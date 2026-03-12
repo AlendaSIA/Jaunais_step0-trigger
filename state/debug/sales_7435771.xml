@@ -1,0 +1,15 @@
+<Sale><Header><Document><DocumentID>7435771</DocumentID><DocumentDate>2022-10-08</DocumentDate><DocumentRef>ALE 210886</DocumentRef><DocumentType>sale</DocumentType><DocumentStatus>paid</DocumentStatus><Client><ClientID>571031</ClientID><ClientName>SIA &quot;MENTAMED&quot;</ClientName></Client></Document><SaleType>sales_invoice</SaleType><Operation>other_income</Operation><Total>132.37</Total><AmountDue>0.00</AmountDue><DueNoticeEnabled>false</DueNoticeEnabled><Currency>EUR</Currency><BalanceCurrency>EUR</BalanceCurrency><CurrencyRate>1.00</CurrencyRate><TaxBasis>1</TaxBasis><IncludeTax>true</IncludeTax><UseOverpayment>false</UseOverpayment><DateDue>2023-01-02</DateDue><DateApproved>2022-10-08</DateApproved><IssuedBy>Ligita Zvejniece</IssuedBy><Discount>0.00</Discount><Deposit></Deposit><Comment></Comment><Signature>1</Signature><InvoicePeriod><PeriodType>0</PeriodType><PeriodStart></PeriodStart><PeriodEnd></PeriodEnd></InvoicePeriod><PayTerm><PayTermType>0</PayTermType><PayTermDays>0</PayTermDays></PayTerm><PaymentMethod>1</PaymentMethod><AccountID>2673407</AccountID><ShippingData><ShippingType>0</ShippingType><Warehouse></Warehouse><LoadingArea></LoadingArea><Shipper></Shipper><ShippingAddress></ShippingAddress></ShippingData><Project></Project><TimeStamps>
+                <Created>2023-01-02T13:07:08Z</Created>
+                <Updated></Updated>
+              </TimeStamps></Header><CustomData></CustomData><LineItems><LineItem><Account><AccountID>2673549</AccountID><AccountCode>3150</AccountCode><AccountName>Sākuma saldo izlīdzināšana</AccountName></Account><Item></Item><ItemLot></ItemLot><Description></Description><ItemDescription></ItemDescription><Qty>1.00</Qty><Price>132.37</Price><LineDiscount></LineDiscount><LineTotal>132.37</LineTotal><Unit></Unit><TaxKey><TaxKeyID></TaxKeyID><TaxKeyName></TaxKeyName></TaxKey></LineItem></LineItems><Adjustments></Adjustments><ShippingCharge><Account></Account><Amount></Amount><TaxKey><TaxKeyID></TaxKeyID><TaxKeyName></TaxKeyName></TaxKey></ShippingCharge><Taxes></Taxes><Totals><GrossAmount>132.37</GrossAmount><NetAmount>0.00</NetAmount><Qty>1.00</Qty></Totals><InvoiceReference></InvoiceReference><OrderReference></OrderReference><ProformaReference></ProformaReference><MovementReference></MovementReference><Payments><Payment>
+                 <PaymentDate>2023-01-02</PaymentDate>
+                 <PaymentType>bank</PaymentType>
+                 <PaymentAmount>132.37</PaymentAmount>
+                 <JournalID>8042389</JournalID>
+                 <JournalRef>20230102/32</JournalRef>
+                 <DocumentLink>
+                   <DocumentID>7436265</DocumentID>
+                   <DocumentRef>0123/00005</DocumentRef>
+                   <DocumentType>payment</DocumentType>
+                 </DocumentLink>
+               </Payment></Payments><Journals><Journal><JournalID>8041991</JournalID><JournalRef>20221231/34</JournalRef><JournalDate>2022-12-31</JournalDate><JournalStatus>P</JournalStatus><JournalType><JournalTypeID>141182</JournalTypeID><JournalTypeName>Pārdošanas nodokļa rēķins</JournalTypeName></JournalType></Journal></Journals><Tags></Tags></Sale>
