@@ -1,0 +1,603 @@
+{
+  "document_id": 7440437,
+  "client_id": "571360",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "7440437"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2300028"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "571360"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Mārtiņš Jēcis"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "10.34"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Raivis Zvejnieks"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-8365, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4260"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "158976"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Mārtiņš Jēcis, +37122052737"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Grobiņa, Lielā iela 74 (Grobiņas TOP Venipak pakomāts)"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "3430"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/Project/ProjectName",
+      "value": "LVTT"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2023-01-03T11:45:56Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2023-01-03T11:46:17Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "830802"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "RNBCM10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [ZARYS-RNBC03M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "6.75"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "6.75"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673529"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "8190"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Citi ieņēmumi"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "charge"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "amount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262056"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "nav PVN"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "3.59"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "10.34"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "8.55"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "1.79"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "10.34"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "8.55"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "7440440"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0123/00030"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "10.34"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "8064197"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20230103/51"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "7455050"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0123/00050"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "8047532"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20230103/21"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "8047533"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20230103/22"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830802"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCM10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [ZARYS-RNBC03M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.75"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "6.75"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCM10001",
+      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M",
+      "qty": "1.00",
+      "price": "6.75",
+      "line_total": "6.75",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "571360",
+    "client_endpoint": "/api/client/571360",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "571360"
+      },
+      {
+        "field": "client/Name",
+        "value": "Mārtiņš Jēcis"
+      },
+      {
+        "field": "client/Email",
+        "value": "martins.jecis@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "1"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Jaunatnes Iela 14, Grobiņa"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "3430"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "+37122052737"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-03T11:45:56Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-01-03T11:45:56Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/571360",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/571360",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "158976"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "Mārtiņš Jēcis, +37122052737"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Grobiņa, Lielā iela 74 (Grobiņas TOP Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Zip",
+        "value": "3430"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/571360",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
