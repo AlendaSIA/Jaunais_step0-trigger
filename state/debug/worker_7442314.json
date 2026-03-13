@@ -82,10 +82,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -213,7 +213,7 @@
           "document_id": 7442314,
           "client_id": 571484
         },
-        "message_id": "18657585775429876"
+        "message_id": "18671356528751171"
       },
       "mozello_enrich": {
         "skipped": true,
