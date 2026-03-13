@@ -1,0 +1,244 @@
+{
+  "payload_meta": {
+    "doc_id": 7527407,
+    "document_ref": "PR/0123/00005",
+    "xml_len": 5557,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67577,
+    "title": "PR/0123/00005",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7527407,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [ZARYS-RNB-S-100]",
+        "code": "RNBS10001",
+        "quantity": 7.0,
+        "unit_price": 3.96,
+        "gross_unit_price": 3.96,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNB-M-100_m]",
+        "code": "RNBM10001",
+        "quantity": 4.0,
+        "unit_price": 3.76,
+        "gross_unit_price": 3.76,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 581477,
+      "found_by": "name",
+      "org_action": "updated",
+      "org_id": 997,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA DM PREMIUM",
+        "email": null,
+        "phone": null,
+        "regnr": "40103206925",
+        "vatnr": "LV40103206925",
+        "country": "LV",
+        "legal_address_formatted": "Kuldīgas 23-3, Rīga,, 1007, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40103206925",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "sia dm premium",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103206925"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103206925"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kuldīgas 23-3, Rīga,, 1007, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kuldīgas 23-3, Rīga,, 1007, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67577,
+      "org_id": 997,
+      "found_by": "org_existing",
+      "person_id": 998,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "PR/0123/00005"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "PR/0123/00005",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67577,
+          "document_id": 7527407,
+          "client_id": 581477
+        },
+        "message_id": "18078513866083703"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "PR/0123/00005"
+      }
+    }
+  }
+}
