@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 3,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 3,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -110,7 +110,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 570917,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 3065,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -133,29 +133,29 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "address": {
-          "key": "address",
-          "value": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
         ],
         "skipped_same": {
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV",
+            "old": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV",
+            "old": "Mēness iela, 13-1, Lielvārde, LV-5070, Latvia, LV",
             "reason": "same"
           }
         }
@@ -213,7 +213,7 @@
           "document_id": 7433663,
           "client_id": 570917
         },
-        "message_id": "18666477013693186"
+        "message_id": "18670560589097995"
       },
       "mozello_enrich": {
         "skipped": true,
