@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67548,
     "title": "PAS/0326/00025",
     "_trace": [
@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 3,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 3,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -109,7 +109,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1209351,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 14080,
       "attached_to_deal": true,
@@ -125,44 +125,14 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "testa klients 24",
-            "found": false,
-            "candidate_count": 0
-          }
-        ]
-      },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 14080,
+            "skipped_db_lookup": true
           }
         ]
       },
+      "pipedrive_search": {},
       "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
@@ -200,42 +170,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "testaklients24@tests.lv",
-              "candidates": [
-                {
-                  "id": 14080,
-                  "name": "TESTA KLIENTS 24"
-                }
-              ]
-            },
-            "phone": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "name": {
-              "term": "testa klients 24",
-              "candidates": [
-                {
-                  "id": 14080,
-                  "name": "TESTA KLIENTS 24"
-                }
-              ]
-            }
-          },
-          "unique_ids": [
-            14080
-          ]
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -244,7 +179,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67548,
       "org_id": 14080,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 15176,
       "attached_to_deal": true,
       "activity_created": false,
@@ -252,13 +187,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "testaklients24@tests.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15176,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -283,7 +219,7 @@
           "document_id": 15822279,
           "client_id": 1209351
         },
-        "message_id": "18076389959434747"
+        "message_id": "18076119655437911"
       },
       "mozello_enrich": {
         "skipped": true,
