@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 3,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 3,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -109,8 +109,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 571831,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 2212,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -125,43 +125,24 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "dinka123@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 2212,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "27845589"
-        },
-        "address": {
-          "key": "address",
-          "value": "maskavas iela 252, Rīga, LV1063, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "maskavas iela 252, Rīga, LV1063, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -169,9 +150,24 @@
             "old": "dinka123@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "27845589",
+            "old": "27845589",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "maskavas iela 252, Rīga, LV1063, LV",
+            "old": "maskavas iela 252, Rīga, LV1063, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "maskavas iela 252, Rīga, LV1063, LV",
+            "old": "maskavas iela 252, Rīga, LV1063, LV",
             "reason": "same"
           }
         }
@@ -180,7 +176,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -229,7 +225,7 @@
           "document_id": 7447563,
           "client_id": 571831
         },
-        "message_id": "18664251423361219"
+        "message_id": "18671811541330833"
       },
       "mozello_enrich": {
         "skipped": true,
