@@ -68,7 +68,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 570882,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 3130,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -91,39 +91,44 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40003457128"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40003457128"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Vienības gatve 45, Rīga, LV-1004, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Vienības gatve 45, Rīga, LV-1004, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [],
-        "skipped_same": {}
+        "skipped_same": {
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40003457128",
+            "old": "40003457128",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40003457128",
+            "old": "LV40003457128",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Vienības gatve 45, Rīga, LV-1004, LV",
+            "old": "Vienības gatve 45, Rīga, LV-1004, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Vienības gatve 45, Rīga, LV-1004, LV",
+            "old": "Vienības gatve 45, Rīga, LV-1004, LV",
+            "reason": "same"
+          }
+        }
       },
       "dup_check": {
         "potential_duplicates": false,
@@ -178,7 +183,7 @@
           "document_id": 7432923,
           "client_id": 570882
         },
-        "message_id": "18670474000351240"
+        "message_id": "18670584401637076"
       },
       "mozello_enrich": {
         "skipped": true,
