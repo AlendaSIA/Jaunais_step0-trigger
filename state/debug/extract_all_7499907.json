@@ -1,0 +1,719 @@
+{
+  "document_id": 7499907,
+  "client_id": "578620",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "7499907"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2023-01-09"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "PAS/0123/00009"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "done"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "578620"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA ADK GROUP"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "73.47"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "73.47"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2023-01-09"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2023-01-09"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-8518, Bank Transfer"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4260"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "164917"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA ADK GROUP, +37126896929"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Rīgas Kurzemes prospekta Mego pakomāts (Rīga, Kurzemes prospekts 132)"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2023-01-09T14:38:06Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2023-01-09T14:38:06Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "838675"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "TK-ZARYS-RNBC03S"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 10 X 100 gab iepakojums, S, 100 gb, TK-ZARYS-RNBC03S"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 10 X 100 gab iepakojums, S, 100 gb, TK-ZARYS-RNBC03S [TK-ZARYS-RNBC03S]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "61.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "61.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "831037"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "FM29175M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "837738"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "FM29148M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M [FM29148M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "73.47"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "60.72"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "12.75"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "73.47"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "60.72"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "7525133"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2300146"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "838675"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "TK-ZARYS-RNBC03S"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 10 X 100 gab iepakojums, S, 100 gb, TK-ZARYS-RNBC03S"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 10 X 100 gab iepakojums, S, 100 gb, TK-ZARYS-RNBC03S [TK-ZARYS-RNBC03S]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "61.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "61.49"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "TK-ZARYS-RNBC03S",
+      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 10 X 100 gab iepakojums, S, 100 gb, TK-ZARYS-RNBC03S",
+      "qty": "1.00",
+      "price": "61.49",
+      "line_total": "61.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831037"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM29175M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M [FM29175M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM29175M",
+      "item_name": "Medicīniskās sejas maskas TYPE II rozā, 1 kastīte (50 gb), FM29175M",
+      "qty": "1.00",
+      "price": "5.99",
+      "line_total": "5.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "837738"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM29148M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M [FM29148M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FM29148M",
+      "item_name": "Medicīniskās sejas maskas TYPE II melnas, 1 kastīte (50 gb), FM29148M",
+      "qty": "1.00",
+      "price": "5.99",
+      "line_total": "5.99",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "578620",
+    "client_endpoint": "/api/client/578620",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "578620"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA ADK GROUP"
+      },
+      {
+        "field": "client/Email",
+        "value": "edijs.rokis@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40103768243"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40103768243"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Stropu iela, 11, Babītes pagasts"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-2101"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "+37126896929"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-09T14:38:06Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2023-01-09T14:38:06Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/578620",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/578620",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "164917"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "SIA ADK GROUP, +37126896929"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Rīgas Kurzemes prospekta Mego pakomāts (Rīga, Kurzemes prospekts 132)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/578620",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
