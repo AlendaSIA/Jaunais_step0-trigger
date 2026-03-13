@@ -68,7 +68,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 570878,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 129,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -91,44 +91,47 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "info@medeka.lv"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40103533381"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40103533381"
-        },
-        "address": {
-          "key": "address",
-          "value": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
-        ],
         "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "info@medeka.lv",
+            "old": "info@medeka.lv",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40103533381",
+            "old": "40103533381",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40103533381",
+            "old": "LV40103533381",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "old": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
+            "old": "Torņa iela 13,  Bauska, Bauskas nov., LV-3901, LV",
             "reason": "same"
           }
         }
@@ -186,7 +189,7 @@
           "document_id": 7432926,
           "client_id": 570878
         },
-        "message_id": "18076406345851643"
+        "message_id": "18076417627795735"
       },
       "mozello_enrich": {
         "skipped": true,
