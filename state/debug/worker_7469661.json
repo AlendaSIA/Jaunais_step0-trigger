@@ -1,0 +1,247 @@
+{
+  "payload_meta": {
+    "doc_id": 7469661,
+    "document_ref": "ALE 2300115",
+    "xml_len": 10009,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 16601,
+    "title": "ALE 2300115",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7469661,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Lateksa cimdi bez pūdera  \"Grip-Light\" N100, M, FM26759M [FM26759M]",
+        "code": "FM2675M",
+        "quantity": 8.0,
+        "unit_price": 5.45,
+        "gross_unit_price": 6.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Pūderēti nitrila cimdi CONTROL, S, 100 gb, FM2606M [FM2606M]",
+        "code": "FM2606M",
+        "quantity": 4.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [ZARYS-RNBR03M]",
+        "code": "RNBRM10003",
+        "quantity": 3.0,
+        "unit_price": 6.11,
+        "gross_unit_price": 7.39,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 7,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 573256,
+      "found_by": "deal_org_id",
+      "org_action": "updated",
+      "org_id": 358,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "NECESSE SIA",
+        "email": "office@necesse.lv",
+        "phone": "27766458",
+        "regnr": "40103992675",
+        "vatnr": "LV40103992675",
+        "country": "LV",
+        "legal_address_formatted": "Tilta iela 5 k-1 - 50, Rīga, LV-1005, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "deal_org_id",
+            "found": true,
+            "term": 358,
+            "skipped_db_lookup": true
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "27766458"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40103992675"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40103992675"
+        },
+        "address": {
+          "key": "address",
+          "value": "Tilta iela 5 k-1 - 50, Rīga, LV-1005, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Tilta iela 5 k-1 - 50, Rīga, LV-1005, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "office@necesse.lv",
+            "old": "office@necesse.lv",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "skipped_updated_deal_existing_org"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 16601,
+      "org_id": 358,
+      "found_by": "deal_person_id",
+      "person_id": 359,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 359,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2300115"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2300115",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 16601,
+          "document_id": 7469661,
+          "client_id": 573256
+        },
+        "message_id": "18078216170069684"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2300115"
+      }
+    }
+  }
+}
