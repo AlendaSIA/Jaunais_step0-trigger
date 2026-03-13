@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67549,
     "title": "M-860325-30697",
     "_trace": [
@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 5,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 5,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -109,8 +109,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1209665,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14082,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -125,113 +125,64 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "50203375451",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "grabitbeauty@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "37126593143",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "grab it sia",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14082,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "50203375451",
-            "found": false,
-            "candidate_count": 0
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "grabitbeauty@inbox.lv",
+            "old": "grabitbeauty@inbox.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "grabitbeauty@inbox.lv",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37126593143",
+            "old": "+37126593143",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "37126593143",
-            "found": false,
-            "candidate_count": 0
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "50203375451",
+            "old": "50203375451",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "grab it sia",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Gāles iela 3A, Sigulda, LV-2150, LV",
+            "old": "Gāles iela 3A, Sigulda, LV-2150, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Gāles iela 3A, Sigulda, LV-2150, LV",
+            "old": "Gāles iela 3A, Sigulda, LV-2150, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "grabitbeauty@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "+37126593143"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "50203375451"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Gāles iela 3A, Sigulda, LV-2150, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Gāles iela 3A, Sigulda, LV-2150, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "50203375451",
-              "candidates": []
-            },
-            "email": {
-              "term": "grabitbeauty@inbox.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": "37126593143",
-              "candidates": []
-            },
-            "name": {
-              "term": "grab it sia",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -240,7 +191,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67549,
       "org_id": 14082,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 15180,
       "attached_to_deal": true,
       "activity_created": false,
@@ -248,18 +199,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "grabitbeauty@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "37126593143",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15180,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -289,7 +236,7 @@
           "document_id": 15822397,
           "client_id": 1209665
         },
-        "message_id": "18668369809235824"
+        "message_id": "18667897771379283"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -298,7 +245,7 @@
           "document_id": 15822397,
           "doc_ref": "M-860325-30697"
         },
-        "message_id": "18076130320981065"
+        "message_id": "18667383190321972"
       }
     }
   }
