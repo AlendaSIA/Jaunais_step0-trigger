@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 67537,
+    "deal_id": 67554,
     "title": "ALE 210886",
     "_trace": [
       {
@@ -190,7 +190,7 @@
       "ok": true,
       "version": "v2026-03-10-step05-reuse-deal-person-01",
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 67537,
+      "deal_id": 67554,
       "org_id": 7557,
       "found_by": "org_existing",
       "person_id": 5231,
@@ -232,11 +232,11 @@
       "org_update": {
         "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
         "payload": {
-          "deal_id": 67537,
+          "deal_id": 67554,
           "document_id": 7435771,
           "client_id": 571031
         },
-        "message_id": "18661511600715009"
+        "message_id": "18669563428239836"
       },
       "mozello_enrich": {
         "skipped": true,
