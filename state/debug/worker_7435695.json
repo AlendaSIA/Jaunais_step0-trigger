@@ -68,7 +68,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 571031,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 7557,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -91,34 +91,35 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "50003858241"
-        },
-        "address": {
-          "key": "address",
-          "value": "Kalngales iela 3A, Rīga, LV-1015, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Kalngales iela 3A, Rīga, LV-1015, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
-        ],
         "skipped_same": {
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "50003858241",
+            "old": "50003858241",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Kalngales iela 3A, Rīga, LV-1015, LV",
+            "old": "Kalngales iela 3A, Rīga, LV-1015, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Kalngales iela 3A, Rīga, LV-1015, LV",
+            "old": "Kalngales iela 3A, Rīga, LV-1015, LV",
             "reason": "same"
           }
         }
@@ -176,7 +177,7 @@
           "document_id": 7435695,
           "client_id": 571031
         },
-        "message_id": "18074496127213715"
+        "message_id": "18670963529079110"
       },
       "mozello_enrich": {
         "skipped": true,
