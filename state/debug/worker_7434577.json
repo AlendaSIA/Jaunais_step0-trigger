@@ -82,10 +82,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -98,7 +98,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 570979,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 3059,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -121,29 +121,29 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "address": {
-          "key": "address",
-          "value": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
         ],
         "skipped_same": {
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV",
+            "old": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV",
+            "old": "Rīgas 59a-23, Gulbene, Lv-4401, Latvia, LV",
             "reason": "same"
           }
         }
@@ -201,7 +201,7 @@
           "document_id": 7434577,
           "client_id": 570979
         },
-        "message_id": "18074412128428721"
+        "message_id": "18076100844643623"
       },
       "mozello_enrich": {
         "skipped": true,
