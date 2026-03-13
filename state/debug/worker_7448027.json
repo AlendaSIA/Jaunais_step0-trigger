@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 9,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 9,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -109,8 +109,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 570876,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14079,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -125,112 +125,64 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40003873785",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "romans.cvetkovs@olainmed.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "sia klīnika diamed",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14079,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "40003873785",
-            "found": false,
-            "candidate_count": 0
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "Romans.Cvetkovs@olainmed.lv",
+            "old": "Romans.Cvetkovs@olainmed.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "romans.cvetkovs@olainmed.lv",
-            "found": false,
-            "candidate_count": 0
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40003873785",
+            "old": "40003873785",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40003873785",
+            "old": "LV40003873785",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "sia klīnika diamed",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Brīvības gatve 214, Rīga, LV-1039, LV",
+            "old": "Brīvības gatve 214, Rīga, LV-1039, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Brīvības gatve 214, Rīga, LV-1039, LV",
+            "old": "Brīvības gatve 214, Rīga, LV-1039, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "Romans.Cvetkovs@olainmed.lv"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40003873785"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40003873785"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Brīvības gatve 214, Rīga, LV-1039, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Brīvības gatve 214, Rīga, LV-1039, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "40003873785",
-              "candidates": []
-            },
-            "email": {
-              "term": "romans.cvetkovs@olainmed.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "name": {
-              "term": "sia klīnika diamed",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -279,7 +231,7 @@
           "document_id": 7448027,
           "client_id": 570876
         },
-        "message_id": "18074736087128097"
+        "message_id": "18077450151934998"
       },
       "mozello_enrich": {
         "skipped": true,
