@@ -82,10 +82,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -98,7 +98,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 571701,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 250,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -121,44 +121,47 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "velnav@agios.lv"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40003610059"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40003610059"
-        },
-        "address": {
-          "key": "address",
-          "value": "Maskavas iela 429–78, Rīga, LV-1063, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Maskavas iela 429–78, Rīga, LV-1063, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
-        ],
         "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "velnav@agios.lv",
+            "old": "velnav@agios.lv",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40003610059",
+            "old": "40003610059",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40003610059",
+            "old": "LV40003610059",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Maskavas iela 429–78, Rīga, LV-1063, LV",
+            "old": "Maskavas iela 429–78, Rīga, LV-1063, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Maskavas iela 429–78, Rīga, LV-1063, LV",
+            "old": "Maskavas iela 429–78, Rīga, LV-1063, LV",
             "reason": "same"
           }
         }
@@ -216,7 +219,7 @@
           "document_id": 7446577,
           "client_id": 571701
         },
-        "message_id": "18662952347202374"
+        "message_id": "18667809914030416"
       },
       "mozello_enrich": {
         "skipped": true,
