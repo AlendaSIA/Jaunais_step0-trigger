@@ -1,0 +1,330 @@
+{
+  "document_id": 7432924,
+  "client_id": "570877",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "7432924"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2022-12-06"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 225528"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "570877"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA \"Daiļrade Koks\""
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "other_income"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "279.75"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2022-12-06"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "30"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2023-01-01T20:11:13Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673549"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "3150"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Sākuma saldo izlīdzināšana"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "279.75"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "279.75"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "279.75"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2023-01-03"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "279.75"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "8057291"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20230103/32"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "7449175"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0123/00013"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalID",
+      "value": "8038793"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalRef",
+      "value": "20221231/24"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalDate",
+      "value": "2022-12-31"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673549"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "3150"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Sākuma saldo izlīdzināšana"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "279.75"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "279.75"
+        }
+      ],
+      "item_code": null,
+      "item_name": null,
+      "qty": "1.00",
+      "price": "279.75",
+      "line_total": "279.75",
+      "tax": null
+    }
+  ],
+  "client_bundle": {
+    "client_id": "570877",
+    "client_endpoint": "/api/client/570877",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "570877"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA \"Daiļrade Koks\""
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40003127582"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40003127582"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Čiekurkalna 1. līnija 11, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-1026"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "30"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-01T19:36:11Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/570877",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/570877",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [],
+    "banks_endpoint": "/api/client/banks/570877",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
