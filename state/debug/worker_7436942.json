@@ -82,10 +82,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -97,8 +97,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 571085,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 1714,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -113,43 +113,24 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "inga.varslavane@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 1714,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "+371 29 358 902"
-        },
-        "address": {
-          "key": "address",
-          "value": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -157,9 +138,24 @@
             "old": "inga.varslavane@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+371 29 358 902",
+            "old": "+371 29 358 902",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV",
+            "old": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV",
+            "old": "Smilšu 1, Birzgales Pagasts, Ķeguma novads, 5033, LV",
             "reason": "same"
           }
         }
@@ -168,7 +164,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -177,7 +173,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 42866,
       "org_id": 1714,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 1714,
       "attached_to_deal": true,
       "activity_created": false,
@@ -185,13 +181,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "inga.varslavane@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 1714,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -216,7 +213,7 @@
           "document_id": 7436942,
           "client_id": 571085
         },
-        "message_id": "18074578353530638"
+        "message_id": "18076603823628146"
       },
       "mozello_enrich": {
         "skipped": true,
