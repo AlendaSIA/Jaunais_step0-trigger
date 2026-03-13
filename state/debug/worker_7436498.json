@@ -68,7 +68,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 571061,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 3174,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -91,39 +91,44 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40203284254"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40203284254"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [],
-        "skipped_same": {}
+        "skipped_same": {
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203284254",
+            "old": "40203284254",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40203284254",
+            "old": "LV40203284254",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV",
+            "old": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV",
+            "old": "Tirgoņu iela 23 k-1, Jūrmala, LV-2015, LV",
+            "reason": "same"
+          }
+        }
       },
       "dup_check": {
         "potential_duplicates": false,
@@ -178,7 +183,7 @@
           "document_id": 7436498,
           "client_id": 571061
         },
-        "message_id": "18074559066281399"
+        "message_id": "18076305937182244"
       },
       "mozello_enrich": {
         "skipped": true,
