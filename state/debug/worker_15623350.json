@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 3,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 3,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -110,7 +110,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 945760,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 10553,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -133,40 +133,18 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "22170904"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40002198751"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40002198751"
-        },
-        "address": {
-          "key": "address",
-          "value": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
           "4b4db855bb2ac128d585e2d84c554eb099e588f7",
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
-        "skipped_same_keys": [
-          "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -174,9 +152,34 @@
             "old": "aiko_woodworks@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "22170904",
+            "old": "22170904",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40002198751",
+            "old": "40002198751",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40002198751",
+            "old": "LV40002198751",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV",
+            "old": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV",
+            "old": "Liepu iela 4-9, Preiļu nov., Kastīre, Rušonas pag., LV-5329, LV",
             "reason": "same"
           }
         }
@@ -234,7 +237,7 @@
           "document_id": 15623350,
           "client_id": 945760
         },
-        "message_id": "18076536024679749"
+        "message_id": "18076131698800811"
       },
       "mozello_enrich": {
         "skipped": true,
