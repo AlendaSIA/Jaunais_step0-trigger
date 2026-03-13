@@ -94,10 +94,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -110,7 +110,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 571326,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 3055,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -133,30 +133,16 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "62173240"
-        },
-        "address": {
-          "key": "address",
-          "value": "Mažeikiu r., Žibikai, Telšiu, 89495, LT"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Mažeikiu r., Žibikai, Telšiu, 89495, LT"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -164,9 +150,24 @@
             "old": "vaicienesonata@gmail.com",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "62173240",
+            "old": "62173240",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LT",
             "old": "LT",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Mažeikiu r., Žibikai, Telšiu, 89495, LT",
+            "old": "Mažeikiu r., Žibikai, Telšiu, 89495, LT",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Mažeikiu r., Žibikai, Telšiu, 89495, LT",
+            "old": "Mažeikiu r., Žibikai, Telšiu, 89495, LT",
             "reason": "same"
           }
         }
@@ -224,7 +225,7 @@
           "document_id": 7440114,
           "client_id": 571326
         },
-        "message_id": "18074230627847759"
+        "message_id": "18076450368563469"
       },
       "mozello_enrich": {
         "skipped": true,
