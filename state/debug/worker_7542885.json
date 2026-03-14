@@ -1,0 +1,254 @@
+{
+  "payload_meta": {
+    "doc_id": 7542885,
+    "document_ref": "M-860325-8591",
+    "xml_len": 6470,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67613,
+    "title": "M-860325-8591",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7542885,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», sarkani 100 gb, M, 100 gb, FM26159M [FM26159M]",
+        "code": "FM26159M",
+        "quantity": 1.0,
+        "unit_price": 6.11,
+        "gross_unit_price": 7.39,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi bez pūdera «Safe light», violeti 100 gb., M, 100 gb, FM26156M [FM26156M]",
+        "code": "FM26156M",
+        "quantity": 2.0,
+        "unit_price": 6.44,
+        "gross_unit_price": 7.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Vienreizlietojamie priekšauti maisiņā, 12my | HDPE N100, 125 x 70 cm | HDPE, FM23180M [FM23180M]",
+        "code": "FM23180M",
+        "quantity": 1.0,
+        "unit_price": 4.89,
+        "gross_unit_price": 5.92,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 6,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 582511,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 299,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SanSiBe OÜ",
+        "email": "siret0920@gmail.com",
+        "phone": "+37253508820",
+        "regnr": "16569920",
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Viljandi 32-2, Türi, Järvamaa, 72212, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "siret0920@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37253508820"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "16569920"
+        },
+        "address": {
+          "key": "address",
+          "value": "Viljandi 32-2, Türi, Järvamaa, 72212, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Viljandi 32-2, Türi, Järvamaa, 72212, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "siret0920@gmail.com",
+            "old": "siret0920@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67613,
+      "org_id": 299,
+      "found_by": "email",
+      "person_id": 299,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "siret0920@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-8591",
+      "payload": {
+        "pipedrive_deal_id": 67613,
+        "paytraq_document_id": 7542885,
+        "pipedrive_person_id": 299,
+        "pipedrive_org_id": 299
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-8591",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67613,
+          "document_id": 7542885,
+          "client_id": 582511
+        },
+        "message_id": "17833055027758241"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67613,
+          "document_id": 7542885,
+          "doc_ref": "M-860325-8591"
+        },
+        "message_id": "17832973953257626"
+      }
+    }
+  }
+}
