@@ -1,0 +1,1261 @@
+{
+  "document_id": 7560281,
+  "client_id": "570878",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "7560281"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2023-01-16"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "ALE 2300236"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "paid"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "570878"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA \"KRZ\""
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "666.23"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2023-01-19"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2023-01-16"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Raivis Zvejnieks"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "3"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4260"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2330"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Slokas iela  126B, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1067"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/Project/ProjectName",
+      "value": "KRZ"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2023-01-16T12:47:29Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2023-01-16T13:02:24Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "830795"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "RNBXL10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNB-XL-100_m]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "200.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "2.02"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "404.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "830801"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "RNBCS10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, ZARYS-RNBC03S [ZARYS-RNBC03S]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "3.02"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "30.20"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "830803"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "RNBCL10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, L, 100 gb."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, L, 100 gb, ZARYS-RNBC03L [ZARYS-RNBC03L]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "3.02"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "30.20"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "830797"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "RNBRS10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [ZARYS-RNBR03S]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "3.37"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "33.70"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "830798"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "RNBRM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [ZARYS-RNBR03M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "3.37"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "33.70"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemID",
+      "value": "831626"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemCode",
+      "value": "SLN-001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemName",
+      "value": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Description",
+      "value": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001 [SLN-001]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Qty",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Price",
+      "value": "0.94"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineTotal",
+      "value": "18.80"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "666.23"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "550.60"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "115.63"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "666.23"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "550.60"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "260.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "7560494"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0123/00245"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2023-01-22"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "666.23"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "8196681"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20230122/1"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "7595493"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0123/00350"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "8155456"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20230116/61"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2023-01-16"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "8155457"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20230116/62"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2023-01-16"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830795"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBXL10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNB-XL-100_m]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "200.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "2.02"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "404.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBXL10001",
+      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m",
+      "qty": "200.00",
+      "price": "2.02",
+      "line_total": "404.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830801"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCS10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, ZARYS-RNBC03S [ZARYS-RNBC03S]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.02"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "30.20"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCS10001",
+      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,",
+      "qty": "10.00",
+      "price": "3.02",
+      "line_total": "30.20",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830803"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCL10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, L, 100 gb."
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, L, 100 gb, ZARYS-RNBC03L [ZARYS-RNBC03L]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.02"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "30.20"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCL10001",
+      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, L, 100 gb.",
+      "qty": "10.00",
+      "price": "3.02",
+      "line_total": "30.20",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830797"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRS10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [ZARYS-RNBR03S]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.37"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "33.70"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRS10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S",
+      "qty": "10.00",
+      "price": "3.37",
+      "line_total": "33.70",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830798"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "XS-L Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [ZARYS-RNBR03M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.37"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "33.70"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRM10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M",
+      "qty": "10.00",
+      "price": "3.37",
+      "line_total": "33.70",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831626"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "SLN-001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001 [SLN-001]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.94"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "18.80"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "SLN-001",
+      "item_name": "KOKA ŠPĀTELES 100 GB, 150X17 MM, SLN-001",
+      "qty": "20.00",
+      "price": "0.94",
+      "line_total": "18.80",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "570878",
+    "client_endpoint": "/api/client/570878",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "570878"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA \"KRZ\""
+      },
+      {
+        "field": "client/Email",
+        "value": "info@medeka.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40103533381"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40103533381"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Torņa iela 13,  Bauska, Bauskas nov."
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-3901"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "30"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-01T19:37:11Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2025-02-02T09:17:26Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/570878",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/570878",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "365619"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "SIA \"KRZ\""
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Bauskas zaļās ielas venipak pakomats, 26574770"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "269028"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "KRZ"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Torņa iela 13"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/570878",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
