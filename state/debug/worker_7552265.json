@@ -1,0 +1,249 @@
+{
+  "payload_meta": {
+    "doc_id": 7552265,
+    "document_ref": "M-860325-8614",
+    "xml_len": 4897,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67630,
+    "title": "M-860325-8614",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7552265,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "FFP2 respirators Melns, individuāli iepakots, , 1 gb iepakojums, LitdFFP2B [LitdFFP2B]",
+        "code": "LitdFFP2B",
+        "quantity": 40.0,
+        "unit_price": 0.18,
+        "gross_unit_price": 0.22,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "SRONG 150, pap.dvielis [852210]",
+        "code": "852210",
+        "quantity": 1.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "XS-XL Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, L, 100 gb, RNB-L-100_m [RNB-L-100_m]",
+        "code": "RNBL10001",
+        "quantity": 1.0,
+        "unit_price": 3.96,
+        "gross_unit_price": 4.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 4,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 582906,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2964,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Margit Rõõm",
+        "email": "margit.room@gmail.com",
+        "phone": "5284078",
+        "regnr": null,
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Arukase1, Tartu, Tartumaa, 51011, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "margit.room@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "5284078"
+        },
+        "address": {
+          "key": "address",
+          "value": "Arukase1, Tartu, Tartumaa, 51011, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Arukase1, Tartu, Tartumaa, 51011, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "margit.room@gmail.com",
+            "old": "margit.room@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67630,
+      "org_id": 2964,
+      "found_by": "email",
+      "person_id": 2960,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "margit.room@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-8614",
+      "payload": {
+        "pipedrive_deal_id": 67630,
+        "paytraq_document_id": 7552265,
+        "pipedrive_person_id": 2960,
+        "pipedrive_org_id": 2964
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-8614",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67630,
+          "document_id": 7552265,
+          "client_id": 582906
+        },
+        "message_id": "18079814250761944"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67630,
+          "document_id": 7552265,
+          "doc_ref": "M-860325-8614"
+        },
+        "message_id": "18674831677383581"
+      }
+    }
+  }
+}
