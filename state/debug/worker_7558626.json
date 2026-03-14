@@ -1,0 +1,249 @@
+{
+  "payload_meta": {
+    "doc_id": 7558626,
+    "document_ref": "M-860325-8657",
+    "xml_len": 9279,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67665,
+    "title": "M-860325-8657",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7558626,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 9,
+    "line_items_preview": [
+      {
+        "name": "Melni Nitrila cimdi MASTER GLOVE, 100 gb iepakojums, XS-L izmēri, XS, 100 gb, SOR-067 [SOR-067]",
+        "code": "SOR-067",
+        "quantity": 1.0,
+        "unit_price": 4.86,
+        "gross_unit_price": 5.88,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zaļā krāsā, 100 gb, S, 100 gb, FM27067M [FM27067M]",
+        "code": "FM27067M",
+        "quantity": 2.0,
+        "unit_price": 6.44,
+        "gross_unit_price": 7.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», baltā krāsā, 100 gb, S, 100 gb, FM27069M [FM27069M]",
+        "code": "FM27069M",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 9,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 583421,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2955,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Hanna Tarum",
+        "email": "hanna.tarum@gmail.com",
+        "phone": "+37256770206",
+        "regnr": null,
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Outokumpu 7-138, Kohtla-Järve, Ida-Virumaa, 310327, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "hanna.tarum@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37256770206"
+        },
+        "address": {
+          "key": "address",
+          "value": "Outokumpu 7-138, Kohtla-Järve, Ida-Virumaa, 310327, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Outokumpu 7-138, Kohtla-Järve, Ida-Virumaa, 310327, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "hanna.tarum@gmail.com",
+            "old": "hanna.tarum@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67665,
+      "org_id": 2955,
+      "found_by": "email",
+      "person_id": 2951,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "hanna.tarum@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-8657",
+      "payload": {
+        "pipedrive_deal_id": 67665,
+        "paytraq_document_id": 7558626,
+        "pipedrive_person_id": 2951,
+        "pipedrive_org_id": 2955
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-8657",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67665,
+          "document_id": 7558626,
+          "client_id": 583421
+        },
+        "message_id": "18675452858386653"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67665,
+          "document_id": 7558626,
+          "doc_ref": "M-860325-8657"
+        },
+        "message_id": "18080840688562393"
+      }
+    }
+  }
+}
