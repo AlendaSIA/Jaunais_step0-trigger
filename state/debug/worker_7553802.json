@@ -1,0 +1,249 @@
+{
+  "payload_meta": {
+    "doc_id": 7553802,
+    "document_ref": "M-860325-8625",
+    "xml_len": 4300,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67640,
+    "title": "M-860325-8625",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 7553802,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Antigēna COVID-19 Ātrais Tests (SIEKALU kociņš/ tampons) , SingClean N1 , 1gb iepakojums, sINCLEAN-1GB-P0 [sINCLEAN-1GB-P0]",
+        "code": "sINCLEAN-1GB-P0",
+        "quantity": 9.0,
+        "unit_price": 0.86,
+        "gross_unit_price": 1.04,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Kiilto Pro Kasperi Putojošs atkaļķotājs, 1 litrs, KCT7435001 [KCT7435001]",
+        "code": "KCT7435001",
+        "quantity": 1.0,
+        "unit_price": 5.55,
+        "gross_unit_price": 6.72,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.82,
+        "gross_unit_price": 2.2,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 3,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 582986,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2952,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Kaspars Siliņš",
+        "email": "naberus@gmail.com",
+        "phone": "29400981",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Lauku 35-124, Jūrmala, LV2016, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "naberus@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29400981"
+        },
+        "address": {
+          "key": "address",
+          "value": "Lauku 35-124, Jūrmala, LV2016, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Lauku 35-124, Jūrmala, LV2016, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "naberus@gmail.com",
+            "old": "naberus@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67640,
+      "org_id": 2952,
+      "found_by": "email",
+      "person_id": 2948,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "naberus@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-8625",
+      "payload": {
+        "pipedrive_deal_id": 67640,
+        "paytraq_document_id": 7553802,
+        "pipedrive_person_id": 2948,
+        "pipedrive_org_id": 2952
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-8625",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67640,
+          "document_id": 7553802,
+          "client_id": 582986
+        },
+        "message_id": "18675984668909494"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67640,
+          "document_id": 7553802,
+          "doc_ref": "M-860325-8625"
+        },
+        "message_id": "18079720048254782"
+      }
+    }
+  }
+}
