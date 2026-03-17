@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 15823137,
     "document_ref": "ALE 2601596",
-    "xml_len": 5592,
+    "xml_len": 6366,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -203,8 +203,8 @@
       "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": null,
-      "person_country_updated": true,
+      "person_country_previous": "LV",
+      "person_country_updated": false,
       "person_country_checked": true
     },
     "step_98": {
@@ -225,7 +225,7 @@
           "document_id": 15823137,
           "client_id": 1209733
         },
-        "message_id": "18076633723580461"
+        "message_id": "18092328674408116"
       },
       "mozello_enrich": {
         "skipped": true,
