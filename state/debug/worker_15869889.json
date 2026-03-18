@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67783,
     "title": "M-860325-30800",
     "_trace": [
@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -101,7 +101,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1212345,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 14110,
       "attached_to_deal": true,
@@ -117,45 +117,14 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "miks321@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "37126129452",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "janis setkins",
-            "found": false,
-            "candidate_count": 0
-          }
-        ]
-      },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "miks321@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 14110,
+            "skipped_db_lookup": true
           }
         ]
       },
+      "pipedrive_search": {},
       "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
@@ -199,46 +168,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "miks321@inbox.lv",
-              "candidates": [
-                {
-                  "id": 14110,
-                  "name": "JANIS SETKINS"
-                }
-              ]
-            },
-            "phone": {
-              "term": "37126129452",
-              "candidates": [
-                {
-                  "id": 14110,
-                  "name": "JANIS SETKINS"
-                }
-              ]
-            },
-            "name": {
-              "term": "janis setkins",
-              "candidates": [
-                {
-                  "id": 14110,
-                  "name": "JANIS SETKINS"
-                }
-              ]
-            }
-          },
-          "unique_ids": [
-            14110
-          ]
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -247,7 +177,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67783,
       "org_id": 14110,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 15238,
       "attached_to_deal": true,
       "activity_created": false,
@@ -255,13 +185,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "miks321@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15238,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -269,13 +200,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-30800",
-      "invoice_rows": 1,
-      "line_rows": 2,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/cd3aaf02-ca6d-423e-928f-092e1fa8e60d?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: cd3aaf02-ca6d-423e-928f-092e1fa8e60d\n"
     },
     "step_98": {
       "ok": true,
@@ -300,7 +226,7 @@
           "document_id": 15869889,
           "client_id": 1212345
         },
-        "message_id": "18096049819476893"
+        "message_id": "18095789027721296"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -309,7 +235,7 @@
           "document_id": 15869889,
           "doc_ref": "M-860325-30800"
         },
-        "message_id": "18095707805200647"
+        "message_id": "18096036216592216"
       }
     }
   }
