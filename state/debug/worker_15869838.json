@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 67782,
     "title": "M-860325-30799",
     "_trace": [
@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -101,8 +101,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1212345,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14110,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -117,108 +117,58 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "miks321@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "37126129452",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "janis setkins",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14110,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "miks321@inbox.lv",
+            "old": "miks321@inbox.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "miks321@inbox.lv",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "37126129452",
+            "old": "37126129452",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "37126129452",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "janis setkins",
-            "found": false,
-            "candidate_count": 0
+          "address": {
+            "new": "CERINU IELA-12, CĒSIS, LV-4101, LV",
+            "old": "CERINU IELA-12, CĒSIS, LV-4101, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "CERINU IELA-12, CĒSIS, LV-4101, LV",
+            "old": "CERINU IELA-12, CĒSIS, LV-4101, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "miks321@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "37126129452"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "CERINU IELA-12, CĒSIS, LV-4101, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "CERINU IELA-12, CĒSIS, LV-4101, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "miks321@inbox.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": "37126129452",
-              "candidates": []
-            },
-            "name": {
-              "term": "janis setkins",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -227,7 +177,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 67782,
       "org_id": 14110,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 15238,
       "attached_to_deal": true,
       "activity_created": false,
@@ -235,18 +185,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "miks321@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "37126129452",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15238,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -254,13 +200,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-30799",
-      "invoice_rows": 1,
-      "line_rows": 2,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/a7a4c70e-9d5f-4ed2-9e86-5a5d12a0ca42?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: a7a4c70e-9d5f-4ed2-9e86-5a5d12a0ca42\n"
     },
     "step_98": {
       "ok": true,
@@ -285,7 +226,7 @@
           "document_id": 15869838,
           "client_id": 1212345
         },
-        "message_id": "18096080530308582"
+        "message_id": "18095220641636481"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -294,7 +235,7 @@
           "document_id": 15869838,
           "doc_ref": "M-860325-30799"
         },
-        "message_id": "18095794267873416"
+        "message_id": "18096165102687783"
       }
     }
   }
