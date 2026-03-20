@@ -183,13 +183,18 @@
       "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": null,
-      "person_country_updated": true,
+      "person_country_previous": "LV",
+      "person_country_updated": false,
       "person_country_checked": true
     },
     "step_97": {
-      "ok": false,
-      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/30db4374-4c53-423a-87a2-355ca58becc4?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 30db4374-4c53-423a-87a2-355ca58becc4\n"
+      "ok": true,
+      "invoice_no": "M-860325-30848",
+      "invoice_rows": 1,
+      "line_rows": 1,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
     },
     "step_98": {
       "ok": true,
@@ -214,7 +219,7 @@
           "document_id": 15895100,
           "client_id": 581833
         },
-        "message_id": "18101281843976628"
+        "message_id": "18101355005675464"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -223,7 +228,7 @@
           "document_id": 15895100,
           "doc_ref": "M-860325-30848"
         },
-        "message_id": "18101915862883711"
+        "message_id": "18101201477769316"
       }
     }
   }
