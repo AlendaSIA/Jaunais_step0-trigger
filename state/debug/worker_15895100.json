@@ -189,7 +189,7 @@
     },
     "step_97": {
       "ok": false,
-      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/c7282cb7-65e0-4124-b263-242f2e0af684?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: c7282cb7-65e0-4124-b263-242f2e0af684\n"
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/0be79cf4-c34c-48ab-ad3e-719de4fecea3?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 0be79cf4-c34c-48ab-ad3e-719de4fecea3\n"
     },
     "step_98": {
       "ok": true,
@@ -214,7 +214,7 @@
           "document_id": 15895100,
           "client_id": 581833
         },
-        "message_id": "18101830606347258"
+        "message_id": "18101634968527780"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -223,7 +223,7 @@
           "document_id": 15895100,
           "doc_ref": "M-860325-30848"
         },
-        "message_id": "18101458359924964"
+        "message_id": "18101204090190932"
       }
     }
   }
