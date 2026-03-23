@@ -1,0 +1,275 @@
+{
+  "payload_meta": {
+    "doc_id": 15900685,
+    "document_ref": "M-860325-30898",
+    "xml_len": 5780,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 67888,
+    "title": "M-860325-30898",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 15900685,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 60.0,
+        "unit_price": 0.818,
+        "gross_unit_price": 0.818,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "SANITAR WC, Citrons - tīrīšanas un dezinfekcijas gēls - 750ml [002378]",
+        "code": "002378",
+        "quantity": 3.0,
+        "unit_price": 1.645,
+        "gross_unit_price": 1.645,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "BINGO traukiem - Greipfruts- 500ml [SP004226]",
+        "code": "SP004226",
+        "quantity": 3.0,
+        "unit_price": 1.066,
+        "gross_unit_price": 1.066,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 5,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 899001,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 9895,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "PEOHALDUS OÜ",
+        "email": "peohaldus@gmail.com",
+        "phone": "53734075",
+        "regnr": "16967336",
+        "vatnr": "EE102758687",
+        "country": "EE",
+        "legal_address_formatted": "Põdra tee 6-7, Vägari küla, Põltsamaa vald, Jõgeva maakond, 48222, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "peohaldus@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "peohaldus@gmail.com",
+            "old": "peohaldus@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "53734075",
+            "old": "53734075",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "16967336",
+            "old": "16967336",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "EE102758687",
+            "old": "EE102758687",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Põdra tee 6-7, Vägari küla, Põltsamaa vald, Jõgeva maakond, 48222, EE",
+            "old": "Põdra tee 6-7, Vägari küla, Põltsamaa vald, Jõgeva maakond, 48222, EE",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Põdra tee 6-7, Vägari küla, Põltsamaa vald, Jõgeva maakond, 48222, EE",
+            "old": "Põdra tee 6-7, Vägari küla, Põltsamaa vald, Jõgeva maakond, 48222, EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 67888,
+      "org_id": 9895,
+      "found_by": "email",
+      "person_id": 11281,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "peohaldus@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-30898",
+      "invoice_rows": 1,
+      "line_rows": 5,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-30898",
+      "payload": {
+        "pipedrive_deal_id": 67888,
+        "paytraq_document_id": 15900685,
+        "pipedrive_person_id": 11281,
+        "pipedrive_org_id": 9895
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-30898",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 67888,
+          "document_id": 15900685,
+          "client_id": 899001
+        },
+        "message_id": "18108342145980141"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 67888,
+          "document_id": 15900685,
+          "doc_ref": "M-860325-30898"
+        },
+        "message_id": "18107687301690515"
+      }
+    }
+  }
+}
