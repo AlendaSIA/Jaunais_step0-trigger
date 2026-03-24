@@ -1,0 +1,2601 @@
+{
+  "document_id": 15914106,
+  "client_id": "644703",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15914106"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-03-24"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "M-860325-30964"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "draft"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "644703"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Ķirbītis IK"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "241.22"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "241.22"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-03-24"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-03-24"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-30964, Payment Gateway"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "413311"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Ķirbitis IK, 26 017 831"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Slavu iela 17-14, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "LV1073"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-03-24T20:24:09Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-03-24T20:24:09Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "954935"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "77-351"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "NANO PROTECT SILVER ODOUR KILLER GREEN TEA 1000ml"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "NANO PROTECT SILVER ODOUR KILLER GREEN TEA 1000ml [77-351]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "11.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "11.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "971019"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "5600-3"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "GoGrip Oranži,M, N50, Nitrila cimdi"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "GoGrip Oranži,M, N50, Nitrila cimdi [5600-3]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "8.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "26.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "971020"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "5600-4"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "GoGrip Oranži ,L , N50, Nitrila cimdi ,56918"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "GoGrip Oranži ,L , N50, Nitrila cimdi ,56918 [5600-4]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "8.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "26.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
+      "value": "971021"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
+      "value": "5600-5"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
+      "value": "GoGrip Oranži ,XL, N50, Nitrila cimdi ,56919"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "GoGrip Oranži ,XL, N50, Nitrila cimdi ,56919 [5600-5]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "8.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "26.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "1237882"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "BDOL"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi  [BDOL]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "17.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemID",
+      "value": "1237883"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemCode",
+      "value": "BDOXL"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Item/ItemName",
+      "value": "Berry Diamond ORANGE \"XL\" N50 Nitrila cimdi"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Description",
+      "value": "Berry Diamond ORANGE \"XL\" N50 Nitrila cimdi  [BDOXL]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/LineTotal",
+      "value": "11.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemID",
+      "value": "830798"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemCode",
+      "value": "RNBRM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Item/ItemName",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/ItemLot/LotID",
+      "value": "52817"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/ItemLot/LotNumber",
+      "value": "492508046N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Description",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/LineTotal",
+      "value": "17.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[6]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemID",
+      "value": "830799"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemCode",
+      "value": "RNBRL10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Item/ItemName",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/ItemLot/LotID",
+      "value": "52820"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/ItemLot/LotNumber",
+      "value": "762501011N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Description",
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [RNBRL10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Price",
+      "value": "5.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/LineTotal",
+      "value": "17.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemID",
+      "value": "830793"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemCode",
+      "value": "RNBM10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Item/ItemName",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/ItemLot/LotID",
+      "value": "52821"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/ItemLot/LotNumber",
+      "value": "672502002N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Description",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Price",
+      "value": "4.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/LineTotal",
+      "value": "14.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[8]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Description",
+      "value": "easyCARE nitrile flex Melni elastīgie nitrila diagnostikas cimdi bez pūdera (100 gab.), Alternativa easy care S, melna, CPRNBCS10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/ItemDescription",
+      "value": "easyCARE nitrile flex Melni elastīgie nitrila diagnostikas cimdi bez pūdera (100 gab.), Alternativa easy care S, melna, CPRNBCS10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Price",
+      "value": "4.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/LineTotal",
+      "value": "9.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemID",
+      "value": "1319988"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemCode",
+      "value": "RNBCM10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Item/ItemName",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/ItemLot/LotID",
+      "value": "53496"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/ItemLot/LotNumber",
+      "value": "582505042N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Description",
+      "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Price",
+      "value": "4.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/LineTotal",
+      "value": "14.97"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[10]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemID",
+      "value": "968907"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemCode",
+      "value": "3502-3"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Item/ItemName",
+      "value": "Lateksa cimdi COMFORT, bez pūdera N100, M izmērs,3502-3"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Description",
+      "value": "Lateksa cimdi COMFORT, bez pūdera N100, M izmērs,3502-3 [3502-3]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Price",
+      "value": "6.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/LineTotal",
+      "value": "6.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[11]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemID",
+      "value": "968909"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemCode",
+      "value": "3502-4"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Item/ItemName",
+      "value": "Lateksa cimdi COMFORT, bez pūdera N100, L izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Description",
+      "value": "Lateksa cimdi COMFORT, bez pūdera N100, L izmērs [3502-4]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Price",
+      "value": "6.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/LineTotal",
+      "value": "6.49"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[12]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemID",
+      "value": "957821"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemCode",
+      "value": "3400-3"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemName",
+      "value": "VINYLEX Vinila cimdi, N100, M, vinyleM"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Description",
+      "value": "VINYLEX Vinila cimdi, N100, M, vinyleM [3400-3]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Price",
+      "value": "4.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/LineTotal",
+      "value": "12.87"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Item/ItemID",
+      "value": "957822"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Item/ItemCode",
+      "value": "3400-4"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Item/ItemName",
+      "value": "VINYLEX Vinila cimdi, N100, L, vinyleL"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Description",
+      "value": "VINYLEX Vinila cimdi, N100, L, vinyleL [3400-4]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Price",
+      "value": "4.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/LineTotal",
+      "value": "8.58"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[14]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Item/ItemID",
+      "value": "957823"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Item/ItemCode",
+      "value": "3400-5"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Item/ItemName",
+      "value": "VINYLEX Vinila cimdi, N100, XL, vinyleXL"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Description",
+      "value": "VINYLEX Vinila cimdi, N100, XL, vinyleXL [3400-5]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Price",
+      "value": "4.29"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/LineTotal",
+      "value": "8.58"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[15]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "241.22"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "199.36"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "41.86"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "241.22"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "199.36"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "38.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "954935"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "77-351"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "NANO PROTECT SILVER ODOUR KILLER GREEN TEA 1000ml"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "NANO PROTECT SILVER ODOUR KILLER GREEN TEA 1000ml [77-351]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "11.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "11.49"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "77-351",
+      "item_name": "NANO PROTECT SILVER ODOUR KILLER GREEN TEA 1000ml",
+      "qty": "1.00",
+      "price": "11.49",
+      "line_total": "11.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "971019"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "5600-3"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "GoGrip Oranži,M, N50, Nitrila cimdi"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "GoGrip Oranži,M, N50, Nitrila cimdi [5600-3]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "26.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "5600-3",
+      "item_name": "GoGrip Oranži,M, N50, Nitrila cimdi",
+      "qty": "3.00",
+      "price": "8.99",
+      "line_total": "26.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "971020"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "5600-4"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "GoGrip Oranži ,L , N50, Nitrila cimdi ,56918"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "GoGrip Oranži ,L , N50, Nitrila cimdi ,56918 [5600-4]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "26.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "5600-4",
+      "item_name": "GoGrip Oranži ,L , N50, Nitrila cimdi ,56918",
+      "qty": "3.00",
+      "price": "8.99",
+      "line_total": "26.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "971021"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "5600-5"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "GoGrip Oranži ,XL, N50, Nitrila cimdi ,56919"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "GoGrip Oranži ,XL, N50, Nitrila cimdi ,56919 [5600-5]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "26.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "5600-5",
+      "item_name": "GoGrip Oranži ,XL, N50, Nitrila cimdi ,56919",
+      "qty": "3.00",
+      "price": "8.99",
+      "line_total": "26.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1237882"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "BDOL"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi  [BDOL]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "17.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "BDOL",
+      "item_name": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi",
+      "qty": "3.00",
+      "price": "5.99",
+      "line_total": "17.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1237883"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "BDOXL"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Berry Diamond ORANGE \"XL\" N50 Nitrila cimdi"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Berry Diamond ORANGE \"XL\" N50 Nitrila cimdi  [BDOXL]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "11.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "BDOXL",
+      "item_name": "Berry Diamond ORANGE \"XL\" N50 Nitrila cimdi",
+      "qty": "2.00",
+      "price": "5.99",
+      "line_total": "11.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830798"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52817"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "492508046N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "17.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRM10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M",
+      "qty": "3.00",
+      "price": "5.99",
+      "line_total": "17.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830799"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRL10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52820"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "762501011N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L [RNBRL10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "17.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRL10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, L, 100 gb, ZARYS-RNBR03L",
+      "qty": "3.00",
+      "price": "5.99",
+      "line_total": "17.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830793"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBM10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "52821"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "672502002N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "14.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBM10001",
+      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m",
+      "qty": "3.00",
+      "price": "4.99",
+      "line_total": "14.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "easyCARE nitrile flex Melni elastīgie nitrila diagnostikas cimdi bez pūdera (100 gab.), Alternativa easy care S, melna, CPRNBCS10001"
+        },
+        {
+          "field": "LineItem/ItemDescription",
+          "value": "easyCARE nitrile flex Melni elastīgie nitrila diagnostikas cimdi bez pūdera (100 gab.), Alternativa easy care S, melna, CPRNBCS10001"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "9.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": null,
+      "item_name": null,
+      "qty": "2.00",
+      "price": "4.99",
+      "line_total": "9.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1319988"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "53496"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582505042N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBCM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "14.97"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBCM10003",
+      "item_name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
+      "qty": "3.00",
+      "price": "4.99",
+      "line_total": "14.97",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "968907"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "3502-3"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Lateksa cimdi COMFORT, bez pūdera N100, M izmērs,3502-3"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Lateksa cimdi COMFORT, bez pūdera N100, M izmērs,3502-3 [3502-3]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "6.49"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "3502-3",
+      "item_name": "Lateksa cimdi COMFORT, bez pūdera N100, M izmērs,3502-3",
+      "qty": "1.00",
+      "price": "6.49",
+      "line_total": "6.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "968909"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "3502-4"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Lateksa cimdi COMFORT, bez pūdera N100, L izmērs"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Lateksa cimdi COMFORT, bez pūdera N100, L izmērs [3502-4]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.49"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "6.49"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "3502-4",
+      "item_name": "Lateksa cimdi COMFORT, bez pūdera N100, L izmērs",
+      "qty": "1.00",
+      "price": "6.49",
+      "line_total": "6.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "957821"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "3400-3"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "VINYLEX Vinila cimdi, N100, M, vinyleM"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "VINYLEX Vinila cimdi, N100, M, vinyleM [3400-3]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "12.87"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "3400-3",
+      "item_name": "VINYLEX Vinila cimdi, N100, M, vinyleM",
+      "qty": "3.00",
+      "price": "4.29",
+      "line_total": "12.87",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "957822"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "3400-4"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "VINYLEX Vinila cimdi, N100, L, vinyleL"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "VINYLEX Vinila cimdi, N100, L, vinyleL [3400-4]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "8.58"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "3400-4",
+      "item_name": "VINYLEX Vinila cimdi, N100, L, vinyleL",
+      "qty": "2.00",
+      "price": "4.29",
+      "line_total": "8.58",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "957823"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "3400-5"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "VINYLEX Vinila cimdi, N100, XL, vinyleXL"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "VINYLEX Vinila cimdi, N100, XL, vinyleXL [3400-5]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.29"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "8.58"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "3400-5",
+      "item_name": "VINYLEX Vinila cimdi, N100, XL, vinyleXL",
+      "qty": "2.00",
+      "price": "4.29",
+      "line_total": "8.58",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "644703",
+    "client_endpoint": "/api/client/644703",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "644703"
+      },
+      {
+        "field": "client/Name",
+        "value": "Ķirbītis IK"
+      },
+      {
+        "field": "client/Email",
+        "value": "lerom2@inbox.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40002092531"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40002092531"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Slavu iela 17-14, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV1073"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "26 017 831"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-05-08T11:49:20Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2025-07-21T13:54:26Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/644703",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/644703",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "331134"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "IK Ķirbitia, 26017831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Rīga, Mazā Rencēnu iela 1 (Rīgas TC Ozols Venipak pakomāts)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "1073"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "207871"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Ķirbītis IK, 26 017 831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Rīgas Autoostas pakomāts (Rīga, Prāgas iela 1)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "316773"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "Ķirbitis IK, +37126017831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "Rīgas Autoostas pakomāts (Rīga, Prāgas iela 1)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/AddressID",
+        "value": "323423"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/ShipTo",
+        "value": "Ķirbitis IK, 26017831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Address",
+        "value": "Rīgas Autoostas pakomāts (Rīga, Prāgas iela 1)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/AddressID",
+        "value": "372634"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/ShipTo",
+        "value": "IK Ķirbitis, +37126017831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Address",
+        "value": "Rīgas Autoostas pakomāts (Rīga, Prāgas iela 1)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/AddressID",
+        "value": "201848"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/ShipTo",
+        "value": "Ķirbītis IK, 26 017 831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Address",
+        "value": "Rīgas T/C Ozols pakomāts (Rīga, Mazā Rencēnu iela 1)"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/AddressID",
+        "value": "413311"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/ShipTo",
+        "value": "Ķirbitis IK, 26 017 831"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Address",
+        "value": "Slavu iela 17-14, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Zip",
+        "value": "LV1073"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[6]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/644703",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
