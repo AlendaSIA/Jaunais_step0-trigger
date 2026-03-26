@@ -99,9 +99,9 @@
     "step_03": {
       "ok": true,
       "added": 0,
-      "updated": 1,
+      "updated": 0,
       "deleted": 0,
-      "skipped": 5,
+      "skipped": 6,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -219,18 +219,13 @@
       "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "EE",
-      "person_country_previous": null,
-      "person_country_updated": true,
+      "person_country_previous": "EE",
+      "person_country_updated": false,
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "ALE 2601860",
-      "invoice_rows": 1,
-      "line_rows": 6,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/393fccd8-280e-4985-a2a9-d376c3428d06?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 393fccd8-280e-4985-a2a9-d376c3428d06\n"
     },
     "step_98": {
       "ok": true,
@@ -250,7 +245,7 @@
           "document_id": 15925945,
           "client_id": 606813
         },
-        "message_id": "18116136488724823"
+        "message_id": "18702975785632382"
       },
       "mozello_enrich": {
         "skipped": true,
