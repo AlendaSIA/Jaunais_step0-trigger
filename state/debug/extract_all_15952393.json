@@ -1,0 +1,1087 @@
+{
+  "document_id": 15952393,
+  "client_id": "832466",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "15952393"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-03-31"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "M-860325-31120"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "in_process"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "832466"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "Klīnika Dzintari SIA"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_order"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "162.74"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "162.74"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-03-31"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-03-31"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "M-860325-31120, Bank Transfer"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "292324"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Klīnika Dzintari SIA, 67147850"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "LV-2008"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-03-31T11:06:17Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-03-31T11:06:17Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Transporta kaste 22X 100gb Vienreizlietojamas Bahilas zilas BERRY, 22 paciņas, TK-HYbahN100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/ItemDescription",
+      "value": "Transporta kaste 22X 100gb Vienreizlietojamas Bahilas zilas BERRY, 22 paciņas, TK-HYbahN100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "50.38"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "100.76"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1177924"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "65-010"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Bacticide AF 1 litrs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Bacticide AF 1 litrs [65-010]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "4.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "8.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "35.96"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "1070590"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "65-109"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "CHEMISEPT FG 250ML dez.līdz."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "CHEMISEPT FG 250ML dez.līdz. [65-109]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "6.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "13.98"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Description",
+      "value": "Papīra pārklājs kušetei, Lucart- ECONATURAL 70 JOINT, 870099"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/ItemDescription",
+      "value": "Papīra pārklājs kušetei, Lucart- ECONATURAL 70 JOINT, 870099"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Price",
+      "value": "8.14"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/LineTotal",
+      "value": "8.14"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "1114006"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "SUPREME/VB/M/100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "SUPRIME Nitrila cimdi, bez pūdera N100,M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Price",
+      "value": "3.902"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/LineTotal",
+      "value": "3.90"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
+      "value": "67687"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Unit/UnitName",
+      "value": "pakas"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "162.74"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "134.50"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "28.24"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "162.74"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "134.50"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "10.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Transporta kaste 22X 100gb Vienreizlietojamas Bahilas zilas BERRY, 22 paciņas, TK-HYbahN100"
+        },
+        {
+          "field": "LineItem/ItemDescription",
+          "value": "Transporta kaste 22X 100gb Vienreizlietojamas Bahilas zilas BERRY, 22 paciņas, TK-HYbahN100"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "50.38"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "100.76"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": null,
+      "item_name": null,
+      "qty": "2.00",
+      "price": "50.38",
+      "line_total": "100.76",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1177924"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-010"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Bacticide AF 1 litrs"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Bacticide AF 1 litrs [65-010]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "4.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "35.96"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-010",
+      "item_name": "Bacticide AF 1 litrs",
+      "qty": "4.00",
+      "price": "8.99",
+      "line_total": "35.96",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1070590"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-109"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "CHEMISEPT FG 250ML dez.līdz."
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "CHEMISEPT FG 250ML dez.līdz. [65-109]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "6.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "13.98"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-109",
+      "item_name": "CHEMISEPT FG 250ML dez.līdz.",
+      "qty": "2.00",
+      "price": "6.99",
+      "line_total": "13.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Papīra pārklājs kušetei, Lucart- ECONATURAL 70 JOINT, 870099"
+        },
+        {
+          "field": "LineItem/ItemDescription",
+          "value": "Papīra pārklājs kušetei, Lucart- ECONATURAL 70 JOINT, 870099"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.14"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "8.14"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": null,
+      "item_name": null,
+      "qty": "1.00",
+      "price": "8.14",
+      "line_total": "8.14",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1114006"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "SUPREME/VB/M/100"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "SUPRIME Nitrila cimdi, bez pūdera N100,M"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "SUPRIME Nitrila cimdi, bez pūdera N100,M [SUPREME/VB/M/100]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.902"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "3.90"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67687"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "pakas"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "SUPREME/VB/M/100",
+      "item_name": "SUPRIME Nitrila cimdi, bez pūdera N100,M",
+      "qty": "1.00",
+      "price": "3.902",
+      "line_total": "3.90",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "832466",
+    "client_endpoint": "/api/client/832466",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "832466"
+      },
+      {
+        "field": "client/Name",
+        "value": "Klīnika Dzintari SIA"
+      },
+      {
+        "field": "client/Email",
+        "value": "dzintari@dzintari.lv"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "2"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40003461335"
+      },
+      {
+        "field": "client/VatNumber",
+        "value": "LV40003461335"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "67147850"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2024-02-22T10:53:06Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2025-02-20T13:01:04Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/832466",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/832466",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "368466"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "Klīnika Dzintari SIA, 67147850"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "MEŽSARGU  IELA 4/6, Jūrmala, MELLUŽI"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "LV2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "292324"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "Klīnika Dzintari SIA, 67147850"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "298166"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "SIA Klīnika Dzintari, 67147850"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/AddressID",
+        "value": "328342"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/ShipTo",
+        "value": "Klīnika Dzintari SIA, +37167147850"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[3]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/AddressID",
+        "value": "355229"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/ShipTo",
+        "value": "Klīnika Dzintari SIA, 67755140"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/AddressID",
+        "value": "362281"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/ShipTo",
+        "value": "Klīnika Dzintari SIA, 29630057"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Address",
+        "value": "MEŽSARGU IELA 4/6, JŪRMALA"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Zip",
+        "value": "LV-2008"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[5]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/832466",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
