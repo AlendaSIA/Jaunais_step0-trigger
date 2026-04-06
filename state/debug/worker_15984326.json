@@ -14,10 +14,8 @@
   ],
   "worker_response": {
     "detail": {
-      "error": "pipedrive_http_error",
-      "path": "/deals/68241/products",
-      "status_code": 404,
-      "response_text": "{\"success\":false,\"error\":\"Products 7458 were not found.\",\"error_info\":\"Please check developers.pipedrive.com for more information about Pipedrive API.\",\"data\":null,\"additional_data\":null,\"code\":\"ERR_UNKNOWN\"}"
+      "step": "01_deal_upsert",
+      "error": "Pipedrive PUT non-JSON: HTTP 500 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!"
     }
   }
 }
