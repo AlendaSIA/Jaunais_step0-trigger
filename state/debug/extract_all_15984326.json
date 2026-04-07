@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "voided"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -44,7 +44,7 @@
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "27.62"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-04-06T07:19:07Z"
+      "value": "2026-04-07T04:29:00Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
