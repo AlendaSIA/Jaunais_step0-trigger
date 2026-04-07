@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68242,
     "title": "M-860325-31227",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 5,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 5,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,7 +113,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1085474,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 12824,
       "attached_to_deal": true,
@@ -129,15 +129,10 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "vkozireva24@gmail.com",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 12824,
+            "skipped_db_lookup": true
           }
         ]
       },
@@ -185,7 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -194,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68242,
       "org_id": 12824,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 13973,
       "attached_to_deal": true,
       "activity_created": false,
@@ -202,13 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "vkozireva24@gmail.com",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 13973,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -216,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-31227",
-      "invoice_rows": 1,
-      "line_rows": 5,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/6d9a01cd-1f75-41fb-b183-4e69367556ff?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 6d9a01cd-1f75-41fb-b183-4e69367556ff\n"
     },
     "step_98": {
       "ok": true,
@@ -247,7 +238,7 @@
           "document_id": 15984329,
           "client_id": 1085474
         },
-        "message_id": "18146180677271393"
+        "message_id": "18145141971621987"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -256,7 +247,7 @@
           "document_id": 15984329,
           "doc_ref": "M-860325-31227"
         },
-        "message_id": "18145378214424541"
+        "message_id": "18145827757778005"
       }
     }
   }
