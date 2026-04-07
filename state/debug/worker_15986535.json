@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68245,
     "title": "M-860325-31231",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1220645,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14169,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,113 +129,64 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "30117811286",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "lalina.lf.78@gmail.com",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "20263787",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "30117811286",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14169,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "30117811286",
-            "found": false,
-            "candidate_count": 0
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "lalina.lf.78@gmail.com",
+            "old": "lalina.lf.78@gmail.com",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "lalina.lf.78@gmail.com",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "20263787",
+            "old": "20263787",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "20263787",
-            "found": false,
-            "candidate_count": 0
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "30117811286",
+            "old": "30117811286",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "30117811286",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV",
+            "old": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV",
+            "old": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "lalina.lf.78@gmail.com"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "20263787"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "30117811286"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Ģimnāzijas iela 2-601, Cēsis, 4101, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "30117811286",
-              "candidates": []
-            },
-            "email": {
-              "term": "lalina.lf.78@gmail.com",
-              "candidates": []
-            },
-            "phone": {
-              "term": "20263787",
-              "candidates": []
-            },
-            "name": {
-              "term": "30117811286",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -244,7 +195,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68245,
       "org_id": 14169,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 3627,
       "attached_to_deal": true,
       "activity_created": false,
@@ -252,13 +203,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "lalina.lf.78@gmail.com",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 3627,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -266,13 +218,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-31231",
-      "invoice_rows": 1,
-      "line_rows": 4,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/00dccb7a-4323-4c5b-9188-50742cd5b47f?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 00dccb7a-4323-4c5b-9188-50742cd5b47f\n"
     },
     "step_98": {
       "ok": true,
@@ -297,7 +244,7 @@
           "document_id": 15986535,
           "client_id": 1220645
         },
-        "message_id": "18145140921051265"
+        "message_id": "18146142594811739"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -306,7 +253,7 @@
           "document_id": 15986535,
           "doc_ref": "M-860325-31231"
         },
-        "message_id": "18146140596007714"
+        "message_id": "18145556731124457"
       }
     }
   }
