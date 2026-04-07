@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68243,
     "title": "M-860325-31228",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 6,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 6,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1220540,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14168,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,108 +129,58 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "viktorijazaharova@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "37129244737",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "viktorija zaharova",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14168,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "viktorijazaharova@inbox.lv",
+            "old": "viktorijazaharova@inbox.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "viktorijazaharova@inbox.lv",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "+37129244737",
+            "old": "+37129244737",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "37129244737",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "viktorija zaharova",
-            "found": false,
-            "candidate_count": 0
+          "address": {
+            "new": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV",
+            "old": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV",
+            "old": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "viktorijazaharova@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "+37129244737"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Balvu iela, 5, 9157, Balvu Novads, Balvu novads,  Žīguru pagasts, 9157, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "viktorijazaharova@inbox.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": "37129244737",
-              "candidates": []
-            },
-            "name": {
-              "term": "viktorija zaharova",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -239,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68243,
       "org_id": 14168,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 15404,
       "attached_to_deal": true,
       "activity_created": false,
@@ -247,18 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "viktorijazaharova@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "37129244737",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15404,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -266,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-31228",
-      "invoice_rows": 1,
-      "line_rows": 6,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/858c6446-af41-447d-a32d-ead17f09a233?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 858c6446-af41-447d-a32d-ead17f09a233\n"
     },
     "step_98": {
       "ok": true,
@@ -297,7 +238,7 @@
           "document_id": 15984990,
           "client_id": 1220540
         },
-        "message_id": "18144380710395388"
+        "message_id": "18145108011008258"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -306,7 +247,7 @@
           "document_id": 15984990,
           "doc_ref": "M-860325-31228"
         },
-        "message_id": "18146111974414182"
+        "message_id": "18145232392134788"
       }
     }
   }
