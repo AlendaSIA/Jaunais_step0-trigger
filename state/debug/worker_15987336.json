@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68247,
     "title": "M-860325-31232",
     "_trace": [
@@ -98,29 +98,23 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
     "products_attached": null,
-    "products_created": [
-      {
-        "name": "Rozā nitrylex clasic Nitrila cimdi, bez pūdera N100 X10, L, 100 gb, TK-46888 [TK-46888]",
-        "id": 9015,
-        "reason": "not_found"
-      }
-    ],
+    "products_created": [],
     "activities_created": [],
     "step_04": {
       "ok": true,
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 614084,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 1693,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -135,49 +129,25 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40103458191",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "ovetrans@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 1693,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40103458191"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40103458191"
-        },
-        "address": {
-          "key": "address",
-          "value": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "259f90917e748590024b17a61fa5014a685fc3e6",
-          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -185,9 +155,29 @@
             "old": "ovetrans@inbox.lv",
             "reason": "same"
           },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40103458191",
+            "old": "40103458191",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40103458191",
+            "old": "LV40103458191",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV",
+            "old": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV",
+            "old": "Brāļu Kaudzīšu iela 25–28, Rīga,, 1021, LV",
             "reason": "same"
           }
         }
@@ -196,7 +186,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -205,21 +195,22 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68247,
       "org_id": 1693,
-      "found_by": "email",
-      "person_id": 1693,
+      "found_by": "deal_person_id",
+      "person_id": 15407,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "ovetrans@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15407,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -227,13 +218,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-31232",
-      "invoice_rows": 1,
-      "line_rows": 4,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/c02d4c48-95ee-4201-a498-421b9ae615d0?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: c02d4c48-95ee-4201-a498-421b9ae615d0\n"
     },
     "step_98": {
       "ok": true,
@@ -243,7 +229,7 @@
       "payload": {
         "pipedrive_deal_id": 68247,
         "paytraq_document_id": 15987336,
-        "pipedrive_person_id": 1693,
+        "pipedrive_person_id": 15407,
         "pipedrive_org_id": 1693
       }
     },
@@ -258,7 +244,7 @@
           "document_id": 15987336,
           "client_id": 614084
         },
-        "message_id": "18146339274836754"
+        "message_id": "18146208557852190"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -267,7 +253,7 @@
           "document_id": 15987336,
           "doc_ref": "M-860325-31232"
         },
-        "message_id": "18145973188432197"
+        "message_id": "18145512826621899"
       }
     }
   }
