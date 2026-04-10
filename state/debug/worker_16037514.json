@@ -1,0 +1,284 @@
+{
+  "payload_meta": {
+    "doc_id": 16037514,
+    "document_ref": "M-860325-31347",
+    "xml_len": 6832,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 68383,
+    "title": "M-860325-31347",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16037514,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 6,
+    "line_items_preview": [
+      {
+        "name": "yellowTAPE kinesiotapinga (limfātiskā) lente sejai – 2,5 cm x 5 m, gaiši rozā  [YT-255-LP]",
+        "code": "YT-255-LP",
+        "quantity": 3.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "yellowTAPE kinesiotapinga (limfātiskā) lente sejai – 2,5 cm x 5 m, ādas krāsā [YT-255-S]",
+        "code": "YT-255-S",
+        "quantity": 1.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "yellowTAPE kinezioloģiskais teips, 5 cm x 5 m, zaļš kamuflāžas tonis, 1 gab. [YT-55-GC]",
+        "code": "YT-55-GC",
+        "quantity": 1.0,
+        "unit_price": 6.19,
+        "gross_unit_price": 7.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 6,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1223513,
+      "found_by": "name",
+      "org_action": "updated",
+      "org_id": 12695,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Pašnodarbinātais",
+        "email": "jkkustibuharmonija@inbox.lv",
+        "phone": "+37129399889",
+        "regnr": "03018011677",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Andreja ielā 6, Ventspils, Lv3601, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "03018011677",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "jkkustibuharmonija@inbox.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "37129399889",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "pašnodarbinātais",
+            "found": true,
+            "candidate_count": 2
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "jkkustibuharmonija@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37129399889"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "03018011677"
+        },
+        "address": {
+          "key": "address",
+          "value": "Andreja ielā 6, Ventspils, Lv3601, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Andreja ielā 6, Ventspils, Lv3601, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 68383,
+      "org_id": 12695,
+      "found_by": "org_existing",
+      "person_id": 15427,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "jkkustibuharmonija@inbox.lv",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "37129399889",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-31347",
+      "invoice_rows": 1,
+      "line_rows": 6,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-31347",
+      "payload": {
+        "pipedrive_deal_id": 68383,
+        "paytraq_document_id": 16037514,
+        "pipedrive_person_id": 15427,
+        "pipedrive_org_id": 12695
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-31347",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 68383,
+          "document_id": 16037514,
+          "client_id": 1223513
+        },
+        "message_id": "18181786876886562"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 68383,
+          "document_id": 16037514,
+          "doc_ref": "M-860325-31347"
+        },
+        "message_id": "18182791846836031"
+      }
+    }
+  }
+}
