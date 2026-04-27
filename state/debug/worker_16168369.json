@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16168369,
     "document_ref": "ALE 2602433",
-    "xml_len": 2255,
+    "xml_len": 3922,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68727,
     "title": "ALE 2602433",
     "_trace": [
@@ -57,22 +57,40 @@
     "step_02": {
       "ok": true
     },
-    "line_items_count": 0,
-    "line_items_preview": [],
+    "line_items_count": 1,
+    "line_items_preview": [
+      {
+        "name": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi  [BDOL]",
+        "code": "BDOL",
+        "quantity": 5.0,
+        "unit_price": 8.99,
+        "gross_unit_price": 8.99,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
     "step_03": {
-      "skipped": true,
-      "reason": "No line_items"
+      "ok": true,
+      "added": 1,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
     },
     "products_attached": null,
-    "products_created": null,
-    "activities_created": null,
+    "products_created": [],
+    "activities_created": [],
     "step_04": {
       "ok": true,
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 662913,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 14264,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -87,107 +105,58 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40003546341",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "sabiedrība ar ierobežotu atbildību pilna servisa līzings",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 14264,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "40003546341",
-            "found": false,
-            "candidate_count": 0
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40003546341",
+            "old": "40003546341",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": null,
-            "skipped": true
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40003546341",
+            "old": "LV40003546341",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "sabiedrība ar ierobežotu atbildību pilna servisa līzings",
-            "found": false,
-            "candidate_count": 0
+          "address": {
+            "new": "Gunāra Astras iela 13, Rīga, 1082, LV",
+            "old": "Gunāra Astras iela 13, Rīga, 1082, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Gunāra Astras iela 13, Rīga, 1082, LV",
+            "old": "Gunāra Astras iela 13, Rīga, 1082, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "40003546341"
-        },
-        "vatnr": {
-          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
-          "value": "LV40003546341"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Gunāra Astras iela 13, Rīga, 1082, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Gunāra Astras iela 13, Rīga, 1082, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "40003546341",
-              "candidates": []
-            },
-            "email": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "phone": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "name": {
-              "term": "sabiedrība ar ierobežotu atbildību pilna servisa līzings",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -196,7 +165,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68727,
       "org_id": 14264,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 15574,
       "attached_to_deal": true,
       "activity_created": false,
@@ -204,18 +173,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15574,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -223,13 +188,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "ALE 2602433",
-      "invoice_rows": 1,
-      "line_rows": 0,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/de492490-ecf1-40ed-a479-4d8b32fae4c5?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: de492490-ecf1-40ed-a479-4d8b32fae4c5\n"
     },
     "step_98": {
       "ok": true,
@@ -249,7 +209,7 @@
           "document_id": 16168369,
           "client_id": 662913
         },
-        "message_id": "18431660124098091"
+        "message_id": "18431478068285922"
       },
       "mozello_enrich": {
         "skipped": true,
