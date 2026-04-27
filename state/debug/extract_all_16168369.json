@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "0.00"
+      "value": "54.39"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "0.00"
+      "value": "54.39"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -75,24 +75,24 @@
       "value": "false"
     },
     {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-05-11"
+    },
+    {
       "field": "Sale/Header/DateApproved",
       "value": "2026-04-27"
     },
     {
       "field": "Sale/Header/IssuedBy",
-      "value": "Ligita Zvejniece"
+      "value": "Raivis Zvejnieks"
     },
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Signature",
-      "value": "1"
+      "value": "4"
     },
     {
       "field": "Sale/Header/InvoicePeriod/PeriodType",
@@ -104,11 +104,15 @@
     },
     {
       "field": "Sale/Header/PayTerm/PayTermDays",
-      "value": "0"
+      "value": "14"
     },
     {
       "field": "Sale/Header/PaymentMethod",
       "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
     },
     {
       "field": "Sale/Header/ShippingData/ShippingType",
@@ -143,23 +147,266 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "372272"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Sabiedrība ar ierobežotu atbildību \"Pilna Servisa Līzings\""
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Gunāra Astras iela 13, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "1082"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-04-27T06:58:39Z"
     },
     {
-      "field": "Sale/Totals/GrossAmount",
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-04-27T07:02:02Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "1237882"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "BDOL"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi  [BDOL]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "5.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "8.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
       "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "44.95"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "54.39"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "44.95"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "9.44"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "54.39"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "0.00"
+      "value": "44.95"
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "0.00"
+      "value": "5.00"
     }
   ],
-  "line_items": [],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1237882"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "BDOL"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi  [BDOL]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "5.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "8.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "44.95"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "BDOL",
+      "item_name": "Berry Diamond ORANGE \"L\" N50 Nitrila cimdi",
+      "qty": "5.00",
+      "price": "8.99",
+      "line_total": "44.95",
+      "tax": "PVN 21%"
+    }
+  ],
   "client_bundle": {
     "client_id": "662913",
     "client_endpoint": "/api/client/662913",
