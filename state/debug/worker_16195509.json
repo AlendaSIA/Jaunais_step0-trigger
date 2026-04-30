@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 68797,
     "title": "ALE 2602526",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 3,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 3,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,7 +113,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1223395,
-      "found_by": "regnr",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 14189,
       "attached_to_deal": true,
@@ -129,40 +129,14 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40203610850",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "srikrishnasia@gmail.com",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "name",
-            "term": "sia sri krishna",
-            "found": false,
-            "candidate_count": 0
-          }
-        ]
-      },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "40203610850",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 14189,
+            "skipped_db_lookup": true
           }
         ]
       },
+      "pipedrive_search": {},
       "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
@@ -206,46 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "40203610850",
-              "candidates": [
-                {
-                  "id": 14189,
-                  "name": "SIA SRI Krishna"
-                }
-              ]
-            },
-            "email": {
-              "term": "srikrishnasia@gmail.com",
-              "candidates": [
-                {
-                  "id": 14189,
-                  "name": "SIA SRI Krishna"
-                }
-              ]
-            },
-            "phone": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "name": {
-              "term": "sia sri krishna",
-              "candidates": [
-                {
-                  "id": 14189,
-                  "name": "SIA SRI Krishna"
-                }
-              ]
-            }
-          },
-          "unique_ids": [
-            14189
-          ]
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -254,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 68797,
       "org_id": 14189,
-      "found_by": "org_existing",
+      "found_by": "deal_person_id",
       "person_id": 15453,
       "attached_to_deal": true,
       "activity_created": false,
@@ -262,18 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "srikrishnasia@gmail.com",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": null,
-            "skipped": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15453,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person attached from org (most recent). Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -281,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "ALE 2602526",
-      "invoice_rows": 1,
-      "line_rows": 3,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/5123dc84-3f91-4d4f-8eec-7d55c63984af?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 5123dc84-3f91-4d4f-8eec-7d55c63984af\n"
     },
     "step_98": {
       "ok": true,
@@ -307,7 +233,7 @@
           "document_id": 16195509,
           "client_id": 1223395
         },
-        "message_id": "18471136190804316"
+        "message_id": "18468535832689020"
       },
       "mozello_enrich": {
         "skipped": true,
