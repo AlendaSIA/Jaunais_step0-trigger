@@ -1,0 +1,268 @@
+{
+  "payload_meta": {
+    "doc_id": 16232748,
+    "document_ref": "M-860325-31783",
+    "xml_len": 6826,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 68890,
+    "title": "M-860325-31783",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16232748,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «PPS gloves», MELNI. S izmērs  [PPSMS]",
+        "code": "PPSMS",
+        "quantity": 4.0,
+        "unit_price": 4.54,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CLINEX HandWash 500ml [77-719]",
+        "code": "77-719",
+        "quantity": 1.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "HDPE 25L atkritumu maisi, 9mkr,48X60cm,20m rulllī [25-325]",
+        "code": "25-325",
+        "quantity": 3.0,
+        "unit_price": 0.65,
+        "gross_unit_price": 0.79,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 7,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1058592,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 1903,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SKAISTUMA UN VESELĪBAS TELPA IK",
+        "email": "ile.baiba@gmail.com",
+        "phone": "29119838",
+        "regnr": "40002206688",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Meldru Iela 3, Sigulda, Siguldas, LV-2150, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40002206688",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "ile.baiba@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29119838"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40002206688"
+        },
+        "address": {
+          "key": "address",
+          "value": "Meldru Iela 3, Sigulda, Siguldas, LV-2150, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Meldru Iela 3, Sigulda, Siguldas, LV-2150, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "ile.baiba@gmail.com",
+            "old": "ile.baiba@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 68890,
+      "org_id": 1903,
+      "found_by": "email",
+      "person_id": 1904,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "ile.baiba@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-31783",
+      "invoice_rows": 1,
+      "line_rows": 7,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-31783",
+      "payload": {
+        "pipedrive_deal_id": 68890,
+        "paytraq_document_id": 16232748,
+        "pipedrive_person_id": 1904,
+        "pipedrive_org_id": 1903
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-31783",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 68890,
+          "document_id": 16232748,
+          "client_id": 1058592
+        },
+        "message_id": "18855757658341232"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 68890,
+          "document_id": 16232748,
+          "doc_ref": "M-860325-31783"
+        },
+        "message_id": "18856637625945135"
+      }
+    }
+  }
+}
