@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 69086,
     "title": "M-860325-31958",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 13,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 13,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 892496,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 9795,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,49 +129,25 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "22036810847",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "gunta.j@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 9795,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "29152936"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "22036810847"
-        },
-        "address": {
-          "key": "address",
-          "value": "Republikas 5, Liepāja, LV 3401, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Republikas 5, Liepāja, LV 3401, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "259f90917e748590024b17a61fa5014a685fc3e6",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -179,9 +155,29 @@
             "old": "gunta.j@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29152936",
+            "old": "29152936",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "22036810847",
+            "old": "22036810847",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Republikas 5, Liepāja, LV 3401, LV",
+            "old": "Republikas 5, Liepāja, LV 3401, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Republikas 5, Liepāja, LV 3401, LV",
+            "old": "Republikas 5, Liepāja, LV 3401, LV",
             "reason": "same"
           }
         }
@@ -190,7 +186,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -199,35 +195,31 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 69086,
       "org_id": 9795,
-      "found_by": "email",
-      "person_id": 11200,
+      "found_by": "deal_person_id",
+      "person_id": 15683,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "gunta.j@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15683,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": "LV",
-      "person_country_updated": false,
+      "person_country_previous": null,
+      "person_country_updated": true,
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-31958",
-      "invoice_rows": 1,
-      "line_rows": 13,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/5f6cd135-9a5e-4cb7-b1da-88a8e57a0d96?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 5f6cd135-9a5e-4cb7-b1da-88a8e57a0d96\n"
     },
     "step_98": {
       "ok": true,
@@ -237,7 +229,7 @@
       "payload": {
         "pipedrive_deal_id": 69086,
         "paytraq_document_id": 16329848,
-        "pipedrive_person_id": 11200,
+        "pipedrive_person_id": 15683,
         "pipedrive_org_id": 9795
       }
     },
@@ -252,7 +244,7 @@
           "document_id": 16329848,
           "client_id": 892496
         },
-        "message_id": "19063373236180693"
+        "message_id": "19063550590859492"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -261,7 +253,7 @@
           "document_id": 16329848,
           "doc_ref": "M-860325-31958"
         },
-        "message_id": "19547045978266382"
+        "message_id": "19547308790749742"
       }
     }
   }
