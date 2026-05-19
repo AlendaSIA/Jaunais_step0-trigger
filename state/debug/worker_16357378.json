@@ -1,0 +1,280 @@
+{
+  "payload_meta": {
+    "doc_id": 16357378,
+    "document_ref": "ALE 2602815",
+    "xml_len": 2258,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69158,
+    "title": "ALE 2602815",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16357378,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1073761,
+      "found_by": "regnr",
+      "org_action": "updated",
+      "org_id": 14245,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "KURBADA, SIA",
+        "email": "info@aprioreserviss.lv",
+        "phone": "+371 29 515 057",
+        "regnr": "40203411638",
+        "vatnr": "LV40203411638",
+        "country": "LV",
+        "legal_address_formatted": "Kurbada iela 4A, Rīga,, 1009, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203411638",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "info@aprioreserviss.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "37129515057",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "kurbada sia",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203411638",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "info@aprioreserviss.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+371 29 515 057"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7"
+        ],
+        "skipped_same_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203411638",
+            "old": "40203411638",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40203411638",
+            "old": "LV40203411638",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Kurbada iela 4A, Rīga,, 1009, LV",
+            "old": "Kurbada iela 4A, Rīga,, 1009, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Kurbada iela 4A, Rīga,, 1009, LV",
+            "old": "Kurbada iela 4A, Rīga,, 1009, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40203411638",
+              "candidates": [
+                {
+                  "id": 14245,
+                  "name": "KURBADA, SIA"
+                }
+              ]
+            },
+            "email": {
+              "term": "info@aprioreserviss.lv",
+              "candidates": []
+            },
+            "phone": {
+              "term": "37129515057",
+              "candidates": []
+            },
+            "name": {
+              "term": "kurbada sia",
+              "candidates": []
+            }
+          },
+          "unique_ids": [
+            14245
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69158,
+      "org_id": 14245,
+      "found_by": "org_existing",
+      "person_id": 13845,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "info@aprioreserviss.lv",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "37129515057",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person attached from org (most recent). Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2602815",
+      "invoice_rows": 1,
+      "line_rows": 0,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2602815"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2602815",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69158,
+          "document_id": 16357378,
+          "client_id": 1073761
+        },
+        "message_id": "19565504810784885"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2602815"
+      }
+    }
+  }
+}
