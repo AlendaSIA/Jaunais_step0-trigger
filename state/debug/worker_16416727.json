@@ -1,0 +1,322 @@
+{
+  "payload_meta": {
+    "doc_id": 16416727,
+    "document_ref": "M-860325-32185",
+    "xml_len": 4440,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69344,
+    "title": "M-860325-32185",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16416727,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
+        "code": "YT-55-4",
+        "quantity": 1.0,
+        "unit_price": 16.52,
+        "gross_unit_price": 19.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "yellowENERGETIC TAPE, Melns, 5cm. X 5 m. [YET-55-X]",
+        "code": "YET-55-X",
+        "quantity": 1.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.88,
+        "gross_unit_price": 3.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 3,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1246639,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 14344,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA MAJAS APRUPE",
+        "email": "laurabalode@majasaprupe.lv",
+        "phone": "28640018",
+        "regnr": "40003553254",
+        "vatnr": "LV40003553254",
+        "country": "LV",
+        "legal_address_formatted": "Kapseļu iela 15, Rīga, LV-1046, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40003553254",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "laurabalode@majasaprupe.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "28640018",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "sia majas aprupe",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40003553254",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "laurabalode@majasaprupe.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "28640018",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "sia majas aprupe",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "laurabalode@majasaprupe.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "28640018"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40003553254"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV40003553254"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kapseļu iela 15, Rīga, LV-1046, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kapseļu iela 15, Rīga, LV-1046, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40003553254",
+              "candidates": []
+            },
+            "email": {
+              "term": "laurabalode@majasaprupe.lv",
+              "candidates": []
+            },
+            "phone": {
+              "term": "28640018",
+              "candidates": []
+            },
+            "name": {
+              "term": "sia majas aprupe",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69344,
+      "org_id": 14344,
+      "found_by": "created",
+      "person_id": 15747,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "laurabalode@majasaprupe.lv",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "28640018",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32185",
+      "invoice_rows": 1,
+      "line_rows": 3,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32185",
+      "payload": {
+        "pipedrive_deal_id": 69344,
+        "paytraq_document_id": 16416727,
+        "pipedrive_person_id": 15747,
+        "pipedrive_org_id": 14344
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32185",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69344,
+          "document_id": 16416727,
+          "client_id": 1246639
+        },
+        "message_id": "19636263933737822"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 69344,
+          "document_id": 16416727,
+          "doc_ref": "M-860325-32185"
+        },
+        "message_id": "19635601478066198"
+      }
+    }
+  }
+}
