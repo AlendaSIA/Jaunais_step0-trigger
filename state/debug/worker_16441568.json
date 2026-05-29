@@ -1,0 +1,227 @@
+{
+  "payload_meta": {
+    "doc_id": 16441568,
+    "document_ref": "ALE 2603014",
+    "xml_len": 2713,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69413,
+    "title": "ALE 2603014",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16441568,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": false,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 817907,
+      "found_by": "name",
+      "org_action": null,
+      "org_id": null,
+      "attached_to_deal": false,
+      "paytraq_fields": {
+        "name": "SELLAND SIA",
+        "email": null,
+        "phone": null,
+        "regnr": "43603030178",
+        "vatnr": "LV43603030178",
+        "country": "LV",
+        "legal_address_formatted": "Jelgava, Zirgu iela 54,, 3008, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "43603030178",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "selland sia",
+            "found": true,
+            "candidate_count": 4
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "43603030178"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV43603030178"
+        },
+        "address": {
+          "key": "address",
+          "value": "Jelgava, Zirgu iela 54,, 3008, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Jelgava, Zirgu iela 54,, 3008, LV"
+        }
+      },
+      "note": "ERROR: Pipedrive request failed: HTTP 400 body={'success': False, 'error': 'Entity is deleted. You must first restore it before you can edit', 'error_info': 'Please check developers.pipedrive.com for more information about Pipedrive API.', 'data': None, 'additional_data': None, 'code': 'ERR_ORGANIZATION_DELETED'}",
+      "update_filter_debug": {
+        "kept_keys": [
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": null
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69413,
+      "org_id": null,
+      "found_by": "created",
+      "person_id": 15777,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2603014",
+      "invoice_rows": 1,
+      "line_rows": 0,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2603014"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2603014",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69413,
+          "document_id": 16441568,
+          "client_id": 817907
+        },
+        "message_id": "19841135749865692"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2603014"
+      }
+    }
+  }
+}
