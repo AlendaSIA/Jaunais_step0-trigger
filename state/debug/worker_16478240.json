@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 1,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 1,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -206,13 +206,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "ALE 2603105",
-      "invoice_rows": 1,
-      "line_rows": 2,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/e5344409-11e7-4681-af63-d0cb3a2a68e5?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: e5344409-11e7-4681-af63-d0cb3a2a68e5\n"
     },
     "step_98": {
       "ok": true,
@@ -232,7 +227,7 @@
           "document_id": 16478240,
           "client_id": 1060337
         },
-        "message_id": "19922669456433088"
+        "message_id": "19914559710137325"
       },
       "mozello_enrich": {
         "skipped": true,
