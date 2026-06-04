@@ -1,0 +1,261 @@
+{
+  "payload_meta": {
+    "doc_id": 16497967,
+    "document_ref": "M-860325-32373",
+    "xml_len": 4838,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69553,
+    "title": "M-860325-32373",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16497967,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 20.0,
+        "unit_price": 0.8,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «PPS gloves», zili. L izmērs [PPSZL]",
+        "code": "PPSZL",
+        "quantity": 5.0,
+        "unit_price": 3.86,
+        "gross_unit_price": 4.79,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Zili BERRY Nitrila cimdi, bez pūdera N100, L, 100 gb  [ZZ_BERRY_L]",
+        "code": "ZZ_BERRY_L",
+        "quantity": 5.0,
+        "unit_price": 4.02,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 3,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 865951,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 9463,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Anneli Vent",
+        "email": "annelivent@gmail.com",
+        "phone": "55601426",
+        "regnr": null,
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Kaseküla 16, Käärdi, 61007, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "annelivent@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "annelivent@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "55601426"
+        },
+        "address": {
+          "key": "address",
+          "value": "Kaseküla 16, Käärdi, 61007, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Kaseküla 16, Käärdi, 61007, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69553,
+      "org_id": 9463,
+      "found_by": "email",
+      "person_id": 10926,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "annelivent@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32373",
+      "invoice_rows": 1,
+      "line_rows": 3,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32373",
+      "payload": {
+        "pipedrive_deal_id": 69553,
+        "paytraq_document_id": 16497967,
+        "pipedrive_person_id": 10926,
+        "pipedrive_org_id": 9463
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32373",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69553,
+          "document_id": 16497967,
+          "client_id": 865951
+        },
+        "message_id": "19661396320938190"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 69553,
+          "document_id": 16497967,
+          "doc_ref": "M-860325-32373"
+        },
+        "message_id": "19934617078241790"
+      }
+    }
+  }
+}
