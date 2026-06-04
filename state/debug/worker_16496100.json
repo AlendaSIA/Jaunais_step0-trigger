@@ -1,0 +1,257 @@
+{
+  "payload_meta": {
+    "doc_id": 16496100,
+    "document_ref": "ALE 2603132",
+    "xml_len": 6506,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 69540,
+    "title": "M-860325-32360 _ ALE 2603132",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16496100,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]",
+        "code": "RNBRM10003",
+        "quantity": 2.0,
+        "unit_price": 4.83,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "easyCARE nitrile flex Nitrila cimdi, N100, M izmērs [RNBKM10003]",
+        "code": "RNBKM10003",
+        "quantity": 2.0,
+        "unit_price": 4.83,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152 [65-013]",
+        "code": "65-013",
+        "quantity": 1.0,
+        "unit_price": 8.46,
+        "gross_unit_price": 10.49,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 4,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 826475,
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
+      "org_id": 8976,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Sirelin Iluteenused OÜ",
+        "email": "marika.kasepold@gmail.com",
+        "phone": "5344 9128",
+        "regnr": "14283585",
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Viljandi 28, Torva Linn, Valgamaa, 68607, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "deal_org_id",
+            "found": true,
+            "term": 8976,
+            "skipped_db_lookup": true
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "marika.kasepold@gmail.com",
+            "old": "marika.kasepold@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "5344 9128",
+            "old": "5344 9128",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "14283585",
+            "old": "14283585",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Viljandi 28, Torva Linn, Valgamaa, 68607, EE",
+            "old": "Viljandi 28, Torva Linn, Valgamaa, 68607, EE",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Viljandi 28, Torva Linn, Valgamaa, 68607, EE",
+            "old": "Viljandi 28, Torva Linn, Valgamaa, 68607, EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "skipped_updated_deal_existing_org"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69540,
+      "org_id": 8976,
+      "found_by": "deal_person_id",
+      "person_id": 15810,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15810,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": null,
+      "person_country_updated": true,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2603132",
+      "invoice_rows": 1,
+      "line_rows": 4,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2603132"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2603132",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69540,
+          "document_id": 16496100,
+          "client_id": 826475
+        },
+        "message_id": "19934334092601114"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2603132"
+      }
+    }
+  }
+}
