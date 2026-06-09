@@ -1,0 +1,263 @@
+{
+  "payload_meta": {
+    "doc_id": 16527973,
+    "document_ref": "ALE 2603209",
+    "xml_len": 2241,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69641,
+    "title": "ALE 2603209",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16527973,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1252994,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 14385,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Nodibinājums “Osokinu fonds”",
+        "email": "daiga@andrejsosokins.com",
+        "phone": null,
+        "regnr": "40008333695",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Rīga, Krišjāņa\n Valdemāra iela 77-12,, 1013, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40008333695",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "daiga@andrejsosokins.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "nodibinājums osokinu fonds",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40008333695",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "daiga@andrejsosokins.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "name",
+            "term": "nodibinājums osokinu fonds",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "daiga@andrejsosokins.com"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "40008333695"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Rīga, Krišjāņa\n Valdemāra iela 77-12,, 1013, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Rīga, Krišjāņa\n Valdemāra iela 77-12,, 1013, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40008333695",
+              "candidates": []
+            },
+            "email": {
+              "term": "daiga@andrejsosokins.com",
+              "candidates": []
+            },
+            "phone": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "name": {
+              "term": "nodibinājums osokinu fonds",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69641,
+      "org_id": 14385,
+      "found_by": "created",
+      "person_id": 15836,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "daiga@andrejsosokins.com",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2603209",
+      "invoice_rows": 1,
+      "line_rows": 0,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2603209"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2603209",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69641,
+          "document_id": 16527973,
+          "client_id": 1252994
+        },
+        "message_id": "19942439244886300"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2603209"
+      }
+    }
+  }
+}
