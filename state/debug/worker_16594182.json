@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 69859,
     "title": "M-860325-32644",
     "_trace": [
@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -101,7 +101,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1169620,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 13670,
       "attached_to_deal": true,
@@ -117,16 +117,10 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40203697500",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "info@hairart.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 13670,
+            "skipped_db_lookup": true
           }
         ]
       },
@@ -186,7 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -195,35 +189,31 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 69859,
       "org_id": 13670,
-      "found_by": "email",
-      "person_id": 14775,
+      "found_by": "deal_person_id",
+      "person_id": 15908,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "info@hairart.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15908,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": "LV",
-      "person_country_updated": false,
+      "person_country_previous": null,
+      "person_country_updated": true,
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-32644",
-      "invoice_rows": 1,
-      "line_rows": 2,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/e51297b0-faa3-474a-b0db-e20ef074bd87?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: e51297b0-faa3-474a-b0db-e20ef074bd87\n"
     },
     "step_98": {
       "ok": true,
@@ -233,7 +223,7 @@
       "payload": {
         "pipedrive_deal_id": 69859,
         "paytraq_document_id": 16594182,
-        "pipedrive_person_id": 14775,
+        "pipedrive_person_id": 15908,
         "pipedrive_org_id": 13670
       }
     },
@@ -248,7 +238,7 @@
           "document_id": 16594182,
           "client_id": 1169620
         },
-        "message_id": "20035854916144929"
+        "message_id": "20086246382267817"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -257,7 +247,7 @@
           "document_id": 16594182,
           "doc_ref": "M-860325-32644"
         },
-        "message_id": "20087275115405072"
+        "message_id": "20087688949610826"
       }
     }
   }
