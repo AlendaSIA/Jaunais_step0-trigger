@@ -1,0 +1,270 @@
+{
+  "payload_meta": {
+    "doc_id": 16608611,
+    "document_ref": "M-860325-32686",
+    "xml_len": 7719,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69907,
+    "title": "M-860325-32686",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16608611,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "HYDRA+ Medicare nitrila cimdi, M, 100 gb, ZARYS-RNBH03M [RNBHM10003]",
+        "code": "RNBHM10003",
+        "quantity": 4.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "yellowBAND Pašpielīpošs pārsējs zaļš,10cm x 4,5m [YCB-1045-G]",
+        "code": "YCB-1045-G",
+        "quantity": 4.0,
+        "unit_price": 1.31,
+        "gross_unit_price": 1.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "GOLD DROP BOOSTER DELICATE1.5L mazg. līdz [67-074]",
+        "code": "67-074",
+        "quantity": 1.0,
+        "unit_price": 3.46,
+        "gross_unit_price": 4.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 7,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 662873,
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
+      "org_id": 1678,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Inetas Pokules ĢĀP",
+        "email": "inpo@e-apollo.lv",
+        "phone": "29198947",
+        "regnr": "19127011437",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Jaunšinkas Lēdmanes pag. Ogres novads, Ikšķile, Izvēlēties štatu/pilsētu, LV 5052, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "19127011437",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "inpo@e-apollo.lv",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "inpo@e-apollo.lv",
+            "old": "inpo@e-apollo.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "29198947",
+            "old": "29198947",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "19127011437",
+            "old": "19127011437",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Jaunšinkas Lēdmanes pag. Ogres novads, Ikšķile, Izvēlēties štatu/pilsētu, LV 5052, LV",
+            "old": "Jaunšinkas Lēdmanes pag. Ogres novads, Ikšķile, Izvēlēties štatu/pilsētu, LV 5052, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Jaunšinkas Lēdmanes pag. Ogres novads, Ikšķile, Izvēlēties štatu/pilsētu, LV 5052, LV",
+            "old": "Jaunšinkas Lēdmanes pag. Ogres novads, Ikšķile, Izvēlēties štatu/pilsētu, LV 5052, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69907,
+      "org_id": 1678,
+      "found_by": "email",
+      "person_id": 1678,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "inpo@e-apollo.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32686",
+      "invoice_rows": 1,
+      "line_rows": 7,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32686",
+      "payload": {
+        "pipedrive_deal_id": 69907,
+        "paytraq_document_id": 16608611,
+        "pipedrive_person_id": 1678,
+        "pipedrive_org_id": 1678
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32686",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69907,
+          "document_id": 16608611,
+          "client_id": 662873
+        },
+        "message_id": "20041428488413278"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 69907,
+          "document_id": 16608611,
+          "doc_ref": "M-860325-32686"
+        },
+        "message_id": "20118477670091921"
+      }
+    }
+  }
+}
