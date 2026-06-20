@@ -1,0 +1,321 @@
+{
+  "payload_meta": {
+    "doc_id": 16631661,
+    "document_ref": "M-860325-32737",
+    "xml_len": 4353,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 69968,
+    "title": "M-860325-32737",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16631661,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,  [3602-3]",
+        "code": "3602-3",
+        "quantity": 1.0,
+        "unit_price": 4.455,
+        "gross_unit_price": 4.455,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+        "code": "MelHY",
+        "quantity": 2.0,
+        "unit_price": 2.058,
+        "gross_unit_price": 2.058,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.06,
+        "gross_unit_price": 2.06,
+        "include_tax": true,
+        "vat_rate": 0.0,
+        "tax_key_name": "uz ES piegādātās preces",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 3,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1259749,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 14420,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Orteway OU",
+        "email": "diana.edur@gmail.com",
+        "phone": "55613184",
+        "regnr": "14202061",
+        "vatnr": "EE101948605",
+        "country": "EE",
+        "legal_address_formatted": "Lähte, Lähte, Tartumaa, 60502, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "diana.edur@gmail.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "55613184",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "orteway ou",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "diana.edur@gmail.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "55613184",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "orteway ou",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "diana.edur@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "55613184"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "14202061"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "EE101948605"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "EE"
+        },
+        "address": {
+          "key": "address",
+          "value": "Lähte, Lähte, Tartumaa, 60502, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Lähte, Lähte, Tartumaa, 60502, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "diana.edur@gmail.com",
+              "candidates": []
+            },
+            "phone": {
+              "term": "55613184",
+              "candidates": []
+            },
+            "name": {
+              "term": "orteway ou",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 69968,
+      "org_id": 14420,
+      "found_by": "created",
+      "person_id": 15940,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "diana.edur@gmail.com",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "55613184",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32737",
+      "invoice_rows": 1,
+      "line_rows": 3,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32737",
+      "payload": {
+        "pipedrive_deal_id": 69968,
+        "paytraq_document_id": 16631661,
+        "pipedrive_person_id": 15940,
+        "pipedrive_org_id": 14420
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32737",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 69968,
+          "document_id": 16631661,
+          "client_id": 1259749
+        },
+        "message_id": "19719062337197813"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 69968,
+          "document_id": 16631661,
+          "doc_ref": "M-860325-32737"
+        },
+        "message_id": "19719539256795715"
+      }
+    }
+  }
+}
