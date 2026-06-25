@@ -1,0 +1,262 @@
+{
+  "payload_meta": {
+    "doc_id": 16656879,
+    "document_ref": "M-860325-32799",
+    "xml_len": 5744,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70034,
+    "title": "M-860325-32799",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16656879,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "Medicīniskās sejas maskas TYPE I melnas, 1 kastīte (50 gb),  [MelHY]",
+        "code": "MelHY",
+        "quantity": 1.0,
+        "unit_price": 2.01,
+        "gross_unit_price": 2.49,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CHEMISEPT G 1000 ml, dez.lidz. [PP65-CG1000ml]",
+        "code": "PP65-CG1000ml",
+        "quantity": 1.0,
+        "unit_price": 8.06,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "BETAtex_SuperAbsorbent underpad, non-sterile 40cm x 60cm_A25 [BT-PCS4060]",
+        "code": "BT-PCS4060",
+        "quantity": 1.0,
+        "unit_price": 4.43,
+        "gross_unit_price": 5.49,
+        "include_tax": true,
+        "vat_rate": 0.24,
+        "tax_key_name": "Igaunija OSS 24%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 5,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 628570,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 2343,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Jessica Kozljakova",
+        "email": "kozljakova@gmail.com",
+        "phone": "+372 56738690",
+        "regnr": null,
+        "vatnr": null,
+        "country": "EE",
+        "legal_address_formatted": "Paide mnt 65-37, Tapa, Lääne-Virumaa, 45106, EE"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "kozljakova@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+372 56738690"
+        },
+        "address": {
+          "key": "address",
+          "value": "Paide mnt 65-37, Tapa, Lääne-Virumaa, 45106, EE"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Paide mnt 65-37, Tapa, Lääne-Virumaa, 45106, EE"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "kozljakova@gmail.com",
+            "old": "kozljakova@gmail.com",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "EE",
+            "old": "EE",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70034,
+      "org_id": 2343,
+      "found_by": "email",
+      "person_id": 2342,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "kozljakova@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "EE",
+      "person_country_previous": "EE",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32799",
+      "invoice_rows": 1,
+      "line_rows": 5,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32799",
+      "payload": {
+        "pipedrive_deal_id": 70034,
+        "paytraq_document_id": 16656879,
+        "pipedrive_person_id": 2342,
+        "pipedrive_org_id": 2343
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32799",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70034,
+          "document_id": 16656879,
+          "client_id": 628570
+        },
+        "message_id": "20215994062268105"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70034,
+          "document_id": 16656879,
+          "doc_ref": "M-860325-32799"
+        },
+        "message_id": "20216715649117028"
+      }
+    }
+  }
+}
