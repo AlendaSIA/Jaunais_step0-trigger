@@ -1,0 +1,322 @@
+{
+  "payload_meta": {
+    "doc_id": 16665182,
+    "document_ref": "M-860325-32826",
+    "xml_len": 3732,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70063,
+    "title": "M-860325-32826",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16665182,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Komplekts! Kinezioloģiskais teips -yellowTAPE - kinesiotape, četru teipu komplekts 5cmX5 metri. [YT-55-4]",
+        "code": "YT-55-4",
+        "quantity": 2.0,
+        "unit_price": 16.52,
+        "gross_unit_price": 19.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 1.81,
+        "gross_unit_price": 2.19,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 2,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1208734,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 14072,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "FizioBalsts",
+        "email": "fizobalsts@gamil.com",
+        "phone": "22313936",
+        "regnr": "40203696651",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Vienības gatve 109, Rīga, Rīga, 1058, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203696651",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "fizobalsts@gamil.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "22313936",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "fiziobalsts",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "40203696651",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "fizobalsts@gamil.com",
+            "old": "fizobalsts@gamil.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "22313936",
+            "old": "22313936",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203696651",
+            "old": "40203696651",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Vienības gatve 109, Rīga, Rīga, 1058, LV",
+            "old": "Vienības gatve 109, Rīga, Rīga, 1058, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Vienības gatve 109, Rīga, Rīga, 1058, LV",
+            "old": "Vienības gatve 109, Rīga, Rīga, 1058, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "40203696651",
+              "candidates": [
+                {
+                  "id": 14072,
+                  "name": "FizioBalsts"
+                }
+              ]
+            },
+            "email": {
+              "term": "fizobalsts@gamil.com",
+              "candidates": [
+                {
+                  "id": 14072,
+                  "name": "FizioBalsts"
+                }
+              ]
+            },
+            "phone": {
+              "term": "22313936",
+              "candidates": [
+                {
+                  "id": 14072,
+                  "name": "FizioBalsts"
+                }
+              ]
+            },
+            "name": {
+              "term": "fiziobalsts",
+              "candidates": [
+                {
+                  "id": 14072,
+                  "name": "FizioBalsts"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            14072
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70063,
+      "org_id": 14072,
+      "found_by": "email",
+      "person_id": 15162,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "fizobalsts@gamil.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32826",
+      "invoice_rows": 1,
+      "line_rows": 2,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32826",
+      "payload": {
+        "pipedrive_deal_id": 70063,
+        "paytraq_document_id": 16665182,
+        "pipedrive_person_id": 15162,
+        "pipedrive_org_id": 14072
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32826",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70063,
+          "document_id": 16665182,
+          "client_id": 1208734
+        },
+        "message_id": "20234299733801952"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70063,
+          "document_id": 16665182,
+          "doc_ref": "M-860325-32826"
+        },
+        "message_id": "20233445393866923"
+      }
+    }
+  }
+}
