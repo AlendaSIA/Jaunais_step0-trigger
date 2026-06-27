@@ -1,0 +1,220 @@
+{
+  "payload_meta": {
+    "doc_id": 16667239,
+    "document_ref": "ALE 2603558",
+    "xml_len": 8744,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 70070,
+    "title": "M-860325-32833 _ ALE 2603558",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16667239,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNBXL10001]",
+        "code": "RNBXL10001",
+        "quantity": 1.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs  [RNBDPXL5005]",
+        "code": "RNBDPXL5005",
+        "quantity": 1.0,
+        "unit_price": 8.26,
+        "gross_unit_price": 9.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Cauruļu tīrīšanas līdz. 800g Kret granulas [K1024685]",
+        "code": "K1024685",
+        "quantity": 1.0,
+        "unit_price": 6.6,
+        "gross_unit_price": 7.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 7,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": false,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 934829,
+      "found_by": "email",
+      "org_action": null,
+      "org_id": null,
+      "attached_to_deal": false,
+      "paytraq_fields": {
+        "name": "Oksana Guka",
+        "email": "oksana.guka@gmail.com",
+        "phone": "+37126438193",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Akmeņu iela 50B, Ogre, LV-5001, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "oksana.guka@gmail.com",
+            "found": true,
+            "candidate_count": 2
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": "ERROR: Pipedrive request failed: HTTP 404 body={'success': False, 'error': 'Organization not found.', 'error_info': 'Please check developers.pipedrive.com for more information about Pipedrive API.', 'data': None, 'additional_data': None, 'code': 'ERR_ORGANIZATION_NOT_FOUND'}",
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": null
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70070,
+      "org_id": null,
+      "found_by": "deal_person_id",
+      "person_id": 11698,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 11698,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2603558",
+      "invoice_rows": 1,
+      "line_rows": 7,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2603558"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2603558",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70070,
+          "document_id": 16667239,
+          "client_id": 934829
+        },
+        "message_id": "20244764507101720"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2603558"
+      }
+    }
+  }
+}
