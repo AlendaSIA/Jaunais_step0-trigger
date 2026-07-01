@@ -1,0 +1,23 @@
+{
+  "payload_meta": {
+    "doc_id": 16691823,
+    "document_ref": "M-860325-32916",
+    "xml_len": 5826,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "detail": {
+      "error": "pipedrive_http_error",
+      "path": "/deals/70175/products",
+      "status_code": 408,
+      "response_text": "{\"success\":false,\"error\":\"Timeout while calling Products API service\",\"error_info\":\"Please check developers.pipedrive.com for more information about Pipedrive API.\",\"data\":[],\"additional_data\":[],\"code\":\"ERR_UNKNOWN\"}"
+    }
+  }
+}
