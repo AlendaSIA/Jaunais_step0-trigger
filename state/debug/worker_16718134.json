@@ -1,0 +1,227 @@
+{
+  "payload_meta": {
+    "doc_id": 16718134,
+    "document_ref": "M-860325-32978",
+    "xml_len": 8094,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70253,
+    "title": "M-860325-32978",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16718134,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 8,
+    "line_items_preview": [
+      {
+        "name": "elastoKIDS Colorful kids plasters, non-sterile, 1,9cm x 7,2cm_A100 [VH-PDP7219]",
+        "code": "VH-PDP7219",
+        "quantity": 1.0,
+        "unit_price": 4.62,
+        "gross_unit_price": 5.59,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Plāksteru komplekts KIDS PRO GIRLS, 16gb dažada izmēra plāksteri, ZARYS-VH-ZKG [ZARYS-VH-ZKG]",
+        "code": "ZARYS-VH-ZKG",
+        "quantity": 1.0,
+        "unit_price": 1.23,
+        "gross_unit_price": 1.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Plāksteru komplekts TRANSPARENT, 24 gb dažada izmēra CAURSPĪDĪGI plāksteri, ZARYS-VH-ZTR [ZARYS-VH-ZTR]",
+        "code": "ZARYS-VH-ZTR",
+        "quantity": 1.0,
+        "unit_price": 1.64,
+        "gross_unit_price": 1.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 8,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": false,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 673034,
+      "found_by": "email",
+      "org_action": null,
+      "org_id": null,
+      "attached_to_deal": false,
+      "paytraq_fields": {
+        "name": "kristaps ziverts",
+        "email": "ziiverts90@gmail.com",
+        "phone": "28283552",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "\"Dālderi-15\". Kurmāles pagasts,, Kurmāles Pag, LV-3332, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "ziiverts90@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": "ERROR: Pipedrive request failed: HTTP 404 body={'success': False, 'error': 'Organization not found.', 'error_info': 'Please check developers.pipedrive.com for more information about Pipedrive API.', 'data': None, 'additional_data': None, 'code': 'ERR_ORGANIZATION_NOT_FOUND'}",
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": null
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70253,
+      "org_id": null,
+      "found_by": "email",
+      "person_id": 1486,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "ziiverts90@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-32978",
+      "invoice_rows": 1,
+      "line_rows": 8,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-32978",
+      "payload": {
+        "pipedrive_deal_id": 70253,
+        "paytraq_document_id": 16718134,
+        "pipedrive_person_id": 1486,
+        "pipedrive_org_id": null
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-32978",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70253,
+          "document_id": 16718134,
+          "client_id": 673034
+        },
+        "message_id": "19778333367283036"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70253,
+          "document_id": 16718134,
+          "doc_ref": "M-860325-32978"
+        },
+        "message_id": "19778585402367955"
+      }
+    }
+  }
+}
