@@ -1,0 +1,259 @@
+{
+  "payload_meta": {
+    "doc_id": 16723103,
+    "document_ref": "ALE 2603705",
+    "xml_len": 6363,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70290,
+    "title": "ALE 2603705",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16723103,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 4,
+    "line_items_preview": [
+      {
+        "name": "Papīra dvielis bez serdes 120 metri, JS1832 [JS1832]",
+        "code": "JS1832",
+        "quantity": 24.0,
+        "unit_price": 1.8,
+        "gross_unit_price": 1.8,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Lateksa cimdi, nepūderēti \"Easy care\", baltā krāsā, 100 gb, XS izmers, 100 gb, [RLBXS10007]",
+        "code": "RLBXS10007",
+        "quantity": 3.0,
+        "unit_price": 4.0,
+        "gross_unit_price": 4.0,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [RNBRS10003]",
+        "code": "RNBRS10003",
+        "quantity": 3.0,
+        "unit_price": 4.5,
+        "gross_unit_price": 4.5,
+        "include_tax": false,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 4,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 817451,
+      "found_by": "email",
+      "org_action": "updated",
+      "org_id": 12861,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Sabiedrība ar ierobežotu atbildību \"AL Denta\"",
+        "email": "zobarstnieciba.aldenta@gmail.com",
+        "phone": "20590580",
+        "regnr": "45403035522",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Madonas nov., Cesvaine, Pils iela 1A,, 4871, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "45403035522",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "zobarstnieciba.aldenta@gmail.com",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "zobarstnieciba.aldenta@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "20590580"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "45403035522"
+        },
+        "address": {
+          "key": "address",
+          "value": "Madonas nov., Cesvaine, Pils iela 1A,, 4871, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Madonas nov., Cesvaine, Pils iela 1A,, 4871, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same_keys": [
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+        ],
+        "skipped_same": {
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70290,
+      "org_id": 12861,
+      "found_by": "email",
+      "person_id": 13167,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "zobarstnieciba.aldenta@gmail.com",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2603705",
+      "invoice_rows": 1,
+      "line_rows": 4,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2603705"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2603705",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70290,
+          "document_id": 16723103,
+          "client_id": 817451
+        },
+        "message_id": "19796194414959510"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2603705"
+      }
+    }
+  }
+}
