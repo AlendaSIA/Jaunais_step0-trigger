@@ -1,0 +1,313 @@
+{
+  "payload_meta": {
+    "doc_id": 16738620,
+    "document_ref": "M-860325-33037",
+    "xml_len": 7764,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70333,
+    "title": "M-860325-33037",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16738620,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 7,
+    "line_items_preview": [
+      {
+        "name": "KLIIN PURE PULP Z FOLD 150 [200006]",
+        "code": "200006",
+        "quantity": 10.0,
+        "unit_price": 0.82,
+        "gross_unit_price": 0.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [RNBRS10003]",
+        "code": "RNBRS10003",
+        "quantity": 1.0,
+        "unit_price": 4.95,
+        "gross_unit_price": 5.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Bacticide AF 1 litrs [65-010]",
+        "code": "65-010",
+        "quantity": 2.0,
+        "unit_price": 6.69,
+        "gross_unit_price": 8.09,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 7,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1266122,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 15691,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Olesja Zeliznaka",
+        "email": "olesja.zeliznaka@gmail.com",
+        "phone": "+37122305100",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Grodņas iela34, Daugavpils, Augšdaugavas novads, LV-5417, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "olesja.zeliznaka@gmail.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "37122305100",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "olesja zeliznaka",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "email",
+            "term": "olesja.zeliznaka@gmail.com",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "37122305100",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "olesja zeliznaka",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "olesja.zeliznaka@gmail.com"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "+37122305100"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Grodņas iela34, Daugavpils, Augšdaugavas novads, LV-5417, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Grodņas iela34, Daugavpils, Augšdaugavas novads, LV-5417, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": null,
+              "skipped": true,
+              "candidates": []
+            },
+            "email": {
+              "term": "olesja.zeliznaka@gmail.com",
+              "candidates": []
+            },
+            "phone": {
+              "term": "37122305100",
+              "candidates": []
+            },
+            "name": {
+              "term": "olesja zeliznaka",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70333,
+      "org_id": 15691,
+      "found_by": "created",
+      "person_id": 17448,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "olesja.zeliznaka@gmail.com",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "37122305100",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-33037",
+      "invoice_rows": 1,
+      "line_rows": 7,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-33037",
+      "payload": {
+        "pipedrive_deal_id": 70333,
+        "paytraq_document_id": 16738620,
+        "pipedrive_person_id": 17448,
+        "pipedrive_org_id": 15691
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-33037",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70333,
+          "document_id": 16738620,
+          "client_id": 1266122
+        },
+        "message_id": "19811943144106486"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70333,
+          "document_id": 16738620,
+          "doc_ref": "M-860325-33037"
+        },
+        "message_id": "19807017059403162"
+      }
+    }
+  }
+}
