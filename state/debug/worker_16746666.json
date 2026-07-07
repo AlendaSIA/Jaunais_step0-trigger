@@ -1,0 +1,266 @@
+{
+  "payload_meta": {
+    "doc_id": 16746666,
+    "document_ref": "M-860325-33058",
+    "xml_len": 4972,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 70355,
+    "title": "M-860325-33058",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16746666,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 3,
+    "line_items_preview": [
+      {
+        "name": "HYDRA+ Medicare nitrila cimdi, S, 100 gb, ZARYS-RNBH03S [RNBHS10003]",
+        "code": "RNBHS10003",
+        "quantity": 5.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "HYDRA+ Medicare nitrila cimdi, M, 100 gb, ZARYS-RNBH03M [RNBHM10003]",
+        "code": "RNBHM10003",
+        "quantity": 5.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "HYDRA+ Medicare nitrila cimdi, L, 100 gb. [RNBHL10003]",
+        "code": "RNBHL10003",
+        "quantity": 5.0,
+        "unit_price": 5.78,
+        "gross_unit_price": 6.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 3,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1248841,
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
+      "org_id": 13587,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA Clean Victory",
+        "email": "kozireva.viktorija@gmail.com",
+        "phone": "26164672",
+        "regnr": "40203737201",
+        "vatnr": "LV40203737201",
+        "country": "LV",
+        "legal_address_formatted": "Vaidelotes iela 4-44, Rīga, LV-1055, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "deal_org_id",
+            "found": true,
+            "term": 13587,
+            "skipped_db_lookup": true
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "kozireva.viktorija@gmail.com",
+            "old": "kozireva.viktorija@gmail.com",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26164672",
+            "old": "26164672",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "40203737201",
+            "old": "40203737201",
+            "reason": "same"
+          },
+          "abf60c765911b83a0e0243483c2bf3ee680f6b0c": {
+            "new": "LV40203737201",
+            "old": "LV40203737201",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Vaidelotes iela 4-44, Rīga, LV-1055, LV",
+            "old": "Vaidelotes iela 4-44, Rīga, LV-1055, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Vaidelotes iela 4-44, Rīga, LV-1055, LV",
+            "old": "Vaidelotes iela 4-44, Rīga, LV-1055, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "skipped_updated_deal_existing_org"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70355,
+      "org_id": 13587,
+      "found_by": "deal_person_id",
+      "person_id": 14701,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 14701,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/445cb0bb-e3cb-4074-9ace-d6ed079a6af0?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 445cb0bb-e3cb-4074-9ace-d6ed079a6af0\n"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-33058",
+      "payload": {
+        "pipedrive_deal_id": 70355,
+        "paytraq_document_id": 16746666,
+        "pipedrive_person_id": 14701,
+        "pipedrive_org_id": 13587
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-33058",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70355,
+          "document_id": 16746666,
+          "client_id": 1248841
+        },
+        "message_id": "19820623198131547"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70355,
+          "document_id": 16746666,
+          "doc_ref": "M-860325-33058"
+        },
+        "message_id": "20510929371101338"
+      }
+    }
+  }
+}
