@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-33109, Payment Gateway (SEB)"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "212599"
     },
@@ -179,6 +183,10 @@
       "value": "2026-07-09T13:59:46Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-09T14:00:27Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
       "value": "2673477"
     },
@@ -192,27 +200,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem/Item/ItemID",
-      "value": "830795"
+      "value": "830823"
     },
     {
       "field": "Sale/LineItems/LineItem/Item/ItemCode",
-      "value": "RNBXL10001"
+      "value": "FM2700M"
     },
     {
       "field": "Sale/LineItems/LineItem/Item/ItemName",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m"
+      "value": "Nitrila cimdi, nepūderēti «Safe light», zili. , XL 100 gb, FM2700M"
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotID",
-      "value": "52458"
+      "value": "31001"
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotNumber",
-      "value": "762503007N"
+      "value": "4015120000"
     },
     {
       "field": "Sale/LineItems/LineItem/Description",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNBXL10001]"
+      "value": "Nitrila cimdi, nepūderēti «Safe light», zili. , XL 100 gb, FM2700M [FM2700M]"
     },
     {
       "field": "Sale/LineItems/LineItem/Qty",
@@ -244,6 +252,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -315,12 +355,60 @@
       "value": "6.00"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentID",
-      "value": "16764605"
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16764691"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
-      "value": "M-860325-33109"
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0726/00216"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "19813148"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260709/73"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-07-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "19813149"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260709/74"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-07-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -340,27 +428,27 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "830795"
+          "value": "830823"
         },
         {
           "field": "LineItem/Item/ItemCode",
-          "value": "RNBXL10001"
+          "value": "FM2700M"
         },
         {
           "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m"
+          "value": "Nitrila cimdi, nepūderēti «Safe light», zili. , XL 100 gb, FM2700M"
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "52458"
+          "value": "31001"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "762503007N"
+          "value": "4015120000"
         },
         {
           "field": "LineItem/Description",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m [RNBXL10001]"
+          "value": "Nitrila cimdi, nepūderēti «Safe light», zili. , XL 100 gb, FM2700M [FM2700M]"
         },
         {
           "field": "LineItem/Qty",
@@ -395,8 +483,8 @@
           "value": "PVN 21%"
         }
       ],
-      "item_code": "RNBXL10001",
-      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, XL, 100 gb, RNB-XL-100_m",
+      "item_code": "FM2700M",
+      "item_name": "Nitrila cimdi, nepūderēti «Safe light», zili. , XL 100 gb, FM2700M",
       "qty": "6.00",
       "price": "4.491",
       "line_total": "26.95",
