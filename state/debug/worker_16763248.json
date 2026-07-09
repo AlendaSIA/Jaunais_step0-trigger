@@ -1,0 +1,234 @@
+{
+  "payload_meta": {
+    "doc_id": 16763248,
+    "document_ref": "ZZTEST-SHIP2-121501",
+    "xml_len": 3487,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "updated",
+    "deal_id": 70426,
+    "title": "ZZTEST-SHIP2-121501",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16763248,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 2,
+    "line_items_preview": [
+      {
+        "name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]",
+        "code": "RNBM10001",
+        "quantity": 1.0,
+        "unit_price": 3.71,
+        "gross_unit_price": 4.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Shipping [Ship1]",
+        "code": "Ship1",
+        "quantity": 1.0,
+        "unit_price": 2.88,
+        "gross_unit_price": 3.49,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "shipping_charge"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 0,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 2,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1094100,
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
+      "org_id": 9078,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "Viktorija",
+        "email": "viktorijag@inbox.lv",
+        "phone": "22001011",
+        "regnr": null,
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Atbrīvošanas aleja 178-26, Rēzekne, LV 4604, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "deal_org_id",
+            "found": true,
+            "term": 9078,
+            "skipped_db_lookup": true
+          }
+        ]
+      },
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "viktorijag@inbox.lv",
+            "old": "viktorijag@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "22001011",
+            "old": "22001011",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Atbrīvošanas aleja 178-26, Rēzekne, LV 4604, LV",
+            "old": "Atbrīvošanas aleja 178-26, Rēzekne, LV 4604, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Atbrīvošanas aleja 178-26, Rēzekne, LV 4604, LV",
+            "old": "Atbrīvošanas aleja 178-26, Rēzekne, LV 4604, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "skipped_updated_deal_existing_org"
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70426,
+      "org_id": 9078,
+      "found_by": "deal_person_id",
+      "person_id": 10567,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "deal_person_id",
+            "found": true,
+            "term": 10567,
+            "skipped_research": true
+          }
+        ]
+      },
+      "note": "Person reused from existing deal. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/88f073b2-de89-48e7-bfba-a5e26ef50ce5?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 88f073b2-de89-48e7-bfba-a5e26ef50ce5\n"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ZZTEST-SHIP2-121501"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ZZTEST-SHIP2-121501",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70426,
+          "document_id": 16763248,
+          "client_id": 1094100
+        },
+        "message_id": "20515822906933688"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ZZTEST-SHIP2-121501"
+      }
+    }
+  }
+}
