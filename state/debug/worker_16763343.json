@@ -1,0 +1,158 @@
+{
+  "payload_meta": {
+    "doc_id": 16763343,
+    "document_ref": "PAS/0726/00010",
+    "xml_len": 3029,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70430,
+    "title": "PAS/0726/00010",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16763343,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 0,
+    "line_items_preview": [],
+    "step_03": {
+      "skipped": true,
+      "reason": "No line_items"
+    },
+    "products_attached": null,
+    "products_created": null,
+    "activities_created": null,
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": null,
+      "found_by": null,
+      "org_action": null,
+      "org_id": null,
+      "attached_to_deal": false,
+      "paytraq_fields": {},
+      "db_search": {},
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": "No ClientID in paytraq_full_xml; skipping org sync",
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": null
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70430,
+      "org_id": null,
+      "found_by": "skipped",
+      "person_id": null,
+      "attached_to_deal": false,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": null,
+            "skipped": true
+          },
+          {
+            "by": "phone",
+            "term": null,
+            "skipped": true
+          }
+        ]
+      },
+      "note": "No name/email/phone available; skipping person create",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": null,
+      "person_country_previous": null,
+      "person_country_updated": false
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "PAS/0726/00010",
+      "invoice_rows": 1,
+      "line_rows": 0,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "PAS/0726/00010"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "PAS/0726/00010",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70430,
+          "document_id": 16763343
+        },
+        "message_id": "20516418985675642"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "PAS/0726/00010"
+      }
+    }
+  }
+}
