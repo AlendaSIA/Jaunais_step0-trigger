@@ -1,0 +1,328 @@
+{
+  "payload_meta": {
+    "doc_id": 16770886,
+    "document_ref": "M-860325-33121",
+    "xml_len": 6307,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70455,
+    "title": "M-860325-33121",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16770886,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 5,
+    "line_items_preview": [
+      {
+        "name": "ZEWA DELUXE pure white 3 kārtu t/p 8 ruļļi [JUA63021]",
+        "code": "JUA63021",
+        "quantity": 3.0,
+        "unit_price": 4.12,
+        "gross_unit_price": 4.99,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Nitrila cimdi, nepūderēti «Safe light», zili. , L, 100 gb, FM2701M [FM2701M]",
+        "code": "FM2701M",
+        "quantity": 2.0,
+        "unit_price": 5.42,
+        "gross_unit_price": 6.56,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "Belinno Z- salvetes 2 kārtas 100% celuloze, 1 paciņa, [JS2649]",
+        "code": "JS2649",
+        "quantity": 20.0,
+        "unit_price": 1.07,
+        "gross_unit_price": 1.29,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 5,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [
+      {
+        "name": "ECONATURAL 135 JOINT, papīra ruļļu dvielis, Transporta kaste (6 ruļļi), tk-852226 [tk-852226]",
+        "id": 9198,
+        "reason": "not_found"
+      }
+    ],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1267842,
+      "found_by": null,
+      "org_action": "created",
+      "org_id": 15711,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "SIA \"Paparžkalni\"",
+        "email": "paparzkalni@inbox.lv",
+        "phone": "29229756",
+        "regnr": "44103095148",
+        "vatnr": "LV44103095148",
+        "country": "LV",
+        "legal_address_formatted": "Papažkalni, Skultes pag., Limbažu nov., Skulte, Limbzu nov.Skultes pag., LV4025, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "44103095148",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "paparzkalni@inbox.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "29229756",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "sia paparžkalni",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "44103095148",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "paparzkalni@inbox.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "29229756",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "sia paparžkalni",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_update_fields": {
+        "email": {
+          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "value": "paparzkalni@inbox.lv"
+        },
+        "phone": {
+          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "value": "29229756"
+        },
+        "regnr": {
+          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
+          "value": "44103095148"
+        },
+        "vatnr": {
+          "key": "abf60c765911b83a0e0243483c2bf3ee680f6b0c",
+          "value": "LV44103095148"
+        },
+        "country": {
+          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "value": "LV"
+        },
+        "address": {
+          "key": "address",
+          "value": "Papažkalni, Skultes pag., Limbažu nov., Skulte, Limbzu nov.Skultes pag., LV4025, LV"
+        },
+        "shipping_address": {
+          "key": "dae3df0edeadce95ba223719cc18141795387de8",
+          "value": "Papažkalni, Skultes pag., Limbažu nov., Skulte, Limbzu nov.Skultes pag., LV4025, LV"
+        }
+      },
+      "note": null,
+      "update_filter_debug": null,
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "44103095148",
+              "candidates": []
+            },
+            "email": {
+              "term": "paparzkalni@inbox.lv",
+              "candidates": []
+            },
+            "phone": {
+              "term": "29229756",
+              "candidates": []
+            },
+            "name": {
+              "term": "sia paparžkalni",
+              "candidates": []
+            }
+          },
+          "unique_ids": []
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70455,
+      "org_id": 15711,
+      "found_by": "created",
+      "person_id": 17523,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "paparzkalni@inbox.lv",
+            "found": false
+          },
+          {
+            "by": "phone",
+            "term": "29229756",
+            "found": false
+          }
+        ]
+      },
+      "note": "Person created and attached. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "M-860325-33121",
+      "invoice_rows": 1,
+      "line_rows": 5,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": true,
+      "collection": "mozello_deal_map",
+      "doc_ref": "M-860325-33121",
+      "payload": {
+        "pipedrive_deal_id": 70455,
+        "paytraq_document_id": 16770886,
+        "pipedrive_person_id": 17523,
+        "pipedrive_org_id": 15711
+      }
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "M-860325-33121",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70455,
+          "document_id": 16770886,
+          "client_id": 1267842
+        },
+        "message_id": "20566275319485242"
+      },
+      "mozello_enrich": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "payload": {
+          "deal_id": 70455,
+          "document_id": 16770886,
+          "doc_ref": "M-860325-33121"
+        },
+        "message_id": "20566213518146655"
+      }
+    }
+  }
+}
