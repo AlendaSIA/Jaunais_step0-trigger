@@ -1,0 +1,831 @@
+{
+  "document_id": 16768667,
+  "client_id": "585669",
+  "sale_fields": [
+    {
+      "field": "Sale/Header/Document/DocumentID",
+      "value": "16768667"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentDate",
+      "value": "2026-07-10"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentRef",
+      "value": "PAP-2026-0015"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentType",
+      "value": "sale"
+    },
+    {
+      "field": "Sale/Header/Document/DocumentStatus",
+      "value": "wait_payment"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientID",
+      "value": "585669"
+    },
+    {
+      "field": "Sale/Header/Document/Client/ClientName",
+      "value": "SIA Pirmā Miofunkcionālā klīnika"
+    },
+    {
+      "field": "Sale/Header/SaleType",
+      "value": "sales_proforma"
+    },
+    {
+      "field": "Sale/Header/Operation",
+      "value": "sell_goods"
+    },
+    {
+      "field": "Sale/Header/Total",
+      "value": "154.84"
+    },
+    {
+      "field": "Sale/Header/AmountDue",
+      "value": "154.84"
+    },
+    {
+      "field": "Sale/Header/DueNoticeEnabled",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/Currency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/BalanceCurrency",
+      "value": "EUR"
+    },
+    {
+      "field": "Sale/Header/CurrencyRate",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/Header/TaxBasis",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/IncludeTax",
+      "value": "true"
+    },
+    {
+      "field": "Sale/Header/UseOverpayment",
+      "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-07-10"
+    },
+    {
+      "field": "Sale/Header/DateApproved",
+      "value": "2026-07-10"
+    },
+    {
+      "field": "Sale/Header/IssuedBy",
+      "value": "Ligita Zvejniece"
+    },
+    {
+      "field": "Sale/Header/Discount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Header/Deposit",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/Header/Comment",
+      "value": "Papildinātājs QR · pecapmaksa · PAP-2026-0015 · token  · Piegāde: Piegāde uz adresi — Dzirnavu iela 37, Rīga 1010 (5.59 EUR)"
+    },
+    {
+      "field": "Sale/Header/Signature",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/InvoicePeriod/PeriodType",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/PayTerm/PayTermDays",
+      "value": "0"
+    },
+    {
+      "field": "Sale/Header/PaymentMethod",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673450"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingType",
+      "value": "1"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
+      "value": "4751"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
+      "value": "Alenda SIA noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
+      "value": "2655"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
+      "value": "Alenda SIA  noliktava"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
+      "value": "Bauskas iela 22, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
+      "value": "LV1004"
+    },
+    {
+      "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "430351"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA Pirmā Miofunkcionālā klīnika, 29232099"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Dzirnavu iela 37, Rīga"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "1010"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
+      "field": "Sale/Header/Project/ProjectName",
+      "value": "Raimonds"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Created",
+      "value": "2026-07-10T06:24:57Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-10T06:24:58Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "879776"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "200006"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "KLIIN PURE PULP Z FOLD 150"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "KLIIN PURE PULP Z FOLD 150 [200006]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "25.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "0.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "24.75"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "830793"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "RNBM10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
+      "value": "55777"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
+      "value": "672510102N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "3.87"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "77.40"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "978825"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "FOL-CPE/B/22"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Bahilas Zilas N100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Bahilas Zilas N100 [FOL-CPE/B/22]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "30.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "1.57"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "47.10"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "5.59"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "154.84"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "127.97"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "26.87"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673468"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5730 - Atliktais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "154.84"
+    },
+    {
+      "field": "Sale/Totals/NetAmount",
+      "value": "127.97"
+    },
+    {
+      "field": "Sale/Totals/Qty",
+      "value": "75.00"
+    }
+  ],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "879776"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "200006"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "KLIIN PURE PULP Z FOLD 150"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "KLIIN PURE PULP Z FOLD 150 [200006]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "25.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "0.99"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "24.75"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "200006",
+      "item_name": "KLIIN PURE PULP Z FOLD 150",
+      "qty": "25.00",
+      "price": "0.99",
+      "line_total": "24.75",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830793"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBM10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "55777"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "672510102N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "3.87"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "77.40"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBM10001",
+      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m",
+      "qty": "20.00",
+      "price": "3.87",
+      "line_total": "77.40",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "978825"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FOL-CPE/B/22"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Bahilas Zilas N100"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Bahilas Zilas N100 [FOL-CPE/B/22]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "30.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.57"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "47.10"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "FOL-CPE/B/22",
+      "item_name": "Bahilas Zilas N100",
+      "qty": "30.00",
+      "price": "1.57",
+      "line_total": "47.10",
+      "tax": "PVN 21%"
+    }
+  ],
+  "client_bundle": {
+    "client_id": "585669",
+    "client_endpoint": "/api/client/585669",
+    "client_status_code": 200,
+    "client_auth_used": "query_normal",
+    "client_fields": [
+      {
+        "field": "client/ClientID",
+        "value": "585669"
+      },
+      {
+        "field": "client/Name",
+        "value": "SIA Pirmā Miofunkcionālā klīnika"
+      },
+      {
+        "field": "client/Email",
+        "value": "info.pmfk@gmail.com"
+      },
+      {
+        "field": "client/Type",
+        "value": "2"
+      },
+      {
+        "field": "client/Status",
+        "value": "1"
+      },
+      {
+        "field": "client/RegNumber",
+        "value": "40103976670"
+      },
+      {
+        "field": "client/LegalAddress/Address",
+        "value": "Dzirnavu iela 37, Rīga"
+      },
+      {
+        "field": "client/LegalAddress/Zip",
+        "value": "1010"
+      },
+      {
+        "field": "client/LegalAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "client/Phone",
+        "value": "29232099"
+      },
+      {
+        "field": "client/Project/ProjectName",
+        "value": "Raimonds"
+      },
+      {
+        "field": "client/FinancialData/CreditLimit",
+        "value": "0"
+      },
+      {
+        "field": "client/FinancialData/Deposit",
+        "value": "100.00"
+      },
+      {
+        "field": "client/FinancialData/Discount",
+        "value": "0.00"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermType",
+        "value": "1"
+      },
+      {
+        "field": "client/FinancialData/PayTerm/PayTermDays",
+        "value": "0"
+      },
+      {
+        "field": "client/TimeStamps/Created",
+        "value": "2023-01-20T13:09:07Z"
+      },
+      {
+        "field": "client/TimeStamps/Updated",
+        "value": "2026-07-10T06:24:56Z"
+      }
+    ],
+    "contacts_endpoint": "/api/client/contacts/585669",
+    "contacts_status_code": 200,
+    "contacts_auth_used": "query_normal",
+    "contacts_fields": [],
+    "shipping_addresses_endpoint": "/api/client/shippingAddresses/585669",
+    "shipping_addresses_status_code": 200,
+    "shipping_addresses_auth_used": "query_normal",
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/AddressID",
+        "value": "311266"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/ShipTo",
+        "value": "\"PIRMĀ MIOFUNKCIONĀLĀ KLĪNIKA\""
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Address",
+        "value": "Dzirnavu iela 37-15"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Zip",
+        "value": "lv-1010"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[0]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/AddressID",
+        "value": "430351"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/ShipTo",
+        "value": "SIA Pirmā Miofunkcionālā klīnika, 29232099"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Address",
+        "value": "Dzirnavu iela 37, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Zip",
+        "value": "1010"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[1]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/AddressID",
+        "value": "168872"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/ShipTo",
+        "value": "Sia Pirmā Miofunkcionālā klīnika, 29232099"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Address",
+        "value": "Melnsila iela 25, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Zip",
+        "value": "1046"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      }
+    ],
+    "banks_endpoint": "/api/client/banks/585669",
+    "banks_status_code": 200,
+    "banks_auth_used": "query_normal",
+    "banks_fields": []
+  }
+}
