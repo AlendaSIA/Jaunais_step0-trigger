@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 70452,
     "title": "M-860325-33118",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 9,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 9,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,7 +113,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1218182,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 14153,
       "attached_to_deal": true,
@@ -129,45 +129,14 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "strode.elina1@gmail.com",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "28465202",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "elina strode",
-            "found": false,
-            "candidate_count": 0
-          }
-        ]
-      },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "strode.elina1@gmail.com",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 14153,
+            "skipped_db_lookup": true
           }
         ]
       },
+      "pipedrive_search": {},
       "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
@@ -211,46 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "strode.elina1@gmail.com",
-              "candidates": [
-                {
-                  "id": 14153,
-                  "name": "Elina Strode"
-                }
-              ]
-            },
-            "phone": {
-              "term": "28465202",
-              "candidates": [
-                {
-                  "id": 14153,
-                  "name": "Elina Strode"
-                }
-              ]
-            },
-            "name": {
-              "term": "elina strode",
-              "candidates": [
-                {
-                  "id": 14153,
-                  "name": "Elina Strode"
-                }
-              ]
-            }
-          },
-          "unique_ids": [
-            14153
-          ]
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -259,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 70452,
       "org_id": 14153,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 15358,
       "attached_to_deal": true,
       "activity_created": false,
@@ -267,13 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "strode.elina1@gmail.com",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 15358,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -281,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-33118",
-      "invoice_rows": 1,
-      "line_rows": 9,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/7ffa6be8-79fd-4c22-8003-3f9442606db9?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 7ffa6be8-79fd-4c22-8003-3f9442606db9\n"
     },
     "step_98": {
       "ok": true,
@@ -312,7 +238,7 @@
           "document_id": 16769713,
           "client_id": 1218182
         },
-        "message_id": "20564370189758661"
+        "message_id": "20523445125759601"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -321,7 +247,7 @@
           "document_id": 16769713,
           "doc_ref": "M-860325-33118"
         },
-        "message_id": "20563966197985390"
+        "message_id": "19860214473780324"
       }
     }
   }
