@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 70485,
     "title": "M-860325-33141",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 5,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 5,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1035617,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 12308,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,43 +129,24 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "jevgenija.juldaseva@gmail.com",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 12308,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "28201838"
-        },
-        "address": {
-          "key": "address",
-          "value": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -173,9 +154,24 @@
             "old": "jevgenija.juldaseva@gmail.com",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "28201838",
+            "old": "28201838",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV",
+            "old": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV",
+            "old": "Lilaste, Lilaste 29b,, Saulkrastu novads, Saulkrastu pagasts., 2160, LV",
             "reason": "same"
           }
         }
@@ -184,7 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -193,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 70485,
       "org_id": 12308,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 13485,
       "attached_to_deal": true,
       "activity_created": false,
@@ -201,13 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "jevgenija.juldaseva@gmail.com",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 13485,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -215,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-33141",
-      "invoice_rows": 1,
-      "line_rows": 5,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/4800bc98-37ec-49ee-956a-0d11e392be4c?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 4800bc98-37ec-49ee-956a-0d11e392be4c\n"
     },
     "step_98": {
       "ok": true,
@@ -246,7 +238,7 @@
           "document_id": 16778597,
           "client_id": 1035617
         },
-        "message_id": "20639351729492509"
+        "message_id": "20637958651563591"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -255,7 +247,7 @@
           "document_id": 16778597,
           "doc_ref": "M-860325-33141"
         },
-        "message_id": "20640021480943769"
+        "message_id": "19919766454930408"
       }
     }
   }
