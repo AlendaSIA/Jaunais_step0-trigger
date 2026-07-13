@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 7,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 7,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -114,7 +114,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 1268796,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 15688,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -137,44 +137,47 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "28366010"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "04026811329"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
           "4b4db855bb2ac128d585e2d84c554eb099e588f7",
           "259f90917e748590024b17a61fa5014a685fc3e6",
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [
-          "faac2c792221bf18216ef17eae1941feef9a17cc"
-        ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
             "new": "mairitaob@inbox.lv",
             "old": "mairitaob@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "28366010",
+            "old": "28366010",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "04026811329",
+            "old": "04026811329",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV",
+            "old": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV",
+            "old": "Saulrīti, Nītaures pagasts, Cēsu novads, LV 4112, LV",
             "reason": "same"
           }
         }
@@ -192,7 +195,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 70516,
       "org_id": 15688,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 17256,
       "attached_to_deal": true,
       "activity_created": false,
@@ -200,27 +203,23 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "mairitaob@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 17256,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": null,
-      "person_country_updated": true,
+      "person_country_previous": "LV",
+      "person_country_updated": false,
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "PAP-2026-0017",
-      "invoice_rows": 1,
-      "line_rows": 7,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/7fe1c20f-a81c-4803-ab62-4fe21e169689?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 7fe1c20f-a81c-4803-ab62-4fe21e169689\n"
     },
     "step_98": {
       "ok": true,
@@ -240,7 +239,7 @@
           "document_id": 16786894,
           "client_id": 1268796
         },
-        "message_id": "20644874484738667"
+        "message_id": "20018787832230212"
       },
       "mozello_enrich": {
         "skipped": true,
