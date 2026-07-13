@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 6,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 6,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -189,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 70506,
       "org_id": 926,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 925,
       "attached_to_deal": true,
       "activity_created": false,
@@ -197,13 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "linda.iljenko@gmail.com",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 925,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -211,13 +212,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "PAP-2026-0016",
-      "invoice_rows": 1,
-      "line_rows": 6,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/9c473262-828c-450a-b324-699fcf5ae4b3?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 9c473262-828c-450a-b324-699fcf5ae4b3\n"
     },
     "step_98": {
       "ok": true,
@@ -237,7 +233,7 @@
           "document_id": 16784265,
           "client_id": 689120
         },
-        "message_id": "20010915868773949"
+        "message_id": "20004755096625214"
       },
       "mozello_enrich": {
         "skipped": true,
