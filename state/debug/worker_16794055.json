@@ -213,7 +213,7 @@
     },
     "step_97": {
       "ok": false,
-      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/73b4404e-0d34-4135-8d25-406b4ebb2227?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 73b4404e-0d34-4135-8d25-406b4ebb2227\n"
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/4062db87-5ebb-4183-8b10-00c97db4f8d3?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: 4062db87-5ebb-4183-8b10-00c97db4f8d3\n"
     },
     "step_98": {
       "ok": true,
@@ -233,7 +233,7 @@
           "document_id": 16794055,
           "client_id": 653572
         },
-        "message_id": "20021122539287810"
+        "message_id": "20020361098117311"
       },
       "mozello_enrich": {
         "skipped": true,
