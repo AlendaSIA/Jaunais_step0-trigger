@@ -1,0 +1,326 @@
+{
+  "payload_meta": {
+    "doc_id": 16864532,
+    "document_ref": "ALE 2604050",
+    "xml_len": 8793,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "status": "created",
+    "deal_id": 70737,
+    "title": "ALE 2604050",
+    "_trace": [
+      {
+        "step": "01_deal_upsert",
+        "ok": true
+      },
+      {
+        "step": "02_parse_line_items",
+        "ok": true
+      },
+      {
+        "step": "03_products_sync",
+        "ok": true
+      },
+      {
+        "step": "04_find_update_organization",
+        "ok": true
+      },
+      {
+        "step": "05_find_update_person",
+        "ok": true
+      },
+      {
+        "step": "97_write_invoice_to_db",
+        "ok": true
+      },
+      {
+        "step": "98_save_mozello_map",
+        "ok": true
+      },
+      {
+        "step": "99_update_products",
+        "ok": true
+      }
+    ],
+    "document_id": 16864532,
+    "step_02_fetch": {
+      "used_fallback_fetch": false
+    },
+    "step_02": {
+      "ok": true
+    },
+    "line_items_count": 9,
+    "line_items_preview": [
+      {
+        "name": "SWELL EXTRA CHG 500 ml. ar dozat., dez.līdz. [PP65-210]",
+        "code": "PP65-210",
+        "quantity": 1.0,
+        "unit_price": 4.45,
+        "gross_unit_price": 5.39,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CHEMISEPT VIR+ 250ML dez.līdz. [PP65-812]",
+        "code": "PP65-812",
+        "quantity": 1.0,
+        "unit_price": 3.51,
+        "gross_unit_price": 4.25,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      },
+      {
+        "name": "CHEMISEPT FG 250ML dez.līdz. [65-109]",
+        "code": "65-109",
+        "quantity": 1.0,
+        "unit_price": 5.2,
+        "gross_unit_price": 6.29,
+        "include_tax": true,
+        "vat_rate": 0.21,
+        "tax_key_name": "PVN 21%",
+        "line_discount_pct": 0.0,
+        "price_source": "paytraq_price_field"
+      }
+    ],
+    "step_03": {
+      "ok": true,
+      "added": 9,
+      "updated": 0,
+      "deleted": 0,
+      "skipped": 0,
+      "missing_code_count": 0,
+      "delete_allowed": true
+    },
+    "products_attached": null,
+    "products_created": [],
+    "activities_created": [],
+    "step_04": {
+      "ok": true,
+      "version": "v2026-03-12-step04-db-first-01",
+      "mode": "paytraq_direct_db_first",
+      "client_id": 1270191,
+      "found_by": "regnr",
+      "org_action": "skipped_no_changes",
+      "org_id": 15737,
+      "attached_to_deal": true,
+      "paytraq_fields": {
+        "name": "LD nagi un skropstas",
+        "email": "liene.matuko@inbox.lv",
+        "phone": "26467633",
+        "regnr": "21078411284",
+        "vatnr": null,
+        "country": "LV",
+        "legal_address_formatted": "Viršu iela 6 Cēsis, LV4101, LV"
+      },
+      "db_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "21078411284",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "email",
+            "term": "liene.matuko@inbox.lv",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "phone",
+            "term": "26467633",
+            "found": false,
+            "candidate_count": 0
+          },
+          {
+            "by": "name",
+            "term": "ld nagi un skropstas",
+            "found": false,
+            "candidate_count": 0
+          }
+        ]
+      },
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "regnr",
+            "term": "21078411284",
+            "found": true,
+            "candidate_count": 1
+          }
+        ]
+      },
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "liene.matuko@inbox.lv",
+            "old": "liene.matuko@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26467633",
+            "old": "26467633",
+            "reason": "same"
+          },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "21078411284",
+            "old": "21078411284",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Viršu iela 6 Cēsis, LV4101, LV",
+            "old": "Viršu iela 6 Cēsis, LV4101, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Viršu iela 6 Cēsis, LV4101, LV",
+            "old": "Viršu iela 6 Cēsis, LV4101, LV",
+            "reason": "same"
+          }
+        }
+      },
+      "dup_check": {
+        "potential_duplicates": false,
+        "activity_created": false,
+        "activity_id": null,
+        "skipped_reason": "no_potential_duplicates",
+        "debug": {
+          "by": {
+            "regnr": {
+              "term": "21078411284",
+              "candidates": [
+                {
+                  "id": 15737,
+                  "name": "LD nagi un skropstas"
+                }
+              ]
+            },
+            "email": {
+              "term": "liene.matuko@inbox.lv",
+              "candidates": [
+                {
+                  "id": 15737,
+                  "name": "LD nagi un skropstas"
+                }
+              ]
+            },
+            "phone": {
+              "term": "26467633",
+              "candidates": [
+                {
+                  "id": 15737,
+                  "name": "LD nagi un skropstas"
+                }
+              ]
+            },
+            "name": {
+              "term": "ld nagi un skropstas",
+              "candidates": [
+                {
+                  "id": 15737,
+                  "name": "LD nagi un skropstas"
+                }
+              ]
+            }
+          },
+          "unique_ids": [
+            15737
+          ]
+        }
+      }
+    },
+    "step_05": {
+      "ok": true,
+      "version": "v2026-03-10-step05-reuse-deal-person-01",
+      "mode": "person_attach_v1_no_activity",
+      "deal_id": 70737,
+      "org_id": 15737,
+      "found_by": "email",
+      "person_id": 17356,
+      "attached_to_deal": true,
+      "activity_created": false,
+      "activity_id": null,
+      "pipedrive_search": {
+        "attempts": [
+          {
+            "by": "email",
+            "term": "liene.matuko@inbox.lv",
+            "found": true
+          }
+        ]
+      },
+      "note": "Person matched by email. Activity disabled.",
+      "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
+      "person_country_value": "LV",
+      "person_country_previous": "LV",
+      "person_country_updated": false,
+      "person_country_checked": true
+    },
+    "step_97": {
+      "ok": true,
+      "invoice_no": "ALE 2604050",
+      "invoice_rows": 1,
+      "line_rows": 9,
+      "invoice_errors": [],
+      "line_errors": [],
+      "dataset": "paytraq_sync"
+    },
+    "step_98": {
+      "ok": true,
+      "saved": false,
+      "skipped": true,
+      "reason": "doc_ref_not_mozello",
+      "doc_ref": "ALE 2604050"
+    },
+    "step_99": {
+      "ok": true,
+      "mode": "pubsub_publish",
+      "doc_ref": "ALE 2604050",
+      "org_update": {
+        "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
+        "payload": {
+          "deal_id": 70737,
+          "document_id": 16864532,
+          "client_id": 1270191
+        },
+        "message_id": "20685784007743460"
+      },
+      "mozello_enrich": {
+        "skipped": true,
+        "reason": "doc_ref_not_mozello",
+        "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
+        "doc_ref": "ALE 2604050"
+      }
+    }
+  }
+}
