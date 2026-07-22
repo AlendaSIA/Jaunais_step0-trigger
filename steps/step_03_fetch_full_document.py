@@ -1,9 +1,25 @@
 import os
 import base64
 import requests
+import xml.etree.ElementTree as ET
 
 PAYTRAQ_BASE_URL = "https://go.paytraq.com"
 REPO = "AlendaSIA/Jaunais_step0-trigger"
+
+
+def _doc_status(xml_text: str):
+    """Return lowercased DocumentStatus (e.g. 'draft', 'wait_payment', 'paid',
+    'voided') from a PayTraq sale XML, or None if it can't be parsed."""
+    if not xml_text or not isinstance(xml_text, str):
+        return None
+    try:
+        root = ET.fromstring(xml_text)
+    except Exception:
+        return None
+    el = root.find("./Header/Document/DocumentStatus")
+    if el is None or not el.text:
+        return None
+    return el.text.strip().lower()
 
 
 def _commit_message(message: str) -> str:
@@ -85,6 +101,13 @@ def run(ctx: dict):
     xml_text = body or ""
     ctx["paytraq_full_xml_len"] = len(xml_text)
     ctx["paytraq_full_xml"] = xml_text
+
+    # Draft-gate signal: a PayTraq document in 'draft' status is not yet committed
+    # (no lines / no ProformaReference). Downstream steps must NOT hand it to the
+    # worker, otherwise a reference-less twin deal is created. See step_06/step_08.
+    doc_status = _doc_status(xml_text)
+    ctx["doc_status"] = doc_status
+    ctx["doc_is_draft"] = (doc_status == "draft")
 
     gh_token = os.getenv("GITHUB_TOKEN")
     if gh_token:

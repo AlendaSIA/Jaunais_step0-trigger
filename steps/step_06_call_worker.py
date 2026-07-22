@@ -111,6 +111,19 @@ def run(ctx: dict) -> dict:
     xml = ctx.get("paytraq_full_xml") or ""
     xml_len = len(xml) if isinstance(xml, str) else 0
 
+    # DRAFT GATE: never send an un-committed PayTraq draft to the worker. A draft has
+    # no LineItems / no ProformaReference yet, so the worker would create a reference-less
+    # twin deal. In the automatic flows (normal forward scan + pending re-check) we skip
+    # the worker; step_08 then defers the id to state/pending_draft_ids.txt and revisits it
+    # once it becomes booked. Manual overrides (operator forced a specific doc) are exempt.
+    picked_by = ctx.get("picked_by")
+    if ctx.get("doc_is_draft") and picked_by in ("normal_after_last_processed", "pending_draft_ready"):
+        ctx["worker_skipped_draft"] = True
+        ctx["worker_status_code"] = 0
+        ctx["worker_response_text"] = f"skipped: DocumentStatus=draft (deferred), doc {doc_id}"
+        _trace(ctx, step_name, True, {"skipped_draft": True, "doc_id": doc_id, "picked_by": picked_by})
+        return ctx
+
     document_ref = ctx.get("document_ref")
     if not document_ref:
         document_ref = _extract_doc_ref_from_xml(xml)
