@@ -1,5 +1,6 @@
 import os
 import re
+import base64
 import requests
 import xml.etree.ElementTree as ET
 from typing import Optional
@@ -9,6 +10,69 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 PAYTRAQ_BASE_URL = os.getenv("PAYTRAQ_BASE_URL", "https://go.paytraq.com").rstrip("/")
 PAYTRAQ_API_KEY = os.getenv("PAYTRAQ_API_KEY")
 PAYTRAQ_API_TOKEN = os.getenv("PAYTRAQ_API_TOKEN")
+
+DEFAULT_OWNER = "AlendaSIA"
+DEFAULT_REPO = "Jaunais_step0-trigger"
+STATE_PENDING_PATH = "state/pending_draft_ids.txt"
+
+# How many pending drafts to re-check per run (bounds PayTraq calls even if the
+# pending list ever grows). Oldest ids are checked first.
+PENDING_SCAN_CAP = 30
+
+# Statuses that mean the deferred draft will never become a real order → drop it.
+_TERMINAL_STATUSES = ("voided", "cancelled", "canceled", "deleted")
+
+
+def _repo_full() -> str:
+    return f"{os.getenv('GITHUB_OWNER') or DEFAULT_OWNER}/{os.getenv('GITHUB_REPO') or DEFAULT_REPO}"
+
+
+def _gh_read_text(path: str):
+    token = os.getenv("GITHUB_TOKEN")
+    if not token:
+        return None
+    url = f"https://api.github.com/repos/{_repo_full()}/contents/{path}"
+    try:
+        r = requests.get(
+            url,
+            headers={"Authorization": f"token {token}", "Accept": "application/vnd.github+json"},
+            timeout=20,
+        )
+    except Exception:
+        return None
+    if r.status_code != 200:
+        return None
+    data = r.json() or {}
+    if "content" not in data:
+        return None
+    try:
+        return base64.b64decode(data["content"]).decode().strip()
+    except Exception:
+        return None
+
+
+def _load_pending_ids():
+    """Read state/pending_draft_ids.txt -> sorted unique list[int] (asc)."""
+    txt = _gh_read_text(STATE_PENDING_PATH)
+    if not txt:
+        return []
+    out = []
+    for line in txt.replace(",", "\n").splitlines():
+        line = line.strip()
+        if line.isdigit():
+            out.append(int(line))
+    return sorted(set(out))
+
+
+def _doc_status_from_sale_xml(sale_xml: str):
+    try:
+        root = ET.fromstring(sale_xml)
+    except Exception:
+        return None
+    el = root.find("./Header/Document/DocumentStatus")
+    if el is None or not el.text:
+        return None
+    return el.text.strip().lower()
 
 
 def _github_headers():
@@ -203,6 +267,38 @@ def run(ctx: dict):
             ctx["in_progress_id"] = int(chosen_id)
 
         return ctx
+
+    # ---- PENDING DRAFT RE-CHECK (highest priority in normal mode) ----
+    # Drafts that were seen earlier (and skipped past by the forward cursor) live in
+    # state/pending_draft_ids.txt. Re-check them oldest-first: as soon as one is no
+    # longer a draft, process it now so it links/dedups correctly. Terminal ones
+    # (voided/deleted) are dropped. This never blocks the forward cursor.
+    pending_ids = _load_pending_ids()
+    ctx["pending_list"] = pending_ids
+    pending_drops = []
+    if pending_ids:
+        for pid in pending_ids[:PENDING_SCAN_CAP]:
+            sc_p, sale_xml_p = _paytraq_sale_xml_by_id(int(pid))
+            if sc_p != 200:
+                pending_drops.append(int(pid))  # gone/deleted from PayTraq
+                continue
+            st_p = _doc_status_from_sale_xml(sale_xml_p)
+            if st_p == "draft":
+                continue  # still not ready; leave it pending
+            if st_p in _TERMINAL_STATUSES:
+                pending_drops.append(int(pid))  # will never become a real order
+                continue
+            # READY: booked (or any non-draft, non-terminal) → process this one now.
+            ctx["pending_drops"] = pending_drops
+            ctx["has_next_document"] = True
+            ctx["next_document_id"] = int(pid)
+            ctx["picked_by"] = "pending_draft_ready"
+            ctx["paytraq_full_xml"] = sale_xml_p
+            if not skip_state_update:
+                ctx["in_progress_id"] = int(pid)
+            return ctx
+    ctx["pending_drops"] = pending_drops
+    # ---- end pending re-check → fall through to forward scan ----
 
     # Normal mode: pick OLDEST doc newer than last_processed_id
     last_processed_id = ctx.get("last_processed_id")
