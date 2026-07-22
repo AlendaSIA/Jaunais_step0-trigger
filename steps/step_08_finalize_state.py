@@ -7,6 +7,7 @@ DEFAULT_REPO = "Jaunais_step0-trigger"
 
 STATE_LAST_PATH = "state/last_processed_id.txt"
 STATE_INPROGRESS_PATH = "state/in_progress_id.txt"
+STATE_PENDING_PATH = "state/pending_draft_ids.txt"
 
 
 def _repo_full() -> str:
@@ -103,10 +104,66 @@ def run(ctx: dict):
         return ctx
 
     ack = _worker_all_steps_ok(ctx)
-    doc_id = ctx.get("in_progress_id") or ctx.get("next_document_id")
-
     ctx["github_finalize_ack"] = ack
 
+    picked_by = ctx.get("picked_by")
+    is_pending_pick = (picked_by == "pending_draft_ready")
+    # A forward-scan doc that was a draft and got skipped by the worker → defer it.
+    is_forward_draft = bool(ctx.get("worker_skipped_draft")) and picked_by == "normal_after_last_processed"
+
+    # ---- pending list maintenance ----
+    orig_pending = sorted({int(x) for x in (ctx.get("pending_list") or [])})
+    pending = set(orig_pending)
+    pending -= {int(x) for x in (ctx.get("pending_drops") or [])}  # voided/gone
+
+    fwd_id = ctx.get("next_document_id")
+    if is_forward_draft and fwd_id:
+        pending.add(int(fwd_id))  # remember the deferred draft
+    if is_pending_pick and ack and fwd_id:
+        pending.discard(int(fwd_id))  # processed successfully → stop tracking
+
+    new_pending = sorted(pending)
+    if new_pending != orig_pending:
+        body = ("\n".join(str(i) for i in new_pending) + "\n") if new_pending else ""
+        _, st_pend, _ = _github_put_text(
+            token,
+            STATE_PENDING_PATH,
+            body,
+            message=f"state: pending_draft_ids -> {new_pending}",
+        )
+        ctx["github_finalize_pending_status"] = st_pend
+
+    # ---- cursor rules ----
+    # Forward draft: advance the cursor PAST it (never block the queue). The doc is now
+    # tracked in pending and will be processed once it books.
+    if is_forward_draft and fwd_id:
+        _, st_last, _ = _github_put_text(
+            token,
+            STATE_LAST_PATH,
+            str(int(fwd_id)),
+            message=f"state: set last_processed_id={int(fwd_id)} (draft deferred)",
+        )
+        ctx["github_finalize_last_status"] = st_last
+        _, st_clear, _ = _github_put_text(
+            token, STATE_INPROGRESS_PATH, "0", message="state: clear in_progress_id"
+        )
+        ctx["github_finalize_clear_status"] = st_clear
+        return ctx
+
+    # Pending doc: NEVER touch the forward cursor (its id is already behind it).
+    if is_pending_pick:
+        if ack:
+            _, st_clear, _ = _github_put_text(
+                token, STATE_INPROGRESS_PATH, "0",
+                message="state: clear in_progress_id (pending processed)",
+            )
+            ctx["github_finalize_clear_status"] = st_clear
+        else:
+            ctx["github_finalize_clear_status"] = "kept(pending_not_acked)"
+        return ctx
+
+    # Normal booked forward doc: existing behavior (advance cursor on ack).
+    doc_id = ctx.get("in_progress_id") or ctx.get("next_document_id")
     if not ack or not doc_id:
         ctx["github_finalize_clear_status"] = "skipped(no_ack_or_no_doc)"
         return ctx
