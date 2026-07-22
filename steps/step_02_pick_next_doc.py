@@ -216,11 +216,14 @@ def run(ctx: dict):
         # Keep debug fields consistent
         ctx["sales_count"] = len(ids)
 
-    if not ids:
-        return _set_idle(ctx, picked_by="no_sales")
+    # NOTE: do NOT early-return on empty `ids` here. The pending-draft re-check below must
+    # run even when the forward scan has nothing new, otherwise a draft that books during a
+    # quiet period would not be revisited until fresh forward traffic appears.
 
     # Override by document_ref or date requires fetching per-doc XML (HEAVY; use only when needed)
     if override_ref or override_date or date_from or date_to:
+        if not ids:
+            return _set_idle(ctx, picked_by="override_ref_or_date")
         want_ref = override_ref.strip() if isinstance(override_ref, str) else None
 
         # normalize date filters
@@ -299,6 +302,10 @@ def run(ctx: dict):
             return ctx
     ctx["pending_drops"] = pending_drops
     # ---- end pending re-check → fall through to forward scan ----
+
+    # Forward scan has nothing new (cursor already caught up). Pending was handled above.
+    if not ids:
+        return _set_idle(ctx, picked_by="no_sales")
 
     # Normal mode: pick OLDEST doc newer than last_processed_id
     last_processed_id = ctx.get("last_processed_id")
