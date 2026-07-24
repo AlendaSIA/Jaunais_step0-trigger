@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-33465, Payment Gateway (SEB), Lūdzu, rēķinā norādīt personas kodu- 04069512513"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "6670"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Itella"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "432612"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-07-24T11:52:52Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-24T12:12:30Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -251,12 +259,28 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "dispoFINE sterilas injekciju adatas, 100 gb. iep. 30G (0,3 × 13 mm), bez ftalātiem, IN-03X13"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1384034"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/ItemDescription",
-      "value": "dispoFINE sterilas injekciju adatas, 100 gb. iep. 30G (0,3 × 13 mm), bez ftalātiem, IN-03X13"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "RNBZS10003"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zaļā krāsā, S, 100 gb"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
+      "value": "57426"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
+      "value": "582511001N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zaļā krāsā, S, 100 gb [RNBZS10003]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -264,7 +288,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Price",
-      "value": "1.39"
+      "value": "4.99"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineDiscount",
@@ -272,15 +296,15 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineTotal",
-      "value": "1.39"
+      "value": "4.99"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
-      "value": "67684"
+      "value": "88904"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
-      "value": "gab."
+      "value": "Iep."
     },
     {
       "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
@@ -304,27 +328,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
-      "value": "1384034"
+      "value": "1360480"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
-      "value": "RNBZS10003"
+      "value": "IN-06X30"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zaļā krāsā, S, 100 gb"
+      "value": "dispoFINE Injekciju adata 23G (0,6 × 30 mm), bez ftalātiem"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
-      "value": "57426"
+      "value": "54822"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
-      "value": "582511001N"
+      "value": "282509071E"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zaļā krāsā, S, 100 gb [RNBZS10003]"
+      "value": "dispoFINE Injekciju adata 23G (0,6 × 30 mm), bez ftalātiem [IN-06X30]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
@@ -332,7 +356,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Price",
-      "value": "4.99"
+      "value": "1.39"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineDiscount",
@@ -340,7 +364,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineTotal",
-      "value": "4.99"
+      "value": "1.39"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
@@ -372,27 +396,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
-      "value": "1360480"
+      "value": "1340976"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
-      "value": "IN-06X30"
+      "value": "IN-03X13"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
-      "value": "dispoFINE Injekciju adata 23G (0,6 × 30 mm), bez ftalātiem"
+      "value": "dispoFINE Injekciju adata 30G, 0,3 x 13 mm, sterila"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
-      "value": "54822"
+      "value": "54816"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
-      "value": "282509071E"
+      "value": "282509028E"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
-      "value": "dispoFINE Injekciju adata 23G (0,6 × 30 mm), bez ftalātiem [IN-06X30]"
+      "value": "dispoFINE Injekciju adata 30G, 0,3 x 13 mm, sterila [ IN-03X13]"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Qty",
@@ -424,6 +448,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -501,6 +557,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33465"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16897539"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0726/00579"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "19978040"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260724/46"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-07-24"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "19978041"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260724/47"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-07-24"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -572,68 +684,6 @@
       "qty": "1.00",
       "price": "19.99",
       "line_total": "19.99",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "dispoFINE sterilas injekciju adatas, 100 gb. iep. 30G (0,3 × 13 mm), bez ftalātiem, IN-03X13"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "dispoFINE sterilas injekciju adatas, 100 gb. iep. 30G (0,3 × 13 mm), bez ftalātiem, IN-03X13"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "1.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "1.39"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "1.39"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "1.00",
-      "price": "1.39",
-      "line_total": "1.39",
       "tax": "PVN 21%"
     },
     {
@@ -787,6 +837,84 @@
       ],
       "item_code": "IN-06X30",
       "item_name": "dispoFINE Injekciju adata 23G (0,6 × 30 mm), bez ftalātiem",
+      "qty": "1.00",
+      "price": "1.39",
+      "line_total": "1.39",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1340976"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "IN-03X13"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "dispoFINE Injekciju adata 30G, 0,3 x 13 mm, sterila"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "54816"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "282509028E"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "dispoFINE Injekciju adata 30G, 0,3 x 13 mm, sterila [ IN-03X13]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.39"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.39"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "IN-03X13",
+      "item_name": "dispoFINE Injekciju adata 30G, 0,3 x 13 mm, sterila",
       "qty": "1.00",
       "price": "1.39",
       "line_total": "1.39",
