@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-07-23"
+      "value": "2026-07-24"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "425122"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-07-24T09:23:18Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-24T09:23:46Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -259,12 +267,20 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "FFP2 respirators balts, individuāli iepakots, N10, 10 gb. iepakojums, hyffp2w"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1377423"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/ItemDescription",
-      "value": "FFP2 respirators balts, individuāli iepakots, N10, 10 gb. iepakojums, hyffp2w"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "65-166-MD"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Dezinfekcijas līdzeklis CHEMI-PHARM -STERISEPT PLUS 1000ML, 65-166-MD"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Dezinfekcijas līdzeklis CHEMI-PHARM -STERISEPT PLUS 1000ML, 65-166-MD [65-166-MD]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -272,7 +288,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Price",
-      "value": "1.90"
+      "value": "24.96"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineDiscount",
@@ -280,7 +296,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineTotal",
-      "value": "1.90"
+      "value": "24.96"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
@@ -312,19 +328,19 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
-      "value": "1377423"
+      "value": "1003425"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
-      "value": "65-166-MD"
+      "value": "hyffp2w"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
-      "value": "Dezinfekcijas līdzeklis CHEMI-PHARM -STERISEPT PLUS 1000ML, 65-166-MD"
+      "value": "Respirators FFP2 balts  N10"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Dezinfekcijas līdzeklis CHEMI-PHARM -STERISEPT PLUS 1000ML, 65-166-MD [65-166-MD]"
+      "value": "Respirators FFP2 balts  N10 [ hyffp2w]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
@@ -332,7 +348,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Price",
-      "value": "24.96"
+      "value": "1.90"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineDiscount",
@@ -340,7 +356,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineTotal",
-      "value": "24.96"
+      "value": "1.90"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
@@ -356,6 +372,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -433,6 +481,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33422"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16895863"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0726/00572"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "19976178"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260724/32"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-07-24"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "19976179"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260724/33"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-07-24"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -529,68 +633,6 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "FFP2 respirators balts, individuāli iepakots, N10, 10 gb. iepakojums, hyffp2w"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "FFP2 respirators balts, individuāli iepakots, N10, 10 gb. iepakojums, hyffp2w"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "1.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "1.90"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "1.90"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "1.00",
-      "price": "1.90",
-      "line_total": "1.90",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
           "field": "LineItem/Item/ItemID",
           "value": "1377423"
         },
@@ -644,6 +686,76 @@
       "qty": "1.00",
       "price": "24.96",
       "line_total": "24.96",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1003425"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "hyffp2w"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Respirators FFP2 balts  N10"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Respirators FFP2 balts  N10 [ hyffp2w]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.90"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.90"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "hyffp2w",
+      "item_name": "Respirators FFP2 balts  N10",
+      "qty": "1.00",
+      "price": "1.90",
+      "line_total": "1.90",
       "tax": "PVN 21%"
     }
   ],
