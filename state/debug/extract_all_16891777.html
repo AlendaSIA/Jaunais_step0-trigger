@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_16891777</title></head><body><h1>extract_all_16891777</h1><p><b>Sale fields:</b> 39 | <b>Line items:</b> 0</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_16891777</title></head><body><h1>extract_all_16891777</h1><p><b>Sale fields:</b> 80 | <b>Line items:</b> 1</p><pre>{
   "document_id": 16891777,
   "client_id": "617942",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "0.00"
+      "value": "20.00"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "0.00"
+      "value": "20.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -68,11 +68,15 @@
     },
     {
       "field": "Sale/Header/IncludeTax",
-      "value": "false"
+      "value": "true"
     },
     {
       "field": "Sale/Header/UseOverpayment",
       "value": "false"
+    },
+    {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-07-23"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -85,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Signature",
@@ -109,6 +109,10 @@
     {
       "field": "Sale/Header/PaymentMethod",
       "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
     },
     {
       "field": "Sale/Header/ShippingData/ShippingType",
@@ -147,19 +151,258 @@
       "value": "2026-07-23T13:31:50Z"
     },
     {
-      "field": "Sale/Totals/GrossAmount",
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-24T08:55:33Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "1252266"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "RNBDPXL5005"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/ItemLot/LotID",
+      "value": "48086"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/ItemLot/LotNumber",
+      "value": "582412048N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs  [RNBDPXL5005]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Price",
+      "value": "10.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineDiscount",
       "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/LineTotal",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "value": "88904"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "value": "Iep."
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
+      "value": "PVN"
+    },
+    {
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "16.53"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "3.47"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountID",
+      "value": "2673464"
+    },
+    {
+      "field": "Sale/Taxes/Tax/Account/AccountName",
+      "value": "5721 - Aprēķinātais PVN"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "20.00"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "0.00"
+      "value": "16.53"
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "0.00"
+      "value": "2.00"
     }
   ],
-  "line_items": [],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1252266"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBDPXL5005"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "48086"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "582412048N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs  [RNBDPXL5005]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "88904"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "Iep."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBDPXL5005",
+      "item_name": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, XL izmērs",
+      "qty": "2.00",
+      "price": "10.00",
+      "line_total": "20.00",
+      "tax": "PVN 21%"
+    }
+  ],
   "client_bundle": {
     "client_id": "617942",
     "client_endpoint": "/api/client/617942",
