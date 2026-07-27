@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "0.00"
+      "value": "40.38"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "0.00"
+      "value": "40.38"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -75,6 +75,10 @@
       "value": "false"
     },
     {
+      "field": "Sale/Header/DateDue",
+      "value": "2026-07-30"
+    },
+    {
       "field": "Sale/Header/DateApproved",
       "value": "2026-07-27"
     },
@@ -85,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Signature",
@@ -104,11 +104,15 @@
     },
     {
       "field": "Sale/Header/PayTerm/PayTermDays",
-      "value": "0"
+      "value": "3"
     },
     {
       "field": "Sale/Header/PaymentMethod",
       "value": "1"
+    },
+    {
+      "field": "Sale/Header/AccountID",
+      "value": "2673407"
     },
     {
       "field": "Sale/Header/ShippingData/ShippingType",
@@ -143,12 +147,232 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "6881"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Unisend"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "423189"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "LAKOTAZ OÜ"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Viimsi Rimi Hypermarket (Randvere tee 9), +372 5816 0440"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "EE"
+    },
+    {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-07-27T11:51:54Z"
     },
     {
-      "field": "Sale/Totals/GrossAmount",
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-07-27T11:54:17Z"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
+      "value": "830801"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
+      "value": "RNBCS10001"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/ItemLot/LotID",
+      "value": "56726"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/ItemLot/LotNumber",
+      "value": "672512221N"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Description",
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Qty",
+      "value": "3.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Price",
+      "value": "4.12"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
       "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
+      "value": "12.36"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
+      "value": "262045"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "uz ES piegādātās preces"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "830830"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "FM27058M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
+      "value": "31327"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
+      "value": "0000"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M [FM27058M]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "5.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "5.11"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "25.55"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262045"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "uz ES piegādātās preces"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "2.47"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262045"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "uz ES piegādātās preces"
+    },
+    {
+      "field": "Sale/Totals/GrossAmount",
+      "value": "40.38"
     },
     {
       "field": "Sale/Totals/NetAmount",
@@ -156,10 +380,167 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "0.00"
+      "value": "8.00"
     }
   ],
-  "line_items": [],
+  "line_items": [
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830801"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBCS10001"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "56726"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "672512221N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "3.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.12"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "12.36"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262045"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "uz ES piegādātās preces"
+        }
+      ],
+      "item_code": "RNBCS10001",
+      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,",
+      "qty": "3.00",
+      "price": "4.12",
+      "line_total": "12.36",
+      "tax": "uz ES piegādātās preces"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830830"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "FM27058M"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "31327"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "0000"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M [FM27058M]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "5.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "5.11"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "25.55"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262045"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "uz ES piegādātās preces"
+        }
+      ],
+      "item_code": "FM27058M",
+      "item_name": "Nitrila cimdi, nepūderēti «Safe light», melnā krāsā, 100 gb., M, 100 gb, FM27058M",
+      "qty": "5.00",
+      "price": "5.11",
+      "line_total": "25.55",
+      "tax": "uz ES piegādātās preces"
+    }
+  ],
   "client_bundle": {
     "client_id": "1244337",
     "client_endpoint": "/api/client/1244337",
