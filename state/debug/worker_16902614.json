@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16902614,
     "document_ref": "M-860325-33501",
-    "xml_len": 3430,
+    "xml_len": 3425,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -14,7 +14,7 @@
   ],
   "worker_response": {
     "status": "created",
-    "deal_id": 70997,
+    "deal_id": 71095,
     "title": "M-860325-33501",
     "_trace": [
       {
@@ -89,8 +89,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1276346,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "email",
+      "org_action": "skipped_no_changes",
       "org_id": 15795,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -139,47 +139,50 @@
           {
             "by": "email",
             "term": "rarina@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "26485929",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "marina rodina",
-            "found": false,
-            "candidate_count": 0
+            "found": true,
+            "candidate_count": 1
           }
         ]
       },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "Rarina@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26485929"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV"
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "Rarina@inbox.lv",
+            "old": "Rarina@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26485929",
+            "old": "26485929",
+            "reason": "same"
+          },
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV",
+            "old": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV",
+            "old": "Miltenāju iela 8, Rāmava, Kekavas novads, LV-2111, LV",
+            "reason": "same"
+          }
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
@@ -194,18 +197,35 @@
             },
             "email": {
               "term": "rarina@inbox.lv",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 15795,
+                  "name": "Marina Rodina"
+                }
+              ]
             },
             "phone": {
               "term": "26485929",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 15795,
+                  "name": "Marina Rodina"
+                }
+              ]
             },
             "name": {
               "term": "marina rodina",
-              "candidates": []
+              "candidates": [
+                {
+                  "id": 15795,
+                  "name": "Marina Rodina"
+                }
+              ]
             }
           },
-          "unique_ids": []
+          "unique_ids": [
+            15795
+          ]
         }
       }
     },
@@ -213,9 +233,9 @@
       "ok": true,
       "version": "v2026-03-10-step05-reuse-deal-person-01",
       "mode": "person_attach_v1_no_activity",
-      "deal_id": 70997,
+      "deal_id": 71095,
       "org_id": 15795,
-      "found_by": "created",
+      "found_by": "email",
       "person_id": 17793,
       "attached_to_deal": true,
       "activity_created": false,
@@ -225,16 +245,11 @@
           {
             "by": "email",
             "term": "rarina@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "26485929",
-            "found": false
+            "found": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person matched by email. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -256,7 +271,7 @@
       "collection": "mozello_deal_map",
       "doc_ref": "M-860325-33501",
       "payload": {
-        "pipedrive_deal_id": 70997,
+        "pipedrive_deal_id": 71095,
         "paytraq_document_id": 16902614,
         "pipedrive_person_id": 17793,
         "pipedrive_org_id": 15795
@@ -269,20 +284,20 @@
       "org_update": {
         "topic": "projects/jaunais-za-aizv04022026/topics/org-update-queue",
         "payload": {
-          "deal_id": 70997,
+          "deal_id": 71095,
           "document_id": 16902614,
           "client_id": 1276346
         },
-        "message_id": "20607924123842422"
+        "message_id": "20797929372078464"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
         "payload": {
-          "deal_id": 70997,
+          "deal_id": 71095,
           "document_id": 16902614,
           "doc_ref": "M-860325-33501"
         },
-        "message_id": "20768034717163211"
+        "message_id": "20797929372078592"
       }
     }
   }
