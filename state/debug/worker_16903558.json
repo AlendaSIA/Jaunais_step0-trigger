@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16903558,
     "document_ref": "ALE 2604203",
-    "xml_len": 4728,
+    "xml_len": 5774,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -87,9 +87,9 @@
     "step_03": {
       "ok": true,
       "added": 0,
-      "updated": 1,
+      "updated": 0,
       "deleted": 0,
-      "skipped": 1,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -226,7 +226,7 @@
           "document_id": 16903558,
           "client_id": 1275250
         },
-        "message_id": "20769831972031660"
+        "message_id": "20797350780330203"
       },
       "mozello_enrich": {
         "skipped": true,
