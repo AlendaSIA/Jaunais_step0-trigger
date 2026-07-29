@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "wait_payment"
+      "value": "paid"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -44,7 +44,7 @@
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "19.96"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -335,16 +335,48 @@
       "value": "PIEG/0726/00587"
     },
     {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-07-25"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "card"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "19.96"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "20005458"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260725/12"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "16903193"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "ALE 2604200"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "sale"
+    },
+    {
       "field": "Sale/Journals/Journal[0]/JournalID",
-      "value": "19987439"
+      "value": "20005458"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalRef",
-      "value": "20260727/13"
+      "value": "20260725/12"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalDate",
-      "value": "2026-07-27"
+      "value": "2026-07-25"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalStatus",
@@ -352,19 +384,19 @@
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
-      "value": "141182"
+      "value": "141193"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
-      "value": "Pārdošanas nodokļa rēķins"
+      "value": "Cits"
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalID",
-      "value": "19987440"
+      "value": "19987439"
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalRef",
-      "value": "20260727/14"
+      "value": "20260727/13"
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalDate",
@@ -376,10 +408,34 @@
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
-      "value": "141193"
+      "value": "141182"
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalID",
+      "value": "19987440"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalRef",
+      "value": "20260727/14"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalDate",
+      "value": "2026-07-27"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalType/JournalTypeName",
       "value": "Cits"
     }
   ],
