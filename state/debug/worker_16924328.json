@@ -15,7 +15,7 @@
   "worker_response": {
     "detail": {
       "step": "01_deal_upsert",
-      "error": "Pipedrive GET failed: HTTP 401 body={'success': False, 'error': 'unauthorized access', 'errorCode': 401, 'error_info': 'Please check developers.pipedrive.com'}"
+      "error": "Pipedrive GET failed: HTTP 429 body={'success': False, 'error': 'daily request budget exceeded', 'errorCode': 429, 'error_info': 'Please check developers.pipedrive.com'}"
     }
   }
 }
