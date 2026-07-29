@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -160,7 +160,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-07-29T11:58:40Z"
+      "value": "2026-07-29T12:08:44Z"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -437,7 +437,32 @@
     "shipping_addresses_endpoint": "/api/client/shippingAddresses/1262654",
     "shipping_addresses_status_code": 200,
     "shipping_addresses_auth_used": "query_normal",
-    "shipping_addresses_fields": [],
+    "shipping_addresses_fields": [
+      {
+        "field": "shipping_addresses/ShippingAddress/AddressID",
+        "value": "433290"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/ShipTo",
+        "value": "ZZ TEST Papildinatajs"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Address",
+        "value": "Bauskas iela 22, Rīga"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Zip",
+        "value": "LV-1004"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress/IsDefault",
+        "value": "false"
+      }
+    ],
     "banks_endpoint": "/api/client/banks/1262654",
     "banks_status_code": 200,
     "banks_auth_used": "query_normal",
