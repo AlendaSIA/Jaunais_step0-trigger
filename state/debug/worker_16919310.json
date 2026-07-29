@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 71079,
     "title": "M-860325-33558",
     "_trace": [
@@ -74,10 +74,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 1,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 1,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -89,8 +89,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 680668,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 1134,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -105,44 +105,24 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "45402020290",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "anzela.orlova@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 1134,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "45402020290"
-        },
-        "address": {
-          "key": "address",
-          "value": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "259f90917e748590024b17a61fa5014a685fc3e6",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -150,9 +130,24 @@
             "old": "anzela.orlova@inbox.lv",
             "reason": "same"
           },
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "45402020290",
+            "old": "45402020290",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV",
+            "old": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV",
+            "old": "Rīgas 137-1, Jēkabpils, Jēkabpils,, 5202, LV",
             "reason": "same"
           }
         }
@@ -161,7 +156,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -170,25 +165,26 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 71079,
       "org_id": 1134,
-      "found_by": "email",
-      "person_id": 1135,
+      "found_by": "deal_person_id",
+      "person_id": 17831,
       "attached_to_deal": true,
       "activity_created": false,
       "activity_id": null,
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "anzela.orlova@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 17831,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": "LV",
-      "person_country_updated": false,
+      "person_country_previous": null,
+      "person_country_updated": true,
       "person_country_checked": true
     },
     "step_97": {
@@ -208,7 +204,7 @@
       "payload": {
         "pipedrive_deal_id": 71079,
         "paytraq_document_id": 16919310,
-        "pipedrive_person_id": 1135,
+        "pipedrive_person_id": 17831,
         "pipedrive_org_id": 1134
       }
     },
@@ -223,7 +219,7 @@
           "document_id": 16919310,
           "client_id": 680668
         },
-        "message_id": "20793412415310482"
+        "message_id": "20796095268156200"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -232,7 +228,7 @@
           "document_id": 16919310,
           "doc_ref": "M-860325-33558"
         },
-        "message_id": "20795923338018847"
+        "message_id": "20794079343621774"
       }
     }
   }
