@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "wait_payment"
+      "value": "paid"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -44,7 +44,7 @@
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "24.69"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -353,6 +353,70 @@
     {
       "field": "Sale/MovementReference/DocumentLink/DocumentRef",
       "value": "PIEG/0726/00589"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/PaymentDate",
+      "value": "2026-07-22"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/PaymentAmount",
+      "value": "12.67"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/JournalID",
+      "value": "20001441"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/JournalRef",
+      "value": "20260722/85"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/DocumentLink/DocumentID",
+      "value": "16912726"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/DocumentLink/DocumentRef",
+      "value": "0726/00572"
+    },
+    {
+      "field": "Sale/Payments/Payment[0]/DocumentLink/DocumentType",
+      "value": "payment"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/PaymentDate",
+      "value": "2026-07-27"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/PaymentAmount",
+      "value": "12.02"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/JournalID",
+      "value": "20001279"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/JournalRef",
+      "value": "20260727/116"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/DocumentLink/DocumentID",
+      "value": "16912610"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/DocumentLink/DocumentRef",
+      "value": "0726/00548"
+    },
+    {
+      "field": "Sale/Payments/Payment[1]/DocumentLink/DocumentType",
+      "value": "payment"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalID",
