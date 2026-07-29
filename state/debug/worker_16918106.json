@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 71073,
     "title": "PAP-2026-0035",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 4,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 805349,
-      "found_by": "name",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 8574,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,64 +129,49 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "egita70@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "26178320",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "frizētava",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 8574,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "egita70@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26178320"
-        },
-        "address": {
-          "key": "address",
-          "value": "Ziemeļu iela 7, 4201, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Ziemeļu iela 7, 4201, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
+        "kept_keys": [],
+        "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
           "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
           "address",
           "dae3df0edeadce95ba223719cc18141795387de8"
         ],
-        "skipped_same_keys": [
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
-        ],
         "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "egita70@inbox.lv",
+            "old": "egita70@inbox.lv",
+            "reason": "same"
+          },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26178320",
+            "old": "26178320",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Ziemeļu iela 7, 4201, LV",
+            "old": "Ziemeļu iela 7, 4201, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Ziemeļu iela 7, 4201, LV",
+            "old": "Ziemeļu iela 7, 4201, LV",
             "reason": "same"
           }
         }
@@ -195,7 +180,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -204,7 +189,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 71073,
       "org_id": 8574,
-      "found_by": "org_existing",
+      "found_by": "deal_person_id",
       "person_id": 17746,
       "attached_to_deal": true,
       "activity_created": false,
@@ -212,18 +197,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "egita70@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "26178320",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 17746,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person attached from org (most recent). Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -257,7 +238,7 @@
           "document_id": 16918106,
           "client_id": 805349
         },
-        "message_id": "20792731796908906"
+        "message_id": "20797686124053148"
       },
       "mozello_enrich": {
         "skipped": true,
