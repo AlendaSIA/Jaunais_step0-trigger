@@ -99,9 +99,9 @@
     "step_03": {
       "ok": true,
       "added": 0,
-      "updated": 1,
+      "updated": 0,
       "deleted": 0,
-      "skipped": 3,
+      "skipped": 4,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -114,7 +114,7 @@
       "mode": "paytraq_direct_db_first",
       "client_id": 997728,
       "found_by": "deal_org_id",
-      "org_action": "updated",
+      "org_action": "skipped_no_changes",
       "org_id": 11848,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -137,25 +137,15 @@
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "address": {
-          "key": "address",
-          "value": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -166,6 +156,16 @@
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV",
+            "old": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV",
+            "old": "kalnciemiela, Sampeteris Pleskodale,, 1046, LV",
             "reason": "same"
           }
         }
@@ -201,8 +201,8 @@
       "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
-      "person_country_previous": null,
-      "person_country_updated": true,
+      "person_country_previous": "LV",
+      "person_country_updated": false,
       "person_country_checked": true
     },
     "step_97": {
@@ -232,7 +232,7 @@
           "document_id": 16919277,
           "client_id": 997728
         },
-        "message_id": "20796428569634237"
+        "message_id": "20797622612886387"
       },
       "mozello_enrich": {
         "skipped": true,
