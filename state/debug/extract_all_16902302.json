@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "in_process"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -565,6 +565,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "8.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "16907183"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2604230"
     }
   ],
   "line_items": [
