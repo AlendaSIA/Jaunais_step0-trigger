@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-07-29T08:50:02Z"
+      "value": "2026-07-29T08:55:17Z"
     },
     {
       "field": "Sale/CustomData/CustomField/FieldName",
@@ -191,63 +191,123 @@
       "value": "+371 29 150 109"
     },
     {
-      "field": "Sale/LineItems/LineItem/Account/AccountID",
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
       "value": "2673477"
     },
     {
-      "field": "Sale/LineItems/LineItem/Account/AccountCode",
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountCode",
       "value": "6110"
     },
     {
-      "field": "Sale/LineItems/LineItem/Account/AccountName",
+      "field": "Sale/LineItems/LineItem[0]/Account/AccountName",
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
       "value": "1374424"
     },
     {
-      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
       "value": "861175"
     },
     {
-      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
       "value": "Strong 155 ID 2,0, papīra dvieļi"
     },
     {
-      "field": "Sale/LineItems/LineItem/Description",
+      "field": "Sale/LineItems/LineItem[0]/Description",
       "value": "Strong 155 ID 2,0, papīra dvieļi [861175]"
     },
     {
-      "field": "Sale/LineItems/LineItem/Qty",
+      "field": "Sale/LineItems/LineItem[0]/Qty",
       "value": "120.00"
     },
     {
-      "field": "Sale/LineItems/LineItem/Price",
+      "field": "Sale/LineItems/LineItem[0]/Price",
       "value": "7.94"
     },
     {
-      "field": "Sale/LineItems/LineItem/LineDiscount",
+      "field": "Sale/LineItems/LineItem[0]/LineDiscount",
       "value": "0.00"
     },
     {
-      "field": "Sale/LineItems/LineItem/LineTotal",
+      "field": "Sale/LineItems/LineItem[0]/LineTotal",
       "value": "952.80"
     },
     {
-      "field": "Sale/LineItems/LineItem/Unit/UnitID",
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
       "value": "88904"
     },
     {
-      "field": "Sale/LineItems/LineItem/Unit/UnitName",
+      "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
       "value": "Iep."
     },
     {
-      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyID",
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
       "value": "262041"
     },
     {
-      "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "1374423"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "892990"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Lucart AutoCut towel dispenser 2,0"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Lucart AutoCut towel dispenser 2,0 [892990]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Qty",
+      "value": "20.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Price",
+      "value": "48.50"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineDiscount",
+      "value": "100.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/LineTotal",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -348,7 +408,39 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "120.00"
+      "value": "140.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16920389"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0726/00683"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalID",
+      "value": "20010604"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalRef",
+      "value": "20260729/27"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalDate",
+      "value": "2026-07-29"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
     }
   ],
   "line_items": [
@@ -420,6 +512,76 @@
       "qty": "120.00",
       "price": "7.94",
       "line_total": "952.80",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1374423"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "892990"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Lucart AutoCut towel dispenser 2,0"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Lucart AutoCut towel dispenser 2,0 [892990]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "48.50"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "100.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "892990",
+      "item_name": "Lucart AutoCut towel dispenser 2,0",
+      "qty": "20.00",
+      "price": "48.50",
+      "line_total": "0.00",
       "tax": "PVN 21%"
     }
   ],
