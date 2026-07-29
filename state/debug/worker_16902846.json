@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16902846,
     "document_ref": "M-860325-33503",
-    "xml_len": 3708,
+    "xml_len": 3852,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 71008,
     "title": "M-860325-33503",
     "_trace": [
@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -101,8 +101,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1276368,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 15800,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -117,108 +117,58 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "l.leimante@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "20372747",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "liga leimante",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 15800,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "l.leimante@inbox.lv",
+            "old": "l.leimante@inbox.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "l.leimante@inbox.lv",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "20372747",
+            "old": "20372747",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "20372747",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "liga leimante",
-            "found": false,
-            "candidate_count": 0
+          "address": {
+            "new": "Saldus, Saldus, LV 3862, LV",
+            "old": "Saldus, Saldus, LV 3862, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Saldus, Saldus, LV 3862, LV",
+            "old": "Saldus, Saldus, LV 3862, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "l.leimante@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "20372747"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Saldus, Saldus, LV 3862, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Saldus, Saldus, LV 3862, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": null,
-              "skipped": true,
-              "candidates": []
-            },
-            "email": {
-              "term": "l.leimante@inbox.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": "20372747",
-              "candidates": []
-            },
-            "name": {
-              "term": "liga leimante",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -227,7 +177,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 71008,
       "org_id": 15800,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 17799,
       "attached_to_deal": true,
       "activity_created": false,
@@ -235,18 +185,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "l.leimante@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "20372747",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 17799,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -285,7 +231,7 @@
           "document_id": 16902846,
           "client_id": 1276368
         },
-        "message_id": "20769594627321604"
+        "message_id": "20794540380182120"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -294,7 +240,7 @@
           "document_id": 16902846,
           "doc_ref": "M-860325-33503"
         },
-        "message_id": "20769582977753649"
+        "message_id": "20797777350276575"
       }
     }
   }
