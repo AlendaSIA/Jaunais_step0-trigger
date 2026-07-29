@@ -6,7 +6,6 @@ from steps import (
     step_02_pick_next_doc,
     step_03_fetch_full_document,
     step_04_extract_client_data,
-    step_05_pipedrive_ping,
     step_06_call_worker,
     step_08_finalize_state,
 )
@@ -19,7 +18,6 @@ STEPS: List[Tuple[str, StepFn]] = [
     ("02_pick_next_doc", step_02_pick_next_doc.run),
     ("03_fetch_full_document", step_03_fetch_full_document.run),
     ("04_extract_client_data", step_04_extract_client_data.run),
-    ("05_pipedrive_ping", step_05_pipedrive_ping.run),
     ("06_call_worker", step_06_call_worker.run),
     ("08_finalize_state", step_08_finalize_state.run),
 ]
