@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "wait_payment"
+      "value": "paid"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -44,7 +44,7 @@
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "22.87"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -369,6 +369,38 @@
     {
       "field": "Sale/MovementReference/DocumentLink/DocumentRef",
       "value": "PIEG/0726/00591"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-07-24"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "bank"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "22.87"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "19993226"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260724/69"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "16908323"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "0726/00538"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "payment"
     },
     {
       "field": "Sale/Journals/Journal[0]/JournalID",
