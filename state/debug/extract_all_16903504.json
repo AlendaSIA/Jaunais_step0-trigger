@@ -553,6 +553,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "40.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "16920712"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2604293"
     }
   ],
   "line_items": [
