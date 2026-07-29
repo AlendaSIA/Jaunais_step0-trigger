@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "in_process"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -369,6 +369,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "18.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "16906766"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2604224"
     }
   ],
   "line_items": [
@@ -525,7 +533,7 @@
       },
       {
         "field": "client/Name",
-        "value": "Pašnodarbinātais"
+        "value": "Nadezhda Tutova"
       },
       {
         "field": "client/Email",
@@ -585,7 +593,7 @@
       },
       {
         "field": "client/TimeStamps/Updated",
-        "value": "2026-07-26T17:42:07Z"
+        "value": "2026-07-27T11:03:54Z"
       }
     ],
     "contacts_endpoint": "/api/client/contacts/1276304",
