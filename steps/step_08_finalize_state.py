@@ -62,6 +62,57 @@ def _github_put_text(token: str, path: str, text: str, message: str):
     return r.json() if r.content else None, r.status_code, None
 
 
+def _read_last_processed(token: str):
+    """Fresh read of the current forward cursor (int), or None if unavailable."""
+    url = f"https://api.github.com/repos/{_repo_full()}/contents/{STATE_LAST_PATH}"
+    try:
+        r = requests.get(url, headers=_headers(token), timeout=20)
+        if r.status_code != 200:
+            return None
+        data = r.json() or {}
+        raw = base64.b64decode(data.get("content") or "").decode().strip()
+        return int(raw) if raw else None
+    except Exception:
+        return None
+
+
+def _advance_cursor(token: str, ctx: dict, new_id, note: str = ""):
+    """Monotonic forward cursor: NEVER move last_processed_id backwards.
+
+    Root-cause guard for the 'booking an old draft rolls the cursor back' bug:
+    under concurrent /run executions (scheduler + Mozello webhook, no lock) a
+    stale in_progress_id could be written as the cursor, dropping it to an old
+    draft's id and forcing step0 to re-process every later order one-by-one.
+    We only ever advance; any id <= the current cursor is ignored.
+    """
+    try:
+        new_id = int(new_id)
+    except Exception:
+        ctx["github_finalize_last_status"] = "skipped(bad_id)"
+        return
+
+    floor = 0
+    for cand in (_read_last_processed(token), ctx.get("github_state_last_processed_id")):
+        try:
+            if cand is not None and int(cand) > floor:
+                floor = int(cand)
+        except Exception:
+            pass
+
+    if new_id <= floor:
+        ctx["github_finalize_last_status"] = f"skipped(monotonic {new_id}<={floor})"
+        ctx["cursor_rollback_prevented"] = {"attempted": new_id, "floor": floor}
+        return
+
+    _, st_last, _ = _github_put_text(
+        token,
+        STATE_LAST_PATH,
+        str(new_id),
+        message=f"state: set last_processed_id={new_id}{note}",
+    )
+    ctx["github_finalize_last_status"] = st_last
+
+
 def _worker_all_steps_ok(ctx: dict) -> bool:
     try:
         code = int(ctx.get("worker_status_code") or 0)
@@ -135,15 +186,9 @@ def run(ctx: dict):
 
     # ---- cursor rules ----
     # Forward draft: advance the cursor PAST it (never block the queue). The doc is now
-    # tracked in pending and will be processed once it books.
+    # tracked in pending and will be processed once it books. (Monotonic: only forward.)
     if is_forward_draft and fwd_id:
-        _, st_last, _ = _github_put_text(
-            token,
-            STATE_LAST_PATH,
-            str(int(fwd_id)),
-            message=f"state: set last_processed_id={int(fwd_id)} (draft deferred)",
-        )
-        ctx["github_finalize_last_status"] = st_last
+        _advance_cursor(token, ctx, int(fwd_id), note=" (draft deferred)")
         _, st_clear, _ = _github_put_text(
             token, STATE_INPROGRESS_PATH, "0", message="state: clear in_progress_id"
         )
@@ -162,19 +207,15 @@ def run(ctx: dict):
             ctx["github_finalize_clear_status"] = "kept(pending_not_acked)"
         return ctx
 
-    # Normal booked forward doc: existing behavior (advance cursor on ack).
-    doc_id = ctx.get("in_progress_id") or ctx.get("next_document_id")
+    # Normal booked forward doc: advance cursor on ack. Prefer the freshly-picked
+    # forward doc id; only fall back to in_progress_id if next_document_id is missing
+    # (a stale in_progress_id must never become the cursor — that was the rollback bug).
+    doc_id = ctx.get("next_document_id") or ctx.get("in_progress_id")
     if not ack or not doc_id:
         ctx["github_finalize_clear_status"] = "skipped(no_ack_or_no_doc)"
         return ctx
 
-    _, st_last, _ = _github_put_text(
-        token,
-        STATE_LAST_PATH,
-        str(int(doc_id)),
-        message=f"state: set last_processed_id={int(doc_id)}",
-    )
-    ctx["github_finalize_last_status"] = st_last
+    _advance_cursor(token, ctx, int(doc_id), note="")
 
     _, st_clear, _ = _github_put_text(
         token,
