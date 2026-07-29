@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16902302,
     "document_ref": "M-860325-33499",
-    "xml_len": 6431,
+    "xml_len": 6575,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 70995,
     "title": "M-860325-33499",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 6,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 6,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,8 +113,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1276321,
-      "found_by": null,
-      "org_action": "created",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 15793,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -129,113 +129,64 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "14118611358",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "zanjux86@inbox.lv",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "phone",
-            "term": "22180445",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "name",
-            "term": "skaistumkopšanas salons divas dīvas",
-            "found": false,
-            "candidate_count": 0
+            "by": "deal_org_id",
+            "found": true,
+            "term": 15793,
+            "skipped_db_lookup": true
           }
         ]
       },
-      "pipedrive_search": {
-        "attempts": [
-          {
-            "by": "regnr",
-            "term": "14118611358",
-            "found": false,
-            "candidate_count": 0
+      "pipedrive_search": {},
+      "pipedrive_update_fields": {},
+      "note": null,
+      "update_filter_debug": {
+        "kept_keys": [],
+        "skipped_same_keys": [
+          "faac2c792221bf18216ef17eae1941feef9a17cc",
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "259f90917e748590024b17a61fa5014a685fc3e6",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
+        ],
+        "skipped_same": {
+          "faac2c792221bf18216ef17eae1941feef9a17cc": {
+            "new": "zanjux86@inbox.lv",
+            "old": "zanjux86@inbox.lv",
+            "reason": "same"
           },
-          {
-            "by": "email",
-            "term": "zanjux86@inbox.lv",
-            "found": false,
-            "candidate_count": 0
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "22180445",
+            "old": "22180445",
+            "reason": "same"
           },
-          {
-            "by": "phone",
-            "term": "22180445",
-            "found": false,
-            "candidate_count": 0
+          "259f90917e748590024b17a61fa5014a685fc3e6": {
+            "new": "14118611358",
+            "old": "14118611358",
+            "reason": "same"
           },
-          {
-            "by": "name",
-            "term": "skaistumkopšanas salons divas dīvas",
-            "found": false,
-            "candidate_count": 0
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
+            "new": "LV",
+            "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV",
+            "old": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV",
+            "old": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV",
+            "reason": "same"
           }
-        ]
-      },
-      "pipedrive_update_fields": {
-        "email": {
-          "key": "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "value": "zanjux86@inbox.lv"
-        },
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "22180445"
-        },
-        "regnr": {
-          "key": "259f90917e748590024b17a61fa5014a685fc3e6",
-          "value": "14118611358"
-        },
-        "country": {
-          "key": "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
-          "value": "LV"
-        },
-        "address": {
-          "key": "address",
-          "value": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Viestura 34-3, Rūjiena, Valmieras novads, Lv-4240, LV"
         }
       },
-      "note": null,
-      "update_filter_debug": null,
       "dup_check": {
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "no_potential_duplicates",
-        "debug": {
-          "by": {
-            "regnr": {
-              "term": "14118611358",
-              "candidates": []
-            },
-            "email": {
-              "term": "zanjux86@inbox.lv",
-              "candidates": []
-            },
-            "phone": {
-              "term": "22180445",
-              "candidates": []
-            },
-            "name": {
-              "term": "skaistumkopšanas salons divas dīvas",
-              "candidates": []
-            }
-          },
-          "unique_ids": []
-        }
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -244,7 +195,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 70995,
       "org_id": 15793,
-      "found_by": "created",
+      "found_by": "deal_person_id",
       "person_id": 17791,
       "attached_to_deal": true,
       "activity_created": false,
@@ -252,18 +203,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "zanjux86@inbox.lv",
-            "found": false
-          },
-          {
-            "by": "phone",
-            "term": "22180445",
-            "found": false
+            "by": "deal_person_id",
+            "found": true,
+            "term": 17791,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person created and attached. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -302,7 +249,7 @@
           "document_id": 16902302,
           "client_id": 1276321
         },
-        "message_id": "20763883069078870"
+        "message_id": "20794505845168089"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -311,7 +258,7 @@
           "document_id": 16902302,
           "doc_ref": "M-860325-33499"
         },
-        "message_id": "20764727805869787"
+        "message_id": "20796993170064767"
       }
     }
   }
