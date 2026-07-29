@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-07-29T09:27:29Z"
+      "value": "2026-07-29T09:34:23Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -196,31 +196,31 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
-      "value": "830793"
+      "value": "830801"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
-      "value": "RNBM10001"
+      "value": "RNBCS10001"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/ItemLot/LotID",
-      "value": "57413"
+      "value": "57900"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/ItemLot/LotNumber",
-      "value": "M02604006N"
+      "value": "582512011N"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Description",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Qty",
-      "value": "10.00"
+      "value": "5.00"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Price",
@@ -232,15 +232,15 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineTotal",
-      "value": "47.00"
+      "value": "23.50"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
-      "value": "88904"
+      "value": "67684"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Unit/UnitName",
-      "value": "Iep."
+      "value": "gab."
     },
     {
       "field": "Sale/LineItems/LineItem[0]/TaxKey/TaxKeyID",
@@ -264,27 +264,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
-      "value": "830801"
+      "value": "830802"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
-      "value": "RNBCS10001"
+      "value": "RNBCM10001"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
-      "value": "57900"
+      "value": "57908"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
-      "value": "582512011N"
+      "value": "M02604016N"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
+      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -332,31 +332,31 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
-      "value": "830801"
+      "value": "830798"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
-      "value": "RNBCS10001"
+      "value": "RNBRM10003"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
-      "value": "57900"
+      "value": "56730"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
-      "value": "582512011N"
+      "value": "762511115N"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
-      "value": "20.00"
+      "value": "10.00"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Price",
@@ -368,7 +368,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineTotal",
-      "value": "94.00"
+      "value": "47.00"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
@@ -400,31 +400,31 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
-      "value": "830802"
+      "value": "830797"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
-      "value": "RNBCM10001"
+      "value": "RNBRS10003"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M"
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
-      "value": "57908"
+      "value": "57904"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
-      "value": "M02604016N"
+      "value": "762511223N"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
-      "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M [RNBCM10001]"
+      "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [RNBRS10003]"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Qty",
-      "value": "5.00"
+      "value": "20.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Price",
@@ -436,7 +436,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineTotal",
-      "value": "23.50"
+      "value": "94.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
@@ -561,87 +561,65 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "PAS/0726/00025"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16920995"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0726/00688"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20011325"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260729/36"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-07-29"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20011326"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260729/37"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-07-29"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Item/ItemID",
-          "value": "830793"
-        },
-        {
-          "field": "LineItem/Item/ItemCode",
-          "value": "RNBM10001"
-        },
-        {
-          "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
-        },
-        {
-          "field": "LineItem/ItemLot/LotID",
-          "value": "57413"
-        },
-        {
-          "field": "LineItem/ItemLot/LotNumber",
-          "value": "M02604006N"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "10.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "4.70"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "47.00"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "88904"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "Iep."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": "RNBM10001",
-      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m",
-      "qty": "10.00",
-      "price": "4.70",
-      "line_total": "47.00",
-      "tax": "PVN 21%"
-    },
     {
       "_flat": [
         {
@@ -718,84 +696,6 @@
       "qty": "5.00",
       "price": "4.70",
       "line_total": "23.50",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Item/ItemID",
-          "value": "830801"
-        },
-        {
-          "field": "LineItem/Item/ItemCode",
-          "value": "RNBCS10001"
-        },
-        {
-          "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,"
-        },
-        {
-          "field": "LineItem/ItemLot/LotID",
-          "value": "57900"
-        },
-        {
-          "field": "LineItem/ItemLot/LotNumber",
-          "value": "582512011N"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb, [RNBCS10001]"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "20.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "4.70"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "94.00"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": "RNBCS10001",
-      "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, S, 100 gb,",
-      "qty": "20.00",
-      "price": "4.70",
-      "line_total": "94.00",
       "tax": "PVN 21%"
     },
     {
@@ -874,6 +774,162 @@
       "qty": "5.00",
       "price": "4.70",
       "line_total": "23.50",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830798"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRM10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "56730"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "762511115N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M [RNBRM10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "10.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.70"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "47.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRM10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, M, 100 gb, ZARYS-RNBR03M",
+      "qty": "10.00",
+      "price": "4.70",
+      "line_total": "47.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "830797"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "RNBRS10003"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "57904"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "762511223N"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S [RNBRS10003]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "20.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.70"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "94.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "RNBRS10003",
+      "item_name": "Rozā nitrila cimdi EasyCare 100 gab. kastīte, S, 100 gb, ZARYS-RNBR03S",
+      "qty": "20.00",
+      "price": "4.70",
+      "line_total": "94.00",
       "tax": "PVN 21%"
     }
   ],
