@@ -2,7 +2,7 @@
   "payload_meta": {
     "doc_id": 16918543,
     "document_ref": "M-860325-33557",
-    "xml_len": 5576,
+    "xml_len": 5720,
     "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
   },
   "payload_sent_to_worker_keys": [
@@ -13,7 +13,7 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 71075,
     "title": "M-860325-33557",
     "_trace": [
@@ -98,10 +98,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 5,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 5,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -113,7 +113,7 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 1260204,
-      "found_by": "email",
+      "found_by": "deal_org_id",
       "org_action": "skipped_no_changes",
       "org_id": 10154,
       "attached_to_deal": true,
@@ -129,16 +129,10 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": "40203718643",
-            "found": false,
-            "candidate_count": 0
-          },
-          {
-            "by": "email",
-            "term": "ketijalangsteina@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 10154,
+            "skipped_db_lookup": true
           }
         ]
       },
@@ -198,7 +192,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -207,7 +201,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 71075,
       "org_id": 10154,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 11497,
       "attached_to_deal": true,
       "activity_created": false,
@@ -215,13 +209,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "ketijalangsteina@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 11497,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -260,7 +255,7 @@
           "document_id": 16918543,
           "client_id": 1260204
         },
-        "message_id": "20795088186356764"
+        "message_id": "20797717788872585"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -269,7 +264,7 @@
           "document_id": 16918543,
           "doc_ref": "M-860325-33557"
         },
-        "message_id": "20794924884194021"
+        "message_id": "20797521919865144"
       }
     }
   }
