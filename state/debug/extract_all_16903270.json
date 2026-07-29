@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "wait_payment"
+      "value": "paid"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -44,7 +44,7 @@
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "3.79"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -343,6 +343,38 @@
       "value": "PIEG/0726/00588"
     },
     {
+      "field": "Sale/Payments/Payment/PaymentDate",
+      "value": "2026-07-27"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentType",
+      "value": "card"
+    },
+    {
+      "field": "Sale/Payments/Payment/PaymentAmount",
+      "value": "3.79"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalID",
+      "value": "20005295"
+    },
+    {
+      "field": "Sale/Payments/Payment/JournalRef",
+      "value": "20260727/130"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentID",
+      "value": "16903270"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentRef",
+      "value": "ALE 2604201"
+    },
+    {
+      "field": "Sale/Payments/Payment/DocumentLink/DocumentType",
+      "value": "sale"
+    },
+    {
       "field": "Sale/Journals/Journal[0]/JournalID",
       "value": "19987508"
     },
@@ -388,6 +420,30 @@
     },
     {
       "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalID",
+      "value": "20005295"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalRef",
+      "value": "20260727/130"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalDate",
+      "value": "2026-07-27"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[2]/JournalType/JournalTypeName",
       "value": "Cits"
     }
   ],
