@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -156,7 +156,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-04T06:28:35Z"
+      "value": "2026-08-04T06:33:03Z"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -325,6 +325,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33712"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16952065"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00062"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20056016"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260804/8"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-04"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20056017"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260804/9"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-04"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -431,11 +487,11 @@
       },
       {
         "field": "client/LegalAddress/Address",
-        "value": "Grēcinieku iela 11, Rīga"
+        "value": "Ogres novads ,Lielvārde, Avotu 6-27"
       },
       {
         "field": "client/LegalAddress/Zip",
-        "value": "LV-1050"
+        "value": "1071"
       },
       {
         "field": "client/LegalAddress/Country",
@@ -471,7 +527,7 @@
       },
       {
         "field": "client/TimeStamps/Updated",
-        "value": "2026-08-04T05:38:07Z"
+        "value": "2026-08-04T06:30:55Z"
       }
     ],
     "contacts_endpoint": "/api/client/contacts/1279958",
