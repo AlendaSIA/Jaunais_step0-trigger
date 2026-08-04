@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-33716, Payment Gateway (SEB)"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "365694"
     },
@@ -180,7 +184,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-04T07:41:06Z"
+      "value": "2026-08-04T12:08:10Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -336,11 +340,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotID",
-      "value": "56729"
+      "value": "57904"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/ItemLot/LotNumber",
-      "value": "762511116N"
+      "value": "762511223N"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
@@ -404,11 +408,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
-      "value": "56726"
+      "value": "57900"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
-      "value": "672512221N"
+      "value": "582512011N"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
@@ -507,6 +511,38 @@
       "value": "PVN 21%"
     },
     {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
       "field": "Sale/ShippingCharge/Account/AccountID",
       "value": "2683816"
     },
@@ -573,6 +609,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "5.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "16957043"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2604456"
     }
   ],
   "line_items": [
@@ -752,11 +796,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "56729"
+          "value": "57904"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "762511116N"
+          "value": "762511223N"
         },
         {
           "field": "LineItem/Description",
@@ -830,11 +874,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "56726"
+          "value": "57900"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "672512221N"
+          "value": "582512011N"
         },
         {
           "field": "LineItem/Description",
