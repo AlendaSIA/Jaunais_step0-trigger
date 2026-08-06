@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-07"
+      "value": "2026-08-09"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -151,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "282886"
     },
@@ -173,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-06T07:12:02Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-06T07:12:49Z"
     },
     {
       "field": "Sale/CustomData/CustomField/FieldName",
@@ -255,20 +267,28 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "Lucart Z,V,C papīra dvieļu (salvešu) padevējs Balts, 892984"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "831104"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/ItemDescription",
-      "value": "Lucart Z,V,C papīra dvieļu (salvešu) padevējs Balts, 892984"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "864013"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Lucart STRONG Z FOLD, Z-locījuma papīra roku salvetes, 864013"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Lucart STRONG Z FOLD, Z-locījuma papīra roku salvetes, 864013 [864013]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
-      "value": "1.00"
+      "value": "3.00"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Price",
-      "value": "49.00"
+      "value": "3.39"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineDiscount",
@@ -276,7 +296,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineTotal",
-      "value": "49.00"
+      "value": "10.17"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
@@ -308,19 +328,19 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
-      "value": "831104"
+      "value": "957707"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
-      "value": "864013"
+      "value": "56926"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
-      "value": "Lucart STRONG Z FOLD, Z-locījuma papīra roku salvetes, 864013"
+      "value": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Lucart STRONG Z FOLD, Z-locījuma papīra roku salvetes, 864013 [864013]"
+      "value": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2 [56926]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
@@ -328,7 +348,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Price",
-      "value": "3.39"
+      "value": "6.59"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineDiscount",
@@ -336,7 +356,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineTotal",
-      "value": "10.17"
+      "value": "19.77"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
@@ -368,27 +388,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
-      "value": "957707"
+      "value": "831082"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
-      "value": "56926"
+      "value": "892984"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
-      "value": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2"
+      "value": "SALVEŠU TURĒTĀJS -PADEVĒJS PAPĪRA DVIEĻIEM LOKSNĒS LUCART"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
-      "value": "Nitrylex MAGENTA Nitrila cimdi, bez pūdera N100, S, 100 gb, 3605-2 [56926]"
+      "value": "SALVEŠU TURĒTĀJS -PADEVĒJS PAPĪRA DVIEĻIEM LOKSNĒS LUCART [892984]"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Qty",
-      "value": "3.00"
+      "value": "1.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Price",
-      "value": "6.59"
+      "value": "49.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineDiscount",
@@ -396,7 +416,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineTotal",
-      "value": "19.77"
+      "value": "49.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
@@ -521,6 +541,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "PAS/0826/00005"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16970430"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00139"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20080763"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260806/14"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-06"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20080764"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260806/15"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-06"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -592,68 +668,6 @@
       "qty": "1.00",
       "price": "8.99",
       "line_total": "8.99",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "Lucart Z,V,C papīra dvieļu (salvešu) padevējs Balts, 892984"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "Lucart Z,V,C papīra dvieļu (salvešu) padevējs Balts, 892984"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "1.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "49.00"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "49.00"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "1.00",
-      "price": "49.00",
-      "line_total": "49.00",
       "tax": "PVN 21%"
     },
     {
@@ -794,6 +808,76 @@
       "qty": "3.00",
       "price": "6.59",
       "line_total": "19.77",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831082"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "892984"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "SALVEŠU TURĒTĀJS -PADEVĒJS PAPĪRA DVIEĻIEM LOKSNĒS LUCART"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "SALVEŠU TURĒTĀJS -PADEVĒJS PAPĪRA DVIEĻIEM LOKSNĒS LUCART [892984]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "49.00"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "49.00"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "892984",
+      "item_name": "SALVEŠU TURĒTĀJS -PADEVĒJS PAPĪRA DVIEĻIEM LOKSNĒS LUCART",
+      "qty": "1.00",
+      "price": "49.00",
+      "line_total": "49.00",
       "tax": "PVN 21%"
     }
   ],
