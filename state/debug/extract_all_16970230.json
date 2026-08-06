@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-04"
+      "value": "2026-08-06"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "434223"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-06T06:57:43Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-06T06:59:14Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -431,12 +439,20 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[4]/Description",
-      "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis, Transporta kaste (6 ruļļi), tk-852226"
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
+      "value": "1172822"
     },
     {
-      "field": "Sale/LineItems/LineItem[4]/ItemDescription",
-      "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis, Transporta kaste (6 ruļļi), tk-852226"
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
+      "value": "S008325"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
+      "value": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/Description",
+      "value": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml.  [S008325]"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Qty",
@@ -444,7 +460,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Price",
-      "value": "28.79"
+      "value": "8.90"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineDiscount",
@@ -452,7 +468,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineTotal",
-      "value": "28.79"
+      "value": "8.90"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
@@ -484,27 +500,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Item/ItemID",
-      "value": "1172822"
+      "value": "847092"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Item/ItemCode",
-      "value": "S008325"
+      "value": "852226"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Item/ItemName",
-      "value": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml."
+      "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Description",
-      "value": "MIDOSAN Q gēls ādas dezinf. līdz 1000ml.  [S008325]"
+      "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis [852226]"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Qty",
-      "value": "1.00"
+      "value": "6.00"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Price",
-      "value": "8.90"
+      "value": "4.798"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/LineDiscount",
@@ -512,7 +528,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[5]/LineTotal",
-      "value": "8.90"
+      "value": "28.79"
     },
     {
       "field": "Sale/LineItems/LineItem[5]/Unit/UnitID",
@@ -528,6 +544,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem[5]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -572,7 +644,7 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "29.00"
+      "value": "34.00"
     },
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentID",
@@ -581,6 +653,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33747"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "16970252"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00138"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20080509"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260806/12"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-06"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20080510"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260806/13"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-06"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -879,68 +1007,6 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis, Transporta kaste (6 ruļļi), tk-852226"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis, Transporta kaste (6 ruļļi), tk-852226"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "1.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "28.79"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "28.79"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "1.00",
-      "price": "28.79",
-      "line_total": "28.79",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
           "field": "LineItem/Item/ItemID",
           "value": "1172822"
         },
@@ -994,6 +1060,76 @@
       "qty": "1.00",
       "price": "8.90",
       "line_total": "8.90",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "847092"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "852226"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "ECONATURAL 135 JOINT, papīra ruļļu dvielis [852226]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "6.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "4.798"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "28.79"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "852226",
+      "item_name": "ECONATURAL 135 JOINT, papīra ruļļu dvielis",
+      "qty": "6.00",
+      "price": "4.798",
+      "line_total": "28.79",
       "tax": "PVN 21%"
     }
   ],
