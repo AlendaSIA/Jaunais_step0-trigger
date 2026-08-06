@@ -13,9 +13,9 @@
     "paytraq_full_xml"
   ],
   "worker_response": {
-    "status": "created",
+    "status": "updated",
     "deal_id": 71394,
-    "title": "M-860325-33786",
+    "title": "M-860325-33786 _ M-860325-33786",
     "_trace": [
       {
         "step": "01_deal_upsert",
@@ -86,10 +86,10 @@
     ],
     "step_03": {
       "ok": true,
-      "added": 2,
+      "added": 0,
       "updated": 0,
       "deleted": 0,
-      "skipped": 0,
+      "skipped": 2,
       "missing_code_count": 0,
       "delete_allowed": true
     },
@@ -101,8 +101,8 @@
       "version": "v2026-03-12-step04-db-first-01",
       "mode": "paytraq_direct_db_first",
       "client_id": 621804,
-      "found_by": "email",
-      "org_action": "updated",
+      "found_by": "deal_org_id",
+      "org_action": "skipped_no_changes",
       "org_id": 2465,
       "attached_to_deal": true,
       "paytraq_fields": {
@@ -117,43 +117,24 @@
       "db_search": {
         "attempts": [
           {
-            "by": "regnr",
-            "term": null,
-            "skipped": true
-          },
-          {
-            "by": "email",
-            "term": "laura236@inbox.lv",
+            "by": "deal_org_id",
             "found": true,
-            "candidate_count": 1
+            "term": 2465,
+            "skipped_db_lookup": true
           }
         ]
       },
       "pipedrive_search": {},
-      "pipedrive_update_fields": {
-        "phone": {
-          "key": "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "value": "26479220"
-        },
-        "address": {
-          "key": "address",
-          "value": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV"
-        },
-        "shipping_address": {
-          "key": "dae3df0edeadce95ba223719cc18141795387de8",
-          "value": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV"
-        }
-      },
+      "pipedrive_update_fields": {},
       "note": null,
       "update_filter_debug": {
-        "kept_keys": [
-          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
-          "address",
-          "dae3df0edeadce95ba223719cc18141795387de8"
-        ],
+        "kept_keys": [],
         "skipped_same_keys": [
           "faac2c792221bf18216ef17eae1941feef9a17cc",
-          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d"
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7",
+          "0905a8eedcb78f85063132a4aa37b76c0fc7da1d",
+          "address",
+          "dae3df0edeadce95ba223719cc18141795387de8"
         ],
         "skipped_same": {
           "faac2c792221bf18216ef17eae1941feef9a17cc": {
@@ -161,9 +142,24 @@
             "old": "laura236@inbox.lv",
             "reason": "same"
           },
+          "4b4db855bb2ac128d585e2d84c554eb099e588f7": {
+            "new": "26479220",
+            "old": "26479220",
+            "reason": "same"
+          },
           "0905a8eedcb78f85063132a4aa37b76c0fc7da1d": {
             "new": "LV",
             "old": "LV",
+            "reason": "same"
+          },
+          "address": {
+            "new": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV",
+            "old": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV",
+            "reason": "same"
+          },
+          "dae3df0edeadce95ba223719cc18141795387de8": {
+            "new": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV",
+            "old": "Liepājas iela, Priekule, Dienvidkurzemes, 3434, LV",
             "reason": "same"
           }
         }
@@ -172,7 +168,7 @@
         "potential_duplicates": false,
         "activity_created": false,
         "activity_id": null,
-        "skipped_reason": "db_match_no_pipedrive_dup_scan"
+        "skipped_reason": "skipped_updated_deal_existing_org"
       }
     },
     "step_05": {
@@ -181,7 +177,7 @@
       "mode": "person_attach_v1_no_activity",
       "deal_id": 71394,
       "org_id": 2465,
-      "found_by": "email",
+      "found_by": "deal_person_id",
       "person_id": 2464,
       "attached_to_deal": true,
       "activity_created": false,
@@ -189,13 +185,14 @@
       "pipedrive_search": {
         "attempts": [
           {
-            "by": "email",
-            "term": "laura236@inbox.lv",
-            "found": true
+            "by": "deal_person_id",
+            "found": true,
+            "term": 2464,
+            "skipped_research": true
           }
         ]
       },
-      "note": "Person matched by email. Activity disabled.",
+      "note": "Person reused from existing deal. Activity disabled.",
       "person_country_field_key": "a1a8f673391eacef699614e5fd4c74a5e4c014de",
       "person_country_value": "LV",
       "person_country_previous": "LV",
@@ -203,13 +200,8 @@
       "person_country_checked": true
     },
     "step_97": {
-      "ok": true,
-      "invoice_no": "M-860325-33786",
-      "invoice_rows": 1,
-      "line_rows": 2,
-      "invoice_errors": [],
-      "line_errors": [],
-      "dataset": "paytraq_sync"
+      "ok": false,
+      "error": "400 GET https://bigquery.googleapis.com/bigquery/v2/projects/jaunais-za-aizv04022026/queries/eda5c7e7-87ed-48a5-b20d-4c107993b87f?maxResults=0&location=EU&prettyPrint=false: UPDATE or DELETE statement over table paytraq_sync.invoices would affect rows in the streaming buffer, which is not supported\n\nLocation: EU\nJob ID: eda5c7e7-87ed-48a5-b20d-4c107993b87f\n"
     },
     "step_98": {
       "ok": true,
@@ -234,7 +226,7 @@
           "document_id": 16976793,
           "client_id": 621804
         },
-        "message_id": "20174861190780738"
+        "message_id": "20918608509077308"
       },
       "mozello_enrich": {
         "topic": "projects/jaunais-za-aizv04022026/topics/mozello-enrich-queue",
@@ -243,7 +235,7 @@
           "document_id": 16976793,
           "doc_ref": "M-860325-33786"
         },
-        "message_id": "20917948829431008"
+        "message_id": "20918918301189770"
       }
     }
   }
