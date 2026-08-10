@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -184,7 +184,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-10T09:30:12Z"
+      "value": "2026-08-10T09:49:01Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -473,6 +473,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33843"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17000235"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00217"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20113436"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260810/56"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20113437"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260810/57"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
