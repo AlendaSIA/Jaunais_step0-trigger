@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "75.90"
+      "value": "106.40"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "75.90"
+      "value": "106.40"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -179,6 +179,10 @@
       "value": "2026-08-11T09:57:45Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-11T10:02:14Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
       "value": "2673477"
     },
@@ -307,6 +311,66 @@
       "value": "PVN 21%"
     },
     {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "831068"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "65-513"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 5L, 65-513"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 5L, 65-513 [65-513]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Qty",
+      "value": "1.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Price",
+      "value": "30.50"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/LineTotal",
+      "value": "30.50"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
       "field": "Sale/Adjustments/Adjustment/Account/AccountID",
       "value": "2673481"
     },
@@ -376,15 +440,15 @@
     },
     {
       "field": "Sale/Taxes/Tax/GrossAmount",
-      "value": "75.90"
+      "value": "106.40"
     },
     {
       "field": "Sale/Taxes/Tax/NetAmount",
-      "value": "62.73"
+      "value": "87.93"
     },
     {
       "field": "Sale/Taxes/Tax/TaxAmount",
-      "value": "13.17"
+      "value": "18.47"
     },
     {
       "field": "Sale/Taxes/Tax/Account/AccountID",
@@ -396,15 +460,15 @@
     },
     {
       "field": "Sale/Totals/GrossAmount",
-      "value": "75.90"
+      "value": "106.40"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "62.73"
+      "value": "87.93"
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "11.00"
+      "value": "12.00"
     },
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentID",
@@ -413,6 +477,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "PAS/0826/00020"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17016185"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00269"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20135494"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260811/68"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20135495"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260811/69"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -562,6 +682,76 @@
       "qty": "1.00",
       "price": "36.00",
       "line_total": "36.00",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831068"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-513"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 5L, 65-513"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 5L, 65-513 [65-513]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "30.50"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "30.50"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-513",
+      "item_name": "Virsmu dezinfekcijas līdzeklis- BACTICID 5L, 65-513",
+      "qty": "1.00",
+      "price": "30.50",
+      "line_total": "30.50",
       "tax": "PVN 21%"
     }
   ],
