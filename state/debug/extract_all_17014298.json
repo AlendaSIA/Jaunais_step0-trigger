@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-10"
+      "value": "2026-08-11"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -91,12 +91,8 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
-      "value": "Kohaletoimetamine: Unisend pakiautomaat Saku Konsum (Pargi 2, Saku). 0% KM - uhendusesisene kaubatarne, EE101454047."
+      "value": "."
     },
     {
       "field": "Sale/Header/Signature",
@@ -155,8 +151,40 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "6881"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Unisend"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "369075"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "Carolina OÜ, +3725015872"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Männituka tee 29-1, Saku, Harjumaa"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "75501"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "EE"
+    },
+    {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-11T08:37:38Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-11T08:39:09Z"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -184,11 +212,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotID",
-      "value": "52823"
+      "value": "57422"
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotNumber",
-      "value": "672508224N"
+      "value": "672512424N"
     },
     {
       "field": "Sale/LineItems/LineItem/Description",
@@ -227,6 +255,38 @@
       "value": "uz ES piegādātās preces"
     },
     {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262045"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "uz ES piegādātās preces"
+    },
+    {
       "field": "Sale/ShippingCharge/Account/AccountID",
       "value": "2683816"
     },
@@ -261,6 +321,62 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "1.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17014338"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00259"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20133481"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260811/47"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20133482"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260811/48"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -292,11 +408,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "52823"
+          "value": "57422"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "672508224N"
+          "value": "672512424N"
         },
         {
           "field": "LineItem/Description",
