@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-33965, Bank Transfer"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "435617"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-12T13:41:08Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-12T13:47:12Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -272,11 +280,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
-      "value": "55781"
+      "value": "57908"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
-      "value": "492509038N"
+      "value": "M02604016N"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Description",
@@ -284,7 +292,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
-      "value": "4.00"
+      "value": "3.00"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Price",
@@ -296,7 +304,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineTotal",
-      "value": "19.96"
+      "value": "14.97"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
@@ -408,11 +416,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
-      "value": "54835"
+      "value": "57917"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
-      "value": "582506077N"
+      "value": "582508022N"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
@@ -420,7 +428,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Qty",
-      "value": "2.00"
+      "value": "3.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Price",
@@ -432,7 +440,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineTotal",
-      "value": "9.98"
+      "value": "14.97"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
@@ -448,6 +456,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -501,6 +565,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33965"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17034283"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00334"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20157432"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260812/84"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20157433"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260812/85"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -610,11 +730,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "55781"
+          "value": "57908"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "492509038N"
+          "value": "M02604016N"
         },
         {
           "field": "LineItem/Description",
@@ -622,7 +742,7 @@
         },
         {
           "field": "LineItem/Qty",
-          "value": "4.00"
+          "value": "3.00"
         },
         {
           "field": "LineItem/Price",
@@ -634,7 +754,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "19.96"
+          "value": "14.97"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -655,9 +775,9 @@
       ],
       "item_code": "RNBCM10001",
       "item_name": "Nitrila cimdi melni, bez pūdera EasyCare Zarys, 100 gab iepakojums, M, 100 gb, ZARYS-RNBC03M",
-      "qty": "4.00",
+      "qty": "3.00",
       "price": "4.99",
-      "line_total": "19.96",
+      "line_total": "14.97",
       "tax": "PVN 21%"
     },
     {
@@ -766,11 +886,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "54835"
+          "value": "57917"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "582506077N"
+          "value": "582508022N"
         },
         {
           "field": "LineItem/Description",
@@ -778,7 +898,7 @@
         },
         {
           "field": "LineItem/Qty",
-          "value": "2.00"
+          "value": "3.00"
         },
         {
           "field": "LineItem/Price",
@@ -790,7 +910,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "9.98"
+          "value": "14.97"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -811,9 +931,9 @@
       ],
       "item_code": "RNBCM10003",
       "item_name": "Melni easyCARE nitrile flex Nitrila cimdi, N100, M izmērs",
-      "qty": "2.00",
+      "qty": "3.00",
       "price": "4.99",
-      "line_total": "9.98",
+      "line_total": "14.97",
       "tax": "PVN 21%"
     }
   ],
