@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-11"
+      "value": "2026-08-12"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "6881"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Unisend"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "435431"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-12T08:31:50Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-12T08:32:11Z"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -204,11 +212,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotID",
-      "value": "56729"
+      "value": "57904"
     },
     {
       "field": "Sale/LineItems/LineItem/ItemLot/LotNumber",
-      "value": "762511116N"
+      "value": "762511223N"
     },
     {
       "field": "Sale/LineItems/LineItem/Description",
@@ -244,6 +252,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "Igaunija OSS 24%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "407048"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "Igaunija OSS 24%"
     },
     {
@@ -321,6 +361,98 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-33938"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17028096"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00303"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20150078"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260812/20"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20150079"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260812/21"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
+    },
+    {
+      "field": "Sale/MessageLog/Message/Created",
+      "value": "2026-08-12T08:32:35Z"
+    },
+    {
+      "field": "Sale/MessageLog/Message/DeliveredBy",
+      "value": "email"
+    },
+    {
+      "field": "Sale/MessageLog/Message/From",
+      "value": "alenda.rekini@gmail.com"
+    },
+    {
+      "field": "Sale/MessageLog/Message/To",
+      "value": "kristjak78@hotmail.com"
+    },
+    {
+      "field": "Sale/MessageLog/Message/SenderName",
+      "value": "SIA \"ALENDA\""
+    },
+    {
+      "field": "Sale/MessageLog/Message/RecipientName",
+      "value": "Knails OÜ"
+    },
+    {
+      "field": "Sale/MessageLog/Message/Subject",
+      "value": "Rēķins Nr. ALE 2604658"
+    },
+    {
+      "field": "Sale/MessageLog/Message/EventType",
+      "value": "sales_invoice"
+    },
+    {
+      "field": "Sale/MessageLog/Message/EventStatus",
+      "value": "delivered"
     }
   ],
   "line_items": [
@@ -352,11 +484,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "56729"
+          "value": "57904"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "762511116N"
+          "value": "762511223N"
         },
         {
           "field": "LineItem/Description",
