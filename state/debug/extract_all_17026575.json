@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-12T07:31:56Z"
+      "value": "2026-08-12T07:33:04Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -412,11 +412,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotID",
-      "value": "55774"
+      "value": "58362"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/ItemLot/LotNumber",
-      "value": "582511101N"
+      "value": "582605011N"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
@@ -616,11 +616,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[6]/ItemLot/LotID",
-      "value": "56729"
+      "value": "58361"
     },
     {
       "field": "Sale/LineItems/LineItem[6]/ItemLot/LotNumber",
-      "value": "762511116N"
+      "value": "762512026N"
     },
     {
       "field": "Sale/LineItems/LineItem[6]/Description",
@@ -901,6 +901,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "Multum atlikums 08.2026"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17026636"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00298"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20148310"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260812/9"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20148311"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260812/10"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-12"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -1166,11 +1222,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "55774"
+          "value": "58362"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "582511101N"
+          "value": "582605011N"
         },
         {
           "field": "LineItem/Description",
@@ -1400,11 +1456,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "56729"
+          "value": "58361"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "762511116N"
+          "value": "762512026N"
         },
         {
           "field": "LineItem/Description",
