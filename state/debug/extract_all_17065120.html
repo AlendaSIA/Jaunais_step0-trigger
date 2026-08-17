@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17065120</title></head><body><h1>extract_all_17065120</h1><p><b>Sale fields:</b> 91 | <b>Line items:</b> 2</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17065120</title></head><body><h1>extract_all_17065120</h1><p><b>Sale fields:</b> 114 | <b>Line items:</b> 2</p><pre>{
   "document_id": 17065120,
   "client_id": "663626",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-14"
+      "value": "2026-08-17"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,28 +151,12 @@
       "value": "LV"
     },
     {
-      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
-      "value": "436035"
-    },
-    {
-      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
-      "value": "Elīna Saukuma, 22844514"
-    },
-    {
-      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
-      "value": "Gatves iela 5,, Jelgava"
-    },
-    {
-      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
-      "value": "3001"
-    },
-    {
-      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
-      "value": "LV"
-    },
-    {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-17T05:23:59Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-17T05:24:12Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -272,11 +252,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
-      "value": "56729"
+      "value": "57904"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
-      "value": "762511116N"
+      "value": "762511223N"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Description",
@@ -312,6 +292,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -365,6 +401,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34031"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17065122"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00398"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20198697"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260817/1"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20198698"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260817/2"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -474,11 +566,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "56729"
+          "value": "57904"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "762511116N"
+          "value": "762511223N"
         },
         {
           "field": "LineItem/Description",
