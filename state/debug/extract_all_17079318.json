@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -89,14 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
-      "field": "Sale/Header/Comment",
-      "value": "Mixpack OU order T-02476, part 2 of 2 (900 packs, black only). Mercator ProTect."
     },
     {
       "field": "Sale/Header/Signature",
@@ -192,7 +184,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-18T07:11:02Z"
+      "value": "2026-08-18T07:49:55Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -208,19 +200,19 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemID",
-      "value": "1374417"
+      "value": "947651"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemCode",
-      "value": "KNQ1107E"
+      "value": "3602-3"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Item/ItemName",
-      "value": "Nitrila cimdi ProTect, melni, M, 100gb/iep."
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Description",
-      "value": "Nitrila cimdi ProTect, melni, M, 100gb/iep. [KNQ1107E]"
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,  [3602-3]"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Qty",
@@ -268,19 +260,19 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
-      "value": "1374418"
+      "value": "947652"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
-      "value": "KNQ1109E"
+      "value": "3602-4"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
-      "value": "Nitrila cimdi ProTect, melni, L, 100gb/iep."
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, L, 100 gb,"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "Nitrila cimdi ProTect, melni, L, 100gb/iep. [KNQ1109E]"
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, L, 100 gb,  [3602-4]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -328,19 +320,19 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
-      "value": "1374419"
+      "value": "968886"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
-      "value": "KNQ1110E"
+      "value": "3602-5"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
-      "value": "Nitrila cimdi ProTect, melni, XL, 100gb/iep."
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, XL, 100 gb,"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Nitrila cimdi ProTect, melni, XL, 100gb/iep. [KNQ1110E]"
+      "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, XL, 100 gb,  [3602-5]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
@@ -375,6 +367,62 @@
       "value": "uz ES piegādātās preces"
     },
     {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
       "field": "Sale/Totals/GrossAmount",
       "value": "2430.00"
     },
@@ -385,6 +433,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "900.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "17079982"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2604820"
     }
   ],
   "line_items": [
@@ -404,19 +460,19 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "1374417"
+          "value": "947651"
         },
         {
           "field": "LineItem/Item/ItemCode",
-          "value": "KNQ1107E"
+          "value": "3602-3"
         },
         {
           "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi ProTect, melni, M, 100gb/iep."
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,"
         },
         {
           "field": "LineItem/Description",
-          "value": "Nitrila cimdi ProTect, melni, M, 100gb/iep. [KNQ1107E]"
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,  [3602-3]"
         },
         {
           "field": "LineItem/Qty",
@@ -451,8 +507,8 @@
           "value": "uz ES piegādātās preces"
         }
       ],
-      "item_code": "KNQ1107E",
-      "item_name": "Nitrila cimdi ProTect, melni, M, 100gb/iep.",
+      "item_code": "3602-3",
+      "item_name": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, M, 100 gb,",
       "qty": "320.00",
       "price": "2.70",
       "line_total": "864.00",
@@ -474,19 +530,19 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "1374418"
+          "value": "947652"
         },
         {
           "field": "LineItem/Item/ItemCode",
-          "value": "KNQ1109E"
+          "value": "3602-4"
         },
         {
           "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi ProTect, melni, L, 100gb/iep."
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, L, 100 gb,"
         },
         {
           "field": "LineItem/Description",
-          "value": "Nitrila cimdi ProTect, melni, L, 100gb/iep. [KNQ1109E]"
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, L, 100 gb,  [3602-4]"
         },
         {
           "field": "LineItem/Qty",
@@ -521,8 +577,8 @@
           "value": "uz ES piegādātās preces"
         }
       ],
-      "item_code": "KNQ1109E",
-      "item_name": "Nitrila cimdi ProTect, melni, L, 100gb/iep.",
+      "item_code": "3602-4",
+      "item_name": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, L, 100 gb,",
       "qty": "480.00",
       "price": "2.70",
       "line_total": "1296.00",
@@ -544,19 +600,19 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "1374419"
+          "value": "968886"
         },
         {
           "field": "LineItem/Item/ItemCode",
-          "value": "KNQ1110E"
+          "value": "3602-5"
         },
         {
           "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi ProTect, melni, XL, 100gb/iep."
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, XL, 100 gb,"
         },
         {
           "field": "LineItem/Description",
-          "value": "Nitrila cimdi ProTect, melni, XL, 100gb/iep. [KNQ1110E]"
+          "value": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, XL, 100 gb,  [3602-5]"
         },
         {
           "field": "LineItem/Qty",
@@ -591,8 +647,8 @@
           "value": "uz ES piegādātās preces"
         }
       ],
-      "item_code": "KNQ1110E",
-      "item_name": "Nitrila cimdi ProTect, melni, XL, 100gb/iep.",
+      "item_code": "3602-5",
+      "item_name": "Melni Nitrylex Black Nitrila cimdi, bez pūdera N100, XL, 100 gb,",
       "qty": "100.00",
       "price": "2.70",
       "line_total": "270.00",
