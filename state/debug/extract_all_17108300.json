@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-19"
+      "value": "2026-08-20"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "436749"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-20T13:12:58Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-20T13:15:16Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -763,20 +771,36 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[9]/Description",
-      "value": "BACTICID 1L + DRY Wipes N600 — virsmu dezinfekcijas komplekts, 65-152WIPE"
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemID",
+      "value": "1264464"
     },
     {
-      "field": "Sale/LineItems/LineItem[9]/ItemDescription",
-      "value": "BACTICID 1L + DRY Wipes N600 — virsmu dezinfekcijas komplekts, 65-152WIPE"
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemCode",
+      "value": "P1-IA-2"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Item/ItemName",
+      "value": "ZARYS Alcohol Prep Pad_sterile_A100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/ItemLot/LotID",
+      "value": "57403"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/ItemLot/LotNumber",
+      "value": "202511001R"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[9]/Description",
+      "value": "ZARYS Alcohol Prep Pad_sterile_A100 [P1-IA-2]"
     },
     {
       "field": "Sale/LineItems/LineItem[9]/Qty",
-      "value": "2.00"
+      "value": "1.00"
     },
     {
       "field": "Sale/LineItems/LineItem[9]/Price",
-      "value": "15.99"
+      "value": "1.85"
     },
     {
       "field": "Sale/LineItems/LineItem[9]/LineDiscount",
@@ -784,7 +808,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[9]/LineTotal",
-      "value": "31.98"
+      "value": "1.85"
     },
     {
       "field": "Sale/LineItems/LineItem[9]/Unit/UnitID",
@@ -816,35 +840,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Item/ItemID",
-      "value": "1264464"
+      "value": "1282150"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Item/ItemCode",
-      "value": "P1-IA-2"
+      "value": "005751"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Item/ItemName",
-      "value": "ZARYS Alcohol Prep Pad_sterile_A100"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[10]/ItemLot/LotID",
-      "value": "57403"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[10]/ItemLot/LotNumber",
-      "value": "202511001R"
+      "value": "Viroxan  ādas un virsmu dezinf. līdz 500ml."
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Description",
-      "value": "ZARYS Alcohol Prep Pad_sterile_A100 [P1-IA-2]"
+      "value": "Viroxan  ādas un virsmu dezinf. līdz 500ml.  [005751]"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Qty",
-      "value": "1.00"
+      "value": "2.00"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Price",
-      "value": "1.85"
+      "value": "5.29"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/LineDiscount",
@@ -852,7 +868,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[10]/LineTotal",
-      "value": "1.85"
+      "value": "10.58"
     },
     {
       "field": "Sale/LineItems/LineItem[10]/Unit/UnitID",
@@ -884,27 +900,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Item/ItemID",
-      "value": "1282150"
+      "value": "1150214"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Item/ItemCode",
-      "value": "005751"
+      "value": "PP65-018"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Item/ItemName",
-      "value": "Viroxan  ādas un virsmu dezinf. līdz 500ml."
+      "value": "Chemisept FG 1 litrs"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Description",
-      "value": "Viroxan  ādas un virsmu dezinf. līdz 500ml.  [005751]"
+      "value": "Chemisept FG 1 litrs [PP65-018]"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Qty",
-      "value": "2.00"
+      "value": "1.00"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Price",
-      "value": "5.29"
+      "value": "13.49"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/LineDiscount",
@@ -912,7 +928,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[11]/LineTotal",
-      "value": "10.58"
+      "value": "13.49"
     },
     {
       "field": "Sale/LineItems/LineItem[11]/Unit/UnitID",
@@ -944,27 +960,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Item/ItemID",
-      "value": "1150214"
+      "value": "1150127"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Item/ItemCode",
-      "value": "PP65-018"
+      "value": "65-175"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Item/ItemName",
-      "value": "Chemisept FG 1 litrs"
+      "value": "CP DRY WIPES, neausta auduma sausās salvetes N600"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Description",
-      "value": "Chemisept FG 1 litrs [PP65-018]"
+      "value": "CP DRY WIPES, neausta auduma sausās salvetes N600 [65-175]"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Qty",
-      "value": "1.00"
+      "value": "2.00"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Price",
-      "value": "13.49"
+      "value": "7.995"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/LineDiscount",
@@ -972,7 +988,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[12]/LineTotal",
-      "value": "13.49"
+      "value": "15.99"
     },
     {
       "field": "Sale/LineItems/LineItem[12]/Unit/UnitID",
@@ -988,6 +1004,122 @@
     },
     {
       "field": "Sale/LineItems/LineItem[12]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountID",
+      "value": "2673477"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountCode",
+      "value": "6110"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Account/AccountName",
+      "value": "Ieņēmumi no pamatdarbības internetveikals"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemID",
+      "value": "831063"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemCode",
+      "value": "65-013"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Item/ItemName",
+      "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Description",
+      "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152 [65-013]"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Qty",
+      "value": "2.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Price",
+      "value": "7.995"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/LineDiscount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/LineTotal",
+      "value": "15.99"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Unit/UnitID",
+      "value": "67684"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/Unit/UnitName",
+      "value": "gab."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[13]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -1032,7 +1164,7 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "26.00"
+      "value": "28.00"
     },
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentID",
@@ -1041,6 +1173,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34147"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17108332"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00541"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20250586"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260820/53"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-20"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20250587"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260820/54"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-20"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -1721,68 +1909,6 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "BACTICID 1L + DRY Wipes N600 — virsmu dezinfekcijas komplekts, 65-152WIPE"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "BACTICID 1L + DRY Wipes N600 — virsmu dezinfekcijas komplekts, 65-152WIPE"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "2.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "15.99"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "31.98"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "2.00",
-      "price": "15.99",
-      "line_total": "31.98",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
           "field": "LineItem/Item/ItemID",
           "value": "1264464"
         },
@@ -1984,6 +2110,146 @@
       "qty": "1.00",
       "price": "13.49",
       "line_total": "13.49",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1150127"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-175"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "CP DRY WIPES, neausta auduma sausās salvetes N600"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "CP DRY WIPES, neausta auduma sausās salvetes N600 [65-175]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "7.995"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "15.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-175",
+      "item_name": "CP DRY WIPES, neausta auduma sausās salvetes N600",
+      "qty": "2.00",
+      "price": "7.995",
+      "line_total": "15.99",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "831063"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "65-013"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152 [65-013]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "2.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "7.995"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "15.99"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "65-013",
+      "item_name": "Virsmu dezinfekcijas līdzeklis- BACTICID 1L, 65-152",
+      "qty": "2.00",
+      "price": "7.995",
+      "line_total": "15.99",
       "tax": "PVN 21%"
     }
   ],
