@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17112912</title></head><body><h1>extract_all_17112912</h1><p><b>Sale fields:</b> 78 | <b>Line items:</b> 1</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17112912</title></head><body><h1>extract_all_17112912</h1><p><b>Sale fields:</b> 102 | <b>Line items:</b> 1</p><pre>{
   "document_id": 17112912,
   "client_id": "1290940",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-27"
+      "value": "2026-08-28"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "436922"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-21T07:02:02Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-21T07:02:11Z"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -236,6 +244,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -313,6 +353,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34169"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17112914"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00555"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20257044"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260821/3"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-21"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20257045"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260821/4"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-21"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
