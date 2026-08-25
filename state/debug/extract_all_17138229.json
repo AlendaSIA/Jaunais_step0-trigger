@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-31"
+      "value": "2026-09-01"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -179,6 +175,10 @@
       "value": "2026-08-25T11:56:57Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-25T11:58:47Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
       "value": "2673477"
     },
@@ -236,6 +236,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -313,6 +345,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34243"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17138239"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00630"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20289117"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260825/54"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-25"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20289118"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260825/55"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-25"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
