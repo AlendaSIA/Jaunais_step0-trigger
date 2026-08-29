@@ -1,0 +1,23 @@
+{
+  "payload_meta": {
+    "doc_id": 17160418,
+    "document_ref": "M-860325-34336",
+    "xml_len": 3585,
+    "process_url": "https://pipedrive-worker-ixilvz5ewa-ew.a.run.app/process"
+  },
+  "payload_sent_to_worker_keys": [
+    "id",
+    "client",
+    "deal",
+    "meta",
+    "paytraq_full_xml"
+  ],
+  "worker_response": {
+    "detail": {
+      "error": "pipedrive_http_error",
+      "path": "/deals/72071/products",
+      "status_code": 500,
+      "response_text": "{\"success\":false,\"error\":\"Error occurred.\",\"error_info\":\"Please check developers.pipedrive.com for more information about Pipedrive API.\",\"data\":null,\"additional_data\":null,\"code\":\"ERR_UNKNOWN\",\"deprecation_warning\":{\"#\":\"Warning! This endpoint will be removed soon. Please check API documentation at developers.pipedrive.com.\"}}"
+    }
+  }
+}
