@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "56.80"
+      "value": "52.56"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "56.80"
+      "value": "52.56"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-08-28"
+      "value": "2026-08-31"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -177,6 +173,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-08-31T10:30:32Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-08-31T10:33:37Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -615,55 +615,35 @@
       "value": "PVN 21%"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Account/AccountID",
-      "value": "2673477"
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Account/AccountCode",
-      "value": "6110"
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Account/AccountName",
-      "value": "Ieņēmumi no pamatdarbības internetveikals"
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Description",
-      "value": "Katrin, roku dvieļi loksnēs NonStop M2, 2-slāņu, 140 loksnes/pac, 1 gb., N88690"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[7]/ItemDescription",
-      "value": "Katrin, roku dvieļi loksnēs NonStop M2, 2-slāņu, 140 loksnes/pac, 1 gb., N88690"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[7]/Qty",
-      "value": "2.00"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[7]/Price",
-      "value": "2.12"
-    },
-    {
-      "field": "Sale/LineItems/LineItem[7]/LineDiscount",
+      "field": "Sale/Adjustments/Adjustment/Amount",
       "value": "0.00"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/LineTotal",
-      "value": "4.24"
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Unit/UnitID",
-      "value": "67684"
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/Unit/UnitName",
-      "value": "gab."
-    },
-    {
-      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyID",
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
       "value": "262041"
     },
     {
-      "field": "Sale/LineItems/LineItem[7]/TaxKey/TaxKeyName",
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -704,15 +684,15 @@
     },
     {
       "field": "Sale/Taxes/Tax/GrossAmount",
-      "value": "56.80"
+      "value": "52.56"
     },
     {
       "field": "Sale/Taxes/Tax/NetAmount",
-      "value": "46.94"
+      "value": "43.44"
     },
     {
       "field": "Sale/Taxes/Tax/TaxAmount",
-      "value": "9.86"
+      "value": "9.12"
     },
     {
       "field": "Sale/Taxes/Tax/Account/AccountID",
@@ -724,15 +704,15 @@
     },
     {
       "field": "Sale/Totals/GrossAmount",
-      "value": "56.80"
+      "value": "52.56"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "46.94"
+      "value": "43.44"
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "11.00"
+      "value": "9.00"
     },
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentID",
@@ -741,6 +721,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34322"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17165782"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0826/00732"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20327797"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260831/49"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-08-31"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20327798"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260831/50"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-08-31"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -1248,68 +1284,6 @@
       "qty": "1.00",
       "price": "4.99",
       "line_total": "4.99",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "Katrin, roku dvieļi loksnēs NonStop M2, 2-slāņu, 140 loksnes/pac, 1 gb., N88690"
-        },
-        {
-          "field": "LineItem/ItemDescription",
-          "value": "Katrin, roku dvieļi loksnēs NonStop M2, 2-slāņu, 140 loksnes/pac, 1 gb., N88690"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "2.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "2.12"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "4.24"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "2.00",
-      "price": "2.12",
-      "line_total": "4.24",
       "tax": "PVN 21%"
     }
   ],
