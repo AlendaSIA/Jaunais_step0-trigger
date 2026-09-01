@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -192,7 +192,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-08-31T11:33:38Z"
+      "value": "2026-09-01T10:41:11Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -689,6 +689,14 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "156.00"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentID",
+      "value": "17175518"
+    },
+    {
+      "field": "Sale/InvoiceReference/DocumentLink/DocumentRef",
+      "value": "ALE 2605100"
     }
   ],
   "line_items": [
