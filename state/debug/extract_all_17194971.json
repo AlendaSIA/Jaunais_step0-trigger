@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "2203.86"
+      "value": "2222.20"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "2203.86"
+      "value": "2222.20"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "Rezervācija pret PAS/EKSEPT-2603591 (01.09.2026). Prece pārvietota uz Slokas biroju (dok. PIEG/0926/00076 + PIEG/0926/00078). Izrakstām un pārdodam, kad Eksept SIA samaksā vecos rēķinus (2 557,47 EUR)."
     },
@@ -128,27 +124,27 @@
     },
     {
       "field": "Sale/Header/ShippingData/Warehouse/WarehouseID",
-      "value": "4751"
+      "value": "4646"
     },
     {
       "field": "Sale/Header/ShippingData/Warehouse/WarehouseName",
-      "value": "Alenda SIA noliktava"
+      "value": "Slokas birojs"
     },
     {
       "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaID",
-      "value": "2655"
+      "value": "2330"
     },
     {
       "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaName",
-      "value": "Alenda SIA  noliktava"
+      "value": "Alenda noliktava"
     },
     {
       "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Address",
-      "value": "Bauskas iela 22, Rīga"
+      "value": "Slokas iela  126B, Rīga"
     },
     {
       "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Zip",
-      "value": "LV1004"
+      "value": "LV1067"
     },
     {
       "field": "Sale/Header/ShippingData/LoadingArea/LoadingAreaAddress/Country",
@@ -164,7 +160,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-03T11:31:32Z"
+      "value": "2026-09-03T11:39:05Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -440,7 +436,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Price",
-      "value": "1.02"
+      "value": "1.61"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineDiscount",
@@ -448,7 +444,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineTotal",
-      "value": "12.24"
+      "value": "19.32"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
@@ -988,7 +984,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[13]/Price",
-      "value": "7.00"
+      "value": "3.96"
     },
     {
       "field": "Sale/LineItems/LineItem[13]/LineDiscount",
@@ -996,7 +992,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[13]/LineTotal",
-      "value": "7.00"
+      "value": "3.96"
     },
     {
       "field": "Sale/LineItems/LineItem[13]/Unit/UnitID",
@@ -1588,7 +1584,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[23]/Price",
-      "value": "1.02"
+      "value": "1.61"
     },
     {
       "field": "Sale/LineItems/LineItem[23]/LineDiscount",
@@ -1596,7 +1592,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[23]/LineTotal",
-      "value": "24.48"
+      "value": "38.64"
     },
     {
       "field": "Sale/LineItems/LineItem[23]/Unit/UnitID",
@@ -1896,7 +1892,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[28]/Price",
-      "value": "7.00"
+      "value": "3.96"
     },
     {
       "field": "Sale/LineItems/LineItem[28]/LineDiscount",
@@ -1904,7 +1900,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[28]/LineTotal",
-      "value": "7.00"
+      "value": "3.96"
     },
     {
       "field": "Sale/LineItems/LineItem[28]/Unit/UnitID",
@@ -2651,6 +2647,62 @@
       "value": "PVN 21%"
     },
     {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
       "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
       "value": "262041"
     },
@@ -2664,15 +2716,15 @@
     },
     {
       "field": "Sale/Taxes/Tax/GrossAmount",
-      "value": "2203.86"
+      "value": "2222.20"
     },
     {
       "field": "Sale/Taxes/Tax/NetAmount",
-      "value": "1821.37"
+      "value": "1836.53"
     },
     {
       "field": "Sale/Taxes/Tax/TaxAmount",
-      "value": "382.49"
+      "value": "385.67"
     },
     {
       "field": "Sale/Taxes/Tax/Account/AccountID",
@@ -2684,11 +2736,11 @@
     },
     {
       "field": "Sale/Totals/GrossAmount",
-      "value": "2203.86"
+      "value": "2222.20"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "1821.37"
+      "value": "1836.53"
     },
     {
       "field": "Sale/Totals/Qty",
@@ -3012,7 +3064,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "1.02"
+          "value": "1.61"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -3020,7 +3072,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "12.24"
+          "value": "19.32"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -3042,8 +3094,8 @@
       "item_code": "STJ039",
       "item_name": "Tualetes papīrs JUMBO,120 metri, 2 kārtas, STJ039",
       "qty": "12.00",
-      "price": "1.02",
-      "line_total": "12.24",
+      "price": "1.61",
+      "line_total": "19.32",
       "tax": "PVN 21%"
     },
     {
@@ -3650,7 +3702,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "7.00"
+          "value": "3.96"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -3658,7 +3710,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "7.00"
+          "value": "3.96"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -3680,8 +3732,8 @@
       "item_code": "RNBDCXXL5005",
       "item_name": "Zarys Gripzzly , Melni, Nitrila cimdi bez pūdera N50, XXL izmmērs",
       "qty": "1.00",
-      "price": "7.00",
-      "line_total": "7.00",
+      "price": "3.96",
+      "line_total": "3.96",
       "tax": "PVN 21%"
     },
     {
@@ -4350,7 +4402,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "1.02"
+          "value": "1.61"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -4358,7 +4410,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "24.48"
+          "value": "38.64"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -4380,8 +4432,8 @@
       "item_code": "STJ039",
       "item_name": "Tualetes papīrs JUMBO,120 metri, 2 kārtas, STJ039",
       "qty": "24.00",
-      "price": "1.02",
-      "line_total": "24.48",
+      "price": "1.61",
+      "line_total": "38.64",
       "tax": "PVN 21%"
     },
     {
@@ -4708,7 +4760,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "7.00"
+          "value": "3.96"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -4716,7 +4768,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "7.00"
+          "value": "3.96"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -4738,8 +4790,8 @@
       "item_code": "RNBDCXXL5005",
       "item_name": "Zarys Gripzzly , Melni, Nitrila cimdi bez pūdera N50, XXL izmmērs",
       "qty": "1.00",
-      "price": "7.00",
-      "line_total": "7.00",
+      "price": "3.96",
+      "line_total": "3.96",
       "tax": "PVN 21%"
     },
     {
