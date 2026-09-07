@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,7 +180,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-04T17:00:08Z"
+      "value": "2026-09-07T05:35:02Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -593,6 +593,10 @@
         "value": "false"
       },
       {
+        "field": "shipping_addresses/ShippingAddress[0]/IsInactive",
+        "value": "false"
+      },
+      {
         "field": "shipping_addresses/ShippingAddress[1]/AddressID",
         "value": "383149"
       },
@@ -617,6 +621,10 @@
         "value": "false"
       },
       {
+        "field": "shipping_addresses/ShippingAddress[1]/IsInactive",
+        "value": "false"
+      },
+      {
         "field": "shipping_addresses/ShippingAddress[2]/AddressID",
         "value": "418130"
       },
@@ -638,6 +646,10 @@
       },
       {
         "field": "shipping_addresses/ShippingAddress[2]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[2]/IsInactive",
         "value": "false"
       }
     ],
