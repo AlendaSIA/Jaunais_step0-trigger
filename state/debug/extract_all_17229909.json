@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-09-06"
+      "value": "2026-09-08"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "266850"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-09-08T06:43:17Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-08T06:44:19Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -311,20 +319,28 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[2]/Description",
-      "value": "Profix handy plus 38x36cm,1000 loksnes., 2 sl., 2 gb., 2PP-69-011"
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemID",
+      "value": "1130252"
     },
     {
-      "field": "Sale/LineItems/LineItem[2]/ItemDescription",
-      "value": "Profix handy plus 38x36cm,1000 loksnes., 2 sl., 2 gb., 2PP-69-011"
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemCode",
+      "value": "PP-69-011"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Item/ItemName",
+      "value": "Profix Handy Plus, Industriāls papīrs 360 metri, 2 kārtas, zils"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[2]/Description",
+      "value": "Profix Handy Plus, Industriāls papīrs 360 metri, 2 kārtas, zils [PP-69-011]"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Qty",
-      "value": "2.00"
+      "value": "4.00"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/Price",
-      "value": "45.90"
+      "value": "22.95"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineDiscount",
@@ -348,6 +364,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem[2]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -392,7 +464,7 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "9.00"
+      "value": "11.00"
     },
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentID",
@@ -401,6 +473,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34489"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17229932"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00152"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20411807"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260908/6"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-08"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20411808"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260908/7"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-08"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -559,20 +687,28 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "Profix handy plus 38x36cm,1000 loksnes., 2 sl., 2 gb., 2PP-69-011"
+          "field": "LineItem/Item/ItemID",
+          "value": "1130252"
         },
         {
-          "field": "LineItem/ItemDescription",
-          "value": "Profix handy plus 38x36cm,1000 loksnes., 2 sl., 2 gb., 2PP-69-011"
+          "field": "LineItem/Item/ItemCode",
+          "value": "PP-69-011"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Profix Handy Plus, Industriāls papīrs 360 metri, 2 kārtas, zils"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Profix Handy Plus, Industriāls papīrs 360 metri, 2 kārtas, zils [PP-69-011]"
         },
         {
           "field": "LineItem/Qty",
-          "value": "2.00"
+          "value": "4.00"
         },
         {
           "field": "LineItem/Price",
-          "value": "45.90"
+          "value": "22.95"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -599,10 +735,10 @@
           "value": "PVN 21%"
         }
       ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "2.00",
-      "price": "45.90",
+      "item_code": "PP-69-011",
+      "item_name": "Profix Handy Plus, Industriāls papīrs 360 metri, 2 kārtas, zils",
+      "qty": "4.00",
+      "price": "22.95",
       "line_total": "91.80",
       "tax": "PVN 21%"
     }
