@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-09-02"
+      "value": "2026-09-09"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "212620"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-09-09T08:54:15Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-09T08:56:17Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -372,27 +380,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemID",
-      "value": "831061"
+      "value": "831059"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemCode",
-      "value": "90-897"
+      "value": "65-006"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Item/ItemName",
-      "value": "INJEKCIJU SPIRTOTĀS SALVETES DEZINFEKCIJAI, 100 GB., 90-897"
+      "value": "Roku dezinfekcijas līdzeklis CHEMI-PHARM -CHEMISEPT GEL 1000ML, 65-006"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Description",
-      "value": "INJEKCIJU SPIRTOTĀS SALVETES DEZINFEKCIJAI, 100 GB., 90-897 [90-897]"
+      "value": "Roku dezinfekcijas līdzeklis CHEMI-PHARM -CHEMISEPT GEL 1000ML, 65-006 [65-006]"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Qty",
-      "value": "1.00"
+      "value": "2.00"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Price",
-      "value": "1.85"
+      "value": "9.99"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineDiscount",
@@ -400,7 +408,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[3]/LineTotal",
-      "value": "1.85"
+      "value": "19.98"
     },
     {
       "field": "Sale/LineItems/LineItem[3]/Unit/UnitID",
@@ -432,27 +440,35 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Item/ItemID",
-      "value": "831059"
+      "value": "1264464"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Item/ItemCode",
-      "value": "65-006"
+      "value": "P1-IA-2"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Item/ItemName",
-      "value": "Roku dezinfekcijas līdzeklis CHEMI-PHARM -CHEMISEPT GEL 1000ML, 65-006"
+      "value": "ZARYS Alcohol Prep Pad_sterile_A100"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/ItemLot/LotID",
+      "value": "57403"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[4]/ItemLot/LotNumber",
+      "value": "202511001R"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Description",
-      "value": "Roku dezinfekcijas līdzeklis CHEMI-PHARM -CHEMISEPT GEL 1000ML, 65-006 [65-006]"
+      "value": "ZARYS Alcohol Prep Pad_sterile_A100 [P1-IA-2]"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Qty",
-      "value": "2.00"
+      "value": "1.00"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Price",
-      "value": "9.99"
+      "value": "1.85"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineDiscount",
@@ -460,7 +476,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineTotal",
-      "value": "19.98"
+      "value": "1.85"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/Unit/UnitID",
@@ -476,6 +492,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem[4]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -553,6 +601,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34419"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17244570"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00213"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20430694"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260909/37"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20430695"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260909/38"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-09"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -782,76 +886,6 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "831061"
-        },
-        {
-          "field": "LineItem/Item/ItemCode",
-          "value": "90-897"
-        },
-        {
-          "field": "LineItem/Item/ItemName",
-          "value": "INJEKCIJU SPIRTOTĀS SALVETES DEZINFEKCIJAI, 100 GB., 90-897"
-        },
-        {
-          "field": "LineItem/Description",
-          "value": "INJEKCIJU SPIRTOTĀS SALVETES DEZINFEKCIJAI, 100 GB., 90-897 [90-897]"
-        },
-        {
-          "field": "LineItem/Qty",
-          "value": "1.00"
-        },
-        {
-          "field": "LineItem/Price",
-          "value": "1.85"
-        },
-        {
-          "field": "LineItem/LineDiscount",
-          "value": "0.00"
-        },
-        {
-          "field": "LineItem/LineTotal",
-          "value": "1.85"
-        },
-        {
-          "field": "LineItem/Unit/UnitID",
-          "value": "67684"
-        },
-        {
-          "field": "LineItem/Unit/UnitName",
-          "value": "gab."
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyID",
-          "value": "262041"
-        },
-        {
-          "field": "LineItem/TaxKey/TaxKeyName",
-          "value": "PVN 21%"
-        }
-      ],
-      "item_code": "90-897",
-      "item_name": "INJEKCIJU SPIRTOTĀS SALVETES DEZINFEKCIJAI, 100 GB., 90-897",
-      "qty": "1.00",
-      "price": "1.85",
-      "line_total": "1.85",
-      "tax": "PVN 21%"
-    },
-    {
-      "_flat": [
-        {
-          "field": "LineItem/Account/AccountID",
-          "value": "2673477"
-        },
-        {
-          "field": "LineItem/Account/AccountCode",
-          "value": "6110"
-        },
-        {
-          "field": "LineItem/Account/AccountName",
-          "value": "Ieņēmumi no pamatdarbības internetveikals"
-        },
-        {
-          "field": "LineItem/Item/ItemID",
           "value": "831059"
         },
         {
@@ -904,6 +938,84 @@
       "qty": "2.00",
       "price": "9.99",
       "line_total": "19.98",
+      "tax": "PVN 21%"
+    },
+    {
+      "_flat": [
+        {
+          "field": "LineItem/Account/AccountID",
+          "value": "2673477"
+        },
+        {
+          "field": "LineItem/Account/AccountCode",
+          "value": "6110"
+        },
+        {
+          "field": "LineItem/Account/AccountName",
+          "value": "Ieņēmumi no pamatdarbības internetveikals"
+        },
+        {
+          "field": "LineItem/Item/ItemID",
+          "value": "1264464"
+        },
+        {
+          "field": "LineItem/Item/ItemCode",
+          "value": "P1-IA-2"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "ZARYS Alcohol Prep Pad_sterile_A100"
+        },
+        {
+          "field": "LineItem/ItemLot/LotID",
+          "value": "57403"
+        },
+        {
+          "field": "LineItem/ItemLot/LotNumber",
+          "value": "202511001R"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "ZARYS Alcohol Prep Pad_sterile_A100 [P1-IA-2]"
+        },
+        {
+          "field": "LineItem/Qty",
+          "value": "1.00"
+        },
+        {
+          "field": "LineItem/Price",
+          "value": "1.85"
+        },
+        {
+          "field": "LineItem/LineDiscount",
+          "value": "0.00"
+        },
+        {
+          "field": "LineItem/LineTotal",
+          "value": "1.85"
+        },
+        {
+          "field": "LineItem/Unit/UnitID",
+          "value": "67684"
+        },
+        {
+          "field": "LineItem/Unit/UnitName",
+          "value": "gab."
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyID",
+          "value": "262041"
+        },
+        {
+          "field": "LineItem/TaxKey/TaxKeyName",
+          "value": "PVN 21%"
+        }
+      ],
+      "item_code": "P1-IA-2",
+      "item_name": "ZARYS Alcohol Prep Pad_sterile_A100",
+      "qty": "1.00",
+      "price": "1.85",
+      "line_total": "1.85",
       "tax": "PVN 21%"
     }
   ],
