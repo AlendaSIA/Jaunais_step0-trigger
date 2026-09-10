@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17254208</title></head><body><h1>extract_all_17254208</h1><p><b>Sale fields:</b> 76 | <b>Line items:</b> 1</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17254208</title></head><body><h1>extract_all_17254208</h1><p><b>Sale fields:</b> 100 | <b>Line items:</b> 1</p><pre>{
   "document_id": 17254208,
   "client_id": "1301612",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-09-16"
+      "value": "2026-09-17"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "6881"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Unisend"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "440390"
     },
@@ -179,6 +183,10 @@
       "value": "2026-09-10T09:13:19Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-10T09:17:38Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
       "value": "2673477"
     },
@@ -191,20 +199,28 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem/Description",
-      "value": "Lucart Strong Z 4 Z-Fold Paper Hand Towels, 4-ply, 154 sheets, Transport box (18 packs), tk-864016"
+      "field": "Sale/LineItems/LineItem/Item/ItemID",
+      "value": "831103"
     },
     {
-      "field": "Sale/LineItems/LineItem/ItemDescription",
-      "value": "Lucart Strong Z 4 Z-Fold Paper Hand Towels, 4-ply, 154 sheets, Transport box (18 packs), tk-864016"
+      "field": "Sale/LineItems/LineItem/Item/ItemCode",
+      "value": "864016"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Item/ItemName",
+      "value": "Lucart STRONG ELITE Z4 FOLD, Z-locījuma papīra roku salvetes, 864016"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/Description",
+      "value": "Lucart STRONG ELITE Z4 FOLD, Z-locījuma papīra roku salvetes, 864016 [864016]"
     },
     {
       "field": "Sale/LineItems/LineItem/Qty",
-      "value": "1.00"
+      "value": "18.00"
     },
     {
       "field": "Sale/LineItems/LineItem/Price",
-      "value": "54.64"
+      "value": "3.036"
     },
     {
       "field": "Sale/LineItems/LineItem/LineDiscount",
@@ -212,7 +228,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem/LineTotal",
-      "value": "54.64"
+      "value": "54.65"
     },
     {
       "field": "Sale/LineItems/LineItem/Unit/UnitID",
@@ -228,6 +244,38 @@
     },
     {
       "field": "Sale/LineItems/LineItem/TaxKey/TaxKeyName",
+      "value": "Igaunija OSS 24%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.01"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "amount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "407048"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "Igaunija OSS 24%"
     },
     {
@@ -296,15 +344,63 @@
     },
     {
       "field": "Sale/Totals/Qty",
-      "value": "1.00"
+      "value": "18.00"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentID",
-      "value": "17245599"
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17254305"
     },
     {
-      "field": "Sale/OrderReference/DocumentLink/DocumentRef",
-      "value": "M-860325-34577"
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00247"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20443334"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260910/28"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20443335"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260910/29"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -323,20 +419,28 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "Lucart Strong Z 4 Z-Fold Paper Hand Towels, 4-ply, 154 sheets, Transport box (18 packs), tk-864016"
+          "field": "LineItem/Item/ItemID",
+          "value": "831103"
         },
         {
-          "field": "LineItem/ItemDescription",
-          "value": "Lucart Strong Z 4 Z-Fold Paper Hand Towels, 4-ply, 154 sheets, Transport box (18 packs), tk-864016"
+          "field": "LineItem/Item/ItemCode",
+          "value": "864016"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Lucart STRONG ELITE Z4 FOLD, Z-locījuma papīra roku salvetes, 864016"
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Lucart STRONG ELITE Z4 FOLD, Z-locījuma papīra roku salvetes, 864016 [864016]"
         },
         {
           "field": "LineItem/Qty",
-          "value": "1.00"
+          "value": "18.00"
         },
         {
           "field": "LineItem/Price",
-          "value": "54.64"
+          "value": "3.036"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -344,7 +448,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "54.64"
+          "value": "54.65"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -363,11 +467,11 @@
           "value": "Igaunija OSS 24%"
         }
       ],
-      "item_code": null,
-      "item_name": null,
-      "qty": "1.00",
-      "price": "54.64",
-      "line_total": "54.64",
+      "item_code": "864016",
+      "item_name": "Lucart STRONG ELITE Z4 FOLD, Z-locījuma papīra roku salvetes, 864016",
+      "qty": "18.00",
+      "price": "3.036",
+      "line_total": "54.65",
       "tax": "Igaunija OSS 24%"
     }
   ],
