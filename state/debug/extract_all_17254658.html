@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17254658</title></head><body><h1>extract_all_17254658</h1><p><b>Sale fields:</b> 87 | <b>Line items:</b> 2</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17254658</title></head><body><h1>extract_all_17254658</h1><p><b>Sale fields:</b> 119 | <b>Line items:</b> 2</p><pre>{
   "document_id": 17254658,
   "client_id": "1299461",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-09-14"
+      "value": "2026-09-17"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "439897"
     },
@@ -177,6 +181,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-09-10T09:37:45Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-10T09:41:02Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -259,12 +267,20 @@
       "value": "Ieņēmumi no pamatdarbības internetveikals"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "Bagilas priekš HYGOMAT 110 gb, PE , 28509Hp"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
+      "value": "940690"
     },
     {
-      "field": "Sale/LineItems/LineItem[1]/ItemDescription",
-      "value": "Bagilas priekš HYGOMAT 110 gb, PE , 28509Hp"
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
+      "value": "28509H"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
+      "value": "Bahilas Overshoes for Hygomat | PE, 110 gb."
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/Description",
+      "value": "Bahilas Overshoes for Hygomat | PE, 110 gb. [28509H ]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -296,6 +312,62 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
+    },
+    {
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
+    },
+    {
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
@@ -349,6 +421,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34519"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17254708"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00248"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20443814"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260910/31"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20443815"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260910/32"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-10"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -445,12 +573,20 @@
           "value": "Ieņēmumi no pamatdarbības internetveikals"
         },
         {
-          "field": "LineItem/Description",
-          "value": "Bagilas priekš HYGOMAT 110 gb, PE , 28509Hp"
+          "field": "LineItem/Item/ItemID",
+          "value": "940690"
         },
         {
-          "field": "LineItem/ItemDescription",
-          "value": "Bagilas priekš HYGOMAT 110 gb, PE , 28509Hp"
+          "field": "LineItem/Item/ItemCode",
+          "value": "28509H"
+        },
+        {
+          "field": "LineItem/Item/ItemName",
+          "value": "Bahilas Overshoes for Hygomat | PE, 110 gb."
+        },
+        {
+          "field": "LineItem/Description",
+          "value": "Bahilas Overshoes for Hygomat | PE, 110 gb. [28509H ]"
         },
         {
           "field": "LineItem/Qty",
@@ -485,8 +621,8 @@
           "value": "PVN 21%"
         }
       ],
-      "item_code": null,
-      "item_name": null,
+      "item_code": "28509H",
+      "item_name": "Bahilas Overshoes for Hygomat | PE, 110 gb.",
       "qty": "1.00",
       "price": "21.90",
       "line_total": "21.90",
