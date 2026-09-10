@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -40,11 +40,11 @@
     },
     {
       "field": "Sale/Header/Total",
-      "value": "6.07"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/AmountDue",
-      "value": "6.07"
+      "value": "0.00"
     },
     {
       "field": "Sale/Header/DueNoticeEnabled",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Signature",
@@ -156,7 +152,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-10T08:19:14Z"
+      "value": "2026-09-10T08:21:17Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -200,7 +196,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Price",
-      "value": "2.43"
+      "value": "0.00"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineDiscount",
@@ -208,7 +204,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineTotal",
-      "value": "2.43"
+      "value": "0.00"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Unit/UnitID",
@@ -268,7 +264,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Price",
-      "value": "2.59"
+      "value": "0.00"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineDiscount",
@@ -276,7 +272,7 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/LineTotal",
-      "value": "2.59"
+      "value": "0.00"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Unit/UnitID",
@@ -295,44 +291,68 @@
       "value": "PVN 21%"
     },
     {
-      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
       "value": "262041"
     },
     {
-      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
       "value": "PVN 21%"
     },
     {
-      "field": "Sale/Taxes/Tax/TaxName",
-      "value": "PVN"
+      "field": "Sale/ShippingCharge/Account/AccountID",
+      "value": "2683816"
     },
     {
-      "field": "Sale/Taxes/Tax/GrossAmount",
-      "value": "6.07"
+      "field": "Sale/ShippingCharge/Account/AccountCode",
+      "value": "6111"
     },
     {
-      "field": "Sale/Taxes/Tax/NetAmount",
-      "value": "5.02"
+      "field": "Sale/ShippingCharge/Account/AccountName",
+      "value": "Ieņēmumi piegades"
     },
     {
-      "field": "Sale/Taxes/Tax/TaxAmount",
-      "value": "1.05"
+      "field": "Sale/ShippingCharge/Amount",
+      "value": "0.00"
     },
     {
-      "field": "Sale/Taxes/Tax/Account/AccountID",
-      "value": "2673464"
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
+      "value": "262041"
     },
     {
-      "field": "Sale/Taxes/Tax/Account/AccountName",
-      "value": "5721 - Aprēķinātais PVN"
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
     },
     {
       "field": "Sale/Totals/GrossAmount",
-      "value": "6.07"
+      "value": "0.00"
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "5.02"
+      "value": "0.00"
     },
     {
       "field": "Sale/Totals/Qty",
@@ -384,7 +404,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "2.43"
+          "value": "0.00"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -392,7 +412,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "2.43"
+          "value": "0.00"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -414,8 +434,8 @@
       "item_code": "RNBDPL5005",
       "item_name": "Zarys Gripzzly , Oranži, Nitrila cimdi bez pūdera N50, L izmērs",
       "qty": "1.00",
-      "price": "2.43",
-      "line_total": "2.43",
+      "price": "0.00",
+      "line_total": "0.00",
       "tax": "PVN 21%"
     },
     {
@@ -462,7 +482,7 @@
         },
         {
           "field": "LineItem/Price",
-          "value": "2.59"
+          "value": "0.00"
         },
         {
           "field": "LineItem/LineDiscount",
@@ -470,7 +490,7 @@
         },
         {
           "field": "LineItem/LineTotal",
-          "value": "2.59"
+          "value": "0.00"
         },
         {
           "field": "LineItem/Unit/UnitID",
@@ -492,8 +512,8 @@
       "item_code": "RNBDCL5005",
       "item_name": "Zarys Gripzzly , Melni, Nitrila cimdi bez pūdera N50, L izmmērs",
       "qty": "1.00",
-      "price": "2.59",
-      "line_total": "2.59",
+      "price": "0.00",
+      "line_total": "0.00",
       "tax": "PVN 21%"
     }
   ],
