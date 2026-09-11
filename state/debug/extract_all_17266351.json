@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -91,10 +91,6 @@
       "value": "0.00"
     },
     {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
-    },
-    {
       "field": "Sale/Header/Comment",
       "value": "M-860325-34630, Payment Gateway (SEB)"
     },
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "394600"
     },
@@ -179,8 +183,12 @@
       "value": "2026-09-11T10:52:02Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-11T10:52:10Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem[0]/LineItemID",
-      "value": "21882518"
+      "value": "21882522"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -247,8 +255,12 @@
       "value": "21882251"
     },
     {
+      "field": "Sale/LineItems/LineItem[0]/MovementLineID",
+      "value": "10884276"
+    },
+    {
       "field": "Sale/LineItems/LineItem[1]/LineItemID",
-      "value": "21882519"
+      "value": "21882523"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
@@ -321,6 +333,42 @@
     {
       "field": "Sale/LineItems/LineItem[1]/OrderLineID",
       "value": "21882252"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/MovementLineID",
+      "value": "10884277"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
     },
     {
       "field": "Sale/ShippingCharge/Account/AccountID",
@@ -397,6 +445,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34630"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17266358"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00287"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20458509"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260911/43"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20458510"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260911/44"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-11"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -404,7 +508,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21882518"
+          "value": "21882522"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -469,6 +573,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21882251"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10884276"
         }
       ],
       "item_code": "200006",
@@ -482,7 +590,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21882519"
+          "value": "21882523"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -555,6 +663,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21882252"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10884277"
         }
       ],
       "item_code": "SLN-001",
