@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17277450</title></head><body><h1>extract_all_17277450</h1><p><b>Sale fields:</b> 97 | <b>Line items:</b> 1</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17277450</title></head><body><h1>extract_all_17277450</h1><p><b>Sale fields:</b> 104 | <b>Line items:</b> 1</p><pre>{
   "document_id": 17277450,
   "client_id": "931346",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -180,11 +180,11 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-14T06:33:54Z"
+      "value": "2026-09-14T06:34:09Z"
     },
     {
       "field": "Sale/LineItems/LineItem/LineItemID",
-      "value": "21903387"
+      "value": "21903403"
     },
     {
       "field": "Sale/LineItems/LineItem/Account/AccountID",
@@ -251,6 +251,10 @@
       "value": "21885753"
     },
     {
+      "field": "Sale/LineItems/LineItem/MovementLineID",
+      "value": "10888759"
+    },
+    {
       "field": "Sale/Adjustments/Adjustment/Account/AccountID",
       "value": "2673481"
     },
@@ -300,74 +304,42 @@
     },
     {
       "field": "Sale/ShippingCharge/TaxKey/TaxKeyID",
-      "value": "262041"
-    },
-    {
-      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
-      "value": "PVN 21%"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/TaxKey/TaxKeyID",
-      "value": "262041"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/TaxKey/TaxKeyName",
-      "value": "PVN 21%"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/TaxName",
-      "value": "PVN"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/GrossAmount",
-      "value": "5.59"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/NetAmount",
-      "value": "4.62"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/TaxAmount",
-      "value": "0.97"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/Account/AccountID",
-      "value": "2673464"
-    },
-    {
-      "field": "Sale/Taxes/Tax[0]/Account/AccountName",
-      "value": "5721 - Aprēķinātais PVN"
-    },
-    {
-      "field": "Sale/Taxes/Tax[1]/TaxKey/TaxKeyID",
       "value": "407048"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/TaxKey/TaxKeyName",
+      "field": "Sale/ShippingCharge/TaxKey/TaxKeyName",
       "value": "Igaunija OSS 24%"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/TaxName",
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyID",
+      "value": "407048"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxKey/TaxKeyName",
+      "value": "Igaunija OSS 24%"
+    },
+    {
+      "field": "Sale/Taxes/Tax/TaxName",
       "value": "VAT"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/GrossAmount",
-      "value": "36.90"
+      "field": "Sale/Taxes/Tax/GrossAmount",
+      "value": "42.49"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/NetAmount",
-      "value": "29.76"
+      "field": "Sale/Taxes/Tax/NetAmount",
+      "value": "34.27"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/TaxAmount",
-      "value": "7.14"
+      "field": "Sale/Taxes/Tax/TaxAmount",
+      "value": "8.22"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/Account/AccountID",
+      "field": "Sale/Taxes/Tax/Account/AccountID",
       "value": "3925938"
     },
     {
-      "field": "Sale/Taxes/Tax[1]/Account/AccountName",
+      "field": "Sale/Taxes/Tax/Account/AccountName",
       "value": "5729 - PVN  OSS"
     },
     {
@@ -376,7 +348,7 @@
     },
     {
       "field": "Sale/Totals/NetAmount",
-      "value": "34.38"
+      "value": "34.27"
     },
     {
       "field": "Sale/Totals/Qty",
@@ -389,6 +361,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34635"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17277478"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00301"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20476419"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260914/15"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-14"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20476420"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260914/16"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-14"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -396,7 +424,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21903387"
+          "value": "21903403"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -461,6 +489,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21885753"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10888759"
         }
       ],
       "item_code": "3400-5",
