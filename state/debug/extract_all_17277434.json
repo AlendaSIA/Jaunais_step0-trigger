@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -147,16 +147,44 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
+      "value": "441158"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/ShipTo",
+      "value": "SIA Phokus"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Address",
+      "value": "Venipak skapis, Āzenes iela 5, Kurzemes rajons, Rīga, 26286685"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Zip",
+      "value": "1048"
+    },
+    {
+      "field": "Sale/Header/ShippingData/ShippingAddress/Country",
+      "value": "LV"
+    },
+    {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-09-14T06:31:10Z"
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-14T06:32:01Z"
+      "value": "2026-09-14T06:38:36Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineItemID",
-      "value": "21903383"
+      "value": "21903447"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -184,11 +212,11 @@
     },
     {
       "field": "Sale/LineItems/LineItem[0]/ItemLot/LotID",
-      "value": "57414"
+      "value": "58835"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/ItemLot/LotNumber",
-      "value": "672509103N"
+      "value": "582606003N"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Description",
@@ -227,8 +255,12 @@
       "value": "PVN 21%"
     },
     {
+      "field": "Sale/LineItems/LineItem[0]/MovementLineID",
+      "value": "10888785"
+    },
+    {
       "field": "Sale/LineItems/LineItem[1]/LineItemID",
-      "value": "21903384"
+      "value": "21903448"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
@@ -244,27 +276,27 @@
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemID",
-      "value": "830793"
+      "value": "830792"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemCode",
-      "value": "RNBM10001"
+      "value": "RNBS10001"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Item/ItemName",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotID",
-      "value": "58358"
+      "value": "58841"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/ItemLot/LotNumber",
-      "value": "672605102N"
+      "value": "M02605001N"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Description",
-      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+      "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [RNBS10001]"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Qty",
@@ -297,6 +329,10 @@
     {
       "field": "Sale/LineItems/LineItem[1]/TaxKey/TaxKeyName",
       "value": "PVN 21%"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/MovementLineID",
+      "value": "10888786"
     },
     {
       "field": "Sale/Adjustments/Adjustment/Account/AccountID",
@@ -397,6 +433,62 @@
     {
       "field": "Sale/Totals/Qty",
       "value": "13.00"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17277541"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00303"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20476490"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260914/19"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-14"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20476491"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260914/20"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-14"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -404,7 +496,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21903383"
+          "value": "21903447"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -432,11 +524,11 @@
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "57414"
+          "value": "58835"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "672509103N"
+          "value": "582606003N"
         },
         {
           "field": "LineItem/Description",
@@ -473,6 +565,10 @@
         {
           "field": "LineItem/TaxKey/TaxKeyName",
           "value": "PVN 21%"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10888785"
         }
       ],
       "item_code": "RNBL10001",
@@ -486,7 +582,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21903384"
+          "value": "21903448"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -502,27 +598,27 @@
         },
         {
           "field": "LineItem/Item/ItemID",
-          "value": "830793"
+          "value": "830792"
         },
         {
           "field": "LineItem/Item/ItemCode",
-          "value": "RNBM10001"
+          "value": "RNBS10001"
         },
         {
           "field": "LineItem/Item/ItemName",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m"
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100"
         },
         {
           "field": "LineItem/ItemLot/LotID",
-          "value": "58358"
+          "value": "58841"
         },
         {
           "field": "LineItem/ItemLot/LotNumber",
-          "value": "672605102N"
+          "value": "M02605001N"
         },
         {
           "field": "LineItem/Description",
-          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m [RNBM10001]"
+          "value": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100 [RNBS10001]"
         },
         {
           "field": "LineItem/Qty",
@@ -555,10 +651,14 @@
         {
           "field": "LineItem/TaxKey/TaxKeyName",
           "value": "PVN 21%"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10888786"
         }
       ],
-      "item_code": "RNBM10001",
-      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, M, 100 gb, RNB-M-100_m",
+      "item_code": "RNBS10001",
+      "item_name": "Nitrila cimdi, nepūderēti «Easy CARE», zilā krāsā, 100 gab / gb, S, 100 gb, ZARYS-RNB-S-100",
       "qty": "5.00",
       "price": "4.50",
       "line_total": "22.50",
@@ -750,6 +850,34 @@
       },
       {
         "field": "shipping_addresses/ShippingAddress[3]/IsInactive",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/AddressID",
+        "value": "441158"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/ShipTo",
+        "value": "SIA Phokus"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Address",
+        "value": "Venipak skapis, Āzenes iela 5, Kurzemes rajons, Rīga, 26286685"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Zip",
+        "value": "1048"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/Country",
+        "value": "LV"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/IsDefault",
+        "value": "false"
+      },
+      {
+        "field": "shipping_addresses/ShippingAddress[4]/IsInactive",
         "value": "false"
       }
     ],
