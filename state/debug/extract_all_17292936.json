@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "done"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -149,6 +149,10 @@
     {
       "field": "Sale/Header/TimeStamps/Created",
       "value": "2026-09-15T08:01:14Z"
+    },
+    {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-15T10:41:48Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineItemID",
