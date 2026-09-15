@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17291329</title></head><body><h1>extract_all_17291329</h1><p><b>Sale fields:</b> 97 | <b>Line items:</b> 2</p><pre>{
+<!doctype html><html><head><meta charset='utf-8'><title>extract_all_17291329</title></head><body><h1>extract_all_17291329</h1><p><b>Sale fields:</b> 123 | <b>Line items:</b> 2</p><pre>{
   "document_id": 17291329,
   "client_id": "1198160",
   "sale_fields": [
@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -76,7 +76,7 @@
     },
     {
       "field": "Sale/Header/DateDue",
-      "value": "2026-09-14"
+      "value": "2026-09-15"
     },
     {
       "field": "Sale/Header/DateApproved",
@@ -89,10 +89,6 @@
     {
       "field": "Sale/Header/Discount",
       "value": "0.00"
-    },
-    {
-      "field": "Sale/Header/Deposit",
-      "value": "100.00"
     },
     {
       "field": "Sale/Header/Comment",
@@ -155,6 +151,14 @@
       "value": "LV"
     },
     {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperID",
+      "value": "5968"
+    },
+    {
+      "field": "Sale/Header/ShippingData/Shipper/ShipperName",
+      "value": "Venipak"
+    },
+    {
       "field": "Sale/Header/ShippingData/ShippingAddress/AddressID",
       "value": "427133"
     },
@@ -179,8 +183,12 @@
       "value": "2026-09-15T06:47:59Z"
     },
     {
+      "field": "Sale/Header/TimeStamps/Updated",
+      "value": "2026-09-15T06:48:12Z"
+    },
+    {
       "field": "Sale/LineItems/LineItem[0]/LineItemID",
-      "value": "21915801"
+      "value": "21915805"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/Account/AccountID",
@@ -247,8 +255,12 @@
       "value": "21913588"
     },
     {
+      "field": "Sale/LineItems/LineItem[0]/MovementLineID",
+      "value": "10892192"
+    },
+    {
       "field": "Sale/LineItems/LineItem[1]/LineItemID",
-      "value": "21915802"
+      "value": "21915806"
     },
     {
       "field": "Sale/LineItems/LineItem[1]/Account/AccountID",
@@ -313,6 +325,42 @@
     {
       "field": "Sale/LineItems/LineItem[1]/OrderLineID",
       "value": "21913589"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/MovementLineID",
+      "value": "10892193"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountID",
+      "value": "2673481"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountCode",
+      "value": "6410"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Account/AccountName",
+      "value": "Piešķirtās skonto atlaides"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/Amount",
+      "value": "0.00"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TypeID",
+      "value": "discount"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/PctOrAmount",
+      "value": "pct"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyID",
+      "value": "262041"
+    },
+    {
+      "field": "Sale/Adjustments/Adjustment/TaxKey/TaxKeyName",
+      "value": "PVN 21%"
     },
     {
       "field": "Sale/ShippingCharge/Account/AccountID",
@@ -389,6 +437,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34684"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17291331"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00346"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20494372"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260915/20"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-15"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20494373"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260915/21"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-15"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -396,7 +500,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21915801"
+          "value": "21915805"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -461,6 +565,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21913588"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10892192"
         }
       ],
       "item_code": "65-007",
@@ -474,7 +582,7 @@
       "_flat": [
         {
           "field": "LineItem/LineItemID",
-          "value": "21915802"
+          "value": "21915806"
         },
         {
           "field": "LineItem/Account/AccountID",
@@ -539,6 +647,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21913589"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10892193"
         }
       ],
       "item_code": "JS222",
