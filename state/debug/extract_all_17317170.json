@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -176,7 +176,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-17T08:13:57Z"
+      "value": "2026-09-17T08:14:17Z"
     },
     {
       "field": "Sale/LineItems/LineItem[0]/LineItemID",
@@ -247,6 +247,10 @@
       "value": "21943812"
     },
     {
+      "field": "Sale/LineItems/LineItem[0]/MovementLineID",
+      "value": "10900419"
+    },
+    {
       "field": "Sale/LineItems/LineItem[1]/LineItemID",
       "value": "21944517"
     },
@@ -313,6 +317,10 @@
     {
       "field": "Sale/LineItems/LineItem[1]/OrderLineID",
       "value": "21943813"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[1]/MovementLineID",
+      "value": "10900420"
     },
     {
       "field": "Sale/LineItems/LineItem[2]/LineItemID",
@@ -391,6 +399,10 @@
       "value": "21943814"
     },
     {
+      "field": "Sale/LineItems/LineItem[2]/MovementLineID",
+      "value": "10900421"
+    },
+    {
       "field": "Sale/LineItems/LineItem[3]/LineItemID",
       "value": "21944519"
     },
@@ -457,6 +469,10 @@
     {
       "field": "Sale/LineItems/LineItem[3]/OrderLineID",
       "value": "21943815"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[3]/MovementLineID",
+      "value": "10900422"
     },
     {
       "field": "Sale/LineItems/LineItem[4]/LineItemID",
@@ -535,6 +551,10 @@
       "value": "21943816"
     },
     {
+      "field": "Sale/LineItems/LineItem[4]/MovementLineID",
+      "value": "10900423"
+    },
+    {
       "field": "Sale/LineItems/LineItem[5]/LineItemID",
       "value": "21944521"
     },
@@ -609,6 +629,10 @@
     {
       "field": "Sale/LineItems/LineItem[5]/OrderLineID",
       "value": "21943817"
+    },
+    {
+      "field": "Sale/LineItems/LineItem[5]/MovementLineID",
+      "value": "10900424"
     },
     {
       "field": "Sale/Adjustments/Adjustment/Account/AccountID",
@@ -717,6 +741,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34768"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17317185"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00402"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20525622"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260917/17"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20525623"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260917/18"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -789,6 +869,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943812"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900419"
         }
       ],
       "item_code": "BerryN100Pr",
@@ -867,6 +951,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943813"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900420"
         }
       ],
       "item_code": "3616-2",
@@ -953,6 +1041,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943814"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900421"
         }
       ],
       "item_code": "RNBRS10003",
@@ -1031,6 +1123,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943815"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900422"
         }
       ],
       "item_code": "50-046",
@@ -1117,6 +1213,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943816"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900423"
         }
       ],
       "item_code": "YCB-2545-B",
@@ -1203,6 +1303,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21943817"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900424"
         }
       ],
       "item_code": "YCB-2545-IP",
