@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "wait_payment"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -184,7 +184,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-17T08:40:08Z"
+      "value": "2026-09-17T08:40:10Z"
     },
     {
       "field": "Sale/LineItems/LineItem/LineItemID",
@@ -253,6 +253,10 @@
     {
       "field": "Sale/LineItems/LineItem/OrderLineID",
       "value": "21945474"
+    },
+    {
+      "field": "Sale/LineItems/LineItem/MovementLineID",
+      "value": "10900594"
     },
     {
       "field": "Sale/Adjustments/Adjustment/Account/AccountID",
@@ -361,6 +365,62 @@
     {
       "field": "Sale/OrderReference/DocumentLink/DocumentRef",
       "value": "M-860325-34771"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentID",
+      "value": "17317709"
+    },
+    {
+      "field": "Sale/MovementReference/DocumentLink/DocumentRef",
+      "value": "PIEG/0926/00406"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalID",
+      "value": "20526217"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalRef",
+      "value": "20260917/25"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalDate",
+      "value": "2026-09-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeID",
+      "value": "141182"
+    },
+    {
+      "field": "Sale/Journals/Journal[0]/JournalType/JournalTypeName",
+      "value": "Pārdošanas nodokļa rēķins"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalID",
+      "value": "20526218"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalRef",
+      "value": "20260917/26"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalDate",
+      "value": "2026-09-17"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalStatus",
+      "value": "P"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeID",
+      "value": "141193"
+    },
+    {
+      "field": "Sale/Journals/Journal[1]/JournalType/JournalTypeName",
+      "value": "Cits"
     }
   ],
   "line_items": [
@@ -433,6 +493,10 @@
         {
           "field": "LineItem/OrderLineID",
           "value": "21945474"
+        },
+        {
+          "field": "LineItem/MovementLineID",
+          "value": "10900594"
         }
       ],
       "item_code": "SUPREME/VB/XL/100",
