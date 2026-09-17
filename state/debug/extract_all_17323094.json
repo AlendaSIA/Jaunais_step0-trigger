@@ -20,7 +20,7 @@
     },
     {
       "field": "Sale/Header/Document/DocumentStatus",
-      "value": "draft"
+      "value": "in_process"
     },
     {
       "field": "Sale/Header/Document/Client/ClientID",
@@ -160,7 +160,7 @@
     },
     {
       "field": "Sale/Header/TimeStamps/Updated",
-      "value": "2026-09-17T14:13:19Z"
+      "value": "2026-09-17T14:15:08Z"
     },
     {
       "field": "Sale/CustomData/CustomField/FieldName",
